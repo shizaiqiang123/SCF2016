@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000970</id>
+	<module>Test</module>
+	<name>未来货权手工注销申请</name>
+	<desc>未来货权手工注销申请</desc>
+    <functype>PM</functype>
+     <page>
+		<id>P_S_000002</id><!-- P_S_000002 为catalog的公共页面 -->
+		<index>0</index>
+		<name>查询协议信息</name>
+		<desc>查询协议信息</desc>
+		<catalog>C_P_000046</catalog>
+	</page>	
+	<page>
+		<id>P_P_000937</id>
+		<index>1</index>
+		<name>未来货权手工注销申请添加</name>
+		<desc>未来货权手工注销申请添加</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page> 
+</function>

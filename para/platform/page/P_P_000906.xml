@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>仓单-续存保证金</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000906</id>
+    <name>仓单-续存保证金</name>
+    <jspfile>screen/loan/queryLoanList.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000663</queryid>
+</page>

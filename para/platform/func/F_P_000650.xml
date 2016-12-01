@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>客户还款的退回处理</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000650</id>
+    <autoassignSize>0</autoassignSize>
+    <name>退回处理</name>
+    <functype>FP</functype>
+    <shortnm>退回处理</shortnm>
+     <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000666</catalog>
+	</page>
+    <page>
+        <id>P_P_000813</id>
+    </page>
+</function>

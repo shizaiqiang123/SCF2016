@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000141</id>
+	<module>删除机构信息</module>
+	<name>删除机构信息</name>
+	<desc>机构信息-删除机构信息</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选页面</name>
+		<desc>删除机构筛选页面</desc>
+		<catalog>C_P_10000102</catalog>
+	</page>
+	<page>
+		<id>P_S_10000008</id>
+		<index>1</index>
+		<name>删除机构菜单</name>
+		<desc>删除机构菜单页面</desc>	
+		<pagetype>DELETE</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

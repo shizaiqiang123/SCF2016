@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000158</id>
+	<module>Para</module>
+	<name>Function Add</name>
+	<desc>新增Function 参数定义</desc>
+	<functype>PA</functype>
+	<!-- <page>
+		<id>P00000021</id>
+		<index>0</index>
+		<name>筛选条件</name>
+		<desc>筛选记录以进入交易</desc>
+		<catalog>C_P_000081</catalog>
+	</page> -->
+	<page>
+		<id>P_P_000085</id>
+		<pagetype>paraAdd</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

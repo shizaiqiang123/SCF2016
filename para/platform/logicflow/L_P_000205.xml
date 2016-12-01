@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000205</id>
+	<name>订单录入</name>
+	<desc>订单录入</desc>
+	<module>订单录入</module>
+	<transfornode>
+		<id>N00000001</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.PO_M</tablename>
+		<fields></fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysFuncId</fields>
+			<values>$sysFuncId$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000080.js</nodejs> 
+	</transfornode>
+</logicflow>

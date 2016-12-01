@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000334</id>
+    <desc>融资查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>融资查询</desc>
+        <name>融资查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>sysRefNo,selNm,loanTp,ccy,ttlLoanAmt,ttlLoanBal,loanValDt,loanDueDt</fields>
+        <params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select m.sysRefNo,m.selNm,m.loanTp,m.ccy,m.ttlLoanAmt,m.ttlLoanBal,m.loanValDt,m.loanDueDt from LoanM m,CustM t,CntrctM c where  m.selId = t.sysRefNo and  m.cntrctNo = c.sysRefNo and m.selId = ? and c.custBrId = ?  and to_char(m.loanDueDt,'yyyy-mm-dd') >= ? and  to_char(m.loanDueDt,'yyyy-mm-dd') <= ? ]]></sql>
+    </qnode>
+    
+</query>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.TRF_REG_M</maintable>
+    <desc>应收账款转让(外网)</desc>
+    <cacheAble>false</cacheAble>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000922</id>
+    <name>应收账款转让(外网)</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/invc/wideInvcM.jsp</jspfile>
+    <logicid>L_P_000618</logicid>
+</page>

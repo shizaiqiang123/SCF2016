@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000082</id>
+	<module>动产质押池状态查询</module>
+	<name>动产质押池状态查询</name>
+	<desc>动产质押池状态查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000068</catalog>
+	</page>
+	<page>
+		<id>P_P_000067</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现用户信息页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<report>
+		<id>R_TEST_00010</id>
+	</report>
+</function>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00045</id>
+	<workid>1307</workid>
+	<workname>sellRepaymentPool</workname>
+	<name>池融资_卖方还款</name>
+	<desc>池融资_卖方还款</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

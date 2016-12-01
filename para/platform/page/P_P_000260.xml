@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000260</id>
+	<name>企业信息查询</name>
+	<desc>企业信息查询</desc>
+	<jspfile>screen/cust/lookUpCompanyMsg.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.CUST_M</maintable>
+</page>

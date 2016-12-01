@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000324</id>
+	<name>查询部门信息</name>
+	<desc>查询部门信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_DEPT_M</tablename>
+		<doname>doname</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition></condition>
+		<orderby></orderby>
+		<asc></asc>
+		<params></params>
+	</qnode>
+</query>

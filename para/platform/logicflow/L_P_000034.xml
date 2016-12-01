@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000034</id>
+	<name>发货通知</name>
+	<desc>发货通知</desc>
+	<module>发货通知</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.INOUT_DETAILS</tablename>
+		<doname>crtf</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>inoutRefNo =?</condition>
+		<params>inoutRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_P_000105.js</nodejs>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST4</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.COLLATERAL_M</tablename>
+		<fields></fields>
+		<doname>crtf</doname>
+		<fpParam>sysRefNo</fpParam> 
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>poNumUsed,poNumUseable</fields>
+			<values>$ttlPoOutNum$,$poNumUseable$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000107.js</nodejs>
+	</transfornode>
+</logicflow>

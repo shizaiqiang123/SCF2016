@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_login</id>
+	<module>登陆</module>
+	<name>登陆首页</name>
+	<desc>登陆首页页面</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_index</id>
+		<index>0</index>
+		<name>首页</name>
+		<desc>首页面</desc>		
+	</page>	
+</function>

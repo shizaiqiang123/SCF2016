@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00010</id>
+	<workid>1310</workid>
+	<workname>CdnInvc</workname>
+	<name>待项清单申请</name>
+	<desc>待项清单申请</desc>
+	<jspath>W_P_00010.js</jspath>
+</workflow>

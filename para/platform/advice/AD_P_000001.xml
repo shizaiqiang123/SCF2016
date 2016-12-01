@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+	<id>AD_P_000001</id>
+	<name>wl测试通知</name>
+	<desc>wl测试通知001</desc>
+	<type>M</type><!-- P:pending 生成 M : 复核时生成 -->
+	<js>AD0000001.js</js>
+	<senddt>2015-7-28</senddt>
+	<expdt>30</expdt>
+	<remindtp>1</remindtp>
+	<sendtp>2</sendtp>
+	<grouptp>1</grouptp>
+	<title>wl测试0730</title>
+	<content>测试通过啦~！</content>
+</advice>

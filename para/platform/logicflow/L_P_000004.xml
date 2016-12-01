@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000004</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+<!-- 	<lnode> -->
+<!-- 		<id>N00000001</id> -->
+<!-- 		<name>TEST 00001</name> -->
+<!-- 		<desc>DESC TEST1</desc> -->
+<!-- 		<module>TEST</module> -->
+<!-- 		<event>TestEvent</event> -->
+<!-- 		<component>checkInvcStatus</component> -->
+<!-- 		<tablename>TRX.INVC_M</tablename> -->
+<!-- 		<doname>doname</doname> -->
+<!-- 		<type>C</type> -->
+<!-- 		<cascadeevent>N</cascadeevent> -->
+<!-- 	</lnode> -->
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INVC_PMT_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields>invBal,invSts</fields>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>invBal,invSts</fields>
+			<values>$invBal$,$invSts$</values>
+		</release>
+		<mapping>
+			<sysRefNo>invRef</sysRefNo>
+		</mapping>
+	</transfornode>
+	
+</logicflow>

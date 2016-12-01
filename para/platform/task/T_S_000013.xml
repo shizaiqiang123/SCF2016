@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000013</id>
+    <name>供应商还款提醒</name>
+    <js>T0000005.js</js>
+    <component>batchCustRepaymentProcessor</component>
+    <jspfile></jspfile>
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>    
+    <trxdatapara>
+    	<paraDt>5</paraDt>
+    </trxdatapara>  
+</task>

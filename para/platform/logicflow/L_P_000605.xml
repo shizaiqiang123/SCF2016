@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>仓单-追加保证金</desc>
+    <id>L_P_000605</id>
+    <name>仓单-追加保证金</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+   <!--  <lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.BAIL_BILL_M</tablename>
+		<doname>bailBill</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>loanId =?</condition>
+		<params>loanId</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_P_000104.js</nodejs>
+	</lnode>  -->
+	<!-- <transfornode>
+		<id>N00000002</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<fpParam>sysRefNo</fpParam>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>regLowestVal,marginBal,fundRt,theirRef,lmtCcy,lmtBal,lmtAmt,lmtRecover,lmtAllocate</fields>
+			<values>$regLowestVal$,$marginBal$,$pldPerc$,$trxId$,$cntrctLmtCcy$,$cntrctLmtBal$,$cntrctLmtAmt$,$cntrctLmtRecover$,$cntrctLmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000120.js</nodejs>
+	</transfornode> -->
+	<!-- <transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<fpParam>sysRefNo</fpParam>
+		<tablename>TRX.BILL_M</tablename>
+		<doname>bailBill</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>marginBal</fields>
+			<values>$marginBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000103.js</nodejs>
+	</transfornode> -->
+	<!-- <transfornode>
+		<id>N00000004</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>marginCompen,marginBal</fields>
+			<values>$bailPayAmt$,$marginBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000038.js</nodejs>
+	</transfornode> -->
+</logicflow>

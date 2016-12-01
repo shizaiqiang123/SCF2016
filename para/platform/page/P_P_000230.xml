@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>获取成员企业</desc>
+    <transaction>true</transaction>
+    <queryid>Q_P_000241</queryid>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000230</id>
+    <name>获取成员企业</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen/cntrct/verify_addCompany.jsp</jspfile>
+</page>

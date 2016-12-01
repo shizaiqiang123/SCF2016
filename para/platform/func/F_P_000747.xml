@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>买方单笔保理——买方付款</module>
+    <pagesSize>0</pagesSize>
+    <desc>买方单笔保理——买方付款</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000747</id>
+    <autoassignSize>0</autoassignSize>
+    <name>买方单笔保理——买方付款</name>
+    <functype>PM</functype>
+    <shortnm>买方单笔保理——买方付款</shortnm>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>买方还款</name>
+		<desc>买方还款</desc>
+		<catalog>C_P_000726</catalog>
+	</page>
+	<page>
+		<id>P_P_000881</id>
+		<index>1</index>
+		<name>买方还款添加</name>
+		<desc>买方还款添加</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+    <workflow>W_P_00055</workflow>
+</function>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000307</id>
+	<name>查询已融资发票</name>
+	<desc>查询已融资发票</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_M,TRX.INVC_LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>a.sel_id = '$selId$' and a.busi_tp = '$busiTp$' and a.cntrct_no = '$cntrctNo$'</condition>
+		<orderby>a.sys_Ref_No</orderby>
+		<params>$selId$,$busiTp$,$cntrctNo$</params>
+		<sql><![CDATA[ select a.inv_no,a.sel_id,a.sys_ref_no,a.inv_ccy,a.inv_amt,a.inv_bal,a.inv_loan_bal,a.inv_loan_aval,a.inv_sts from trx.invc_m a left join trx.invc_loan_m b on (a.sys_ref_no=b.inv_ref)]]></sql>
+		<fields>invNo,selId,sysRefNo,invCcy,invAmt,invBal,invLoanBal,invLoanAval,invSts </fields>
+		<asc>Y</asc>
+	</qnode>
+	<!-- <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>InvcM,InvcLoanM</tablename>
+		<doname>doname</doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>a.sysRefNo=b.invRef and a.selId = '$selId$' and a.busiTp = '$busiTp$' and a.cntrctNo = '$cntrctNo$'</condition>
+		<orderby>a.sys_Ref_No</orderby>
+		<sql>select a.invNo,a.selId,a.sysRefNo,a.invCcy,a.invAmt,a.invBal,a.invLoanBal,a.invLoanAval,a.invSts from InvcM a,InvcLoanM b</sql>
+		<fields>invNo,selId,sysRefNo,invCcy,invAmt,invBal,invLoanBal,invLoanAval,invSts </fields>
+		<asc>Y</asc>
+	</qnode> -->
+</query>

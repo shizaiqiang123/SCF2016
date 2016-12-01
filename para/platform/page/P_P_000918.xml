@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>国内单保理(外网)添加应收账款</desc>
+    <id>P_P_000918</id>
+    <name>国内单保理(外网)添加应收账款</name>
+    <jspfile>screen/invc/wideInvcMChg.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000009</id>
+	<name>质物出库</name>
+	<desc>质物出库</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>更新COLLATERAL表</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>TRX.COLLATERAL</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

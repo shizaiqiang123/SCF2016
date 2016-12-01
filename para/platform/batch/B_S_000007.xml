@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000014</id>
+        <name>批处理审核融资申请</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000007</id>
+    <name>批处理审核融资申请</name>
+</batch>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000004</id>
+	<name>EDI</name>
+	<type>EDI</type>
+	<protocol>ediMsgServiceImpl</protocol>
+	<postadapter>ediPostAdapter</postadapter>
+	<queryadapter>ediQuery</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

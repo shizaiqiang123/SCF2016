@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000793</id>
+	<name>预付类融资明细信息</name>
+	<desc>预付类融资明细信息</desc>
+	<jspfile>screen/invc/loanNoteYuFuDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.LOAN_M,TRX.LOAN_COLLATERAL_M,TRX.BILL_M</maintable>
+</page>

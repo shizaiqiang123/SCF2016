@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000159</id>
+	<name>融资明细</name>
+	<desc>融资明细</desc>
+	<jspfile>screen/loan/invcLoanDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.PMT_M</maintable>
+	<!-- 
+	<logicid>L_P_000031</logicid>
+	
+	 -->
+</page>
+ 

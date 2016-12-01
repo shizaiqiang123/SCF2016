@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000083</id>
+	<name>贷项清单页面</name>
+	<desc>贷项清单页面</desc>
+	<jspfile>screen/invc/creditNote.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.TRF_REG</maintable>
+	<!-- <logicid>L_P_000054</logicid> -->
+</page>

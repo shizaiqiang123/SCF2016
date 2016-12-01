@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000148</id>
+	<name>用户个人信息逻辑流</name>
+	<desc>用户个人信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<name>用户常用功能注入</name>
+		<desc>用户常用功能注入</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxEditDoRecord</component>
+		<tablename>STD.USER_COMF_INFO</tablename>
+		<doname>comfList</doname>
+		<condition>userId = ? and userFunType = 1</condition>
+		<params>userId</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>用户常用功能注入</name>
+		<desc>用户常用功能注入</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxEditDoRecord</component>
+		<tablename>STD.USER_COMF_INFO</tablename>
+		<doname>combList</doname>
+		<condition>userId = ? and userFunType = 2</condition>
+		<params>userId</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

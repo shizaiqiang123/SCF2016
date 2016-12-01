@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>邮件发送页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000401</id>
+    <name>邮件发送页面 </name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen/email/Email_Send.jsp</jspfile>
+</page>

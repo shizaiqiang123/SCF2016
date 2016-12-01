@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000322</id>
+	<name>国内单笔保理--应收账款转让添加 查询发票转让信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内单笔保理--应收账款转让添加 查询发票转让信息Catalog</DESC>
+	<tablename>TRX.TRF_REG_M a,TRX.CNTRCT_M b</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%" alis = "cntrctNo">a.cntrct_No</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%" alis = "selNm">a.sel_Nm</field>
+		<field datatype="1" title="间接客户ID" hidden="true" width = "25%" alis = "buyerId">a.buyer_Id</field>
+		<field datatype="1" title="流水号" hidden="" width = "25%" alis = "sysRefNo">a.sys_Ref_No</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "25%" alis = "sellerInstCd">a.seller_Inst_Cd</field>
+		<field datatype="1" title="是否收取费用" hidden="" width = "25%" alis = "isCollect">a.is_Collect</field>
+		<field datatype="1" title="币种" hidden="" width = "25%" alis = "ccy">a.ccy</field>
+	<!-- 	<field datatype="1" title="待转让笔数" hidden="" width = "25%">regNo</field>
+		<field datatype="1" title="待转让金额" hidden="" width = "25%">regAmt</field> -->
+	</select>
+	<join>
+		<on seq="1">a.cntrct_no = b.sys_ref_no</on>
+	</join>
+	<condition>
+		a.cntrct_No like '%$cntrctNo$%' and a.sel_Nm like '%$selNm$%' and a.buyer_Nm like '%$buyerNm$%' and a.sys_Trx_Sts = 'M' and a.sys_Lock_Flag = 'F' and a.confirm_Flag = 3 and b.busi_tp = 0 and b.sys_org_id = '$sysOrgId$' 
+	</condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q000001022</id>
+	<name>父用户查询</name>
+	<desc>父用户查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_E</tablename>
+		<lockcheck>Y</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>userId like %$userId$% AND userNmlike%$userNm$%</condition>
+		<orderby>userId</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_000024</id>
+	<module>新增机构信息</module>
+	<name>新增机构信息</name>
+	<desc>机构信息-新增机构信息</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_10000006</id>
+		<index>0</index>
+		<name>新增机构菜单</name>
+		<desc>新增机构菜单页面</desc>	
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+	
+	<!-- <service>
+		<id>S_P_000055</id>
+		<servicejs>S_P_00113.js</servicejs>
+		<trigger>M,R,P</trigger>
+		<desc>站内信通知</desc>
+	</service> -->
+</function>

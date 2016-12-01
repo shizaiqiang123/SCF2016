@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syst>
+    <uploadtempdir>d:\SCF2_XIN\para\ap\template\file\</uploadtempdir>
+    <workflowtype>RMI</workflowtype>
+    <workflowpassword>000000</workflowpassword>
+    <bankid>TESTBK</bankid>
+    <workflowport>1093</workflowport>
+    <id>SYSPara</id>
+    <reportengine>http://127.0.0.1:8081/WebReprot/entry</reportengine>
+    <singleSignOn>false</singleSignOn>
+    <workflowengine>172.25.1.246</workflowengine>
+<!--     <workflowflag>false</workflowflag> -->
+	<workflowflag>true</workflowflag>
+</syst>

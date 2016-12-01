@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+	<id>B_S_00004</id>
+	<name>测试SQLExcutor</name>
+	<desc>手动测试SQLExcutor</desc>
+	<type>M</type>
+	<schedule>
+		<scheduletype />
+		<checkholiday>IGNORE</checkholiday>
+		<beginfrom />
+		<terminativedate />
+		<hour />
+		<minute />
+		<second />
+		<condition>N</condition>
+		<bybu isByBu="N" />
+		<express>*/10 * * * * ?</express>
+		<initialize>S</initialize>
+	</schedule>
+	<task>
+		<id>T_S_00004</id>
+	</task>
+</batch>

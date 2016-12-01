@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000080</id>
+    <desc>用户等级信息直接保存</desc>
+    <name>用户等级信息</name>
+    <target>L_P_000173</target>
+    <type>L</type>
+</inqdata>

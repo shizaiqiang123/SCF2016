@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000007</id>
+	<name>Ap</name>
+	<type>Ap</type>
+	<protocol>apServiceImpl</protocol>
+	<postadapter>apServicePostAdapter</postadapter>
+	<queryadapter>apQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000023</id>
+	<name>GAPI</name>
+	<type>GAPI</type>
+	<protocol>gapiServiceImpl</protocol>
+	<postadapter>gapiServicePostAdapter</postadapter>
+	<queryadapter>gapiQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

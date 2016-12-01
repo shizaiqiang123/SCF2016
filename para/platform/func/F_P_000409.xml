@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>新增Product</desc>
+	<name>新增Product</name>
+	<id>F_P_000409</id>
+	<module>Para</module>
+	<functype>PA</functype>
+	<page>
+		<id>P_P_000284</id>
+		<pagetype>paraAdd</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

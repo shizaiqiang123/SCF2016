@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000333</id>
+    <desc>逾期应收账款查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>逾期应收账款查询</desc>
+        <name>逾期应收账款查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>brNm,selNm,buyerNm,invCcy,invNo,invDueDt,invAmt,invBal,dueNum</fields>
+        <params>$dueNumDt$,$custNo$,$instNo$,$sysdate$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select t4.brNm,t1.custNm as selNm,t2.custNm as buyerNm,t.invCcy,t.invNo,t.invDueDt,t.invAmt,t.invBal,ceil(to_date(?,'yyyy-mm-dd')-to_date(to_char(t.dueDt,'yyyy-mm-dd'),'yyyy-mm-dd')) AS dueNum from InvcM t,CustM t1,CustM t2,CntrctM t3,StdInstM t4 where  t.selId = t1.sysRefNo and t.buyerId = t2.sysRefNo and  t.cntrctNo = t3.sysRefNo and t3.custBrId = t4.sysRefNo and  t.selId = ? and t3.custBrId = ? and t.invBal >0 and to_char(t.dueDt,'yyyy-mm-dd') < ?   and to_char(t.invDueDt,'yyyy-mm-dd') >= ? and  to_char(t.invDueDt,'yyyy-mm-dd') <= ? ]]></sql>
+    </qnode>
+    
+</query>
+

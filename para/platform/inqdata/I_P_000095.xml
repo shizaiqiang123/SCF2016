@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000095</id>
+	<name>业务数据展示小页</name>
+	<desc>完善我的信息弹出业务数据展示小页</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000281</target>
+</inqdata>

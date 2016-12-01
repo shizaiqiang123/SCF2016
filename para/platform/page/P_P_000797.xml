@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000797</id>
+	<name>预付类货物出入库台帐查询信息</name>
+	<desc>预付类货物出入库台帐查询信息</desc>
+	<jspfile>screen/invc/loanNoteHuoWuDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

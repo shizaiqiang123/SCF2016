@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000832</id>
+	<name>池融资申请页面</name>
+	<desc>池融资申请页面</desc>
+	<jspfile>screen/loan/invcLoanPagePool.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.CUST_M</maintable>
+</page>

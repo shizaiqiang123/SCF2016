@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <trigger>M</trigger>
+    <ruleSize>0</ruleSize>
+    <type>GAPI</type>
+    <id>S_P_00006705</id>
+    <gapiid>CntrctCD</gapiid>
+    <component></component>
+    <name>EOD处理</name>
+</service>

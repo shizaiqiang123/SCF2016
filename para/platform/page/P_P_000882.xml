@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.INVC_DSP_M</maintable>
+    <desc>国内买方保理--争议登记</desc>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <logicid>L_P_000592</logicid>
+    <id>P_P_000882</id>
+    <name>国内买方保理--争议登记</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/invc/dspBuyerRegister.jsp</jspfile>
+</page>

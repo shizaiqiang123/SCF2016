@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000138</id>
+	<name>Workflow页面</name>
+	<desc>Workflow 开发工具页面</desc>
+	<jspfile>jsp/para/Workflow_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>workflow</maintable>
+	<transaction>true</transaction>
+	<logicid>L_P_000147</logicid>
+	<holdmaster>n</holdmaster>
+</page>

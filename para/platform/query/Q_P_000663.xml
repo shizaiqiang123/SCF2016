@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000663</id>
+    <name>仓单-续存保证金</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>	
+		<fields></fields>
+		<condition>sysRefNo like %$sysRefNo$% and cntrctNo = $cntrctNo$ and selId = $selId$ and busiTp = 10  and sysLockFlag = F and sysTrxSts = M</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

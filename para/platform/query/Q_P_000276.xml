@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000276</id>
+    <desc>额度查询</desc>
+    <name>额度查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询额度</desc>
+		<component>componentClass</component> 
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc>Y</asc>
+		<sql/>
+		<condition>sysBusiUnit=$sysBusiUnit$ and busiTp=$busiTp$</condition>
+		<params>$sysBusiUnit$,%$busiTp$%</params>
+		<orderby>sysRefNo</orderby>
+	</qnode>
+</query>

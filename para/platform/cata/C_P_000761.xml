@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000761</id>
+	<name>仓单-放货出库复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>仓单-放货出库复核Catalog</DESC>
+	<tablename>TRX.GOODS_INOUT_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<!-- <field datatype="1" title="票号" hidden="" width = "100">billNo</field> -->
+		<field datatype="1" title="授信额度编号" hidden="" width = "100">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "25.00%">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "25.00%">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" hidden="true" width = "25.00%">buyerNm</field>
+		<field datatype="1" title="经销商名称" hidden="" width = "25.00%">selNm</field>
+		<!-- <field datatype="1" title="票号" hidden="" width = "16.66%">billNo</field> -->
+		<field datatype="1" title="释放金额" hidden="" width = "24.00%">ttlPayAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$% and  busiTp = 10 and cntrctNo like %$cntrctNo$% and sysTrxSts = P and sysOrgId = $sysOrgId$ 
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

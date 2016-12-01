@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000560</id>
+	<name>融资申请</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.CNTRCT_CHANGE</tablename>
+		<doname>trxDom</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddDoRecord</component>
+		<tablename>TRX.INVC_LOAN_M</tablename>
+		<doname>invcLoan</doname>
+		<condition></condition>
+		<params></params>
+		<type>E</type> 
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields></fields>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,invLoanBal,invLoanAval</fields>
+			<values>F,$invLoanBal$,$invLoanAval$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000012.js</nodejs> 
+	</transfornode>
+	<transfornode>
+		<id>N00000004</id>
+		<name>TEST 00005</name>
+		<desc>DESC TEST5</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields></fields>
+		<doname>trxDom</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtAmt,lmtBal,lmtAllocate</fields>
+			<values>F,$lmtAmt$,$lmtBal$,$lmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000011.js</nodejs>
+	</transfornode>
+</logicflow>

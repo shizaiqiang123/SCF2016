@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh-CN">
+	<head>
+		<termid path="trxDom">termid</termid>
+		<trnid path="trxDom">sysRefNo</trnid>
+		<custid path="trxDom">custid</custid>
+		<cusopr path="trxDom">cusopr</cusopr>
+		<trncod type="v">b2e0265</trncod>
+		<token path="trxDom">token</token>
+	</head>
+	<trans>
+		<trn-b2e0265-rq>
+			<b2e0265-rq>
+				<acrcrepay>
+					<relatedref path="trxDom">sysRefNo</relatedref>
+					<branchid type="v">06042</branchid>
+					<coreid type="v">293610434</coreid>
+					<circlenum type="v">1</circlenum>
+					<custremark path="trxDom">payIntAmt</custremark>
+					<acrcrepaydata>
+						<acrcrepayinfo>
+							<fsbccref path="trxDom">poolLoanId</fsbccref>
+							<applyrepayamt path="trxDom">payPrinAmt</applyrepayamt>
+							<repayacno path="trxDom">inveAc</repayacno>
+						</acrcrepayinfo>
+					</acrcrepaydata>
+				</acrcrepay>
+			</b2e0265-rq>
+		</trn-b2e0265-rq>
+	</trans>
+</bocb2e>

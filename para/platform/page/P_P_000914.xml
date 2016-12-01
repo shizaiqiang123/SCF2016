@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000914</id>
+	<name>重置用户密码</name>
+	<desc>重置用户密码页面</desc>
+	<jspfile>jsp/user/resPwd.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+</page>

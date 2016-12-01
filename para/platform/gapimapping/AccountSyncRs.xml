@@ -1,0 +1,8 @@
+<trxDom>
+	<CNY path="Message/Message_Body">CNY</CNY>
+	<acNm path="Message/Message_Body">acNm</acNm>
+	<acBkNm path="Message/Message_Body">acBkNm</acBkNm>
+	<acBkNo path="Message/Message_Body">acBkNo</acBkNo>
+	<acBkName path="Message/Message_Body">acBkName</acBkName>
+</trxDom>
+

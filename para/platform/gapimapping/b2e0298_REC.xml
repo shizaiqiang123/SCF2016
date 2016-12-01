@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<trnid path="bocb2e/head">trnid</trnid>
+	<relatedRef path="bocb2e/trans/trn-b2e0298-rq/b2e0298-rq/scfp/transReturnData/acrcFincRs">relatedRef</relatedRef>
+	<processDate path="bocb2e/trans/trn-b2e0298-rq/b2e0298-rq/scfp/transReturnData/acrcFincRs">processDate</processDate>
+	<dataInfo
+		path="bocb2e/trans/trn-b2e0298-rq/b2e0298-rq/scfp/transReturnData/acrcFincRs/acrcFincApprvData/acrcFincApprv"
+		loop="true" >
+		<loanApplyState path="acrcFincApprv" loopPath="bocb2e/trans/trn-b2e0298-rq/b2e0298-rq/scfp/transReturnData/acrcFincRs/acrcFincApprvData">loanApplyState</loanApplyState>
+	</dataInfo>
+</trxDom>

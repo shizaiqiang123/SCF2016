@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000011</id>
+    <name>隔日交易取消</name>
+   <!--  <js>T0000004.js</js> -->
+    <component>batchNextDayToCancelProcessor</component>
+    <jspfile></jspfile>
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>
+    <trxdatapara>
+    	<functionIds>F_P_000365,F_P_000377,F_P_000381,F_P_000379</functionIds>
+    </trxdatapara>
+</task>

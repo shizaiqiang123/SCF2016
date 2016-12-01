@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000616</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxDeleteDoRecord</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname>roleIds</doname>
+		<condition>userId = ?</condition>
+		<params>userId</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

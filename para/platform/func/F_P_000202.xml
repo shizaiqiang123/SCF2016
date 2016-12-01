@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <id>F_P_000202</id>
+	<module>查询Query</module>
+	<name>查询Query</name>
+	<desc>Query管理-查询Query</desc>
+	<functype>PA</functype>
+    <page>
+        <desc>筛选Query页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选Query</name>
+        <index>0</index>
+        <catalog>C_P_000200</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+	<page>
+		<transaction>false</transaction>
+        <refsSize>0</refsSize> 
+        <nodeName>page</nodeName>
+        <id>P_P_000136</id>
+		<index>0</index>
+		<name>查询Query</name>
+		<desc>查询Query</desc>
+		<pagetype>View</pagetype> 
+	</page>
+</function>

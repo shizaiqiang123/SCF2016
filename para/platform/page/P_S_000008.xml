@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000008</id>
+	<name>end of day</name>
+	<desc>end of day</desc>
+	<jspfile>jsp/sys/Eod.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.SOD_EOD</maintable>
+	<pagejs>L_P_000057.js</pagejs>
+</page>

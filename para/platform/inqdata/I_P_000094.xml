@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000094</id>
+    <desc>验证码服务后接通知服务</desc>
+    <name>查询通知内容</name>
+    <target>S_P_000056</target>
+    <type>S</type>
+</inqdata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000010</id>
+    <component>batchCustMaterialNotToRemindProcessor</component>
+    <name>供应商材料未达提醒</name>
+    <js>T0000003.js</js>
+    
+    <jspfile></jspfile>    
+    <trxdatapara>
+    	<paraDt>1</paraDt>
+    </trxdatapara>
+    <catalog>C_P_000227</catalog>    
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>
+</task>

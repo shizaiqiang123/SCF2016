@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000003</id>
+	<name>角色信息</name>
+	<desc>角色信息页面</desc>
+	<jspfile>jsp/user/RoleInfo.jsp</jspfile>
+	<jsfile>js/user/RoleInfo.js</jsfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.STD_ROLE_INFO</maintable>
+	<logicid>L_S_10000002</logicid>
+</page>

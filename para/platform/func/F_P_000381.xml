@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>删除融资申请审核</desc>
+	<id>F_P_000381</id>
+	<name>撤回融资申请</name>
+	<transactionPage>0</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<functype>DP</functype>
+	<isValidCode>true</isValidCode>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000308</catalog>
+	</page>
+	<page>
+		<desc>客户复核页面</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>Y</istransaction>
+		<id>P_P_000249</id>
+		<name>复核客户</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>Y</cascadeevent>
+		<pagetype>DELP</pagetype>
+	</page>
+</function>

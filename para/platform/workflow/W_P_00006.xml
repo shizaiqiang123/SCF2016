@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00006</id>
+	<workid>1304</workid>
+	<workname>LZYFLoan</workname>
+	<name>预付融资申请</name>
+	<desc>预付融资申请</desc>
+	<jspath>W_P_00003.js</jspath>
+</workflow>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000005</id>
+	<name>申请修改通知页面Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>申请修改流水号页面Catalog</DESC>
+	<tablename>STD.ADVICE_HEADER</tablename>
+	<search>
+		<field datatype="1" title="消息标题" defaultvalue="" width = "200">msgTitle</field>
+		<field datatype="3" title="发送时间" defaultvalue="" width = "100">msgSendDate</field>
+		<field datatype="3" title="失效时间" defaultvalue="" width = "100">msgInvalidDate</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="消息标题" hidden="" width = "25%">msgTitle</field>
+		<field datatype="1" title="发送者" hidden="" width = "25%">sendNm</field>
+		<field datatype="1" title="发送时间" hidden="" width = "25%" formatter="dateTimeFormater">msgSendDate</field>
+		<field datatype="1" title="失效时间" hidden="" width = "25%" formatter="dateTimeFormater">msgInvalidDate</field>
+		<field datatype="1" title="序列号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="流水号" hidden="true" width = "200">sysRefNo</field>
+	</select>
+	<condition><![CDATA[msgTitle like %$msgTitle$% and msgSendDate >= %$msgSendDate$% and msgInvalidDate <= %$msgInvalidDate$% and sendId = $sysUserRef$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

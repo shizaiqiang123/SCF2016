@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000028</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CUST_INSURE</tablename>
+		<doname>collat</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>sysRefNo=?</condition>
+		<params>sysRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_P_000088.js</nodejs> 
+	</lnode>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<doname>sbr</doname>
+		<condition>cntrctNo =?</condition>
+		<params>cntrctNo</params> 
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs> 
+	</lnode>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CNTRCT_PAT_M</tablename>
+		<condition>cntrctNo=?</condition>
+		<params>cntrctNo</params>
+		<doname>party</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs> 
+	</lnode>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.COLLAT_REG_M</tablename>
+		<doname>collateList</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>cntrctNo=?</condition>
+		<params>cntrctNo</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs> 
+	</lnode>
+	<!-- <lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddDoRecord</component>
+		<tablename>STD.SYS_COMPNT_UPLOAD</tablename>
+		<doname>colla</doname>
+		<condition>trxId =?</condition>
+		<params>trxId</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode> -->
+	<!-- <transfornode>
+		<id>N00000005</id>
+		<name>TEST 00005</name>
+		<desc>DESC TEST5</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<fields>sysLockFlag,lmtBal</fields>
+		<doname>sbr</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal</fields>
+			<values>F,$lmtBalHd$</values>
+		</release>
+		<nodejs>L_P_000065.js</nodejs>
+	</transfornode> -->
+</logicflow>

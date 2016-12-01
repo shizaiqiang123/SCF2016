@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000411</id>
+	<name>合格证数量查询</name>
+	<desc>合格证数量查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>trx.INVC_LOAN_M n ,trx.PO_M m</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition> n.invc_Loan_Id ='$loanId$'</condition>
+		<orderby></orderby>
+		<asc>N</asc>
+		<params>$loanId$</params>
+		<sql><![CDATA[select m.po_Num,n.inv_ref  from trx.INVC_LOAN_M n left join trx.PO_M m on n.inv_Ref = m.sys_Ref_No  ]]>
+		 </sql>
+		 <fields>poNum,invRef</fields>
+		 <orderby>m.sys_Ref_No</orderby>
+	</qnode>	
+</query>

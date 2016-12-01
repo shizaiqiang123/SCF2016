@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000345</id>
+	<name>额度信息查询</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>票据查询</name>
+		<component>componentClass</component>
+		<desc>look up 票据查询</desc>
+		<tablename>BillM t,LoanM t1</tablename>
+		<doname>doname</doname>
+		<lockcheck>N</lockcheck>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,loanId,billNo,billAmt,ttlLoanAmt,ttlLoanBal,initMarginPct,marginAcNo,marginAmt,marginBal,buyerId,buyerNm</fields>
+		<condition>t.loanId = t1.sysRefNo and t1.ttlLoanBal >0 and t1.cntrctNo = '$cntrctNo$' and t1.selId = '$selId$' and t.billNo = '$billNo$' and t.sysTrxSts ='M' and t.sysLockFlag = 'F' </condition>
+		<orderby>t.billNo</orderby>
+		<asc>Y</asc>
+		<sql>select t.sysRefNo,t.loanId,t.billNo,t.billAmt,t1.ttlLoanAmt,t1.ttlLoanBal,t1.initMarginPct,t1.marginAcNo,t1.marginAmt,t1.marginBal,t1.buyerId,t1.buyerNm from BillM t,LoanM t1</sql>
+	</qnode>
+</query>

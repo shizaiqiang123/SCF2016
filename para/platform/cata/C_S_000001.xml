@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000001</id>
+	<name>申请修改流水号页面Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>申请修改流水号页面Catalog</DESC>
+	<tablename>STD.REF_NO_M</tablename>
+	<search>
+		<field datatype="1" title="流水号名称" defaultvalue="" width = "200">refName</field>
+		<field datatype="1" title="所属模组" defaultvalue="" width = "200">module</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="交易批次号" hidden="" width = "25%">sysEventTimes</field>
+		<field datatype="1" title="流水号名称" hidden="" width = "25%">refName</field>
+		<field datatype="1" title="所属模组" hidden="" width = "25%">module</field>
+	</select>
+	<condition>
+		refName like %$refName$% and module like %$module$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

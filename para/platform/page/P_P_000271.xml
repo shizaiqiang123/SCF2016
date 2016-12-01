@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <id>P_P_000271</id>
+    <name>产品介绍页面</name>
+    <jspfile>jsp/productPresentation.jsp</jspfile>
+</page>

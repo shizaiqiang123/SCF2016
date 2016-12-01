@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <page>
+        <maintable>syst/syspara</maintable>
+        <desc>系统参数修改页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>t</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000174</id>
+        <name>系统参数修改页面</name>
+        <lockcheck>N</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>paraEdit</maincomp>
+        <index>0</index>
+        <jspfile>jsp/para/Syst_Edit.jsp</jspfile>
+        <pagetype>EDIT</pagetype>
+    </page>
+   <!--  <page>
+        <desc>处理结果管理</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>n</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_S_000003</id>
+        <name>处理结果管理</name>
+        <lockcheck>n</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>n</cascadeevent>
+        <maincomp>TrxResutlManager</maincomp>
+        <index>1</index>
+        <jspfile>jsp/SYS_Result.jsp</jspfile>
+        <pagetype>RS</pagetype>
+    </page> -->
+    <pagesSize>1</pagesSize>
+    <desc>修改系统参数</desc>
+    <transactionPage>1</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000225</id>
+    <name>修改系统参数</name>
+    <propertyBean>false</propertyBean>
+    <functype>PA</functype>
+</function>

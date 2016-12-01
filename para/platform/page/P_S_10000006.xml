@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000006</id>
+	<name>机构信息</name>
+	<desc>机构信息页面</desc>
+	<jspfile>jsp/user/InstInfo.jsp</jspfile>
+<!-- 	<jsfile>js/user/InstInfo.js</jsfile> -->
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.ORG_INFO_M</maintable>
+<!-- 	<logicid>L_S_10000002</logicid> -->
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000057</id>
+	<name>应付款融资逻辑流</name>
+	<desc>应付款融资逻辑流</desc>
+	<module>TEST</module>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields>sysLockFlag</fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<release>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</release>
+		<nodejs>L_S_000003.js</nodejs>
+	</transfornode>
+</logicflow>

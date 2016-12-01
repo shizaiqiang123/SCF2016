@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000500</id>
+	<index>1</index>
+	<name>预付类-融资查询页面</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/loan/queryLoanInfo.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000476</queryid>
+</page>

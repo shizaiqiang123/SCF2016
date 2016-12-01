@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000335</id>
+    <desc>融资查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>费用查询</desc>
+        <name>费用查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>brNm,custNm,invCcy,payTranAmt,payBillAmt</fields>
+        <params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        
+        <params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select t3.brNm,t2.custNm,t.invCcy,sum(t.payTranAmt) as payTranAmt,sum(t.payBillAmt) as payBillAmt 
+        from InvcM t,CntrctM t1,CustM t2,StdInstM t3 where  t.selId = t2.sysRefNo and  t.cntrctNo = t1.sysRefNo and t1.custBrId =  t3.sysRefNo and t.sysTrxSts = 'M'
+        and (t.payTranAmt >0 or t.payBillAmt >0)
+        and  t.selId = ? and t1.custBrId = ?  and to_char(t.feeDt,'yyyy-mm-dd') >= ? and  to_char(t.feeDt,'yyyy-mm-dd') <= ? 
+        group by t3.brNm,t.selId,t2.custNm,t.invCcy
+        ]]></sql>
+     
+        
+   	 <!--
+   		<params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select s.brNm,t.custNm,m.costCcy,m.costItem,m.currTransCost from FeeM m,CustM t,StdInstM s,CntrctM c where  m.selId = t.sysRefNo and  m.cntrctNo = c.sysRefNo and c.custBrId = s.sysRefNo and  m.selId = ? and c.custBrId = ?  and to_char(m.createDt,'yyyy-mm-dd') >= ? and  to_char(m.createDt,'yyyy-mm-dd') <= ? ]]></sql>
+     -->
+     
+     </qnode>
+</query>
+

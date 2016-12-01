@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <page>
+        <desc>筛选Function以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_P_000175</id>
+        <name>筛选Function</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>Y</cascadeevent>
+        <pagetype>CA</pagetype>
+    </page>
+    <pagesSize>2</pagesSize>
+    <desc>业务调整-修改Function</desc>
+    <transactionPage>0</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000263</id>
+    <name>业务调整修改Function</name>
+    <propertyBean>false</propertyBean>
+    <functype>PA</functype>
+</function>

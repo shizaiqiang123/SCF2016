@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000554</id>
+	<name>池协议下发票查询</name>
+	<desc>池协议下发票查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>池协议下发票查询入池的发票</name>
+		<desc>池协议下发票查询入池的发票</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[cntrctNo = $cntrctNo$ and selId = $selId$ and invValDt <= $trxDt$ and busiTp = $busiTp$ and invDueDt > $trxDt$ and invLoanAval > 0 and invBal > 0 and inPool=0 and sysLockFlag = F and sysTrxSts = M]]></condition>
+		<orderby>invDueDt</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

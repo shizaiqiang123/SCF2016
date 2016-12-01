@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000191</id>
+	<name>个人常用功能删除页面</name>
+	<desc>个人常用功能删除页面</desc>
+	<jspfile>jsp/comFun/User_DeleteComFun.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>page</maintable>
+	<queryid>Q_P_000208</queryid>
+<!-- 	<logicid>L_P_000147</logicid> -->
+</page>

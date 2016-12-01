@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000026</id>
+	<name>质物入库页面</name>
+	<desc>质物入库页面</desc>
+	<jspfile>screen/collatRef/collatRef.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CRTF_REG_M</maintable>
+	<logicid>L_P_000015</logicid>
+</page>

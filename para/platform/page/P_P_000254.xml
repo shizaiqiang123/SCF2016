@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>FixPending公共页面(带级联)</desc>
+    <istransaction>Y</istransaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000254</id>
+    <name>FixPending</name>
+    <pagetype>FP</pagetype>
+    <maincomp>trxFixPendingManager</maincomp>
+    <jspfile>jsp/SYS_FixPending.jsp</jspfile>
+    <cascadeevent>Y</cascadeevent>
+</page>

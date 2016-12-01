@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<func>
+	<function>
+		<module>Test</module>
+		<desc>Test</desc>
+		<event>Test</event>
+		<id>F00000012</id>
+		<name>Add Customer</name>
+		<desc>Add Customer</desc>
+		<maincomp>TrxPendingManager</maincomp>
+		<functype>PM</functype>
+	</function>
+	<logicflows>
+		<logicflow>
+			<id>LF00000008</id>
+			<name>ADD Customer</name>
+		</logicflow>
+	</logicflows>
+</func>

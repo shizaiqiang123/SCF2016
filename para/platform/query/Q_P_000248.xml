@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000248</id>
+    <desc>成员企业查询</desc>
+    <qnode>
+        <desc>成员企业查询</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <name>成员企业查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.CUST_M</tablename>
+        <condition>sysRefNo like %$custId$% and custTp = 1</condition>
+    </qnode>
+    <name>成员企业查询</name>
+    <nodeSize>1</nodeSize>
+</query>

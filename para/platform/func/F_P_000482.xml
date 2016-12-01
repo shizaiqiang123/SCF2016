@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <desc>国内单笔保理——买方付款退回处理</desc>
+   	<name>国内单笔保理——买方付款退回处理</name>
+    <pagesSize>0</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000482</id>
+    <autoassignSize>0</autoassignSize>
+    <functype>FP</functype>
+      <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000764</catalog>
+	</page>
+	<page>
+        <id>P_P_000254</id>
+    </page> 
+</function>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00051</id>
+	<workid>1307</workid>
+	<workname>marginAmtInPool</workname>
+	<name>池融资_保证金入池</name>
+	<desc>池融资_保证金入池</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

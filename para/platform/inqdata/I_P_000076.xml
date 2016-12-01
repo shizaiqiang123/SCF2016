@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000076</id>
+    <desc>业务利率逻辑流</desc>
+    <name>业务利率逻辑流</name>
+    <target>L_P_000169</target>
+    <type>L</type>
+</inqdata>

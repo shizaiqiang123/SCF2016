@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000549</id>
+    <desc>应收账款查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>应收账款查询</desc>
+        <name>应收账款查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>sysRefNo,invNo,selNm,buyerNm,invAmt,invBal,invLoanBal,invCcy,invDt,invValDt,acctPeriod,invSts</fields>
+        <condition><![CDATA[selNm like '%$selNm$%' and buyerNm like '%$buyerNm$%' and busiTp = '$busiTp$' and cntrctNo like '%$cntrctNo$%' and invNo like '%$invNo$%' and (invAmt >= '$invMinAmt$' and invAmt <= '$invMaxAmt$') and (invDt >= to_date('$startDt$','yyyy-mm-dd') and invDt <= to_date('$endDt$','yyyy-mm-dd')) and invSts = '$invSts$' and sysTrxSts = 'M' and sysLockFlag = 'F']]></condition>
+        <orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql>select sysRefNo,invNo,selNm,buyerNm,invAmt,invBal,invLoanBal,invCcy,invDt,invValDt,acctPeriod,invSts from InvcM </sql>
+    </qnode>
+    
+</query>
+

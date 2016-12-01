@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_S_000017</id>
+		<module>SYST</module>
+		<name>start of day</name>
+		<desc>start of day</desc>
+		<functype>MM</functype>
+	<page>
+		<id>P_S_000007</id>
+		<index>1</index>
+		<name>start of day</name>
+		<desc>start of day</desc>
+		<maincomp>TrxMasterManager</maincomp>
+		<pagetype>Edit</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

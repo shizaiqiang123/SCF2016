@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000026</id>
+	<name>复核预付类客户还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>复核预付类客户还款Catalog</DESC>
+	<tablename>TRX.PMT_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "16.66%">sysRefNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "16.66%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="间接客户ID" hidden="" width = "16.66%">buyerId</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "16.66%">buyerNm</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "16.66%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "16.66%">selNm</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysTrxSts = P and sysLockFlag = F and sysFuncId = F_P_000909 and sysRefNo like %$sysRefNo$% and busiTp = 11 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

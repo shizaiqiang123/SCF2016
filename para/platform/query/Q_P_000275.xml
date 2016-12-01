@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000275</id>
+    <desc>测试报表功能</desc>
+    <name>测试报表功能</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>应收账款发生额统计</desc>
+		<component>componentClass</component> 
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc></asc>
+		<sql><![CDATA[select busiTp,sum(invAmt) from InvcM  WHERE (busiTp='0' or busiTp='1' or busiTp='2')  GROUP BY busiTp]]></sql>
+<!-- 		   and invValDt >= ? and invDueDt <= ?     -->
+<!-- 		<params>$invValDt$:typejava.util.Date,$invDueDt$:typejava.util.Date</params> -->
+	</qnode>
+</query>

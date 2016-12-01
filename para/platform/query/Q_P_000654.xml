@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000654</id>
+    <name>买方保理池-融资申请复核-卖方额度查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询额度表E表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LMT_E</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>
+		cntrctNo = $cntrctNo$ and lmtTp = $lmtTp$ and  sysLockBy = $sysLockBy$
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>	
+</query>

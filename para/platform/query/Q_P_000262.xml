@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000262</id>
+	<name>查询融资表</name>
+	<desc>查询融资表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.PMT_M</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>verifPerc,verifLimit,sysRefNo,payPrinAmt,payIntAmt,ttlPmtAmt,pmtDt,pmtSts,loanId,selAcNm,selAcNo,ttlLoanAmt,ttlLoanBal,lmtAmt,lmtBal,openLoanAmt,arAvalLoan,loanDueDt,finaSts,advaPaytype</fields>
+		<condition></condition>
+		<orderby></orderby>
+		<params>$selAcNo$</params>
+		<asc></asc>
+		<sql><![CDATA[SELECT t.verifPerc,t.verifLimit,p.sysRefNo,p.payPrinAmt,p.payIntAmt,p.ttlPmtAmt,p.pmtDt,p.pmtSts,p.loanId,p.selAcNm,p.selAcNo,a.ttlLoanAmt,a.ttlLoanBal,b.lmtAmt,b.lmtBal,b.openLoanAmt,b.arAvalLoan,a.loanDueDt,a.finaSts,a.advaPaytype from PmtM p,LoanM a , CntrctM b,CntrctTemp t where p.loanId = a.sysRefNo and a.cntrctNo=b.sysRefNo and b.cntrctNo=t.sysRefNo  and p.pmtSts = '0' and p.selAcNo=? and p.sysTrxSts='M' and p.sysLockFlag = 'F']]></sql>
+	</qnode>
+</query>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000056</id>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>L</type>
+    <name>面凾小页保存</name>
+	<desc>业务调整-function修改中保存 面凾小页</desc>
+	<target>L_P_000155</target>
+</inqdata>

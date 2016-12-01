@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000229</id>
+    <desc>查询客户信息</desc>
+    <qnode>
+        <desc>查询客户信息</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc></asc>
+        <name>查询客户信息</name>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.CUST_M</tablename>
+        <component>componentClass</component>
+        <condition>sysRefNo = $sysRefNo$ </condition>
+        <lockcheck>N</lockcheck>
+    </qnode>
+    <name>查询客户等级</name>
+    <nodeSize>1</nodeSize>
+</query>

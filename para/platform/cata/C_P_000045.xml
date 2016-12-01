@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000045</id>
+	<name>协议Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>协议Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" defaultvalue="" width = "100">sellerInstCd</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="授信客户编号" hidden="true" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "25%">sellerInstCd</field>
+		<field datatype="1" title="业务类别" hidden="" width = "25%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="网点" hidden="true" width = "100">custBrId</field>
+		<field datatype="1" title="协议金额" hidden="true" width = "100" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="协议余额" hidden="true" width = "100" formatter="ccyFormater">lmtBal</field>
+		<field datatype="1" title="流水号" hidden="true" width = "100">sysRefNo</field>
+		<field datatype="1" title="所属模组" hidden="true" width = "100">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "100" alis = "sysFuncId">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysBusiUnit</field>
+	</select>
+	<condition>
+		  cntrctNo like %$cntrctNo$% and sellerInstCd like %$sellerInstCd$% and selNm like %$selNm$%  and sysTrxSts = M and sysLockFlag = F and busiTp = 10 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

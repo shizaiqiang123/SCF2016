@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <type>Advice</type>
+    <id>S_P_000055</id>
+    <component></component>
+    <name>advice通知</name>
+<!--   	<trigger>M</trigger> -->
+</service>

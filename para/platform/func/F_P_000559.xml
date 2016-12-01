@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000559</id>
+	<module>Test</module>
+	<name>逾期应收账款信息表查询</name>
+	<desc>逾期应收账款信息表查询</desc>
+	<functype>VM</functype>
+	<page>
+		<id>P_P_000403</id>
+		<index>0</index>
+		<name>交易进入页面</name>
+		<desc>交易进入页面</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page>
+	<page>
+		<id>P_P_000404</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>列表页面</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page>
+	<service>
+        <id>S_P_000062</id>
+        <servicejs>S_P_00036.js</servicejs>
+        <trigger>M</trigger>
+	</service>
+</function>

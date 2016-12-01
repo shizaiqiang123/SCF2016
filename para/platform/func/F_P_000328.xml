@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000328</id>
+    <desc>还款自动核销自动处理</desc>
+    <name>还款自动核销自动处理</name>
+    <functype>MM</functype>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>catalog查询页面</name>
+		<desc>catalog查询页面</desc>
+		<catalog>C_P_000233</catalog>
+	</page>
+	<page>
+		<id>P_P_000233</id>
+		<index>1</index>
+		<name>还款自动核销自动处理页面</name>
+		<desc>还款自动核销自动处理页面</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<service>
+        <id>S_P_000055</id>
+      	<servicejs>S_P_00029.js</servicejs>
+      	<trigger>M</trigger>
+    </service>
+</function>

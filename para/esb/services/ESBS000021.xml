@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000021</id>
+	<name>WS服务</name>
+	<type>WS_S</type><!-- 对内开放的服务类型，消费者凭此类型调用服务 -->
+	<initlize>S</initlize>
+	<protocoltp>WS</protocoltp><!-- 接口协议类型 -->
+	<inorout>o</inorout><!-- 当前服务是对内还是对外开放的，对内开放，属性对接外部接口，对外开放，属性对接内部监听 -->
+	<wsServiceName>TxService</wsServiceName>
+	<interfaceName>com.ut.scf.mule.message.webservice.IWebService
+	</interfaceName>
+	<className>com.ut.scf.web.service.TxServiceImpl</className>
+	<wsUser>123456</wsUser>
+	<wsPwd>123456</wsPwd>
+	<wsInterceptorClass>com.ut.scf.web.service.AuthInterceptor</wsInterceptorClass>
+</esbservice>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<func>
+	<catalog>
+		<id>CA00000004</id>
+		<name>ReleaseCatalog</name>
+	</catalog>
+	<function>
+		<module>Demo</module>
+		<desc>公用复合功能</desc>
+		<id>F00000007</id>
+		<name>公用复合功能</name>
+		<maincomp>TrxReleaseManager</maincomp>
+		<functype>RE</functype>
+	</function>
+</func>

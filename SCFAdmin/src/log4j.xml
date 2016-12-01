@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+		<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{dd HH:mm:ss,SSS\} %-5p] [%t] %c{2\} - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">  
+            <param name="levelMin" value="DEBUG" />  
+            <param name="levelMax" value="ERROR" />  
+            <param name="AcceptOnMatch" value="true" />  
+        </filter>  
+	</appender>
+	<appender name="webAppender" class="com.ut.comm.log.log4j.SCFDailyRollingFileAppender">
+		<param name="fileName" value="webLog.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	
+	<appender name="webErrorAppender" class="com.ut.comm.log.log4j.SCFDailyRollingFileAppender">
+		<param name="fileName" value="webErrorLog.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	
+	<appender name="zkAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="zooKeeper.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+
+	
+	<logger name="zkLogger">
+		<level value="INFO" />
+		<appender-ref ref="zkAppender" />
+	</logger>
+	
+	<logger name="errorLog">
+		<level value="ERROR" />
+		<appender-ref ref="webAppender" />
+	</logger>	
+	<logger name="webLog">
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</logger>	
+
+	<root>
+		<level value="WARN" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="webAppender" />
+	</root>
+</log4j:configuration>

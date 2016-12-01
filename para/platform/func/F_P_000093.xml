@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000093</id>
+	<module>新增保理商信息</module>
+	<name>新增保理商</name>
+	<desc>用户保理商信息</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_P_000072</id>
+		<index>0</index>
+		<name>新增保理商</name>
+		<desc>新增保理商页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+		<logicid>L_P_000021</logicid>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

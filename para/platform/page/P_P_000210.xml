@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000210</id>
+    <name>接口监控页面</name>
+    <jspfile>screen/service/GapiMsg.jsp</jspfile>
+    <maincomp>TrxViewManager</maincomp>
+	<pagetype>View</pagetype>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>N</istransaction>
+	<maintable>STD.GAPI_MSG</maintable>
+</page>

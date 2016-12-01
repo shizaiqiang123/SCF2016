@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000679</id>
+    <name>用户角色查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>CntrctM a,CntrctSbrM b</tablename>
+		<doname></doname>
+		<type>S</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields>busiTp</fields>
+		<condition>a.sysRefNo = b.cntrctNo and a.sysTrxSts = 'M' and a.sysLockFlag = 'F' and (a.selId = '$custId$' or b.buyerId = '$custId$')</condition>
+		<orderby>a.sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql>select a.busiTp from CntrctM a,CntrctSbrM b</sql>
+	</qnode>
+</query>

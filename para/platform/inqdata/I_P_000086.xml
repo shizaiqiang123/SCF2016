@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000086</id>
+    <name>接口监控详细数据查询</name>
+    <type>P</type>
+     <target>P_P_000242</target>
+</inqdata>

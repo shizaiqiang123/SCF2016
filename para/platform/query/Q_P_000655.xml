@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000655</id>
+    <name>买方池-融资申请协议查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>应收账款池协议查询</name>
+		<component>componentClass</component>
+		<desc>应收账款池协议查询</desc>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[cntrctNo like %$cntrctNo$% and sysTrxSts = M and sysLockFlag = T and busiTp = 9]]></condition>
+		<orderby>cntrctNo</orderby>
+		<asc>N</asc>
+		<sql/>
+	</qnode>
+</query>

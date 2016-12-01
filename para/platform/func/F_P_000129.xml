@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000129</id>
+	<module>修改密码信息</module>
+	<name>修改我的密码</name>
+	<desc>个人信息-修改个人密码</desc>
+	<functype>MM</functype>
+	<isValidCode>true</isValidCode>
+	<page>
+		<id>P_S_10000108</id>
+		<index>0</index>
+		<name>修改密码菜单</name>
+		<desc>修改密码菜单页面</desc>	
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

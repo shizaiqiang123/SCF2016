@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <desc>Auto SOD</desc>
+    <nodeName>task</nodeName>
+    <type>S</type>
+    <id>T_S_00001</id>
+    <component>BatchSodEodProcessor</component>
+    <singlethread>Y</singlethread>
+    <name>Auto SOD</name>
+    <js>T0000002.js</js>
+    <jspfile></jspfile>
+</task>

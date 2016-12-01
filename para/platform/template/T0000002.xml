@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000002</id>
+	<name>应收账款导入模板</name>
+	<desc>应收账款导入功能</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>Excel</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>导入发票.xlsx</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!--自定义逻辑 -->
+	<reformatclass>InvTemplateReformatImpl</reformatclass>	
+	<head name="Sheet1">
+		<mfield key="0,1" isnull="true" isunique="true" desc="卖方名称" type="java.lang.String" defaultvalue="">selNm</mfield>
+		<mfield key="1,1" isnull="true" isunique="true" desc="买方编号" type="java.lang.String" defaultvalue="">buyerId</mfield>
+		<mfield key="2,1" isnull="true" isunique="true" desc="买方名称" type="java.lang.String" defaultvalue="">buyerNm</mfield>
+		<mfield key="3,1" isnull="true" isunique="true" desc="币别" type="java.lang.String" defaultvalue="">invCcy</mfield>
+		<!-- <mfield key="4,1" isnull="true" isunique="true" desc="账期" type="java.lang.String" defaultvalue="">acctPeriod</mfield>		 -->
+	</head>
+	<mapping name="Sheet1" beginRow="6" endRow="1280" beginColumn="0" endColumn="6">		
+			<mfield key="1" isnull="false" isunique="false" desc="应收账款凭证编号" type="java.lang.String" defaultvalue="">invNo</mfield>
+			<mfield key="2" isnull="false" isunique="false" desc="应收账款金额" type="java.lang.Double" defaultvalue="0">invAmt</mfield>
+			<mfield key="3" isnull="false" isunique="false" desc="预付款金额" type="java.lang.Double" defaultvalue="0">acctAmt</mfield>
+			<mfield key="4" isnull="false" isunique="false" desc="应收账款开立日期" type="java.util.Date" defaultvalue="">invDt</mfield>
+			<mfield key="5" isnull="false" isunique="false" desc="应收账款起算日" type="java.util.Date" defaultvalue="">invValDt</mfield>
+			<mfield key="6" isnull="false" isunique="false" desc="到期日" type="java.util.Date" defaultvalue="">invDueDt</mfield>
+	</mapping>
+</template>

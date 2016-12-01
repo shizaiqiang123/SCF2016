@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>用户信息</desc>
+    <id>P_P_000304</id>
+    <name>用户信息</name>
+    <jspfile>user_add.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+</page>

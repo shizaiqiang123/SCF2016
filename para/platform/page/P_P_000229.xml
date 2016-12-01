@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <istransaction>Y</istransaction>
+    <id>P_P_000229</id>
+    <name>在途删除客户信息</name>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>    
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/supplier/supplier.jsp</jspfile>
+    <maintable>TRX.CUST_M</maintable> 
+</page>

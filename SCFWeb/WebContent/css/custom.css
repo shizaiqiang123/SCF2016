@@ -1,0 +1,141 @@
+.div_ul {
+	margin: 0 auto;
+	/* width: 450px; */
+	/* height: 90%; */
+	font: 13px arial;
+}
+
+.div_ul ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.div_ul ul li {
+	padding: 3px 0 3px 50px;
+	border-bottom: dotted 0px #666;
+}
+
+.div_ul ul li label {
+	display: block;
+	width: 100px;
+	float: left;
+	font-size: 14px;	
+}
+
+.div_ul ul li textarea,.div_ul ul li .setinput {
+	width: 580px;
+	font-size: 13px;
+	font-family: Arial;
+}
+
+.div_ul ul li img.ShowImg {
+	margin-left: 160px;
+}
+
+
+#titlefont{
+	font-size:large;
+	font-weight: bold;
+	
+}
+#div_li{
+	display: block;
+	width: 100px;
+	float: left;
+	font-size: 14px;
+	background: url(../images/tlbars/menu-rpt.png) no-repeat 140px center;
+}
+.alldialog{
+	
+	padding: 5px;
+	width:500px !important;
+	height:300px !important;
+}
+.div_inlineBlock{
+	display:inline-block;
+}
+.div_grid{
+	position: absolute;
+	width:100%;
+}
+
+#addReset{
+	display: none;
+}
+.div_screen{	
+	border:1px solid #95b8e7;
+	text-align:center;	
+	padding: 3px 0 3px 50px;	
+}
+.table_screen{
+	width:100%;
+	align:left;		
+}
+.look-up-btn {
+    background: url('../images/btns/btn_appr.gif') no-repeat scroll 0 0 transparent;
+    border-left: 1px solid #E1E0E0;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 18px;
+}
+.look-up-text {
+    border: 0 none;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    cursor: text;
+}
+.look-up-input-validatebox-invalid{
+	background: url("../images/btns/btn_vert.gif") no-repeat scroll right 1px #FFFFEE;
+	width:90%;
+	font-size:12px;
+	border:1px solid #A4BED4;
+	padding:3px 2px;
+}
+.look-up-input{
+	width:90%;
+	font-size:12px;
+	border:1px solid #A4BED4;
+	padding:3px 2px;
+}
+.look-up {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D8D8D8;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.l-textbox-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+.lin-textbox-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+
+.textbox-combo-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+.textbox-combo-readonly .textbox-text{
+	background: none repeat scroll 0 0 #d7d7d7;
+}
+/* .toolTable{
+	width:100%;
+	height:23px;
+	background: linear-gradient(to bottom, #eff5ff 0px, #e0ecff 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+} */
+.pageNav{
+  font-size: 12px;
+  font-weight: bold;
+  color: #0E2D5F;
+  height: 16px;
+  line-height: 16px;
+}
+

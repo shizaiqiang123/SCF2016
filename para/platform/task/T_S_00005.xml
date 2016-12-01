@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <jspfile></jspfile>
+    <desc>应收账款预警通知 Demo</desc>
+    <trxdatapara>
+    	<paraDt>3</paraDt>
+    </trxdatapara>
+    <catalog>C_P_000217</catalog>
+    <js>T0000001.js</js>
+    <nodeName>task</nodeName>
+    <id>T_S_00005</id>
+    <component>batchNoticeExecutor</component>
+    <singlethread>Y</singlethread>
+    <name>应收账款预警通知</name>
+    <propertyBean>false</propertyBean>
+</task>

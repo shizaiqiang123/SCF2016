@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000069</id>
+	<name>根据仓单编号查询货物信息</name>
+	<desc>根据仓单编号查询货物信息</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000429</target>
+</inqdata>

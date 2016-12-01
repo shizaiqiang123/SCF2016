@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000053</id>
+	<name>国内保理-授信客户还款Catalog</name>
+	<MODULE>SYS</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内保理-授信客户还款Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>
+	<search>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+		<field datatype="1" title="间接客户编号" defaultvalue="" width = "200">buyerId</field>		
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+		<field datatype="1" title="间接客户编号" defaultvalue="" width = "200">buyerId</field>		
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field>			
+		<field datatype="1" title="业务类型" hidden="true" width = "100">busiTp</field>
+		<field datatype="1" title="授信模式" hidden="true" width = "100">serviceReq</field>
+		<field datatype="1" title="放款币别" hidden="true" width = "100">ccy</field>
+		<field datatype="1" title="融资余额" hidden="true" width = "100">ttlLoanBal</field>
+		<field datatype="1" title="放款到期日" hidden="true" width = "100">loanDueDt</field>		
+		<field datatype="1" title="协议编号" hidden="true" width = "100">cntrctNo</field>		
+	</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$% and selNm like %$selNm$% 
+		  and selId like %$selId$%  and buyerNm like %$buyerNm$% 
+		  and buyerId like %$buyerId$% and sysTrxSts = M 
+		  and busiTp=0 and  ttlLoanAmt>0 and ttlLoanBal>0
+	</condition>
+	<orderby>sysRefNo</orderby>	
+</catalog>

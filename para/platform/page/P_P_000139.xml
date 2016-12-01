@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000139</id>
+	<name>Inqdata页面</name>
+	<desc>Inqdata 开发工具页面</desc>
+	<jspfile>jsp/para/Inqdata_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>inqdata</maintable>
+	<transaction>true</transaction>
+	<logicid>L_P_000147</logicid>
+	<holdmaster>n</holdmaster>
+</page>

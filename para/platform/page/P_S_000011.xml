@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000011</id>
+	<name>审核公共页面</name>
+	<desc>审核公共页面</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>y</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>RE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable></maintable>
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000093</id>
+	<name>在途放货出库Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>在途放货出库列表</DESC>
+	<tablename>TRX.GOODS_INOUT_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "100">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "20%">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "20%">buyerNm</field>
+		<field datatype="1" title="经销商名称" hidden="" width = "20%">selNm</field>
+		<field datatype="1" title="释放金额" hidden="" width = "20%">ttlOutSureAmt</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and cntrctNo like %$cntrctNo$%  and (sysTrxSts=P or sysTrxSts=S) and sysLockFlag = F and sysFuncId=F_P_000901 and busiTp = 11 and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>
+

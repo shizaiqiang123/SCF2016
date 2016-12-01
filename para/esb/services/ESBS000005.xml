@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000005</id>
+	<name>Loan</name>
+	<type>Loan</type>
+	<protocol>loanServiceImpl</protocol>
+	<postadapter>loanServicePostAdapter</postadapter>
+	<queryadapter>loanQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

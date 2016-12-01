@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000784</id>
+	<name>动产质押-质物出库页面</name>
+	<desc>动产质押-质物出库页面</desc>
+	<jspfile>screen/dispatchNote/mortgagedOut.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.GOODS_INOUT_M</maintable>
+	<logicid>L_P_000563</logicid>
+</page>

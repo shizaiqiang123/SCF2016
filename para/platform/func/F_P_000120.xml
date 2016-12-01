@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000120</id>
+	<module>修改产品信息</module>
+	<name>修改产品信息</name>
+	<desc>产品维护-修改产品信息</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000078</catalog>
+	</page>
+	<page>
+		<id>P_P_000113</id>
+		<index>1</index>
+		<name>修改产品信息</name>
+		<desc>修改产品信息页面</desc>
+		<pagetype>EDIT</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

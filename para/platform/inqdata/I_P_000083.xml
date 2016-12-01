@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000083</id>
+    <desc>新增成员企业</desc>
+    <name>新增成员企业</name>
+    <target>P_P_000230</target>
+    <type>P</type>
+</inqdata>

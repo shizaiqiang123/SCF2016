@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000145</id>
+    <lnode>
+        <desc>qq</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000003</id>
+        <asc>N</asc>
+        <component>qq</component>
+        <name>qq</name>
+        <doname>qq</doname>
+        <cascadeevent>Y</cascadeevent>
+    </lnode>
+    <nodeName>logicflow</nodeName>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

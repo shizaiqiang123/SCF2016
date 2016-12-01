@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000003</id>
+	<name>申请网点页面Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>申请网点页面Catalog</DESC>
+	<tablename>STD.STD_INST_M</tablename>
+	<search>
+		<field datatype="1" title="网点编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="网点名称" defaultvalue="" width = "200">brNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="网点编号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="上层网点编号" hidden="" width = "250">parentBr</field>
+		<field datatype="1" title="网点名称" hidden="" width = "250">brNm</field>
+		<field datatype="1" title="网点类型" hidden="" width = "250" formatter="brTpFormater">brTp</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and brNm like %$brNm$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

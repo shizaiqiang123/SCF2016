@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000687</id>
+	<module>应收账款池融资</module>
+	<name>保证金入池复核</name>
+	<desc>保证金入池复核</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000690</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核保证金入池</name>
+		<desc>保证金入池页面</desc>
+	</page>
+</function>

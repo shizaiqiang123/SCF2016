@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000423</id>
+	<name>处理结果管理</name>
+	<desc>处理结果管理</desc>
+	<jspfile>jsp/SYS_Result.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<pagetype>RS</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxResutlManager</maincomp>
+	<maintable></maintable>
+</page>

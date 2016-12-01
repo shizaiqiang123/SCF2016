@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000052</id>
+    <desc>查询Advice服务信息</desc>
+    <name>查询Advice服务信息</name>
+    <target>Advice</target>
+    <type>S</type>
+</inqdata>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000281</id>
+	<desc>额度查询的报表</desc>
+	<name>额度查询的报表</name>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>额度查询的报表统计</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc></asc>
+		<sql><![CDATA[select buyerNm,sum(lmtBal),sum(arAvalLoan),sum(openLoanAmt) from CntrctM  where sysRefNo=? GROUP BY buyerNm]]></sql>
+		<!-- and invValDt >= ? and invDueDt <= ?  and sysBusiUnit=$sysBusiUnit$  -->
+		<!-- <params>$invValDt$:typejava.util.Date,$invDueDt$:typejava.util.Date</params> -->
+		<params>$sysRefNo$</params>
+	</qnode>
+</query>

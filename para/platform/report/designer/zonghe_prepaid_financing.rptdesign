@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="73">
+            <property name="FILELIST">D:\预付类融资台账查询.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="74">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">cntrctNo</property>
+                    <text-property name="heading">cntrctNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selNm</property>
+                    <text-property name="heading">selNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanTp</property>
+                    <text-property name="heading">loanTp</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ccy</property>
+                    <text-property name="heading">ccy</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ttlLoanAmt</property>
+                    <text-property name="heading">ttlLoanAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ttlLoanBal</property>
+                    <text-property name="heading">ttlLoanBal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanValDt</property>
+                    <text-property name="heading">loanValDt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanDueDt</property>
+                    <text-property name="heading">loanDueDt</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">cntrctNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">selNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">loanTp</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">ccy</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">ttlLoanAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">ttlLoanBal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">loanValDt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">loanDueDt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">cntrctNo</property>
+                    <property name="nativeName">cntrctNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">selNm</property>
+                    <property name="nativeName">selNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">loanTp</property>
+                    <property name="nativeName">loanTp</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">ccy</property>
+                    <property name="nativeName">ccy</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">ttlLoanAmt</property>
+                    <property name="nativeName">ttlLoanAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">ttlLoanBal</property>
+                    <property name="nativeName">ttlLoanBal</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">loanValDt</property>
+                    <property name="nativeName">loanValDt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">loanDueDt</property>
+                    <property name="nativeName">loanDueDt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/LOAN_M]#:#{sysRefNo;STRING;/sysRefNo},{cntrctNo;STRING;/cntrctNo},{selNm;STRING;/selNm},{loanTp;STRING;/loanTp},{ccy;STRING;/ccy},{ttlLoanAmt;STRING;/ttlLoanAmt},{ttlLoanBal;STRING;/ttlLoanBal},{loanValDt;STRING;/loanValDt},{loanDueDt;STRING;/loanDueDt}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>cntrctNo</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>cntrctNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selNm</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanTp</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanTp</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ccy</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ccy</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ttlLoanAmt</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ttlLoanAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ttlLoanBal</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ttlLoanBal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanValDt</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanValDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanDueDt</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanDueDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="7">
+            <column id="8"/>
+            <row id="9">
+                <cell id="10"/>
+            </row>
+            <row id="11">
+                <cell id="12">
+                    <table id="75">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sysRefNo</property>
+                                <text-property name="displayName">sysRefNo</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">cntrctNo</property>
+                                <text-property name="displayName">cntrctNo</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["cntrctNo"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">selNm</property>
+                                <text-property name="displayName">selNm</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["selNm"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">loanTp</property>
+                                <text-property name="displayName">loanTp</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["loanTp"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ccy</property>
+                                <text-property name="displayName">ccy</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ccy"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ttlLoanAmt</property>
+                                <text-property name="displayName">ttlLoanAmt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ttlLoanAmt"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ttlLoanBal</property>
+                                <text-property name="displayName">ttlLoanBal</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ttlLoanBal"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">loanValDt</property>
+                                <text-property name="displayName">loanValDt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["loanValDt"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">loanDueDt</property>
+                                <text-property name="displayName">loanDueDt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["loanDueDt"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="106">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="107">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="108">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="109">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="110">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="111">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="112">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="113">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <column id="114">
+                            <property name="textAlign">left</property>
+                        </column>
+                        <header>
+                            <row id="76">
+                                <cell id="77">
+                                    <label id="115">
+                                        <text-property name="text">融资编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="78">
+                                    <label id="117">
+                                        <text-property name="text">协议编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="79">
+                                    <label id="119">
+                                        <text-property name="text">卖方客户名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="80">
+                                    <label id="121">
+                                        <text-property name="text">融资支付方式</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="81">
+                                    <label id="123">
+                                        <text-property name="text">融资币别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="82">
+                                    <label id="125">
+                                        <text-property name="text">融资金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="83">
+                                    <label id="127">
+                                        <text-property name="text">融资余额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="84">
+                                    <label id="129">
+                                        <text-property name="text">融资日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="85">
+                                    <label id="131">
+                                        <text-property name="text">融资到期日</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="86">
+                                <cell id="87">
+                                    <data id="116">
+                                        <property name="resultSetColumn">sysRefNo</property>
+                                    </data>
+                                </cell>
+                                <cell id="88">
+                                    <data id="118">
+                                        <property name="resultSetColumn">cntrctNo</property>
+                                    </data>
+                                </cell>
+                                <cell id="89">
+                                    <data id="120">
+                                        <property name="resultSetColumn">selNm</property>
+                                    </data>
+                                </cell>
+                                <cell id="90">
+                                    <data id="122">
+                                        <property name="resultSetColumn">loanTp</property>
+                                    </data>
+                                </cell>
+                                <cell id="91">
+                                    <data id="124">
+                                        <property name="resultSetColumn">ccy</property>
+                                    </data>
+                                </cell>
+                                <cell id="92">
+                                    <data id="126">
+                                        <property name="resultSetColumn">ttlLoanAmt</property>
+                                    </data>
+                                </cell>
+                                <cell id="93">
+                                    <data id="128">
+                                        <property name="resultSetColumn">ttlLoanBal</property>
+                                    </data>
+                                </cell>
+                                <cell id="94">
+                                    <data id="130">
+                                        <property name="resultSetColumn">loanValDt</property>
+                                    </data>
+                                </cell>
+                                <cell id="95">
+                                    <data id="132">
+                                        <property name="resultSetColumn">loanDueDt</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="96">
+                                <cell id="97"/>
+                                <cell id="98"/>
+                                <cell id="99"/>
+                                <cell id="100"/>
+                                <cell id="101"/>
+                                <cell id="102"/>
+                                <cell id="103"/>
+                                <cell id="104"/>
+                                <cell id="105"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

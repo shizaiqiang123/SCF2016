@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000298</id>
+        <name>用户测试页面1</name>
+    </page>
+    <pagesSize>1</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000428</id>
+    <autoassignSize>0</autoassignSize>
+    <name>用户测试功能</name>
+    <functype>PM</functype>
+    <shortnm>用户测试功能</shortnm>
+</function>

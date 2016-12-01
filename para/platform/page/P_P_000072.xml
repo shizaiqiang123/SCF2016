@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000072</id>
+	<name>保理商信息</name>
+	<desc>保理商信息页面</desc>
+	<jspfile>screen/factor/factor.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<!-- <maincomp>TrxPendingManager</maincomp> -->
+	<maintable>TRX.CUST_M</maintable>	
+</page>

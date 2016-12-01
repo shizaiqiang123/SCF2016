@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000234</id>
+    <desc>供应商角色查询</desc>
+    <name>供应商角色查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>querySupplierRoleMenu</component>
+		<tablename>STD.STD_ROLE_INFO</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>C</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+<!-- 		<condition>productId=$productId$ </condition> -->
+<!-- 		<params>$productId$</params> -->
+		<sql/>
+	</qnode>
+</query>

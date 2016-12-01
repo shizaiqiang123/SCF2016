@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000509</id>
+	<name>动产质押追加保证金复核 查询票据BAIL_BILL_E</name>
+	<desc>查询Bill_M</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.BAIL_BILL_E</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>loanId = $loanId$ and (sysLockFlag = F or sysLockBy = $sysLockBy$) and sysTrxSts = P</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<params></params>
+	</qnode>
+</query>

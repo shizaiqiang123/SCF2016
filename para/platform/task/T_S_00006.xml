@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_00006</id>
+    <name>短信通知</name>
+    <component>BatchMessageProcessor</component>
+    <desc>message</desc>
+     <trxdatapara>
+        <paraTp></paraTp>
+        <paraId>100</paraId>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        <paraPath></paraPath>
+        <paraName></paraName>
+    </trxdatapara>
+    <type>E</type>
+</task>

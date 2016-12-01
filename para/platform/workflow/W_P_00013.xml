@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00013</id>
+	<workid>1313</workid>
+	<workname>CrtfReg</workname>
+	<name>合格证登记</name>
+	<desc>合格证登记</desc>
+	<jspath>W_P_00013.js</jspath>
+</workflow>

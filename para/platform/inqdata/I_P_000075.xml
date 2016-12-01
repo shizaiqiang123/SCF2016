@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000075</id>
+    <desc>基础利率查询</desc>
+    <name>基础利率查询</name>
+    <target>Q_P_000220</target>
+    <type>Q</type>
+</inqdata>

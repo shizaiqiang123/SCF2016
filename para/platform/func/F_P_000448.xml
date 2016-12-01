@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000448</id>
+	<module>Test</module>
+	<name>预付类--现货入库</name>
+	<desc>预付类--现货入库</desc>
+	<functype>PM</functype>
+    <!--<page>
+		<desc>客户页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000412</id>
+        <name>交易进入页面</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+	</page>-->
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>现货入库</name>
+		<desc>现货入库</desc>
+		<catalog>C_P_000182</catalog>
+	</page>
+	<page>
+		<id>P_P_000416</id>
+		<index>2</index>
+		<name>现货入库添加</name>
+		<desc>现货入库添加</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<workflow>W_P_00029</workflow>
+</function>

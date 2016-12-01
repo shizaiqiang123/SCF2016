@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh_CN">
+	<head>
+		<termid>E010065105065</termid>
+		<trnid>0000000001</trnid>
+		<custid>25378061</custid>
+		<cusopr>25967778</cusopr>
+		<trncod>b2e0082</trncod>
+	</head>
+	<trans>
+		<trn-b2e0082-rq>
+			<b2e0082-rq>
+				<scfp>
+					<transReturnData>
+						<acrcInvTrfRs>
+							<relatedRef>20140101010101</relatedRef>
+							<applyState>2</applyState>
+							<paymentApprvData>
+								<circleNum>4</circleNum>
+								<paymentApprv>
+									<invNo>1</invNo>
+									<pmtApplyState>1</pmtApplyState>
+								</paymentApprv>
+								<paymentApprv>
+									<invNo>2</invNo>
+									<pmtApplyState>2</pmtApplyState>
+								</paymentApprv>
+								<paymentApprv>
+									<invNo>3</invNo>
+									<pmtApplyState>3</pmtApplyState>
+								</paymentApprv>
+								<paymentApprv>
+									<invNo>4</invNo>
+									<pmtApplyState>4</pmtApplyState>
+								</paymentApprv>
+							</paymentApprvData>
+						</acrcInvTrfRs>
+					</transReturnData>
+				</scfp>
+			</b2e0082-rq>
+		</trn-b2e0082-rq>
+	</trans>
+</bocb2e>

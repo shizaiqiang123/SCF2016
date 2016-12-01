@@ -1,0 +1,2454 @@
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:29:02.783 
+Web Cache initlize success...
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:29:03.535 
+filter init.
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:29:53.815 
+查询user info 耗时：13
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:04.380 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:30:05.150 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:30:05.151 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:05.248 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:05.617 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:05.631 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:06.320 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:06.457 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:06.767 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:06.861 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:06.987 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:07.139 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:07.147 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:07.167 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:07.876 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:08.037 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:30:08.192 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:29.003 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.138 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.139 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.139 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.140 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:29.168 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.301 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.301 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.301 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.301 
+Cache remove... key:/sess/A6C3974701B7B99F936261A70AF5805A/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A/A6C3974701B7B99F936261A70AF5805A_F_1250420776_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A/A6C3974701B7B99F936261A70AF5805A_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A/A6C3974701B7B99F936261A70AF5805A_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A/A6C3974701B7B99F936261A70AF5805A_F_1250419845_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A/A6C3974701B7B99F936261A70AF5805A_F_1250420775_null_null_Q_P_000300
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:29.302 
+Cache remove... key:/caches/A6C3974701B7B99F936261A70AF5805A
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:29.440 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:29.522 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:51.275 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:51.412 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:31:51.413 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:51.464 
+查询user info 耗时：3
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:51.755 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:51.769 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.143 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.277 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.389 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.479 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.593 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.712 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.940 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.950 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:52.974 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:53.540 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:31:53.661 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:48.476 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:48.622 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:37:48.678 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:37:48.678 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:37:48.678 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:37:48.679 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:48.805 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:49.247 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:49.978 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:52.577 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:52.747 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:54.567 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:55.000 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:37:55.206 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:38:01.485 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.652 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.653 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.653 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.653 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.653 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.654 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.654 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.654 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.654 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.655 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.656 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000020_0_722687764_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.656 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000020_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.656 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000020_742323699_null_null_Q_P_000180
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.656 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000020_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:38:01.656 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000020_-1654776288_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:51:59.323 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:51:59.388 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:51:59.440 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 17:51:59.440 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:51:59.512 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:51:59.871 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:52:00.353 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:10.436 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:10.539 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:13.988 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:14.459 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:14.656 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:14.760 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 17:56:14.918 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:12:39.766 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.939 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.940 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.940 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.940 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.940 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.941 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.941 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.941 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.941 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.941 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.942 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_363692000_null_null_Q_P_000029
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.942 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.942 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_0_257722453_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.942 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_-1261821991_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.943 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_147775390_null_null_Q_P_000021
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:39.943 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000134_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:12:40.166 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:40.221 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:40.222 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:12:40.837 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:40.890 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:12:40.890 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:14:09.899 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:14:09.966 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:14:10.018 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 18:14:10.018 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:14:10.075 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:14:10.442 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:14:10.977 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:34.028 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:34.134 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:35.707 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:36.154 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:36.444 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 18:15:36.554 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:14.906 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:14.913 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.109 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.109 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.110 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.110 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.110 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.110 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.110 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.111 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.111 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.111 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.111 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000132_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.112 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000132_0_832007721_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.112 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000132_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.112 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000132_391418147_null_null_Q_S_SELACNO_001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:57:15.112 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_P_000132_-1261821991_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:15.465 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:15.575 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:15.668 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:15.944 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.086 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.166 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.174 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.210 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.743 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:57:16.842 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:38.321 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.497 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.498 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:38.530 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3/entryType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/sess/2D50EE37046ABB0765CED3F960B222E3
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_1813447852_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/-1018203647_null_null_Q_P_000006
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_-1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.755 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_1813448783_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.756 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.756 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:38.756 
+Cache remove... key:/caches/2D50EE37046ABB0765CED3F960B222E3/2D50EE37046ABB0765CED3F960B222E3_F_1988298466_null_null_Q_P_000315
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:38.960 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:39.098 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:43.879 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:44.148 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 20:58:44.149 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:44.196 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:44.485 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:44.499 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:44.840 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:44.971 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.067 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.145 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.246 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.347 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.490 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.501 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:45.544 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:46.135 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 20:58:46.300 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:00:43.883 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:00:43.966 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:00:44.015 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:00:44.015 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:00:44.015 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:00:44.015 
+Cache remove... key:/sess/2E5DF3E03FD03EF1D521172D331D5698/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:00:44.120 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:00:44.479 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:00:45.010 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:17.820 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:34.021 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:34.407 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:34.408 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:34.477 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:35.153 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:35.157 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:35.653 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:35.794 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:35.911 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:36.235 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:36.486 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:36.641 
+查询user info 耗时：147
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:36.647 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:37.196 
+查询user info 耗时：193
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:37.310 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:37.407 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:37.972 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:43.967 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:44.082 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:44.137 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:44.137 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:44.137 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:44.137 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:44.416 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:44.870 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:45.374 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:55.338 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:55.466 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.537 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.537 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.538 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.538 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.538 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.538 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.538 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:08:55.539 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:55.674 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:56.324 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:57.258 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:08:57.375 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:07.893 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:09.404 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.549 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.549 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.549 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.549 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.549 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.550 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.550 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.550 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.550 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.551 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000101_-2138847899_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.551 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000101_-467687986_null_null_Q_P_000182
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.551 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000101_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:09.584 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:09.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:09.776 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:10.729 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:10.999 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:11.253 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:11.489 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:14.006 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:44.499 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:46.229 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.425 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.425 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.425 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.425 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.426 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.426 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.426 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.427 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.427 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.427 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.428 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_-1228812353_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.428 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_1588964209_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.428 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_-1326434935_null_null_Q_P_000189
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.428 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_127054943_null_null_Q_P_000175
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:47.462 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.888 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:09:47.888 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:49.056 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:49.524 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:50.338 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:57.000 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:57.231 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:58.267 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:59.040 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:59.417 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:59.577 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:09:59.801 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:15.787 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:15.919 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.981 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.982 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.988 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.988 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:10:15.988 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:16.101 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:17.038 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:17.277 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:17.392 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:17.528 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:10:24.469 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:28.397 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:29.414 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.590 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.590 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.590 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.590 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.591 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.591 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.591 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.591 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.591 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.592 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000005_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.592 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000005_-467687957_null_null_Q_P_000190
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.593 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000005_-1786094711_null_null_Q_P_000177
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.593 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000005_1138067000_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.593 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000005_-1202937420_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:29.618 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.683 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:12:29.683 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:29.780 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:30.334 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:30.537 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:30.854 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:31.047 
+查询user info 耗时：8
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:12:35.066 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:08.419 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:09.961 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.139 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.139 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.140 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.140 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.140 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.140 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.141 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.141 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.141 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.142 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.142 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_-1228812353_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.142 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_1588964209_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.142 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_-1326434935_null_null_Q_P_000189
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.143 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000002_127054943_null_null_Q_P_000175
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:10.180 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.263 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:10.264 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:10.381 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:10.730 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:11.214 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:15.489 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:15.756 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:16.568 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:16.839 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:17.295 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:21.875 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:22.054 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:22.719 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:23.096 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:23.614 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:23.794 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:25.859 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.047 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.047 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.047 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.047 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.047 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.048 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.048 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.048 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.048 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:28.048 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:29.808 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:30.247 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:30.380 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:30.843 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:31.025 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:31.296 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:31.309 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:31.317 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:32.165 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:32.201 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:32.348 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:34.705 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:34.851 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:34.926 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:34.926 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:35.017 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:35.530 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:36.110 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:38.570 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:38.752 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:39.192 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:39.366 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:39.988 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:42.272 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:42.466 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:43.129 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:47.037 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.039 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.040 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.040 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.040 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:48.040 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/trxMessage
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:49.444 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:49.846 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:49.976 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:50.113 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:50.339 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:50.651 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:50.662 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:50.690 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:51.522 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:51.543 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:51.684 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:57.406 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.486 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.486 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:57.525 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/entryType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/sess/4FF42EF859D690AAE6200E24019AFBCF/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_-1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.648 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_0_226258640_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_1250420776_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_-506551291_null_null_Q_P_000207
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_0_226258640_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_2_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_2_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000011_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.649 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_0_2093905976_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_-734209123_null_null_Q_P_000177
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_-1608695720_null_null_Q_P_000217
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_1250419845_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_1250420775_null_null_Q_P_000300
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000011_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.650 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_-467687986_null_null_Q_P_000182
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_P_000286_-506551260_null_null_Q_P_000217
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_1175565496_null_null_Q_P_000158
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000011_0_216633604_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000102_-467687986_null_null_Q_P_000182
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:13:57.651 
+Cache remove... key:/caches/4FF42EF859D690AAE6200E24019AFBCF/4FF42EF859D690AAE6200E24019AFBCF_F_S_10000105_1175565495_null_null_Q_P_000157
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:57.695 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:13:57.913 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:14:06.989 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:14:16.414 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:16.465 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:16.465 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:14:29.569 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:29.647 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:29.647 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:14:40.972 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:41.033 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:41.033 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:14:56.575 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:56.626 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:14:56.626 
+Cache remove... key:/sess/E044E07049D5EE595BAAD0F9D14AFC33/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:16:57.013 
+Web Cache initlize success...
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:16:58.045 
+filter init.
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:17:11.659 
+查询user info 耗时：15
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:17:36.707 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:17:45.430 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:17:45.522 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:17:45.522 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:17:59.301 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:17:59.380 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:17:59.380 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:07.343 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:07.581 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:07.599 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:09.918 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:09.989 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:09.989 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:17.769 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:17.849 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:17.850 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:25.813 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:26.146 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:26.549 
+Cache remove... key:/sess/A4CD84DD3E9C3A3C7C0CA5CF0F8A07F1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:26.549 
+Cache remove... key:/caches/A4CD84DD3E9C3A3C7C0CA5CF0F8A07F1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:26.747 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:26.826 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:29.478 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:29.848 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:29.849 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:29.954 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:30.426 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:30.428 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.346 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.347 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.581 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.707 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.838 
+查询user info 耗时：3
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:31.980 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:32.154 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:32.163 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:32.184 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:32.919 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:33.109 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:36.550 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.612 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.613 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.613 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.613 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:36.635 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.744 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.744 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.744 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.744 
+Cache remove... key:/sess/EB3ABDB66D5142B182594F0BBC34230E/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E/EB3ABDB66D5142B182594F0BBC34230E_F_1708291315_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E/EB3ABDB66D5142B182594F0BBC34230E_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E/EB3ABDB66D5142B182594F0BBC34230E_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E/EB3ABDB66D5142B182594F0BBC34230E_F_1988298466_null_null_Q_P_000315
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E/EB3ABDB66D5142B182594F0BBC34230E_F_1708290384_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:36.745 
+Cache remove... key:/caches/EB3ABDB66D5142B182594F0BBC34230E
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:36.931 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:37.009 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:45.970 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:18:52.972 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:53.031 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:18:53.032 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:21:18.104 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:21:18.167 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:21:18.167 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:21:27.999 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:21:28.132 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:21:28.133 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:23:20.388 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:23:32.644 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:23:32.733 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:23:32.733 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:20.785 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:20.868 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:20.868 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:23.696 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:23.757 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:23.758 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:29.827 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:29.888 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:29.888 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:31.727 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:31.785 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:31.785 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:33.274 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:33.340 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:33.341 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:25:38.601 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:38.672 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:25:38.672 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.480 
+filter destroy.
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.531 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/caches
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/caches/5A2C58836D838F64AAE65B2ADAA8C0AD/5A2C58836D838F64AAE65B2ADAA8C0AD_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:26:58.532 
+Cache remove... key:/caches/5A2C58836D838F64AAE65B2ADAA8C0AD
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:29:14.522 
+Web Cache initlize success...
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:29:15.302 
+filter init.
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:29:30.063 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:29:34.366 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:31:05.610 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:31:05.673 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:31:05.674 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:32:33.682 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:32:41.014 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:41.102 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:41.102 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:32:43.224 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:43.291 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:43.291 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:32:49.885 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:49.955 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:49.955 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:32:52.055 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:52.192 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:32:52.193 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:33:00.030 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:33:00.124 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:33:00.124 
+Cache remove... key:/sess/5A2C58836D838F64AAE65B2ADAA8C0AD/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:34:35.802 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:34:35.866 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:34:35.866 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:12.117 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:12.196 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:12.196 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:12.612 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:12.612 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:12.721 
+查询user info 耗时：2
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:13.158 
+查询user info 耗时：3
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:13.172 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:13.848 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:13.989 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.199 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.308 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.469 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.649 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.842 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.884 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:14.895 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:15.667 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:15.904 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:21.559 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:21.808 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:21.919 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:21.920 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:21.920 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:37:21.920 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:22.098 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:22.575 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:37:23.580 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:06.150 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:06.362 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:08.217 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:08.975 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:09.272 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:42:09.522 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:29.434 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.676 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.676 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.676 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.676 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.677 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.677 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.678 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.678 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.678 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.678 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.679 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_P_000132_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.680 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_P_000132_0_832007721_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.680 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_P_000132_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.680 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_P_000132_391418147_null_null_Q_S_SELACNO_001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:29.680 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_P_000132_-1261821991_null_I_S_000001_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:31.976 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:32.067 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:40.646 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:40.704 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:40.704 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:40.880 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:53:40.880 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:40.956 
+查询user info 耗时：3
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:41.412 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:41.434 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:41.693 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.093 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.187 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.278 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.446 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.602 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.691 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.700 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:42.730 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:43.335 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:53:43.511 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:27.482 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.543 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.543 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.544 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.544 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:27.572 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/entryType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/sess/9F25204A127ABBA84A10F5598825B065/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.711 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_1813447852_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.712 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/-1018203647_null_null_Q_P_000006
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.712 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.712 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_1813448783_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.712 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_1988298466_null_null_Q_P_000315
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:27.712 
+Cache remove... key:/caches/9F25204A127ABBA84A10F5598825B065/9F25204A127ABBA84A10F5598825B065_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:27.810 
+查询user info 耗时：5
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:27.900 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:31.238 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:31.524 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:31.524 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:31.649 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:32.185 
+查询user info 耗时：8
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:32.202 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:32.636 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:32.764 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:32.893 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.012 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.159 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.299 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.409 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.418 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:33.443 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:34.202 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:34.335 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:38.969 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:39.063 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:39.131 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:39.131 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:39.131 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 21:56:39.131 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:39.231 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:39.678 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:56:40.310 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:59:06.851 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:59:07.001 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:59:10.996 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:59:12.056 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 21:59:12.309 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:00:05.592 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.794 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysFuncInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.794 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.795 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.795 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.795 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.795 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/trxData
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.795 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysQueryKey
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.796 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/reqPageType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.796 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/trxResult
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.796 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/trxMessage
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.796 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_P_000084_453016665_null_null_Q_P_000087
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.797 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_P_000084_-535614404_null_null_Q_P_000070
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.797 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_P_000084_0_-1023784400_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.797 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_P_000084_1_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:05.797 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_P_000084_0_1891736350_null_null_null
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:00:08.017 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:08.100 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:00:08.100 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:52.429 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.487 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.487 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:52.509 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.639 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.639 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/reCode
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.639 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.639 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/entryType
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/sess/FE8B1342E2A322C2D435B9360D501825/sysUserInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_1708290384_null_null_Q_P_000210
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_1988298466_null_null_Q_P_000315
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_0_19_null_null_null
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_1091688586_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_1708291315_null_null_Q_P_000301
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:52.640 
+Cache remove... key:/caches/FE8B1342E2A322C2D435B9360D501825/FE8B1342E2A322C2D435B9360D501825_F_-1281480931_null_null_Q_S_MENU_0001
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:52.752 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:52.818 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:56.511 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:56.756 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/sysFuncId
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:27:56.756 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:56.877 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:57.380 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:57.394 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:57.753 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:57.924 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.022 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.130 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.239 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.352 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.451 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.467 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:58.518 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:59.127 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:27:59.299 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:08.375 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:08.467 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:28:08.521 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/sysPageIndex
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:28:08.521 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/sysPageInfo
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:28:08.521 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/sysPageTotal
+[End]
+[Start] [system] [sys_session_id] DEBUG 2015-11-21 22:28:08.521 
+Cache remove... key:/sess/06F637DF4BCCC36F27178EF6113E4FDC/reqPageType
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:08.616 
+查询user info 耗时：1
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:09.078 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:09.623 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:44.189 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:44.351 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:45.510 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:45.938 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:46.139 
+查询user info 耗时：0
+[End]
+[Start] [system] [sys_session_id] ERROR 2015-11-21 22:28:46.623 
+查询user info 耗时：1
+[End]

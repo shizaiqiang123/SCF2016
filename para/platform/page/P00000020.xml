@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000020</id>
+	<name>应收账款主交易信息管理</name>
+	<desc>主交易信息管理</desc>
+	<jspfile>screen/page4.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>Y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<!-- <pagetype>Add</pagetype> -->
+	<istransaction>Y</istransaction>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>TRX.T_FINA_M</maintable>
+ 	<!--  <queryid>Q00000002</queryid>
+	<logicid>L00000002</logicid>
+	<gapi>G00000001</gapi>
+	<service>S00000002</service>
+	<report>R00000002 </report>-->
+</page>

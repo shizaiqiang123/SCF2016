@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000119</id>
+    <name>查询监管方信息小页</name>
+    <type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000425</target>
+</inqdata>

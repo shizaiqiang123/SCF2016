@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.CBK_REG_M</maintable>
+    <desc>国内买方保理-贷项清单</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000887</id>
+    <name>国内买方保理-贷项清单</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/invc/invcCdnSel.jsp</jspfile>
+    <logicid>L_P_000595</logicid>
+</page>

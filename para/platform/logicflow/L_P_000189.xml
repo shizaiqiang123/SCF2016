@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>回执单更新打印次数</desc>
+    <id>L_P_000189</id>
+    <name>回执单更新打印次数</name>
+    <transforSize>0</transforSize>
+    <nodeSize>1</nodeSize>
+	<module>Comm</module>
+	<doname></doname>
+    <lnode>
+        <desc>回执单更新打印次数</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>commManagerRecord</component>
+        <tablename>TRX.LOAN_M</tablename>
+        <name>修改基础利率</name>
+        <cascadeevent>Y</cascadeevent>
+        <nodejs>L_P_000061.js</nodejs>	
+    </lnode>
+</logicflow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_TEST_00001</id>
+	<workid>802</workid>
+	<workname>测试申请流程</workname>
+	<name>国内保理业务测试AP工作流</name>
+	<desc>国内保理业务功能工作流</desc>
+	<jspath>W_TEST_00001.js</jspath>
+	<areacode>branch id 1</areacode>
+</workflow>

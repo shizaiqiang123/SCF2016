@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>审核注册签约查询catalogM</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000240</id>
+    <name>审核注册签约查询catalogM</name>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/supplier/supplierQueryRegistCatalogCatalog.jsp</jspfile>
+    <maintable>TRX.CUST_M</maintable> 
+</page>

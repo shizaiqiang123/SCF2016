@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <desc>找回密码页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000206</id>
+        <name>找回密码页面</name>
+        <index>0</index>
+    </page>
+    <page>
+        <desc>输入密码页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000212</id>
+        <name>输入新密码页面</name>
+        <index>1</index>
+        <pagetype>EDIT</pagetype>
+        <maincomp>TrxMasterManager</maincomp>     
+    </page>
+  <!--   <page>
+		<id>P_S_000003</id>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page> -->
+    <pagesSize>1</pagesSize>
+    <desc>找回密码</desc>
+    <id>F_P_000312</id>
+    <name>找回密码</name>
+    <functype>MM</functype>
+</function>

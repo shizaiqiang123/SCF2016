@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000525</id>
+	<name>预付类融资明细查询</name>
+	<desc>预付类融资明细查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>LoanM a,BillM c</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields>cntrctNo,selNm,loanTp,ccy,ttlLoanAmt,ttlLoanBal,loanValDt,loanDueDt,billNo,billAmt,billValDt,billDueDt,billRecp,billRecpAcno</fields>
+		<condition>a.sysRefNo = '$sysRefNo$' and a.sysRefNo = c.loanId</condition>
+		<orderby>a.sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql>select a.cntrctNo,a.selNm,a.loanTp,a.ccy,a.ttlLoanAmt,a.ttlLoanBal,a.loanValDt,a.loanDueDt,c.billNo,c.billAmt,c.billValDt,c.billDueDt,c.billRecp,c.billRecpAcno from LoanM a,BillM c</sql>
+	</qnode>	
+</query>

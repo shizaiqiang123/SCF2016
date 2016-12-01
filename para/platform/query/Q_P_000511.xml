@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000511</id>
+	<name>View History</name>
+	<desc>View History</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询E表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_E</tablename>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[id.sysRefNo = $sysRefNo$ and (sysTrxSts = M or sysTrxSts = P)]]></condition>
+		<orderby>id.sysEventTimes</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000865</id>
+	<name>利息查询信息</name>
+	<desc>利息查询信息</desc>
+	<jspfile>screen/invc/intNoteDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.INT_M</maintable>
+</page>

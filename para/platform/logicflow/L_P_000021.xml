@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000021</id>
+	<name>保理商信息添加</name>
+	<desc>保理商信息添加</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddDoRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddDoRecord</component>
+		<tablename>STD.FACTOR_PRODUCT</tablename>
+		<doname>productId</doname>
+		<condition>factorId =?</condition>
+		<params>sysRefNo</params>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs></nodejs>
+	</lnode> 
+	<lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddRecord</component>
+		<tablename>STD.STD_ORG_INFO</tablename>
+		<doname>instInfo</doname>
+		<condition>orgOwnerid =?</condition>
+		<params>sysRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

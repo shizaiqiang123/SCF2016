@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000061</id>
+    <desc>BatchRoot弹出的Batch小页</desc>
+    <name>Batch小页</name>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <target>P_P_000193</target>
+    <type>P</type>
+</inqdata>
+

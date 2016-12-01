@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000015.js</js>
+    <grouptp>1</grouptp>
+    <type>S</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于某日办理的先票款后货——订单登记，授信客户名称$selNm$，订单编号$poNo$，订单数量$poNum$，订单金额$poAmt$，币种$poCcy$，未通过复核，原因：$sysRelReason$。【SCF基线平台】&lt;/p&gt;
+</content>
+    <id>Adv000132</id>
+    <title>先票款后货--订单登记未通过内部授权</title>
+    <remindtp>1</remindtp>
+    <name>先票款后货--订单登记复核不通过(站内信)</name>
+    <senddt>2016-09-08</senddt>
+</advice>
+ 

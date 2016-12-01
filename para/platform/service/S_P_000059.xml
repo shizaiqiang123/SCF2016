@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <type>GAPI</type>
+    <id>S_P_000059</id>
+    <component></component>
+    <name>核心记融资帐</name>
+   	<trigger>M</trigger>
+   	<gapiid>s2b8200</gapiid>
+   	<methodname>viewServiceData</methodname>
+</service>

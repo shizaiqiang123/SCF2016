@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000491</id>
+	<module>池融资间接还款</module>
+	<name>池融资间接还款</name>
+	<desc>池融资间接还款</desc>
+	<functype>PM</functype>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>池融资间接还款的协议信息查询</name>
+		<desc>池融资间接还款的协议信息查询</desc>
+		<catalog>C_P_000675</catalog><!-- cntrct_m表与sbr表联合查询到协议 -->
+	</page>
+	<page>
+		<id>P_P_000853</id>
+		<index>1</index>
+		<name>池融资间接还款</name>
+		<desc>池融资间接还款</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000018.js</accountingjs>
+	</page> --> 	
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	 <workflow>W_P_00044</workflow>
+</function>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000027</id>
+    <name>同步融资余额</name>
+    <component>BatchLzSyncLoanBalanceProcessor</component>
+    <desc>message</desc>
+     <trxdatapara>
+        <paraTp></paraTp>
+        <paraId>100</paraId>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        <paraPath></paraPath>
+        <paraName></paraName>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

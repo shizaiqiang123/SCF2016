@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd HH:mm:ss,SSS\} %-5p] [%t] %c{2\} - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="DEBUG" />
+			<param name="levelMax" value="ERROR" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+	</appender>
+	<appender name="userInfoAppender"
+		class="com.ut.comm.log.log4j.SCFDailyRollingFileAppender">
+		<param name="byUser" value="true" />
+		<param name="fileName" value="info.log" />
+		<param name="Append" value="true" />
+		<param name="logLevel" value="user" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="userErrorAppender"
+		class="com.ut.comm.log.log4j.SCFDailyRollingFileAppender">
+		<param name="byUser" value="true" />
+		<param name="fileName" value="error.log" />
+		<param name="Append" value="true" />
+		<param name="logLevel" value="user" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="userSQLAppender"
+		class="com.ut.comm.log.log4j.SCFDailyRollingFileAppender">
+		<param name="byUser" value="true" />
+		<param name="fileName" value="sql.log" />
+		<param name="Append" value="true" />
+		<param name="logLevel" value="user" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] [%s] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="systemAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="system.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] [%t] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="batchAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="batch.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="adviceAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="advice.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+	<appender name="serviceAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="service.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+
+	<appender name="gapiAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="gapi.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+
+	<appender name="esbAppender" class="com.ut.comm.log.log4j.SCFRollingFileAdppender">
+		<param name="fileName" value="esb.log" />
+		<param name="logLevel" value="syst" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="com.ut.comm.log.log4j.SCFLogPatternLayout">
+			<param name="ConversionPattern"
+				value="[Start] [%b] [%u] %p %d{yyyy-MM-dd HH:mm:ss.SSS} %n%m%n[End]%n" />
+		</layout>
+	</appender>
+
+	<logger name="userInfolog">
+		<level value="DEBUG" />
+		<appender-ref ref="userInfoAppender" />
+	</logger>
+	<logger name="userErrorlog">
+		<level value="DEBUG" />
+		<appender-ref ref="userErrorAppender" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="userSQLlog">
+		<level value="DEBUG" />
+		<appender-ref ref="userSQLAppender" />
+	</logger>
+	<logger name="buSyslog">
+		<level value="DEBUG" />
+		<appender-ref ref="systemAppender" />
+	</logger>
+	<logger name="Batch">
+		<level value="DEBUG" />
+		<appender-ref ref="batchAppender" />
+	</logger>
+
+	<logger name="adviceLogger">
+		<level value="DEBUG" />
+		<appender-ref ref="adviceAppender" />
+	</logger>
+
+	<logger name="serviceLog">
+		<level value="DEBUG" />
+		<appender-ref ref="serviceAppender" />
+	</logger>
+
+	<logger name="GAPILogger">
+		<level value="DEBUG" />
+		<appender-ref ref="gapiAppender" />
+	</logger>
+
+	<logger name="ESBMessage">
+		<level value="DEBUG" />
+		<appender-ref ref="esbAppender" />
+	</logger>
+	
+	<logger name="org.hibernate.SQL">
+		<level value="DEBUG" />
+		<appender-ref ref="userSQLAppender" />
+	</logger>
+	<logger name="org.hibernate.type">
+		<level value="DEBUG" />
+		<appender-ref ref="userSQLAppender" />
+	</logger>
+
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="systemAppender" />
+	</root>
+</log4j:configuration>

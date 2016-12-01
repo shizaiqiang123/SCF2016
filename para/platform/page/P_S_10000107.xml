@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000107</id>
+	<name>用户信息</name>
+	<desc>用户信息页面</desc>
+	<jspfile>jsp/user/editUser.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.USER_INFO_M</maintable>
+	<pagejs>L_P_000009.js</pagejs>
+</page>

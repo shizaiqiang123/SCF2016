@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000012</id>
+	<module>新增合作方信息</module>
+	<name>新增合作方</name>
+	<desc>合作方管理-新增合作方</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_P_000010</id>
+		<index>0</index>
+		<name>新增用户</name>
+		<desc>新增用户页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+		<!-- <logicid>L_P_000001</logicid> -->
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

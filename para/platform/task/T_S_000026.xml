@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000026</id>
+    <name>同步账号流水</name>
+    <component>BatchLzSyncAccountRefNoProcessor</component>
+    <desc>message</desc>
+     <trxdatapara>
+        <paraTp></paraTp>
+        <paraId>100</paraId>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        <paraPath></paraPath>
+        <paraName></paraName>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

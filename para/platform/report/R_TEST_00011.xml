@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<id>R_TEST_00011</id>
+	<name>应收账款发生额统计</name>
+	<desc>应收账款发生额统计</desc>
+	<type>P</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>pdf</reporttype><!-- docx,excl,csv -->
+	<template>应收账款发生额.rptdesign</template>
+	<!-- <outputtype>F</outputtype>F:file G:gapi M:mail S:SFTP -->
+	<output>G_TEST_00001</output>
+	<js></js>
+	<datasourcetype>db</datasourcetype><!-- db,json -->
+	<datasource>jdbc/scfdev</datasource>
+</report>

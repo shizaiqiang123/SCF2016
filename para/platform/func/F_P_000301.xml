@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000301</id>
+	<module>Test</module>
+	<name>应收账款余额统计</name>
+	<desc>应收账款余额统计</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_P_000192</id>
+		<index>1</index>
+		<name>应收账款发生额统计</name>
+		<desc>应收账款发生额统计</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<service>
+        <id>S_P_000045</id>
+    </service>
+</function>

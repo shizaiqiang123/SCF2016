@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000490</id>
+	<name>查询BillM</name>
+	<desc>查询BillM</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.BILL_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>loanId = $loanId$ and billNo like $billNo$ and sysTrxSts = M and sysLockFlag = F
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<params></params>
+	</qnode>
+</query>

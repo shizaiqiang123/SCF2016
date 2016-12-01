@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.CNTRCT_TEMP</maintable>
+    <desc>新增协议文本</desc>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000246</id>
+    <name>新增协议文本</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen\cntrct\addCntrctModel.jsp</jspfile>
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+	<id>B_S_00002</id>
+	<name>测试Batch2</name>
+	<desc>自动开始日初操作</desc>
+	<type>A</type>
+	<schedule>
+		<scheduletype />
+		<checkholiday>Y</checkholiday>
+		<beginfrom />
+		<terminativedate />
+		<hour />
+		<minute />
+		<second />
+		<condition>N</condition>
+		<bybu>Y</bybu>
+		<express>*/10 * * * * ?</express>
+		<initialize>E</initialize>
+	</schedule>
+	<!-- <beforetasks> <task> <id>T_S_00001</id> <name>测试0001</name> </task> 
+		</beforetasks> -->
+	<task>
+		<id>T_S_00002</id>
+		<name>测试0002</name>
+	</task>
+	<!-- <aftertasks> <task> <id>T_S_00003</id> <name>测试0003</name> </task> 
+		</aftertasks> -->
+</batch>

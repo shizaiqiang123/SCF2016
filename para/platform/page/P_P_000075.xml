@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000075</id>
+	<name>添加客户账号页面</name>
+	<desc>添加客户账号页面</desc>
+	<jspfile>screen/factorCust/factorCustAcno.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+<!-- 	<maintable>TRX.CUST_M</maintable> -->
+</page>

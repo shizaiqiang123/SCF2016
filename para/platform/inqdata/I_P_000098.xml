@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000098</id>
+    <desc>回执单打印</desc>
+    <name>回执单打印</name>
+    <type>S</type>
+    <target>S_P_000058</target>
+</inqdata>

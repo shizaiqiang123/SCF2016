@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00011</id>
+	<workid>1311</workid>
+	<workname>Balanceout</workname>
+	<name>账户资金划转申请</name>
+	<desc>账户资金划转申请</desc>
+	<jspath>W_P_00011.js</jspath>
+</workflow>

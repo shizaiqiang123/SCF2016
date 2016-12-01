@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <pagesSize>3</pagesSize>
+    <desc>修改Workflow</desc>
+    <transactionPage>1</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000171</id>
+    <name>修改Workflow</name>
+    <functype>PA</functype>
+    <page>
+        <desc>筛选Workflow页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选Workflow</name>
+        <index>0</index>
+        <catalog>C_P_000205</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+    <page>
+        <desc>Workflow页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000138</id>
+        <name>Page页面</name>
+        <index>1</index>
+        <pagetype>paraEdit</pagetype>
+    </page>
+    <page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+    </page>
+</function>

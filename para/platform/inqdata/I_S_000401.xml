@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_S_000401</id>
+	<name>邮件发送</name>
+	<desc>邮件发送</desc>
+	<type>S</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>Email</target>
+</inqdata>

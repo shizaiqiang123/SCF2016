@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_S_000009</id>
+		<module>SYST</module>
+		<name>新增网点</name>
+		<desc>新增网点</desc>
+		<functype>MM</functype>
+	<page>
+		<id>P_S_000005</id>
+		<index>0</index>
+		<name>新增网点页面</name>
+		<desc>新增网点页面</desc>
+		<maincomp>TrxMasterManager</maincomp>
+		<pagetype>ADD</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

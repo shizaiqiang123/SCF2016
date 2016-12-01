@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000110</id>
+	<name>贷项清单 应收账款查询</name>
+	<desc>贷项清单 应收账款查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>InvcCbk a ,InvcM b</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>cntrctNo,sysRefNo,selId,buyerId,invCcy,invNo,invDt,invValDt,invDueDt,dueDt,invAmt,acctAmt,invBal,invBalHD,loanPerc,invLoanAval,invLoanAvalHD,invLoanBal,invCrnBal,buyerNm,chgBcAmt,invId</fields>
+		<condition>a.invId = b.sysRefNo and a.trxId = '$trxId$'</condition>
+		<orderby>a.sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql>select b.cntrctNo,b.sysRefNo,b.selId,b.buyerId,b.invCcy,b.invNo,b.invDt,b.invValDt,b.invDueDt,b.dueDt,b.invAmt,b.acctAmt,a.invBal,b.invBal as invBalHD,b.loanPerc,a.invLoanAval,b.invLoanAval as invLoanAvalHD,b.invLoanBal,a.invCrnBal ,a.buyerNm ,a.chgBcAmt,a.invId from InvcCbk a,InvcM b </sql>
+	</qnode>	
+</query>

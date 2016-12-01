@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000551</id>
+	<module>贷项清单申请</module>
+	<name>贷项清单申请退回</name>
+	<desc>贷项清单应收账款</desc>
+	<functype>FP</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000451</catalog>
+	</page>
+	<page>
+        <id>P_P_000254</id>
+    </page> 
+</function>

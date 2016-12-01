@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000108</id>
+	<name>修改密码菜单</name>
+	<desc>修改密码菜单页面</desc>
+	<jspfile>jsp/user/UpdateUserPwd.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.USER_PWD</maintable>
+	<pagejs>L_P_000008.js</pagejs>
+</page>

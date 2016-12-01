@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>协议信息</desc>
+    <id>P_P_000849</id>
+    <name>协议信息</name>
+    <jspfile>screen/cntrct/cntrctHomePagePool.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable>	
+</page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000031</id>
+    <name>应收账款到期预警</name>
+    <component>batchInvcDueARAlarmProcessor</component>
+    <desc>message</desc>
+     <trxdatapara>
+        <para>5</para><!-- 提前5个工作日提示 -->
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>  
+</task>

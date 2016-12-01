@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000301</id>
+	<name>用户业务数据展示信息查询</name>
+	<desc>用户业务数据展示信息查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.COM_BUSI_MSG</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>S</type>
+		<condition></condition>
+		<cascadeevent>N</cascadeevent>
+		<fields>userId,userNm,funId,funNm,funPath,funTitle,funUrl,userFunType,userQueryId,btnNm</fields>
+		<params>$userId$</params>
+		<sql>SELECT c.userId,c.userNm,a.funId,a.funNm,a.funPath,a.funTitle,a.funUrl,b.userFunType,a.userQueryId,a.btnNm FROM ComBusiMsg a,UserComfInfo b,UserInfoM c WHERE c.userId=b.userId and b.funId= a.funId and b.userFunType='2' and c.userId=? </sql>
+	</qnode>
+</query>

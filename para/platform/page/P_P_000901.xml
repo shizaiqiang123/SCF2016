@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.BAIL_PAY_M</maintable>
+    <desc>仓单-追加保证金</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000901</id>
+    <name>仓单-追加保证金</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/addMargin/addGodownMargin.jsp</jspfile>
+    <logicid>L_P_000605</logicid>
+</page>

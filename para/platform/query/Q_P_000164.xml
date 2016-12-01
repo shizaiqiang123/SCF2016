@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000164</id>
+	<name>查询还款子表</name>
+	<desc>查询还款子表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_COLLA</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition></condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql>select a from CustColla a where trxId = ?
+		</sql>
+		<params>$trxId$</params>
+	</qnode>
+</query>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000650</id>
+	<name>卖方信息查询页面</name>
+	<desc>卖方信息查询页面</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent></cascadeevent>
+		<fields></fields>
+		<condition>selId like %$selId$% and selNm like %$selNm$% and buyerId = $buyerId$ and sysTrxSts = M and sysLockFlag = F</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>N</asc>
+		<sql />
+	</qnode>
+</query>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000650</id>
+	<name>卖方信息查询页面</name>
+	<desc>卖方信息查询页面</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_SBR_M,TRX.CNTRCT_SBR_M</tablename>
+		<doname></doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>selId like $selId$ and selNm like %$selNm$% and buyerId = $buyerId$ and sysTrxSts = M and sysLockFlag = F</condition>
+		<orderby>sysRefNo</orderby>
+		<params>$selId$,$selNm$,$buyerId$</params>
+		<sql>select a.sel_Id,a.sel_Nm from TRX.CNTRCT_SBR_M a left join TRX.CNTRCT_SBR_M b on a.sys_Ref_No = b.sys_ref_no and a.sel_Id like '$selId$' and a.sel_Nm like '%$selNm$%' and a.buyer_Id = '$buyerId$' and a.sys_Trx_Sts = 'M' and a.sys_Lock_Flag = 'F'</sql>
+		<fields>selId,selNm</fields>
+		<asc>N</asc>
+	</qnode>
+</query> -->

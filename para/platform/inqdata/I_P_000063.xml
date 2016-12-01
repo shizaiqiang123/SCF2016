@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000063</id>
+    <desc>登录修改密码逻辑流</desc>
+    <name>登录修改密码逻辑流</name>
+    <target>L_P_000161</target>
+    <type>L</type>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+</inqdata>

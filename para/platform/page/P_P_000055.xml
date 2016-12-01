@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000055</id>
+	<name>商品页面</name>
+	<desc>商品页面</desc>
+	<jspfile>screen/goods/goodsTaca.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.STD_GOODS_CATA</maintable>
+</page>

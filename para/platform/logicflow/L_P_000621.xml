@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000621</id>
+	<name>内网--放款出账</name>
+	<desc>内网--放款出账</desc>
+	<module>内网--放款出账</module>
+	<transfornode>
+		<id>N00000001</id>
+		<name>放款出账</name>
+		<desc>放款出账</desc>
+		<module>放款出账</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields></fields>
+		<doname>invc</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>invSts</fields>
+			<values>$invSts$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000012.js</nodejs>
+	</transfornode>
+</logicflow>

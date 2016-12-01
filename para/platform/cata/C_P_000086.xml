@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000086</id>
+	<name>保理商复核的信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>融资复核的协议信息Catalog</DESC>
+	<tablename>TRX.CUST_E</tablename>
+	<search>
+		<field datatype="1" title="组织机构代码" hidden="" width = "100">custInstCd</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "250" >custInstCd</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250">custNm</field>
+		<field datatype="1" title="序列号" hidden="" width = "250" >sysEventTimes</field>
+		<field datatype="1" title="交易流水号" hidden="" width = "250">sysRefNo</field>
+		</select>
+	<condition>
+		  custInstCd like %$custInstCd$% and custNm like %$custNm$% and sysTrxSts = P and custTp= 3
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

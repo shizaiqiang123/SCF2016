@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000668</id>
+	<name>质押类-融资在途删除的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>质押类-融 在途删除的协议信息Catalog</DESC>
+	<tablename>TRX.LOAN_E</tablename>	
+	<search>
+		<field datatype="1" title="放款编号" hidden="" width = "100">sysRefNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="放款编号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="保证金金额" hidden="true" width = "200">marginAmt</field>
+		<field datatype="1" title="融资起始日" hidden="true" width = "200">loanValDt</field>
+		<field datatype="1" title="融资到期日" hidden="true" width = "200">loanDueDt</field>
+		<field datatype="1" title="融资余额" hidden="true" width = "200">ttlLoanBal</field>
+		<field datatype="1" title="融资方式" hidden="true" width = "200">loanTp</field>
+		<field datatype="1" title="保证金账号" hidden="true" width = "200">marginAcNo</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200" >sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelId</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+		</select>
+	<condition>
+		 sysLockFlag = F and sysRefNo like %$sysRefNo$% and cntrctNo = %$cntrctNo$% and (busiTp = 4 or busiTp = 5) and (sysTrxSts = P or sysTrxSts = S) and sysBusiUnit=$sysBusiUnit$ and sysOrgId=$sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

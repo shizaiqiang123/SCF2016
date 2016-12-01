@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000316</id>
+    <name>业务数据展示额度查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>S</type>
+		<condition></condition>
+		<cascadeevent>N</cascadeevent>
+		<!-- 		<fields>应收账款总金额$CCY$,最大可融资额度$CCY$,当前可用融资额度$CCY$</fields> -->
+		<fields>应收账款总金额$CCY$,最大可融资额度$CCY$,当前可用融资额度$CCY$,融资余额$CCY$</fields>
+		<params>$userId$</params>
+		<sql>SELECT sum(c.arBal),sum(c.arAvalLoan),(sum(c.arAvalLoan))-(sum(c.openLoanAmt)),sum(c.openLoanAmt) from UserInfoM a,CntrctM c where a.userOwnerid =c.selId and a.userId=? </sql>
+	</qnode>
+</query>

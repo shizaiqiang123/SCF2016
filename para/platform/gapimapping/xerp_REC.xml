@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<bizCode path="XERP/HEAD">BIZCODE</bizCode>
+	<batchNo path="XERP/HEAD">BATCH_NO</batchNo>
+</trxDom>

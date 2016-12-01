@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000154</id>
+	<name>常用功能删除时个人信息删除</name>
+	<desc>常用功能删除时个人信息删除</desc>
+	<module></module>
+ 	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxDeleteDoRecord</component>
+		<tablename>STD.USER_COMF_INFO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<condition>funId = ?</condition>
+		<params>funId</params>
+	</lnode> 
+</logicflow>

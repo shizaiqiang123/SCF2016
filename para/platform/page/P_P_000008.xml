@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000008</id>
+	<name>关联信息页面</name>
+	<desc>关联信息页面</desc>
+	<jspfile>screen/cntrct/CntrctSbr.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CNTRCT_SBR_M</maintable>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00107</id>
+	<workid>1314</workid>
+	<workname>factorCust</workname>
+	<name>基础管理--客户新增</name>
+	<desc>基础管理--客户新增</desc>
+	<jspath>W_P_00014.js</jspath>
+</workflow>

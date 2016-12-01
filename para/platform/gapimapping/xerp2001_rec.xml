@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<bizCode path="XERP/HEAD">BIZCODE</bizCode>
+	<batchNo path="XERP/HEAD">BATCH_NO</batchNo>
+	<acNo path="XERP/BODY">RECE_ACC_NO</acNo>
+	<buyerAcNo path="XERP/BODY">PAYER_ACC_NO</buyerAcNo>
+	<amount path="XERP/BODY">AMOUNT</amount>
+</trxDom>

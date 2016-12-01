@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_10000105</id>
+	<module>CUST</module>
+	<name>复核用户</name>
+	<desc>用户管理-复核用户</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_100001021</id>
+		<index>0</index>
+		<name>修改用户</name>
+		<desc>修改用户筛选页面</desc>
+		<catalog>C_P_10000101</catalog>
+	</page>	
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核用户</name>
+		<desc>用户复核页面</desc>
+	</page>	
+</function>

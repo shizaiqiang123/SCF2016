@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00044</id>
+	<workid>1307</workid>
+	<workname>indirectPmtPool</workname>
+	<name>池融资_间接还款</name>
+	<desc>池融资_间接还款</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000341</id>
+    <desc>未结案应收账款查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>合格证查询</desc>
+        <name>合格证查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.CRTF_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>custNm,billNo,billAmt,billValDt,billDueDt,adviceNo,adviceDt,crtfNo,brandNo,chassisNo,engineNo,adviceAmt,releaseDt,adviceSts,releaseSts</fields>
+        <params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select t.custNm,
+                 m.billNo,
+                 m.billAmt,
+                 m.billValDt,
+                 m.billDueDt,
+                 m.adviceNo,
+                 m.adviceDt,
+                 m.crtfNo,
+                 m.brandNo,
+                 m.chassisNo,
+                 m.engineNo,
+                 m.adviceAmt,
+                 m.releaseDt,
+                 (case when m.adviceDt is null then '未送达' else '已送达' end) as adviceSts,
+                 (case when m.releaseDt is null then '未释放' else '已释放' end) as releaseSts
+            from CrtfM m, CustM t, CntrctM c
+           where m.selId = t.sysRefNo
+             and m.cntrctNo = c.sysRefNo
+             and m.selId = ?
+             and c.custBrId = ?
+             and to_char(m.adviceDt, 'yyyy-mm-dd') >= ?
+             and to_char(m.adviceDt, 'yyyy-mm-dd') <= ?
+              ]]></sql>
+    </qnode>
+    
+</query>

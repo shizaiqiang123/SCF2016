@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000436</id>
+	<name>客户在途删除Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>在途客户列表</DESC>
+	<tablename>TRX.CUST_E</tablename>
+	<search>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+		<field datatype="1" title="所属网点" defaultvalue="" width = "200">custBrId</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<!-- <field datatype="1" title="授信客户编号" hidden="" width = "100">sysRefNo</field> -->
+		<field datatype="1" title="授信客户名称" hidden="" width = "500">custNm</field>
+		<field datatype="1" title="所属网点" hidden="" width = "500">custBrId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition><![CDATA[sysLockFlag <>T and custBrId like %$custBrId$% and custNm like %$custNm$% and sysRefNo like %$sysRefNo$%  and (sysTrxSts=P or sysTrxSts=S) and (sysFuncId=F_P_000001 or sysFuncId=F_P_000002 or sysFuncId=F_P_000003) and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>
+

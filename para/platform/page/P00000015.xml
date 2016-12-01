@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000015</id>
+	<name>筛选管理</name>
+	<desc>筛选条件以进入交易</desc>
+	<jspfile>jsp/SYS_Catalog.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>CA</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxCatalogManager</maincomp>
+	<maintable>TRX.T_CNTRCT_M</maintable>
+<!-- 	<queryid>Q00000001</queryid>
+	<logicid>L00000002</logicid> -->
+</page>

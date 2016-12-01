@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <desc>新增协议文本</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <holdmaster>T</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000246</id>
+        <name>新增协议文本</name>
+        <index>0</index>
+        <lockcheck>N</lockcheck>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>trxMasterManager</maincomp>
+        <pagetype>ADD</pagetype>
+    </page>
+    <page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+    <desc>新增协议文本</desc>
+    <id>F_P_000370</id>
+    <name>新增协议文本</name>
+    <functype>MM</functype>
+</function>

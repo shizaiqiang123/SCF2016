@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000001</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxAddRecord</component>
+		<tablename>STD.STD_CUST_CL</tablename>
+		<doname></doname>
+		<type>E</type><!-- 类型 -->
+		<cascadeevent>N</cascadeevent>
+		<condition></condition>
+		<fields></fields>		
+		<params></params>
+		<sql></sql> 
+	</lnode>
+</logicflow>

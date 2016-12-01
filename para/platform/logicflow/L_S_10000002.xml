@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_S_10000002</id>
+	<name>角色信息</name>
+	<desc>角色信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxRoleMenuRecord</component>
+		<tablename>STD.STD_ROLE_INFO</tablename>
+		<doname></doname>
+		<type>E</type>				
+	</lnode>
+</logicflow>

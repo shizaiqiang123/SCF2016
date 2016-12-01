@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000002</id>
+	<module>修改客户</module>
+	<name>修改客户</name>
+	<desc>客户管理-修改客户</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<!-- <catalog>C_P_000002</catalog> -->
+		<catalog>C_P_000080</catalog>
+	</page>
+	<page>
+		<id>P_P_000001</id>
+		<index>1</index>
+		<name>修改客户</name>
+		<desc>修改客户页面</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+		<logicid>L_P_000025</logicid>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

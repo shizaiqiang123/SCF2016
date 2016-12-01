@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000774</id>
+	<name>应收账款转让(外网)退回处理</name>
+	<MODULE>SYST</MODULE>
+	 <jspfile>screen/catalog.jsp</jspfile> 
+	<DESC>应收账款转让(外网)退回处理</DESC>
+	<tablename>TRX.TRF_REG_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "14.28%">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "14.28%" >cntrctNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "14.28%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "14.28%" >selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "14.28%" >selNm</field>
+		<field datatype="1" title="转让金额" hidden="" width = "14.28%" >regAmt</field>
+		<field datatype="1" title="交易时间" hidden="" width = "14.28%"  formatter="dateFormater">trxDt</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition>
+	sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and cntrctNo like %$cntrctNo$% AND selId = $custId$ and ((sysTrxSts=S and sysLockFlag = F and sysFuncId = F_P_000922) or (confirmFlag = 0 and sysTrxSts = M and sysLockFlag = F))
+	</condition>
+	 <orderby>sysOpTm</orderby>
+</catalog>

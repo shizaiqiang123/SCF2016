@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>业务利率维护</desc>
+    <id>L_P_000169</id>
+    <name>业务利率维护</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+    <module>Comm</module>
+    <lnode>
+        <desc>修改业务利率</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>commManagerRecord</component>
+        <tablename>STD.STD_RT</tablename>
+        <name>修改基础利率</name>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+</logicflow>

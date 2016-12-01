@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000251</id>
+	<name>供应商融资协议申请</name>
+	<desc>供应商融资协议申请</desc>
+	<transaction>true</transaction>
+	<jspfile>screen/cntrct/applyLoanAgreement_company_add.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>T</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

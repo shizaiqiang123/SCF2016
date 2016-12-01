@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000105</id>
+	<name>明细查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>明细查询Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>
+	<search>
+		<field datatype="1" title="融资批次号" defaultvalue="" width = "200">sysRefNo</field>
+	
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+		
+		<field datatype="3" title="融资日期" defaultvalue="" width = "200">trxDt</field>
+		<!--  
+		<field datatype="3" title="指定到期日（方式1）" defaultvalue="" width = "200">advaDueDate</field>
+		
+		<field datatype="3" title="指定到期日（方式2）" defaultvalue="" width = "200">advaApplDueDate</field>
+		-->
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="融资批次号" hidden="" width = "200">sysRefNo</field>
+		<field datatype="1" title="融资日期" hidden="" width = "200">trxDt</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200">selNm</field>
+		<field datatype="1" title="本金余额" hidden="" width = "200">ttlLoanBal</field>
+		<field datatype="1" title="利率" hidden="" width = "200">loanRt</field>
+		<field datatype="1" title="应收利息" hidden="true" width = "200">intAmt</field>
+		<field datatype="1" title="融资总额" hidden="true" width = "200">ttlLoanAmt</field>
+		<field datatype="1" title="出资方" hidden="true" width = "200">investorName</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">busiTp</field>
+		<field datatype="1" title="" hidden="true" width = "200">ccy</field>
+		<field datatype="1" title="" hidden="true" width = "200">loanPct</field>
+		<field datatype="1" title="" hidden="true" width = "200">selId</field>
+		<field datatype="1" title="" hidden="true" width = "200">selAcNo</field>
+		<field datatype="1" title="" hidden="true" width = "200">investorName</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$%  and trxDt = $trxDt$   and selNm like %$selNm$% and sysTrxSts = M  and busiTp = 0 and sysBusiUnit =$sysBusiUnit$]]></condition>
+	<orderby>trxDt</orderby>
+</catalog>

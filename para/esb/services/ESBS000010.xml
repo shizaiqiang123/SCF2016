@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000010</id>
+	<name>Message</name>
+	<type>Message</type>
+	<protocol>messageServiceImpl</protocol>
+	<postadapter>messageAdapter</postadapter>
+	<queryadapter>messageQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

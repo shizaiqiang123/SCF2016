@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000555</id>
+	<module>Test</module>
+	<name>保证金余额同步</name>
+	<desc>保证金余额同步</desc>
+	<functype>VW</functype>
+	<page>
+        <desc>融资申请</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_P_000760</id>
+        <name>客户页面</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+    </page>
+	<page>
+		<id>P_P_000563</id>
+		<index>1</index>
+		<name>融资申请</name>
+		<desc>融资申请页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+</function>

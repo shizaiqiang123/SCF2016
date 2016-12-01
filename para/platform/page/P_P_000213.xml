@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>审核注册签约</desc>
+    <refsSize>0</refsSize>
+    <id>P_P_000213</id>
+    <name>审核注册签约</name>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/supplier/supplier.jsp</jspfile>
+    <maintable>TRX.CUST_M</maintable> 
+    <pagejs>L_P_000035.js</pagejs>
+	<logicid>L_P_000175</logicid>
+</page>

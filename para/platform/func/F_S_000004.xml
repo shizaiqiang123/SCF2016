@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_S_000004</id>
+		<module>SYST</module>
+		<name>查看流水号规则</name>
+		<desc>查看流水规则</desc>
+		<functype>VW</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_S_000001</catalog>
+	</page>
+	<page>
+		<id>P_S_000001</id>
+		<index>1</index>
+		<name>显示流水号规则页面</name>
+		<desc>显示流水号规则页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

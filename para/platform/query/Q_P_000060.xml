@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000060</id>
+	<name>商品大类查询</name>
+	<desc>商品大类查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_GOODS_CATA_TP</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>grade = 0</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000264</id>
+    <desc>额度查询</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <name>额度查询</name>
+    <jspfile>screen\cntrct\CustQueryLimit.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable> 
+<!-- 	<maintable>func</maintable> -->
+<!-- 	<queryid>Q_P_000202</queryid> -->
+	<!-- <logicid>L_P_000151</logicid>  -->
+</page>

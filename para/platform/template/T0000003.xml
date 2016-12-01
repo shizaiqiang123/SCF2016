@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000003</id>
+	<name>订单商品导入模板</name>
+	<desc>订单商品导入功能</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>Excel</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>订单批量导入模板.xlsx</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!--自定义逻辑 -->
+	<reformatclass>CollTemplateReformatImpl</reformatclass>	
+	<head name="Sheet1"></head>
+	<mapping name="Sheet1" beginRow="1" endRow="1280" beginColumn="0" endColumn="4">		
+			<mfield key="1" isnull="false" isunique="false" desc="品牌" type="java.lang.String" defaultvalue="">poBrand</mfield>
+			<mfield key="2" isnull="false" isunique="false" desc="型号" type="java.lang.String" defaultvalue="">poModel</mfield>
+			<mfield key="3" isnull="false" isunique="false" desc="单价" type="java.lang.Double" defaultvalue="0">poPrice</mfield>
+			<mfield key="4" isnull="false" isunique="false" desc="数量" type="java.lang.Int" defaultvalue="0">poNum</mfield>
+			<mfield key="5" isnull="false" isunique="false" desc="总金额" type="java.lang.Double" defaultvalue="0">ttlAmt</mfield>
+	</mapping>
+</template>

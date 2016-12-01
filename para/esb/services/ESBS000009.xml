@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000009</id>
+	<name>Image</name>
+	<type>Image</type>
+	<protocol>imageServiceImpl</protocol>
+	<postadapter>imageServicePostAdapter</postadapter>
+	<queryadapter>imageQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

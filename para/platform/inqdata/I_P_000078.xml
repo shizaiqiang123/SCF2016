@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000078</id>
+    <desc>获取验证码</desc>
+    <name>获取验证码</name>
+    <type>S</type>
+    <target>S_P_000047</target>
+</inqdata>

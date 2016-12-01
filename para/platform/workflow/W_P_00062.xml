@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00062</id>
+	<workid>1307</workid>
+	<workname>addGodownMargin</workname>
+	<name>仓单质押-保证金</name>
+	<desc>仓单质押-保证金</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

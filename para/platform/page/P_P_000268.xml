@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>融资额度调整申请</desc>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <!-- <pagejs>L_P_000054.js</pagejs> -->
+    <id>P_P_000268</id>
+    <name>融资额度调整申请</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/cntrct/editLoanAgreement.jsp</jspfile>
+    <pagetype>EDIT</pagetype>
+    <maintable>TRX.CNTRCT_M</maintable>
+    <pagejs>L_P_000035.js</pagejs>
+</page>

@@ -1,0 +1,10 @@
+<service>
+	<id>S000001</id>
+	<name>EDI</name>
+	<type>EDI</type>
+	<servicejs>S_P_00001</servicejs>
+	<component>ediService</component>
+	<gapiid>G0000001</gapiid>		<!-- 协议类型 -->
+	<!-- <rule>E000001</rule>
+	<rule>E000001</rule> -->
+</service>

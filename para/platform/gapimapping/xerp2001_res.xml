@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<XERP>
+	<BODY>
+		<RET_CODE path="trxDom">retCode</RET_CODE>
+		<RET_MSG path="trxDom">retMsg</RET_MSG>
+	</BODY>
+</XERP>
+

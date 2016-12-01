@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_0000204</id>
+	<name>争议解决申请-逻辑流</name>
+	<desc>争议解决申请-逻辑流</desc>
+	<module></module>
+	<transfornode>
+		<id>N00000005</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields></fields>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>dspAmt,fixRsn,dspFlag,invSts,cbkAmt</fields>
+			<values>$dspAmt$,$fixRsn$,$dspFlag$,15,$invBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_0000771.js</nodejs>
+	</transfornode>
+</logicflow>

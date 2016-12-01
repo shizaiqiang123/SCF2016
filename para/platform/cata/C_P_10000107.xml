@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000107</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>核心企业用户查询</DESC>
+	<tablename>STD.USER_INFO_M</tablename>
+	<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "200">userNm</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="用户类型" hidden="true" width = "150">userTp</field>
+		<field datatype="1" title="上次修改密码日期" hidden="true" width = "200">pwdEditDt</field>
+		<field datatype="1" title="保理商名称" hidden="true" width = "100">userOwnerid</field>
+		<field datatype="1" title="保理商编号" hidden="true" width = "100">busiUnit</field>
+	</select>
+	<condition>
+	userId like %$userId$% and userNm like %$userNm$% and userTp = 2 and sysTrxSts = M and busiUnit = $sysBusiUnit$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>报表公共查询页</desc>
+    <id>P_P_000403</id>
+    <name>协议信息</name>
+    <jspfile>screen/Report/reportHomePage.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable></maintable>	
+</page>

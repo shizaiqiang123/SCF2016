@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <id>F_P_000161</id>
+	<module>PARA</module>
+	<name>查询Function</name>
+	<desc>查询Function</desc>
+	<functype>PA</functype>
+    <page>
+        <desc>筛选Function页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选Function</name>
+        <index>0</index>
+        <catalog>C_P_000206</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+	<page>
+		<transaction>false</transaction>
+        <refsSize>0</refsSize> 
+        <nodeName>page</nodeName>
+        <id>P_P_000085</id>
+		<index>1</index>
+		<name>Function页面</name>
+		<desc>展现Function参数内容</desc>
+		<pagetype>View</pagetype> 
+	</page>
+</function>

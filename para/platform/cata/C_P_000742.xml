@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000742</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>买方保理-融资申请在途删除</DESC>
+	<tablename>TRX.LOAN_E</tablename>
+	<search>
+		<field datatype="1" title="融资编号" defaultvalue="" width = "200">sysRefNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="融资编号" hidden="" width = "25%" >sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="交易批次" hidden="true" width = "150">sysEventTimes</field>
+		<field datatype="1" title="业务类型" hidden="true" width = "100" formatter="busiTpFormater">busiTp</field>
+		<field datatype="1" title="借款金额" hidden="" width = "25%" formatter="ccyFormater">ttlLoanAmt</field>
+		<field datatype="1" title="授信模式" hidden="true" width = "">serviceReq</field>
+		<field datatype="1" title="币种" hidden="true" width = "">ccy</field>
+		<field datatype="1" title="invloanbal" hidden="true" width = "">ttlLoanBal</field>
+		<field datatype="1" title="invloanbal" hidden="true" width = "">selAcNo</field>
+		<field datatype="1" title="正常利率" hidden="true" width = "200">loanRt</field>
+		<field datatype="1" title="费率" hidden="true" width = "200">finChgrt</field>
+		<field datatype="1" title="交易日期" hidden="true" width = "200">trxDt</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "200">sysBusiUnit</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "200">payIntTp</field>
+		<field datatype="1" title="协议号" hidden="true" width = "200">cntrctNo</field>
+
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelId</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$%  and (sysTrxSts=S or sysTrxSts=P) and sysLockFlag = F and sysFuncId = F_P_000781 and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <desc>三方保兑仓--订单录入确认退回内网</desc>
+    <id>F_P_000986</id>
+    <name>三方保兑仓--订单录入确认退回内网</name>
+    <functype>FP</functype>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000533</catalog>
+	</page>
+	<page>
+        <id>P_P_000254</id>
+    </page> 
+</function>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<trnid path="bocb2e/head">trnid</trnid>
+	<relatedRef path="bocb2e/trans/trn-b2e0272-rq/b2e0272-rq/scfp/transReturnData/acrcRepayRs">relatedRef</relatedRef>
+	<dataInfo
+		path="bocb2e/trans/trn-b2e0272-rq/b2e0272-rq/scfp/transReturnData/acrcRepayRs/acrcRepayApprvData/acrcRepayApprv"
+		loop="true" >
+		<repayApplyState path="acrcRepayApprv" loopPath="bocb2e/trans/trn-b2e0272-rq/b2e0272-rq/scfp/transReturnData/acrcRepayRs/acrcRepayApprvData">repayApplyState</repayApplyState>
+	</dataInfo>
+</trxDom>

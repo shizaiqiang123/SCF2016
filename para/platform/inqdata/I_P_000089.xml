@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000089</id>
+    <name>短信通知服务</name>
+    <type>S</type>
+    <target>S_P_000051</target>
+</inqdata>

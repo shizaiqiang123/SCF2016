@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000875</id>
+	<name>添加关联关系页面</name>
+	<desc>添加关联关系页面</desc>
+	<jspfile>screen/cntrct/addCntrctSelSbr.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+</page>

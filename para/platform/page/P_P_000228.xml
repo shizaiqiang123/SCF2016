@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>审核融资协议</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000228</id>
+    <jspfile>screen/cntrct/verifyLoanAgreement.jsp</jspfile>
+    <name>审核融资协议</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <pagetype>EDIT</pagetype>
+    <maintable>TRX.CNTRCT_M</maintable>
+    <pagejs>L_P_000055.js</pagejs>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00032</id>
+	<workid>1307</workid>
+	<workname>dispatchOut</workname>
+	<name>预付类-放货出库</name>
+	<desc>预付类-放货出库</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

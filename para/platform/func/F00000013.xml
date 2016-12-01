@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<func>
+	<catalog>
+		<id>CA00000003</id>
+		<name>EditCatalog</name>
+	</catalog>
+	<function>
+		<module>Test</module>
+		<desc>Test</desc>
+		<event>Test</event>
+		<id>F00000013</id>
+		<name>Edit Customer</name>
+		<desc>Edit Customer</desc>
+		<maincomp>TrxPendingManager</maincomp>
+		<functype>PM</functype>
+	</function>
+	<logicflows>
+		<logicflow>
+			<id>LF00000009</id>
+			<name>Edit Customer</name>
+		</logicflow>
+	</logicflows>
+</func>

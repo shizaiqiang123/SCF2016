@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000278</id>
+	<name>注册新供应商</name>
+	<desc>注册新供应商</desc>
+	<jspfile>jsp/reg_validate.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>T</holdmaster>
+	<istransaction>N</istransaction>
+</page>

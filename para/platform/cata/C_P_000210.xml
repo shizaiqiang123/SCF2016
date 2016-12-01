@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000210</id>
+	<name>间接客户额度明细查询的客户Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>客户Catalog</DESC>
+	<tablename>TRX.CUST_M</tablename>
+	<search>
+		<field datatype="1" title="间接客户编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="间接客户编号" hidden="" width = "14.28%">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "14.28%">custNm</field>
+		<field datatype="1" title="额度金额" hidden="" width = "14.28%" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="额度余额" hidden="" width = "14.28%" formatter="ccyFormater">lmtBal</field>
+		<field datatype="1" title="额度币种" hidden="" width = "14.28%" formatter="ccyFormater">ccy</field>
+		<field datatype="1" title="额度起始日期" hidden="" width = "14.28%" formatter="dateFormater">validDt</field>
+		<field datatype="1" title="额度到期日" hidden="" width = "14.28%" formatter="dateFormater">dueDt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition>
+		  custNm like %$custNm$% and sysRefNo like %$sysRefNo$% and custTp = 2 and sysBusiUnit =$sysBusiUnit$ and sysTrxSts = M and sysOrgId like $sysOrgId$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

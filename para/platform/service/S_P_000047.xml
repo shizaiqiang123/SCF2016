@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <servicejs>S_P_00008.js</servicejs>
+    <ruleSize>0</ruleSize>
+    <type>Verify</type>
+    <id>S_P_000047</id>
+    <component></component>
+    <name>验证码服务</name>
+    <methodname>viewServiceData</methodname>
+   <!--  <gapiid>b2e00083</gapiid> -->
+    <onsuccess>I_P_000094</onsuccess>
+</service>

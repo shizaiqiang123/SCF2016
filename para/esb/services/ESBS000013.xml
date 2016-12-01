@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+    <id>ESBS000013</id>
+    <name>Socket</name>
+    <type>Socket</type>
+    <protocol>imageServiceImpl</protocol>
+	<postadapter>imageServicePostAdapter</postadapter>
+	<queryadapter>imageQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000223</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<DESC>签约用户复核</DESC>
+	<tablename>TRX.CUST_E</tablename>
+	<search>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+		<field datatype="1" title="营业执照号码" defaultvalue="" width = "200">licenceNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="营业执照号码" hidden="" width = "300">licenceNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "350">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "350">custNm</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+	</select>
+	<condition><![CDATA[sysTrxSts = P  and sysLockFlag <>T and licenceNo like %$licenceNo$% and sysRefNo like %$sysRefNo$%  and custNm like %$custNm$% ]]></condition>
+	<orderby>licenceNo,custNm</orderby>
+</catalog>

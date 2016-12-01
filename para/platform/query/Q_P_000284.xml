@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000284</id>
+    <desc>额度查询ownerId</desc>
+	<name>额度查询ownerId</name>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>额度查询的ownerId</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc>Y</asc>
+		<sql/>
+		<condition>sysRefNo=$sysRefNo$</condition>
+		<params>$sysRefNo$</params>
+	</qnode>
+</query>

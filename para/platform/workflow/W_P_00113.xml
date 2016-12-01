@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00113</id>
+	<workid>1314</workid>
+	<workname>DongChanCntrct</workname>
+	<name>协议管理--动产质押</name>
+	<desc>协议管理--动产质押</desc>
+	<jspath>W_P_00014.js</jspath>
+</workflow>

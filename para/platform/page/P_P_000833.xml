@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>应收账款明细查询页</desc>
+    <id>P_P_000833</id>
+    <name>应收账款明细信息</name>
+    <jspfile>screen/Report/invcHomePage.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable></maintable>	
+</page>

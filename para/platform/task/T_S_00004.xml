@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <jspfile>screen/task/Task_T0004.jsp</jspfile>
+    <desc>SQL Execute Demo</desc>
+    <trxdatapara>
+        <paraTp/>
+        <paraId>100</paraId>
+        <paraPath/>
+        <paraName/>
+    </trxdatapara>
+    <catalog>C_P_000081</catalog>
+    <js>T0000001.js</js>
+    <nodeName>task</nodeName>
+    <id>T_S_00004</id>
+    <component>batchSQLExecutor</component>
+    <singlethread>Y</singlethread>
+    <name>SQL Execute</name>
+    <propertyBean>false</propertyBean>
+</task>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000200</id>
+	<name>合格证信息</name>
+	<desc>合格证更信息</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CRTF_M</tablename>
+		<doname>goodsList</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>refNo =?</condition>
+		<params>refNo</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_P_000086.js</nodejs> 
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>更新协议主表</name>
+		<desc>归还协议额度</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields></fields>
+		<doname></doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>ttlRegAmt</fields>
+			<values>$ttlRegAmt$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000140.js</nodejs>
+	</transfornode>
+</logicflow>

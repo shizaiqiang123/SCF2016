@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.CNTRCT_E</maintable>
+    <desc>融资协议申请</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000236</id>
+    <name>融资协议申请</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>trxViewManager</maincomp>
+    <jspfile>screen/cntrct/verifyLoanHistory.jsp</jspfile>
+    <pagetype>VIEW</pagetype>
+</page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000292</id>
+	<desc>供应商报表查成员企业</desc>
+	<name>供应商报表查成员企业</name>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<!-- <condition>licenceNo=$licenceNo$</condition> -->
+		<!-- <params>$sysRefNo$,$sysTrxSts$</params> -->
+		<orderby></orderby>
+		<fields>sysRefNo,custNm</fields>
+		<params>$sysRefNo$</params>
+		<tablename>TRX.CUST_M</tablename>
+		<sql><![CDATA[SELECT t.sysRefNo ,t.custNm from CustM t  where t.sysRefNo =?]]></sql>
+	</qnode>
+</query>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000001</id>
+	<name>测试导入模板</name>
+	<desc>测试应收账款导入功能</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>Excel</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>导出凭证.xml</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!-- 
+		
+	
+	
+	
+	 -->
+	<head name="Sheet1">
+		<mfield key="1,5" isnull="true" isunique="true" desc="文件号" type="java.lang.String" defaultvalue="">docno</mfield>
+		<mfield key="2,2" isnull="true" isunique="true" desc="模板编号" type="java.lang.String" defaultvalue="">fileno</mfield>		
+	</head>
+	<mapping name="Sheet2" beginRow="2" endRow="1280" beginColumn="0" endColumn="6">		
+			<mfield key="1" isnull="false" isunique="false" desc="合同号" type="java.lang.String" defaultvalue="">cntrctno</mfield>
+			<mfield key="2" isnull="false" isunique="false" desc="商品编号" type="java.lang.String" defaultvalue="">cldgdsid</mfield>
+			<mfield key="3" isnull="false" isunique="false" desc="商品名称" type="java.lang.String" defaultvalue="">cldgdsdes</mfield>
+			<mfield key="4" isnull="false" isunique="false" desc="单价" type="java.lang.Double" defaultvalue="0">cldprice</mfield>
+			<mfield key="5" isnull="false" isunique="false" desc="数量" type="java.lang.Double" defaultvalue="0">cldnum</mfield>
+			<mfield key="6" isnull="false" isunique="false" desc="单位" type="java.lang.String" defaultvalue="">cldunion</mfield>
+			<mfield key="7" isnull="false" isunique="false" desc="有效期" type="java.util.Date" defaultvalue="">cldduedate</mfield>
+	</mapping>
+</template>

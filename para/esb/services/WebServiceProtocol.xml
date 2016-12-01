@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<name>WebService Loan</name>
+	<type>WebService</type>
+	<protocol>
+		<inbound>
+			<pattern>request-response</pattern>
+			<address>mLoan</address>
+			<encoding>GB18030</encoding>
+			<serviceClass>com.ut.test.webservices.IMLoanInterface</serviceClass>
+		</inbound>
+	</protocol>
+	<logic_flow>
+		<component type="singleton-object">com.ut.test.webservices.impl.MLoanService</component>
+	</logic_flow>
+</esbservice>

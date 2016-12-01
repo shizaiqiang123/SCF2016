@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000208</id>
+	<name>常用功能查询</name>
+	<desc>常用功能查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>queryComf</component>
+		<tablename>STD.STD_MENU_INFO</tablename>
+<!-- 		<tablename>StdMenuInfo</tablename> -->
+		<doname></doname>
+		<type>C</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+<!-- 		<condition>menuId in (select menuId from StdRoleMenu  where roleId in(select roleId from UserRoleInfo  where userId in(select sysRefNo from UserInfoM d where userId=$userId$)))</condition> -->
+<!-- 		<condition>a.menuId=b.menuId and b.roleId = c.roleId and c.userId=d.sysRefNo and d.userId=?</condition> -->
+		<orderby></orderby>
+		<asc></asc>
+<!-- 		<sql>  -->
+<!-- 		select a from StdMenuInfo a , StdRoleMenu b , UserRoleInfo c , UserInfoM d    -->
+<!-- 		</sql> -->
+<!-- 		<params>$userId$</params> -->
+	</qnode>
+</query>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000026</id>
+	<name>LogicNode小页</name>
+	<desc>Logicflow页面中弹开LogicNode页面</desc>
+	<type>p</type>
+	<target>P_P_000141</target>
+</inqdata>

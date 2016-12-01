@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<desc>额度查询统计</desc>
+	<transaction>false</transaction>
+	<id>P_P_000262</id>
+	<transaction>false</transaction>
+	<refsSize>0</refsSize>
+	<name>测试报表功能</name>
+	<jspfile>screen/invc/queryLimitReport.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable>
+	<logicid></logicid>
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000424</id>
+	<index>1</index>
+	<name>融资应收账款查询页面</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/loan/queryBillList.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000351</queryid>
+</page>

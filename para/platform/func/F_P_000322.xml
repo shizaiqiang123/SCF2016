@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <name>成员企业信息维护</name>
+    <desc>成员企业信息维护</desc>
+    <module>成员企业信息维护</module>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000322</id>
+    <name>成员企业信息维护</name>
+</function>

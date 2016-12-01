@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000619</id>
+    <name>查询客户名称</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询利息E表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>
+		sysRefNo = $sysRefNo$
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>	
+</query>

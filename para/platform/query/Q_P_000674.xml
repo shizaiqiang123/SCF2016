@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000674</id>
+	<name>融资申请时查询协议下保证金余额</name>
+	<desc>融资申请时查询协议下保证金余额</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.BAIL_PAY_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>cntrctNo = $cntrctNo$ and sysLockFlag = F and sysTrxSts = M</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

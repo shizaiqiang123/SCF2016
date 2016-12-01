@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000821</id>
+	<name>价格调整台帐查询信息</name>
+	<desc>价格调整台帐查询信息</desc>
+	<jspfile>screen/invc/priceNoteDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.PRICE_GOODS_E</maintable>
+</page>

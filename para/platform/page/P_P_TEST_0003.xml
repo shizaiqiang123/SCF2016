@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_TEST_0003</id>
+	<name>Add New Windows</name>
+	<desc>Add New Windows</desc>
+	<jspfile>jsp/map/MapClick.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>PM</pagetype>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>TRX.T_CNTRCT_E</maintable>
+</page>

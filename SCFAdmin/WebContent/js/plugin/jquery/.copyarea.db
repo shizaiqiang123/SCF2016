@@ -1,0 +1,9 @@
+ClearCase CopyAreaDB|4
+vobs\FSSDB-FCSP_VOB\fssdb-fcsp_j2ee\src\FCSP\WebContent\corejs\jquery
+2
+5
+e:jquery.json.js|1|1454551a4a7|12b5|13ac0f3|3cb7eae7b3ca11e39cbde41f131e4b14|0
+c:jquery.ui.js|1|1454551a4b7|32f3c|2ef6bd77|4dce25fb5e9c4b82a54c83ddb741dc4d|0
+15:jquery-1.5.2.min.gzjs|1|1454551a4a7|74e8|de375293|a4ce982e186f4cb68ced7e3d74ef8768|0
+15:jquery-1.3.2.min.gzjs|1|1454551a498|4d04|23c56cd3|4b13b9979b674768a39937b4cad9b425|0
+15:jquery-1.8.3.min.gzjs|1|1454551a4a7|82b7|d8aba8d8|4ac6ad0845a9467bbeb26c61dee3d185|0

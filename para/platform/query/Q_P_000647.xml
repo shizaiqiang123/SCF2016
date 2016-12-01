@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000647</id>
+    <qnode>
+        <desc>应收账款查询</desc>
+        <condition>invNo = $invNo$ and buyerId=$buyerId$ and selId=$selId$ and cntrctNo = $cntrctNo$ and invLoanBal = 0 and invBal >0  and sysTrxSts = M  and invSts=1 and busiTp =$busiTp$</condition>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>componentClass</component>
+        <tablename>TRX.INVC_M</tablename>
+        <name>应收账款查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+    </qnode>
+    <name>国内买方保理-应收账款查询</name>
+    <nodeSize>1</nodeSize>
+</query>

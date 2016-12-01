@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000025</id>
+	<name>国内单笔保理--应收账款转让添加 查询发票转让信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内单笔保理--应收账款转让添加 查询发票转让信息Catalog</DESC>
+	<tablename>TRX.TRF_REG_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="间接客户ID" hidden="true" width = "25%">buyerId</field>
+		<field datatype="1" title="流水号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "25%">sellerInstCd</field>
+		<field datatype="1" title="是否收取费用" hidden="" width = "25%">isCollect</field>
+		<field datatype="1" title="币种" hidden="" width = "25%">ccy</field>
+	<!-- 	<field datatype="1" title="待转让笔数" hidden="" width = "25%">regNo</field>
+		<field datatype="1" title="待转让金额" hidden="" width = "25%">regAmt</field> -->
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysFuncId</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysOpId</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysOpTm</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysRelId</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysRelTm</field>
+	</select>
+	<condition>
+		buyerId = $custId$ and cntrctNo like %$cntrctNo$% and selNm like %$selNm$% and buyerNm like %$buyerNm$% and sysTrxSts = P and sysLockFlag = F and sysFuncId = F_P_000905 
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

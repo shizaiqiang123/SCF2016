@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000434</id>
+	<name>复核资金划转Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>复核资金划转Catalog</DESC>
+	<tablename>TRX.BALANCEOUT_E</tablename>
+	<search>
+		<field datatype="1" title="系统流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="流水号" hidden="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="true" width = "100" >cntrctNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200" >custNm</field>
+		<field datatype="1" title="转入账号" hidden="" width = "200" >inAccNo</field>
+		<field datatype="1" title="转出账号" hidden="" width = "200" >outAccNo</field>
+		<field datatype="1" title="转出金额" hidden="" width = "200" >outAmt</field>
+		<field datatype="1" title="" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "100">sysEventTimes</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and custNm like %$custNm$%  and sysTrxSts = P and sysBusiUnit=$sysBusiUnit$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

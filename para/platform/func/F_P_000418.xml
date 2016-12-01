@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>Test</module>
+    <page>
+        <desc>测试列表页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_S_000002</id>
+        <name>测试列表页面</name>
+        <catalog>C_P_000018</catalog>
+    </page>
+    <pagesSize>1</pagesSize>
+    <desc>测试001</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000418</id>
+    <autoassignSize>0</autoassignSize>
+    <name>测试001</name>
+    <functype>PM</functype>
+    <shortnm>测试001</shortnm>
+</function>

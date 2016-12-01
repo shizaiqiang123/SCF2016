@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000587</id>
+	<name>查询还款子表</name>
+	<desc>查询还款子表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_PMT_E</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields>sysRefNo,invRef,struLoanAmt,invNo,invCcy,invBal,invDueDt,invValDt,invLoanBal,invLoanAval,sysEventTimes,eventTimes,loanPerc</fields>
+		<params>$invPmtRef$,P</params>
+		<sql><![CDATA[select m.id.sysRefNo,m.invRef,m.struLoanAmt,m.invNo,t.invCcy,m.invBal,t.invDueDt,t.invValDt,m.invLoanBal,m.invLoanAval,t.sysEventTimes,m.eventTimes,t.loanPerc from InvcPmtE m ,InvcM t where m.invRef = t.sysRefNo and m.invPmtRef = ? and m.sysTrxSts = ?]]></sql>
+		<orderby>m.id.sysRefNo</orderby>
+		<asc>Y</asc>
+
+	</qnode>
+</query>

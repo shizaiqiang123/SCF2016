@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>供应商信息查询报表catalog</desc>
+    <id>P_P_000280</id>
+    <name>供应商信息查询报表catalog</name>
+    <jspfile>screen\cust\BuQueryCustCatalog.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>Trx.CUST_BUYER</maintable> 
+</page>

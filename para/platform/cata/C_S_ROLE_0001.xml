@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_ROLE_0001</id>
+	<name>Catalog</name>
+	<MODULE>角色</MODULE>
+	<jspfile></jspfile>
+	<DESC>角色筛选</DESC>
+	<tablename>STD.STD_ROLE_INFO</tablename>
+	<bybu>true</bybu>
+	<search>
+		<field datatype="1" title="角色编号" defaultvalue="" width = "200">roleId</field>
+		<field datatype="1" title="角色名称" defaultvalue="" width = "200">roleName</field>
+	</search>	
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="系统Key" hidden="true" width = "50%">sysRefNo</field>
+		<field datatype="1" title="角色编号" hidden="" width = "50%">roleId</field>
+		<field datatype="1" title="角色名称" hidden="" width = "50%">roleName</field>
+	</select>
+	<condition><![CDATA[roleId like %$roleId$% and roleName like %$roleName$% and roleType < $sysUserRole$ and roleType > 0 ]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

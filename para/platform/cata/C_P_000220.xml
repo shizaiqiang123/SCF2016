@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000220</id>
+	<name>常用功能管理Catalog</name>
+	<MODULE>常用功能管理Catalog</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>常用功能管理Catalog</DESC>
+	<tablename>std.COM_FUN</tablename>
+	<bybu>false</bybu>
+	<search>
+		<field datatype="1" title="功能编号" hidden="" width = "100">funId</field>
+		<field datatype="1" title="功能名称" hidden="" width = "100">funNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="功能流水号" hidden="" width = "25%" >sysRefNo</field>
+		<field datatype="1" title="功能编号" hidden="" width = "25%" >funId</field>
+		<field datatype="1" title="功能名称" hidden="" width = "25%">funNm</field>
+		<field datatype="1" title="功能路径" hidden="" width = "25%">funPath</field>
+	</select>
+	<condition>funId like %$funId$% and funNm like %$funNm$% </condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>输入新密码页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000212</id>
+    <name>输入新密码</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <maintable>STD.USER_PWD</maintable>
+    <logicid>L_P_000176</logicid>
+    <pagejs>L_P_000008.js</pagejs>
+    <jspfile>jsp/user/NewPassword.jsp</jspfile>
+</page>

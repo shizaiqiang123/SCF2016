@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000016</id>
+	<name>动产质押类-逻辑流</name>
+	<desc>动产质押类-逻辑流</desc>
+	<module>PO</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>COLLAT REG</name>
+		<desc>COLLAT REG</desc>
+		<module>COLLAT</module>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>TRX.PRICE_GOODS_M</tablename>
+		<doname>priceGoods</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_P_000101.js</nodejs>
+	</lnode>
+   <transfornode>
+		<id>N00000003</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST4</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.COLLAT_CH_M</tablename>
+		<fields></fields>
+		<doname>priceGoods</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,collatAdjDt,collatRdPrice,collatVal</fields>
+			<values>F,$updateDt$,$priceNew$,$poInAmt$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<type>E</type>
+		<fields>openLoanAmt</fields>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<release>
+			<fields>sysLockFlag,ttlLowPayNum,marginApplied,ttlRegAmt</fields>
+			<values>F,$ttlLowPayNum$,$marginApplied$,$ttlRegAmt$</values>
+		</release>
+		<nodejs>L_S_000003.js</nodejs>
+	</transfornode>
+</logicflow>

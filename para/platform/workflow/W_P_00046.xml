@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00046</id>
+	<workid>1307</workid>
+	<workname>invcCdnPool</workname>
+	<name>池融资_贷项清单</name>
+	<desc>池融资_贷项清单</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

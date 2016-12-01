@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000600</id>
+	<name>存货类货物出入库台账查询</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/SYS_Collat.jsp</jspfile>
+	<DESC>存货类货物出入库台账查询</DESC>
+	<tablename>TRX.COLLAT_CH_E c,TRX.CRTF_REG_M b,TRX.CNTRCT_M a</tablename>
+	<search>
+		<field datatype="1" title="客户名称" defaultvalue="" width = "200">selNm</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="监管方名称" defaultvalue="" width = "200">supervisorNm</field>
+		<field datatype="1" title="商品名称" defaultvalue="" width = "200">collatNm</field>
+		<field datatype="1" title="商品ID" defaultvalue="" width = "200">collatId</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<!-- <field datatype="1" title="交易流水号" hidden="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "200" >cntrctNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "200" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "200" >selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200" >selNm</field>
+		<field datatype="1" title="间接客户编号" hidden="true" width = "150" >buyerId</field>
+		<field datatype="1" title="间接客户名称" hidden="true" width = "150" >buyerNm</field>
+		<field datatype="1" title="贷项清单金额" hidden="" width = "200"  formatter="ccyFormater">ttlCbkAmt</field> -->
+		
+		<field datatype="1" title="业务日期" hidden="" width = "10.00%" alis = "sysOpTm" formatter="dateFormater">c.SYS_OP_TM</field>
+		<field datatype="1" title="商品编号" hidden="" width = "10.00%" alis = "collatId" >c.collat_Id</field>
+		<field datatype="1" title="商品名称" hidden="" width = "10.00%" alis = "collatNm">c.collat_Nm</field>
+		<field datatype="1" title="入库数量" hidden="" width = "10.00%" alis = "collatQty" >c.COLLAT_QTY</field>
+		<field datatype="1" title="出库数量" hidden="" width = "10.00%" alis = "collatOutQty">c.COLLAT_QTY-c.collat_Out_Qty</field>
+		<field datatype="1" title="货押协议编号" hidden="" width = "10.00%" alis = "cntrctNo">a.CNTRCT_NO</field>
+		<field datatype="1" title="客户名称" hidden="" width = "10.00%" alis = "selNm">a.sel_Nm</field>
+		<field datatype="1" title="业务类别" hidden="" width = "10.00%" formatter="busiTypeFormater" alis = "busiTp">a.BUSI_TP</field>
+		<field datatype="1" title="币种" hidden="" width = "10.00%" alis = "collatCcy">c.COLLAT_CCY</field>
+		<field datatype="1" title="最新认定价格" hidden="" width = "10.00%" alis = "collatRdPrice">c.COLLAT_RD_PRICE</field>
+		<field datatype="1" title="质押率" hidden="" width = "10.00%" alis = "fundRt" formatter="pectType">b.FUND_RT</field>
+		<field datatype="1" title="监管方名称" hidden="" width = "10.00%" alis = "regNm">b.reg_Nm</field>
+		<!-- <field datatype="1" title="仓库名称" hidden="" width = "10.00%" alis = "wareNm">b.WARE_NM</field> -->
+	</select>
+	<join>
+		<on seq="1"> c.reg_No = b.sys_Ref_No</on>
+		<on seq="2"> b.cntrct_No = a.sys_Ref_No</on>
+	</join>
+	<condition><![CDATA[a.sel_Nm like '%$selNm$%' and a.cntrct_No like '%$cntrctNo$%' and b.reg_Nm like '%$supervisorNm$%' and c.collat_Nm like '%$collatNm$%' and c.collat_Id like '%$collatId$%' and a.busi_Tp = 4 and b.sys_Trx_Sts ='M' and b.sys_Lock_Flag ='F' and c.sys_Lock_Flag ='F' and (c.loan_Flag <> '1' or c.loan_flag is null) and a.sys_Org_Id like $sysOrgId$% and b.sys_Org_Id like $sysOrgId$% and c.sys_Org_Id like $sysOrgId$%]]></condition>
+	 <orderby>c.sys_Op_Tm</orderby>
+</catalog>

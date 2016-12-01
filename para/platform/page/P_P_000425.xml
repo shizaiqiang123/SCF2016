@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000425</id>
+	<index>1</index>
+	<name>仓单质押新增协议查询仓库信息小页</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/cntrct/queryStorage.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+	<queryid>Q_P_000353</queryid>
+</page>

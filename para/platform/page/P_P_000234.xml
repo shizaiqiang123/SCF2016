@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <!-- <transaction>false</transaction>
+    <refsSize>0</refsSize> -->
+    <id>P_P_000234</id>
+	<name>还款历程查询</name>
+	<desc>还款历程查询</desc>
+	<jspfile>screen/pmt/pmtDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.PMT_E</maintable>
+</page>

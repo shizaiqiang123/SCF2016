@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.PMT_M</maintable>
+    <desc>仓单-客户还款</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000903</id>
+    <name>仓单-客户还款</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/pmt/godownPmt.jsp</jspfile>
+    <logicid>L_P_000607</logicid>
+</page>

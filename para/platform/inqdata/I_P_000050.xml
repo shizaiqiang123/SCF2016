@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000050</id>
+    <desc>toolbar上的通知查询小页</desc>
+    <name>通知预览查询</name>
+    <target>P_P_000187</target>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>P</type>
+</inqdata>

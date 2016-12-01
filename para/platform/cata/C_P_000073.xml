@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000073</id>
+	<name>追加保证金复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>追加保证金复核Catalog</DESC>
+	<tablename>TRX.BAIL_PAY_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "100">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "16.66%">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "16.66%">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "16.66%">buyerNm</field>
+		<field datatype="1" title="经销商名称" hidden="" width = "16.66%">selNm</field>
+		<field datatype="1" title="融资编号" hidden="" width = "16.66%">loanId</field>
+		<field datatype="1" title="追加保证金金额" hidden="" width = "16.66%" formatter="ccyFormater">bailPayAmt</field>
+		<field datatype="1" title="保证金余额" hidden="" width = "16.66%" formatter="ccyFormater">marginBal</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$% and cntrctNo like %$cntrctNo$% and sysTrxSts = P  and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>融资信息</desc>
+    <id>P_P_000415</id>
+    <name>融资信息</name>
+    <jspfile>screen/loan/loanHomePage.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.LOAN_M</maintable>	
+</page>

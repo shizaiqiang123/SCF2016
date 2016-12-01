@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000376</id>
+	<name>预付类—融资申请 票据查询</name>
+	<desc>预付类—融资申请 票据查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.BILL_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>billNo = $billNo$ and sysOrgId = $sysOrgId$</condition>
+		<orderby></orderby>
+		<asc>N</asc>
+		<sql/>
+	</qnode>
+</query>

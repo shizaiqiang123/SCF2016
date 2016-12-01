@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00015</id>
+	<workid>1315</workid>
+	<workname>GoodsOut</workname>
+	<name>放货出库</name>
+	<desc>放货出库</desc>
+	<jspath>W_P_00015.js</jspath>
+</workflow>

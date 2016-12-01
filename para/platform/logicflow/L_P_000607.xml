@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>仓单-客户还款</desc>
+    <id>L_P_000607</id>
+    <name>仓单-客户还款</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+    <transfornode>
+		<id>N00000001</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<fields>ttlLoanBal</fields>
+		<doname>doname</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>ttlLoanBal</fields>
+			<values>$ttlLoanBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000099.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname></doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>regLowestVal,openLoanAmt,theirRef,lmtCcy,lmtBal,lmtAmt,lmtRecover,lmtAllocate</fields>
+			<values>$numRegLowestVal$,$openLoanAmt$,$trxId$,$cntrctLmtCcy$,$cntrctLmtBal$,$cntrctLmtAmt$,$cntrctLmtRecover$,$cntrctLmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000118.js</nodejs>
+	</transfornode>
+</logicflow>

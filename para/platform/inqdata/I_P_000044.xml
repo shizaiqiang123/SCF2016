@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000044</id>
+    <desc>查询Report信息的请求</desc>
+    <name>Report查询请求</name>
+    <target>Report</target>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>S</type>
+</inqdata>

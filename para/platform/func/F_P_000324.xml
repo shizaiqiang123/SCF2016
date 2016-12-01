@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>注册申请审核</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <module>应收款融资</module>
+    <id>F_P_000324</id>
+    <name>注册申请审核</name>
+    <functype>PM</functype>
+<!--     <isValidCode>true</isValidCode> -->
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>审核签约用户</name>
+		<desc>审核签约用户筛选页面</desc>
+		<catalog>C_P_000222</catalog>
+	</page>	
+    <page>
+        <refsSize>0</refsSize>
+        <id>P_P_000213</id>
+        <pagetype>edit</pagetype>
+        <maincomp>TrxPendingManager</maincomp>        
+    </page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+	<service>
+        <id>S_P_000055</id>
+        <servicejs>S_P_00016.js</servicejs>
+        <trigger>M</trigger>
+    </service>
+</function>

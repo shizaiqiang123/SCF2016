@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000104</id>
+	<name>复核间接还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>复核间接还款Catalog</DESC>
+	<tablename>TRX.PMT_M</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "20%">sysRefNo</field>
+		<!-- <field datatype="1" title="间接客户名称" hidden="" width = "200">buyerNm</field>-->
+		<field datatype="1" title="授信客户名称" hidden="" width = "20%">selNm</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "20%">selId</field>
+		<field datatype="1" title="核销应收账款金额" hidden="" width = "20%">verPmtAmt</field>
+	</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$%  and buyerNm like %$buyerNm$%  and selNm like %$selNm$% and sysTrxSts = P  and pmtTp = 2
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

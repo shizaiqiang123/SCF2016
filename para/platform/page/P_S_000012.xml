@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000012</id>
+	<name>账务公共页面</name>
+	<desc>账务公共页面</desc>
+	<jspfile>jsp/SYS_Accounting.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	 <pagetype>accounting</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxAccountingManager</maincomp>
+	<maintable>TRX.ESB_ACCOUNTING_DETAIL</maintable>
+	<doname>accounting</doname>
+	<!-- <accountingjs>A00000001.js</accountingjs> -->
+</page>

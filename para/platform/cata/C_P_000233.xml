@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000233</id>
+	<name>还款自动核销自动处理Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>还款自动核销自动处理Catalog</DESC>
+	<tablename>TRX.FUND_REF_M</tablename>
+	<search>
+		<field datatype="1" title="资金编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "100">payerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="资金编号" hidden="" width = "120">sysRefNo</field>
+		<field datatype="1" title="入账账号" hidden="" width = "165" >payAcNo</field>
+		<field datatype="1" title="付款人账号" hidden="" width = "165">selAcNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "120">payerNm</field>
+		<field datatype="1" title="还款金额" hidden="" width = "120" formatter="ccyFormater">ttlPmtAmt</field>
+		<field datatype="1" title="到账日期" hidden="" width = "120" formatter="dateFormater">pmtDt</field>
+		<field datatype="1" title="付款银行代码" hidden="true" width = "120">bkCd</field>
+		<field datatype="1" title="附言" hidden="true" width = "120">remark</field>
+		</select>
+	<condition>
+		  sysTrxSts = M and sysLockFlag = F and sysRefNo like %$sysRefNo$% and payerNm like %$payerNm$% and compSts = 0
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

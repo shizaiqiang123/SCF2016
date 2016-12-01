@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000652</id>
+	<name>商品查询</name>
+	<desc>商品查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>CollatChM a,StdGoodsCata b</tablename><!-- TRX.collat_Ch_M -->
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,cntrctNo,collatNm,collatQty,collatCcy,collatVal,price,salePrice,ttlLoanAmt,ttlLoanQty,ttlInQty,ttlInAmt,ttlOutAmt,ttlOutQty,arrivalDt,collatRdPrice,regNo,collatAdjDt,collatSpec,collatFact,qty,weight,collatUnit,collatId,collatOutQty,outQty,outWeight,froFlag,collatQtyBal</fields>
+		<condition>a.cntrctNo = '$cntrctNo$' and a.collatOutQty > 0 and (a.sysLockFlag = 'F' or a.sysLockFlag = 'T') and a.sysTrxSts = 'M' and a.collatId = b.goodsId</condition>
+		<orderby></orderby>
+		<params></params>
+		<asc></asc>
+		<sql>select a.sysRefNo,a.cntrctNo,a.collatNm,a.collatQty,b.ccy,a.collatVal,b.price,a.salePrice,a.ttlLoanAmt,a.ttlLoanQty,a.ttlInQty,a.ttlInAmt,a.ttlOutAmt,a.ttlOutQty,a.arrivalDt,b.price,a.regNo, to_char( b.updateDt,'yyyy-mm-dd'),a.collatSpec,b.producer,a.qty,a.weight,b.unit,a.collatId,a.collatOutQty,a.outQty,a.outWeight,a.froFlag,a.collatQtyBal from CollatChM a,StdGoodsCata b</sql>
+		<!-- <sql><![CDATA[select t.sys_Ref_No,t.cntrct_No,t.collat_Nm,t.collat_Qty,b.Ccy,t.collat_Val,b.price,t.sale_Price,t.ttl_Loan_Amt,t.ttl_Loan_Qty,t.ttl_In_Qty,t.ttl_In_Amt,t.ttl_Out_Amt,t.ttl_Out_Qty,t.arrival_Dt,t.collat_Rd_Price,t.reg_No, to_char( t.collat_Adj_Dt,'yyyy-mm-dd'),t.collat_Spec,b.b.producer,t.qty,t.weight,b.Unit,t.collat_Id,t.collat_Out_Qty,t.out_Qty,t.out_Weight,t.fro_Flag,t.collat_Qty_Bal from TRX.collat_Ch_M t,STD.std_goods_cata b]]></sql> -->
+	</qnode>
+</query>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <id>R_P_000019</id>
+	<name>打印回执单</name>
+	<desc>打印已放款回执单</desc>
+	<type>M</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>pdf</reporttype><!-- docx,excl,csv,pdf -->
+	<template>回执单放款Receipt.rptdesign</template>
+	<outputtype>F</outputtype><!-- F:file G:gapi M:mail S:SFTP -->
+	<output></output>
+<!-- 	<js>R_P_00006.js</js> -->
+	<datasourcetype>xml</datasourcetype><!-- db,json,xml -->
+	<datasource>jndi</datasource>
+</report>

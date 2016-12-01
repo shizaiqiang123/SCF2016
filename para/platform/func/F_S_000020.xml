@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_000020</id>
+	<module>新增通知</module>
+	<name>新增通知</name>
+	<desc>新增通知信息</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_000013</id>
+		<index>0</index>
+		<name>新增通知</name>
+		<desc>新增通知页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+		<logicid>L_S_000004</logicid>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>	
+</function>

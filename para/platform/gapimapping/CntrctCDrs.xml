@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<coreReturnCode path="Message/Message_Body">coreReturnCode</coreReturnCode>
+	<coreReturnMsg path="Message/Message_Body">coreReturnMsg</coreReturnMsg>
+	<ACN path="Message/Message_Body">ACN</ACN>
+	<ZCHNM path="Message/Message_Body">ZCHNM</ZCHNM>
+	<item_id path="Message/Message_Body">item_id</item_id>
+	<com_ins_code path="Message/Message_Body">com_ins_code</com_ins_code>
+	<main_br_id path="Message/Message_Body">main_br_id</main_br_id>
+	<cur_type path="Message/Message_Body">cur_type</cur_type>
+	<crd_lmt path="Message/Message_Body">crd_lmt</crd_lmt>
+	<residual_lmt path="Message/Message_Body">residual_lmt</residual_lmt>
+	<outstnd_lmt path="Message/Message_Body">outstnd_lmt</outstnd_lmt>
+	<start_date path="Message/Message_Body">start_date</start_date>
+	<expi_date path="Message/Message_Body">expi_date</expi_date>
+	<margin_ratio path="Message/Message_Body">margin_ratio</margin_ratio>
+	<REMARKS1 path="Message/Message_Body">REMARKS1</REMARKS1>
+	<REMARKS2 path="Message/Message_Body">REMARKS2</REMARKS2>
+	<REMARKS3 path="Message/Message_Body">REMARKS3</REMARKS3>
+</trxDom>

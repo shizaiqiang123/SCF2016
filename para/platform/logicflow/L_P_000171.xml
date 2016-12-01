@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>新增成员企业</desc>
+    <!-- <lnode>
+        <id>N00000001</id>
+		<name>新增成员企业信息</name>
+		<desc>新增成员企业信息</desc>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+    </lnode> -->
+    <lnode>
+        <id>N00000001</id>
+		<name>新增账户信息</name>
+		<desc>新增成员企业账户信息</desc>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>accountList</doname>
+		<condition>acOwnerid = ?</condition>
+		<params>acOwnerid</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+    </lnode>
+    <id>L_P_000171</id>
+    <name>新增成员企业</name>
+    <nodeSize>2</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

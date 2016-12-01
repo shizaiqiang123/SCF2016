@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <id>F_P_000206</id>
+	<module>查询Service</module>
+	<name>查询Service</name>
+	<desc>Service管理-查询Service</desc>
+	<functype>PA</functype>
+    <page>
+        <desc>筛选Service页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选Service</name>
+        <index>0</index>
+        <catalog>C_P_000201</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+	<page>
+		<transaction>false</transaction>
+        <refsSize>0</refsSize> 
+        <nodeName>page</nodeName>
+        <id>P_P_000143</id>
+		<index>0</index>
+		<name>查询Service</name>
+		<desc>查询Service</desc>
+		<pagetype>View</pagetype> 
+	</page>
+</function>

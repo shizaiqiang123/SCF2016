@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000488</id>
+	<module>池融资买方还款复核</module>
+	<name>池融资买方还款复核</name>
+	<desc>池融资买方还款复核</desc>
+	<functype>RE</functype>
+	<!-- <page>
+        <desc>买方还款</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000715</id>
+        <name>协议信息</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+    </page> -->
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000673</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核应收账款</name>
+		<desc>应收账款复核页面</desc>
+	</page>
+</function>

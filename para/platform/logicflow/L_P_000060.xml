@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000060</id>
+	<name>用户删除信息修改</name>
+	<desc>用户删除信息修改逻辑流</desc>
+	<module></module>
+ 	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxDeleteRecord</component>
+		<tablename>STD.USER_PWD</tablename>
+		<doname></doname>
+		<type>E</type>
+		<nodejs>L_P_000016.js</nodejs>	
+	</lnode> 
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>trxDeleteDoRecord</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname>roleIds</doname>
+		<condition>userId = ?</condition>
+		<params>userId</params>
+		<type>C</type>				
+	</lnode>
+</logicflow>

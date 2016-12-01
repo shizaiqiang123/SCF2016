@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000266</id>
+    <desc>查询协议文本信息</desc>
+    <qnode>
+        <desc>协议文本查询</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <tablename>TRX.CNTRCT_TEMP</tablename>
+        <name>协议文本查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <condition>productId = $productId$</condition>
+    </qnode>
+    <name>查询产品信息</name>
+    <nodeSize>1</nodeSize>
+</query>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000265</id>
+    <desc>查询产品信息</desc>
+    <qnode>
+        <desc>产品查询</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <tablename>TRX.STD_PRODUCT</tablename>
+        <name>产品查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+    </qnode>
+    <name>查询产品信息</name>
+    <nodeSize>1</nodeSize>
+</query>

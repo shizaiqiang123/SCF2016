@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000006</id>
+	<name>Report</name>
+	<type>Report</type>
+	<protocol>reportServiceImpl</protocol>
+	<postadapter>reportServicePostAdapter</postadapter>
+	<queryadapter>reportQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

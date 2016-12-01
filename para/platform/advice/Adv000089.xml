@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000005.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的应收款融资协议申请业务未通过平台审核，目前暂不能办理应收款融资类业务。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000089</id>
+    <title>应收款融资协议未通过平台审核</title>
+    <remindtp>1</remindtp>
+    <name>协议审核不通过(站内信)</name>
+    <senddt>2015-09-19</senddt>
+</advice>

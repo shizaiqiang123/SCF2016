@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_S_PRODUCT_0002</id>
+	<name>产品查询</name>
+	<desc>产品查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.STD_PRODUCT</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition></condition>		
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<bybu>true</bybu>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000125</id>
+	<module>Test</module>
+	<name>应收账款反转让申请</name>
+	<desc>应收账款反转让申请</desc>
+	<functype>PM</functype>
+	<!-- <page>
+		<desc>客户页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_P_000758</id>
+        <name>交易进入页面</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+	</page> -->
+	<!-- modify by shizaiqiang 用于重新规范使用catalog -->
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>反转让</name>
+		<desc>反转让</desc>
+		<catalog>C_P_000643</catalog>
+	</page>
+	<page>
+		<id>P_P_000081</id>
+		<index>1</index>
+		<name>应收账款反转让</name>
+		<desc>应收账款反转让</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+ 	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000015.js</accountingjs>
+	</page> --> 
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<workflow>W_P_00020</workflow>
+	<!-- <report>
+		<id>R_TEST_00004</id>
+	</report> -->
+</function>

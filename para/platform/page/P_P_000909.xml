@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000909</id>
+	<name>协议页面</name>
+	<desc>协议页面</desc>
+	<jspfile>screen/cntrct/DongChanCntrct.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

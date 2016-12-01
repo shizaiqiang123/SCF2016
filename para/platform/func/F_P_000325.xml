@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>协议签约审核</desc>
+	<id>F_P_000325</id>
+	<name>协议签约审核</name>
+	<module>协议签约审核</module>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000231</catalog>
+	</page>
+	<page>
+		<id>P_P_000228</id>
+		<index>0</index>
+		<name>审核融资协议申请</name>
+		<desc>审核融资协议申请</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+	<service>
+		<id>S_P_000055</id>
+		<servicejs>S_P_00019.js</servicejs>
+		<trigger>M</trigger>
+	</service>
+</function>

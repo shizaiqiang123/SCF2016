@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000294</id>
+	<desc>供应商报表查invcm</desc>
+	<name>供应商报表查invcm</name>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<desc>成员企业应收账款查询</desc>
+		<type>S</type>
+		<id>N00000001</id>
+		<name>成员企业查询</name>
+		<component>componentClass</component>
+		<doname></doname>
+		<cascadeevent>N</cascadeevent>
+		<tablename>TRX.INVC_M</tablename>
+		<params>$licenceNo$,$buyerId$</params>
+		<sql><![CDATA[SELECT Sum(invAmt) from InvcM where licenceNo = ? and buyerId = ?]]></sql>
+	</qnode>
+	<!-- <qnode> -->
+	<!-- <id>N00000001</id> -->
+	<!-- <index>0</index> -->
+	<!-- <name>node name</name> -->
+	<!-- <desc>额度查询的报表统计</desc> -->
+	<!-- <component>componentClass</component> -->
+	<!-- <tablename>TRX.CNTRCT_M</tablename> -->
+	<!-- <doname>doname</doname> -->
+	<!-- <type>S</type> -->
+	<!-- <cascadeevent>Y</cascadeevent> -->
+	<!-- <fields></fields> -->
+	<!-- <asc></asc> -->
+	<!-- <sql><![CDATA[select buyerNm,sum(arAvalLoan),sum(arAvalLoan),sum(loanPerc),sum(openLoanAmt),sum(lmtAmt) 
+		from CntrctM where selId=? and buyerId=? GROUP BY buyerNm]]></sql> -->
+	<!--  and invValDt >= ? and invDueDt <= ? and sysBusiUnit=$sysBusiUnit$ -->
+	<!-- <params>$invValDt$:typejava.util.Date,$invDueDt$:typejava.util.Date</params> -->
+	<!-- <params>$sysRefNo$,$buyerId$</params> -->
+	<!-- </qnode> -->
+</query>

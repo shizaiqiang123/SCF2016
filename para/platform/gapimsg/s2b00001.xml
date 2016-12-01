@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+    <id>s2b00001</id>
+    <msgtype>SMSP</msgtype><!-- 表示为对接短信平台的消息 -->
+    <name>短信通知</name>
+    <modle>SYNC</modle><!-- 接口通信模式,同步或异步 -->
+    <ack>N</ack><!-- 接口交互模式,是否需要及时应答 -->
+    <characterset>GBK</characterset>
+    <sendtemp>SMSP_advice</sendtemp><!-- 发送模版 -->
+    <receivetemp>SMSPSEND_REC</receivetemp><!-- 接收模版 -->
+    <gapi>G_P_000005</gapi><!-- 只定义底层通信协议 -->
+    <validateclass></validateclass><!-- 通信层验证 -->
+    <validatejs>G0000001.js</validatejs>
+    <generator>gapiMsgManager</generator>
+    <msgstore>N</msgstore><!-- 重发使用 -->
+    <sendinterrupt>N</sendinterrupt><!-- 发送异常后中断当前操作-->
+    <receiveinterrupt>N</receiveinterrupt><!-- 接收异常后中断当前操作-->
+    <sendservice>SMSP</sendservice><!-- 发送请求的esb服务接口 -->
+    <receiveservice>SMSP1</receiveservice><!-- 接收响应的esb服务接口 -->
+    <gapiSts>0</gapiSts>
+</gapimsg>

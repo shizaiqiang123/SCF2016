@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000005</id>
+	<name>审核协议</name>
+	<desc>协议审核页面</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>y</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>APPROVE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

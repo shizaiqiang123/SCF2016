@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000202</id>
+	<name>Function中面凾查询</name>
+	<desc>保理商function中面凾小页</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 参数定义主表</desc>
+		<component>ParaFactorQuery</component>
+		<tablename>func</tablename>
+		<doname>doname</doname>
+		<type>C</type>
+		<cascadeevent>y</cascadeevent>
+		<fields></fields>
+		<condition>p</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

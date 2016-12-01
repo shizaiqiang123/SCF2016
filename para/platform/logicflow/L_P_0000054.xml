@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_0000054</id>
+	<name>产品信息</name>
+	<desc>产品信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxProductRecord</component>
+		<tablename>TRX.STD_PRODUCT_PROMISSION</tablename>
+		<doname></doname>
+		<type>E</type>				
+	</lnode>
+</logicflow> 

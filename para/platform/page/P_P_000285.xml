@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>STD.USER_LOG_INFO</maintable>
+    <desc>查询log信息</desc>
+    <holdmaster>T</holdmaster>
+    <id>P_P_000285</id>
+    <name>查询log信息</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>trxViewManager</maincomp>
+    <jspfile>jsp/user/queryUser_Log.jsp</jspfile>
+    <pagetype>VIEW</pagetype>
+</page>

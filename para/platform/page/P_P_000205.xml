@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>基础利率小页</desc>
+    <id>P_P_000205</id>
+    <name>基础利率小页</name>
+	<jspfile>screen\para\BasalRate_View.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<transaction>true</transaction>
+	<refsSize>0</refsSize>
+	<propertyBean>false</propertyBean>
+	<cascadeevent>N</cascadeevent>
+	<maintable>STD.STD_BASE_RT</maintable> 
+<!-- 	<queryid>Q_P_000220</queryid>  -->
+<!-- 	<logicid>L_P_000167</logicid> -->
+</page>

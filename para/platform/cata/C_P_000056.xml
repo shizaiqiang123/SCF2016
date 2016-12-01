@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000056</id>
+	<name>商品复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>商品复核Catalog</DESC>
+	<tablename>STD.STD_GOODS_CATA</tablename>
+	<search>
+		<field datatype="1" title="商品名称" defaultvalue="" width = "200">goodsNm</field>
+		<field datatype="1" title="商品ID" defaultvalue="" width = "200">goodsId</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="商品名称" hidden="" width = "20%">goodsNm</field>
+		<field datatype="1" title="商品ID" hidden="" width = "20%">goodsId</field>
+		<field datatype="1" title="商品大类" hidden="" width = "20%">goodsCata</field>
+		<field datatype="1" title="规格型号" hidden="" width = "20%">goodsCharacter</field>
+		<field datatype="1" title="生产厂家" hidden="" width = "20%">producer</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+	</select>
+	<condition>
+		  sysTrxSts = P  and goodsNm like %$goodsNm$% and goodsId like %$goodsId$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

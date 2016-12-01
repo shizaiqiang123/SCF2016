@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00063</id>
+	<workid>1307</workid>
+	<workname>godownPmt</workname>
+	<name>仓单质押-客户还款</name>
+	<desc>仓单质押-客户还款</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

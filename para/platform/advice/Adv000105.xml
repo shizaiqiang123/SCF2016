@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>2</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，平台于$trxDt$收到一笔编号为【$sysRefNo$】的还款资金信息，因未查询到对应的还款信息，平台无法进行自动销账处理，请及时登录平台处理这笔还款资金信息。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000105</id>
+    <title>自动核销失败通知</title>
+    <remindtp>1</remindtp>
+    <name>自动核销失败（站内信）</name>
+    <senddt>2015-10-30</senddt>
+    <js>AD0000012.js</js>
+</advice>

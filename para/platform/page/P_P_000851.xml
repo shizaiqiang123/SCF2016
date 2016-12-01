@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.CBK_REG_M</maintable>
+    <desc>应收账款反转让</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <logicid>L_P_000584</logicid>
+    <id>P_P_000851</id>
+    <name>应收账款反转让</name>
+    <lockcheck>Y</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/invc/invcCbkPool.jsp</jspfile>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000620</id>
+	<name>商品查询</name>
+	<desc>商品查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.crtf_M</tablename>
+		<doname></doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,cntrctNo,collatNm,collatQty,collatCcy,arrivalDt,collatRdPrice,regNo,collatSpec,collatFact,collatUnit,collatId,collatOutQty,sumPoInNum</fields>
+		<condition>t.cntrct_No = '$cntrctNo$' and t.po_In_Num > 0 and t.sys_Lock_Flag = 'F' and t.sys_Trx_Sts = 'M'</condition>
+		<orderby></orderby>
+		<params></params>
+		<asc></asc>
+		<sql><![CDATA[select t.sys_Ref_No,t.cntrct_No,t.goods_Nm,t.po_Num,t.ccy,t.release_Dt,t.price,t.ref_No,t.goods_Character,t.producer,t.unit,t.goods_Id,t.po_In_Num,t.sum_Po_In_Num from TRX.crtf_M t]]></sql>
+	</qnode>
+</query>

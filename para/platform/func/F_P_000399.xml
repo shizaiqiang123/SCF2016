@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>审核额度调整申请</desc>
+	<id>F_P_000399</id>
+	<name>审核额度调整申请</name>
+	<module>审核额度调整申请</module>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000312</catalog>
+	</page>
+	<page>
+		<id>P_P_000269</id>
+		<index>0</index>
+		<name>审核融资协议申请</name>
+		<desc>审核融资协议申请</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

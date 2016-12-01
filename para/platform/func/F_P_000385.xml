@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000385</id>
+	<pagesSize>0</pagesSize>
+	<desc>补充材料登记</desc>
+	<name>补充材料登记</name>
+	<functype>MM</functype>
+	<module>应收款融资</module>
+	<isValidCode>true</isValidCode>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选页面</name>
+		<desc>修改用户筛选页面</desc>
+		<catalog>C_P_000309</catalog>
+	</page>
+	<page>
+		<id>P_P_000259</id>
+		<index>0</index>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

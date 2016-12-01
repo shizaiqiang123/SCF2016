@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000261</id>
+	<name>查询账号表</name>
+	<desc>查询账号表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>doname</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>cntrctNo = $cntrctNo$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

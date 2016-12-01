@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">213</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">213</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">213</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <method name="beforeRender"><![CDATA[this.queryText = this.queryText+ "where" ;
+if(!(params["userTp"]).equals("") &amp;&amp; (params["userTp"])!=null)
+this.queryText = this.queryText+"USER_TP='"+params["userTp"]+"'" ;
+if( !(params["sysTrxSts"]).equals("") &amp;&amp; (params["sysTrxSts"])!=null )
+this.queryText = this.queryText+"and  SYS_TRX_STS = '"+params["sysTrxSts"]+"'";
+if( !(params["sysRefno"]).equals("") &amp;&amp; (params["sysRefno"])!=null)
+this.queryText = this.queryText+ "and SYS_REF_NO <>'"+params["sysRefno"]+"'" +"and USER_OWNERID='"+params["sysRefno"]+"'";]]></method>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">fixed layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="sysRefno" id="210">
+            <text-property name="helpText">sysRefNo</text-property>
+            <text-property name="promptText">sysRefNo</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="userTp" id="211">
+            <text-property name="helpText">userTp</text-property>
+            <text-property name="promptText">userTp</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="sysTrxSts" id="212">
+            <text-property name="helpText">sysTrxSts</text-property>
+            <text-property name="promptText">sysTrxSts</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="百联本地" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.0.103:1521:orcl</property>
+            <property name="odaUser">STD</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">U1RE</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="user_info_m" id="213">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints"/>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">userTp</property>
+                    <property name="paramName">userTp</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">sysTrxSts</property>
+                    <property name="paramName">sysTrxSts</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">userOwnerid</property>
+                    <property name="paramName">sysRefno</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">sysRefNo</property>
+                    <property name="paramName">sysRefno</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">4</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">USER_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">USER_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">MOB_PHONE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">EMAIL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">USER_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">SYS_TRX_STS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">SYS_REF_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">BUSI_UNIT</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">USER_OWNERID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">百联本地</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">USER_ID</property>
+                    <property name="nativeName">USER_ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">USER_NM</property>
+                    <property name="nativeName">USER_NM</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">MOB_PHONE</property>
+                    <property name="nativeName">MOB_PHONE</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">EMAIL</property>
+                    <property name="nativeName">EMAIL</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">USER_TP</property>
+                    <property name="nativeName">USER_TP</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">SYS_TRX_STS</property>
+                    <property name="nativeName">SYS_TRX_STS</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">SYS_REF_NO</property>
+                    <property name="nativeName">SYS_REF_NO</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">BUSI_UNIT</property>
+                    <property name="nativeName">BUSI_UNIT</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">USER_OWNERID</property>
+                    <property name="nativeName">USER_OWNERID</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+u.USER_ID,u.USER_NM,u.MOB_PHONE,u.EMAIL,u.USER_TP,u.SYS_TRX_STS,u.SYS_REF_NO,u.BUSI_UNIT,u.USER_OWNERID
+from STD.USER_INFO_M u
+where
+u.USER_TP=?
+and u.SYS_TRX_STS=?
+and u.USER_OWNERID=?
+and u.SYS_REF_NO<>?]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>USER_ID</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>USER_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>USER_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>USER_NM</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>USER_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>USER_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>MOB_PHONE</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>40</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>MOB_PHONE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>MOB_PHONE</design:label>
+            <design:formattingHints>
+              <design:displaySize>40</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>EMAIL</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>40</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>EMAIL</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>EMAIL</design:label>
+            <design:formattingHints>
+              <design:displaySize>40</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>USER_TP</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>1</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>USER_TP</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>USER_TP</design:label>
+            <design:formattingHints>
+              <design:displaySize>1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SYS_TRX_STS</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>1</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SYS_TRX_STS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SYS_TRX_STS</design:label>
+            <design:formattingHints>
+              <design:displaySize>1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SYS_REF_NO</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SYS_REF_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SYS_REF_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>BUSI_UNIT</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>40</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>BUSI_UNIT</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>BUSI_UNIT</design:label>
+            <design:formattingHints>
+              <design:displaySize>40</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>USER_OWNERID</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>USER_OWNERID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>USER_OWNERID</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <method name="onPageStart"><![CDATA[this.queryText = this.queryText+ "where" ;
+if(!(params["userTp"]).equals("") &amp;&amp; (params["userTp"])!=null)
+this.queryText = this.queryText+"USER_TP='"+params["userTp"]+"'" ;
+if( !(params["sysTrxSts"]).equals("") &amp;&amp; (params["sysTrxSts"])!=null )
+this.queryText = this.queryText+"and  SYS_TRX_STS = '"+params["sysTrxSts"]+"'";
+if( !(params["sysRefno"]).equals("") &amp;&amp; (params["sysRefno"])!=null)
+this.queryText = this.queryText+ "and SYS_REF_NO <>'"+params["sysRefno"]+"'" +"and USER_OWNERID='"+params["sysRefno"]+"'";]]></method>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="194">
+            <property name="backgroundColor">#C8FFE3</property>
+            <property name="fontSize">18pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">本公司用户表</text-property>
+        </label>
+        <table id="104">
+            <property name="backgroundColor">#FFFFFF</property>
+            <property name="fontFamily">"微软雅黑"</property>
+            <property name="fontSize">14pt</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">auto</property>
+            <property name="marginLeft">auto</property>
+            <property name="marginBottom">auto</property>
+            <property name="marginRight">auto</property>
+            <property name="textAlign">center</property>
+            <property name="verticalAlign">bottom</property>
+            <property name="canShrink">true</property>
+            <property name="width">7.9375in</property>
+            <property name="dataSet">user_info_m</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">USER_ID</property>
+                    <text-property name="displayName">USER_ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["USER_ID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">USER_NM</property>
+                    <text-property name="displayName">USER_NM</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["USER_NM"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">MOB_PHONE</property>
+                    <text-property name="displayName">MOB_PHONE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MOB_PHONE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">EMAIL</property>
+                    <text-property name="displayName">EMAIL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["EMAIL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">USER_TP</property>
+                    <text-property name="displayName">USER_TP</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["USER_TP"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SYS_TRX_STS</property>
+                    <text-property name="displayName">SYS_TRX_STS</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SYS_TRX_STS"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SYS_REF_NO</property>
+                    <text-property name="displayName">SYS_REF_NO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BUSI_UNIT</property>
+                    <text-property name="displayName">BUSI_UNIT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BUSI_UNIT"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">USER_OWNERID</property>
+                    <text-property name="displayName">USER_OWNERID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["USER_OWNERID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="168">
+                <property name="width">1.75in</property>
+            </column>
+            <column id="164">
+                <property name="width">2.0833333333333335in</property>
+            </column>
+            <column id="117">
+                <property name="width">1.7916666666666667in</property>
+            </column>
+            <column id="176">
+                <property name="width">2.0625in</property>
+            </column>
+            <header>
+                <row id="105">
+                    <property name="backgroundColor">#B9FFB9</property>
+                    <property name="height">0.34375in</property>
+                    <cell id="165">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <label id="171">
+                            <text-property name="text">用户编号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="161">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <label id="169">
+                            <text-property name="text">用户名称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="106">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <label id="159">
+                            <text-property name="text">注册手机号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="173">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <label id="177">
+                            <text-property name="text">注册邮箱</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="109">
+                    <property name="fontFamily">"@楷体"</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">center</property>
+                    <property name="height">0.3125in</property>
+                    <cell id="166">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="fontSize">14pt</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <data id="195">
+                            <property name="dataSet">user_info_m</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">USER_ID</property>
+                                    <text-property name="displayName">USER_ID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_ID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_NM</property>
+                                    <text-property name="displayName">USER_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">MOB_PHONE</property>
+                                    <text-property name="displayName">MOB_PHONE</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["MOB_PHONE"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">EMAIL</property>
+                                    <text-property name="displayName">EMAIL</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["EMAIL"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_TP</property>
+                                    <text-property name="displayName">USER_TP</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_TP"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_TRX_STS</property>
+                                    <text-property name="displayName">SYS_TRX_STS</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_TRX_STS"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_REF_NO</property>
+                                    <text-property name="displayName">SYS_REF_NO</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">BUSI_UNIT</property>
+                                    <text-property name="displayName">BUSI_UNIT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BUSI_UNIT"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_OWNERID</property>
+                                    <text-property name="displayName">USER_OWNERID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_OWNERID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">USER_ID</property>
+                        </data>
+                    </cell>
+                    <cell id="162">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <data id="196">
+                            <property name="dataSet">user_info_m</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">USER_ID</property>
+                                    <text-property name="displayName">USER_ID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_ID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_NM</property>
+                                    <text-property name="displayName">USER_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">MOB_PHONE</property>
+                                    <text-property name="displayName">MOB_PHONE</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["MOB_PHONE"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">EMAIL</property>
+                                    <text-property name="displayName">EMAIL</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["EMAIL"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_TP</property>
+                                    <text-property name="displayName">USER_TP</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_TP"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_TRX_STS</property>
+                                    <text-property name="displayName">SYS_TRX_STS</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_TRX_STS"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_REF_NO</property>
+                                    <text-property name="displayName">SYS_REF_NO</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">BUSI_UNIT</property>
+                                    <text-property name="displayName">BUSI_UNIT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BUSI_UNIT"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_OWNERID</property>
+                                    <text-property name="displayName">USER_OWNERID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_OWNERID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">USER_NM</property>
+                        </data>
+                    </cell>
+                    <cell id="110">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <data id="197">
+                            <property name="dataSet">user_info_m</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">USER_ID</property>
+                                    <text-property name="displayName">USER_ID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_ID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_NM</property>
+                                    <text-property name="displayName">USER_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">MOB_PHONE</property>
+                                    <text-property name="displayName">MOB_PHONE</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["MOB_PHONE"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">EMAIL</property>
+                                    <text-property name="displayName">EMAIL</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["EMAIL"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_TP</property>
+                                    <text-property name="displayName">USER_TP</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_TP"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_TRX_STS</property>
+                                    <text-property name="displayName">SYS_TRX_STS</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_TRX_STS"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_REF_NO</property>
+                                    <text-property name="displayName">SYS_REF_NO</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">BUSI_UNIT</property>
+                                    <text-property name="displayName">BUSI_UNIT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BUSI_UNIT"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_OWNERID</property>
+                                    <text-property name="displayName">USER_OWNERID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_OWNERID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">MOB_PHONE</property>
+                        </data>
+                    </cell>
+                    <cell id="174">
+                        <property name="fontFamily">"楷体"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="paddingTop">1pt</property>
+                        <data id="198">
+                            <property name="dataSet">user_info_m</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">USER_ID</property>
+                                    <text-property name="displayName">USER_ID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_ID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_NM</property>
+                                    <text-property name="displayName">USER_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">MOB_PHONE</property>
+                                    <text-property name="displayName">MOB_PHONE</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["MOB_PHONE"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">EMAIL</property>
+                                    <text-property name="displayName">EMAIL</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["EMAIL"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_TP</property>
+                                    <text-property name="displayName">USER_TP</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_TP"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_TRX_STS</property>
+                                    <text-property name="displayName">SYS_TRX_STS</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_TRX_STS"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">SYS_REF_NO</property>
+                                    <text-property name="displayName">SYS_REF_NO</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">BUSI_UNIT</property>
+                                    <text-property name="displayName">BUSI_UNIT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BUSI_UNIT"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">USER_OWNERID</property>
+                                    <text-property name="displayName">USER_OWNERID</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["USER_OWNERID"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">EMAIL</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000509</id>
+	<module>Test</module>
+	<name>池融资-贷项清单</name>
+	<desc>池融资-贷项清单</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>池融资-贷项清单</name>
+		<desc>贷项清单</desc>
+		<catalog>C_P_000683</catalog>
+	</page>
+	
+	<page>
+        <desc>池融资-贷项清单</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000846</id>
+        <name>池融资-贷项清单</name>
+        <maincomp>trxPendingManager</maincomp>
+        <pagetype>ADD</pagetype>
+    </page>
+    
+	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000014.js</accountingjs>
+	</page> -->  
+	<page>
+		<id>P_P_000423</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<workflow>W_P_00046</workflow>
+</function>

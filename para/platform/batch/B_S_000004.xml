@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000010</id>
+        <name>供应商材料未达提醒</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000004</id>
+    <name>供应商材料未达提醒</name>
+</batch>

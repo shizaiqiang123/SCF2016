@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000337</id>
+    <desc>已结案应收账款查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>已结案应收账款查询</desc>
+        <name>已结案应收账款查询</name>
+		<component>componentClass</component> 
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>invNo,invCcy,invAmt,invBal,sysOpTm,invDt,invDueDt,dueDt,lastPayDt</fields>
+        <params>$custNo$,$instNo$,$startDt$,$endDt$</params>
+        <sql><![CDATA[select m.invNo,m.invCcy,m.invAmt,m.invBal,m.sysOpTm,m.invDt,m.invDueDt,m.dueDt,m.lastPayDt from InvcM m,CustM t,CntrctM c where  m.selId = t.sysRefNo and  m.cntrctNo = c.sysRefNo and  m.selId = ? and c.custBrId = ? and m.invBal = 0 and to_char(m.invDueDt,'yyyy-mm-dd') >= ? and  to_char(m.invDueDt,'yyyy-mm-dd') <= ? ]]></sql>
+    </qnode>
+    
+</query>
+

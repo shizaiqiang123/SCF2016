@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <pagesSize>0</pagesSize>
+    <desc>业务调整-查询Function</desc>
+    <transactionPage>0</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000264</id>
+    <name>查询Function</name>
+    <propertyBean>false</propertyBean>
+    <functype>PA</functype>
+</function>

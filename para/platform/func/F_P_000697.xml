@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<pagesSize>0</pagesSize>
+	<desc>应收账款池融资---争议解决复核</desc>
+	<transactionPage>0</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<id>F_P_000697</id>
+	<autoassignSize>0</autoassignSize>
+	<name>应收账款池融资---争议解决复核</name>
+	<functype>RE</functype>
+	<shortnm>应收账款池融资---争议解决复核</shortnm>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000647</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>争议解决复核</name>
+		<desc>争议解决复核页面</desc>
+	</page>
+</function>

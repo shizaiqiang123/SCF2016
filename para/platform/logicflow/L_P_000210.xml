@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>转让信息</desc>
+    <id>L_P_000210</id>
+    <name>转让信息</name>
+    <lnode>
+        <desc>修改表</desc>
+        <nodeName>lnode</nodeName>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+         <sql>update CustM set remark=? where sysRefNo = ?</sql>
+        <params>$remark$,$selId$</params>
+        <component>TrxEditRecord</component> 
+        <tablename>trx.CUST_M</tablename>
+        <name>修改表</name>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+</logicflow>

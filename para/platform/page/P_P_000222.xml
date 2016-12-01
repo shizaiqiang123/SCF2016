@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>用户等级维护小页</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000222</id>
+    <name>用户等级维护小页</name>
+   <jspfile>screen\para\CustLevel_View.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<transaction>true</transaction>
+	<refsSize>0</refsSize>
+	<propertyBean>false</propertyBean>
+	<cascadeevent>N</cascadeevent>
+	<maintable>STD.STD_CUST_LEVEL</maintable> 
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000020</id>
+	<name>动产质押业务质物出库Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>动产质押业务质物出库Catalog</DESC>
+	<tablename>TRX.COLLAT_REG c,TRX.CNTRCT_M m</tablename>
+	<search>
+		<field datatype="1" title="批次号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+		<field datatype="1" title="监管机构" defaultvalue="" width = "100">patnerNm</field>
+		<field datatype="1" title="仓库名称" defaultvalue="" width = "100">storageNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="批次号" hidden="" width = "150" alis = "sysRefNo">c.sys_Ref_No</field>
+		<field datatype="1" title="协议编号" hidden="" width = "150" alis = "cntrctNo">c.cntrct_No</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "150" alis = "selId">c.sel_Id</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "150" alis = "selNm">c.sel_Nm</field>
+		<field datatype="1" title="监管机构" hidden="" width = "200" alis = "patnerNm">c.patner_Nm</field>
+		<field datatype="1" title="仓库名称" hidden="" width = "200" alis = "storageNm">c.storage_Nm</field>
+		<field datatype="1" title="客户类型" hidden="true" width = "150" alis = "busiTp">c.busi_Tp</field>
+	</select>
+	<join>
+		<on seq="1"> c.cntrct_No = m.SYS_REF_NO</on>
+	</join>
+	<condition><![CDATA[c.sys_Ref_No like '%$sysRefNo$%' and c.sel_Nm like '%$selNm$%'  and c.sel_Id like '%$selId$%' and c.cntrct_No like '%$cntrctNo$%' and c.patner_Nm like '%$patnerNm$%' and c.storage_Nm like '%$storageNm$%'  and c.busi_Tp=2 and  c.sys_Lock_Flag = 'F' and  c.sys_Trx_Sts = 'M' and c.reg_Amt > 0 and m.cntrct_sts <> 1]]></condition>
+	<orderby>c.sys_Ref_No</orderby>
+</catalog>

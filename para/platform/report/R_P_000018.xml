@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <id>R_P_000018</id>
+	<name>查询用户信息</name>
+	<desc>通过userType,sysTrxSts,sysRefNo</desc>
+	<type>M</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>excl</reporttype><!-- docx,excl,csv -->
+	<template>queryUser.rptdesign</template>
+	<outputtype>F</outputtype><!-- F:file G:gapi M:mail S:SFTP -->
+	<output>G_TEST_00001</output>
+	<js>R_P_00006.js</js>
+	<datasourcetype>db</datasourcetype><!-- db,json -->
+	<datasource>jdbc/scfdev</datasource>
+</report>

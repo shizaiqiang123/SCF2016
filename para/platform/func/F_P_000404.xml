@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>供应商信息查询报表</desc>
+	<id>F_P_000404</id>
+	<name>供应商信息查询报表</name>
+	<autoassignSize>0</autoassignSize>
+	<pagesSize>0</pagesSize>
+	<transactionPage>0</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<module>应收款融资</module>
+	<functype>VW</functype>
+		<page>
+		<id>P_P_000280</id>
+		<index>0</index>
+		<name>筛选供应商页面</name>
+		<desc>筛选供应商页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+<!-- 	<page> -->
+<!-- 		<id>P_S_000002</id> -->
+<!-- 		<index>0</index> -->
+<!-- 		<name>筛选供应商页面</name> -->
+<!-- 		<desc>筛选供应商页面</desc> -->
+<!-- 		<catalog>C_P_000315</catalog> -->
+<!-- 	</page> -->
+	<page>
+		<id>P_P_000276</id>
+		<index>1</index>
+		<name>供应商信息查询报表统计</name>
+		<desc>供应商信息查询报表统计</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

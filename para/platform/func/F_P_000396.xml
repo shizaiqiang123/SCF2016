@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000396</id>
+	<name>供应商信息</name>
+	<desc>查询供应商信息</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_P_000267</id>
+		<pagetype>VIEW</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+		<index>1</index>
+	</page>	
+</function>

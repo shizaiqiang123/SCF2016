@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000272</id>
+    <name>添加用户密码</name>
+    <jspfile>jsp/user/UserPwd.jsp</jspfile>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>n</cascadeevent>
+    <pagetype>Add</pagetype>
+    <istransaction>y</istransaction>
+    <maintable>STD.USER_PWD</maintable>
+    <pagejs>L_P_000027.js</pagejs>
+</page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000087</id>
+    <name>修改密码锁表</name>
+    <type>L</type>
+    <target>L_P_000182</target>
+</inqdata>

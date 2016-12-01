@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F00000017</id>
+	<module>复核用户信息</module>
+	<name>复核用户</name>
+	<desc>用户管理-复核用户</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P00000105</id>
+		<index>1</index>
+		<name>复核用户</name>
+		<desc>复核用户页面</desc>
+	</page>
+</function>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000105</id>
+	<name>复核用户信息</name>
+	<desc>复核用户信息页面</desc>
+	<jspfile>jsp/user/RealseUser.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>RE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>
+	<queryid>Q00000105</queryid>	
+</page>

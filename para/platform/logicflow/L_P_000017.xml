@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000017</id>
+	<name>质物置换-入库</name>
+	<desc>质物置换-入库</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>添加入库出库明细表</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INOUT_DETAILS</tablename>
+		<doname>COLLATIN</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

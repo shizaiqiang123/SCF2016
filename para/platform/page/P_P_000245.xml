@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000245</id>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>N</istransaction>
+    <name>注册新用户确认页面</name>
+    <lockcheck>N</lockcheck>
+    <!-- <cascadeevent>Y</cascadeevent> -->
+    <jspfile>jsp/regResult.jsp</jspfile>
+    <!-- <maintable>TRX.CUST_M</maintable>  -->
+    <!-- <logicid>L_P_000168</logicid> -->
+</page>

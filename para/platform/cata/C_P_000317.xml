@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000317</id>
+	<name>业务数据展示管理Catalog</name>
+	<MODULE>业务数据展示管理Catalog</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>业务数据展示管理Catalog</DESC>
+	<tablename>std.COM_BUSI_MSG</tablename>
+	<bybu>false</bybu>
+	<search>
+		<field datatype="1" title="功能编号" hidden="" width = "100">funId</field>
+		<field datatype="1" title="功能名称" hidden="" width = "100">funNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="功能流水号" hidden="" width = "20%" >sysRefNo</field>
+		<field datatype="1" title="功能编号" hidden="" width = "20%" >funId</field>
+		<field datatype="1" title="功能名称" hidden="" width = "20%">funNm</field>
+		<field datatype="1" title="QUERYID" hidden="" width = "20%">userQueryId</field>
+<!-- 		<field datatype="1" title="显示数据栏位二Id" hidden="" width = "150">column2Id</field> -->
+<!-- 		<field datatype="1" title="显示数据栏位三Id" hidden="" width = "150">column3Id</field> -->
+		<field datatype="1" title="功能路径" hidden="" width = "20%">funPath</field>
+	</select>
+	<condition>funId like %$funId$% and funNm like %$funNm$% </condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

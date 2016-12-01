@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000066</id>
+    <desc>ESB_Root参数提交</desc>
+    <name>独立逻辑流提交请求</name>
+    <target>L_P_000163</target>
+    <type>L</type>
+</inqdata>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_TEST_0006</id>
+	<name>Test Query</name>
+	<desc>Test Query</desc>
+	<module>Test</module>
+	<functype>Ajax</functype>
+	
+	<page>
+		<id>P_P_TEST0001</id>
+		<index>1</index>
+		<name>交易信息子页面</name>
+		<desc>主交易信息子页面</desc>
+	</page>
+</function>

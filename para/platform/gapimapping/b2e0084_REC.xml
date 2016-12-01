@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<trnid path="b2e0084/head">trnid</trnid>
+	<dataInfo
+		path="bocb2e/trans/trn-b2e0084-rq/b2e0084-rq/scfp/transReturnData/acrcPaymentRs/paymentApprvData/paymentApprv"
+		loop="true" >
+		<invNo path="paymentApprv" loopPath="bocb2e/trans/trn-b2e0084-rq/b2e0084-rq/scfp/transReturnData/acrcPaymentRs/paymentApprvData">invNo</invNo>
+		<pmtApplyState path="paymentApprv" loopPath="bocb2e/trans/trn-b2e0084-rq/b2e0084-rq/scfp/transReturnData/acrcPaymentRs/paymentApprvData">pmtApplyState</pmtApplyState>
+	</dataInfo>
+
+</trxDom>

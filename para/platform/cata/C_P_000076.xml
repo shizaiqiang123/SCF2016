@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000076</id>
+	<name>监控信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>监控信息Catalog</DESC>
+	<tablename>STD.USER_LOG_INFO</tablename>
+	<search>
+		<field datatype="4" title="用户类型" defaultvalue=""   width = "100" formatter="userType">userTp</field>
+		<field datatype="1" title="用户ID" defaultvalue=""   width = "100">userId</field>
+		<field datatype="3" title="登录时间" defaultvalue=""   width = "100">userLoginTime</field>
+		<field datatype="3" title="退出时间" defaultvalue=""   width = "100">userLogoutTime</field>
+		<field datatype="2" title="状       态" defaultvalue=""   width = "100">logType</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户ID" hidden="" width = "130" >userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "130" >userName</field>
+		<field datatype="1" title="用户类型" hidden="" width = "130" formatter="userType">userTp</field>
+		<field datatype="1" title="登录时间" hidden="" width = "130" formatter="dateTimeFormater">userLoginTime</field>
+		<field datatype="1" title="退出时间" hidden="" width = "130" formatter="dateTimeFormater">userLogoutTime</field>
+		<field datatype="1" title="IP地址" hidden="" width = "130" formatter="ipFormat">userIp</field>
+		<field datatype="2" title="状    态" hidden="" width = "130" formatter="userLoginType">logType</field>
+		 <field datatype="1" title="机构号" hidden="true" width = "130">sysBusiUnit</field> 
+		 	 <field datatype="1" title="流水号" hidden="true" width = "130">sysRefNo</field> 
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		</select>
+	<condition><![CDATA[userId like %$userId$% and userTp=$userTp$ and logType like $logType$ and userLoginTime >= $userLoginTime$ and userLogoutTime <= $userLogoutTime$]]></condition>
+		<orderby>userLoginTime</orderby>
+</catalog>

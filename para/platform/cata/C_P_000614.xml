@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000614</id>
+	<name>国内买方保理池--应收账款入池添加 查询协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内买方保理池--应收账款入池添加 查询协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" defaultvalue="" width = "200">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "20%">sellerInstCd</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "20%" >buyerNm</field>
+		<field datatype="1" title="业务类别" hidden="" width = "20%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="币种" hidden="" width = "20%" formatter="ccyFormater">lmtCcy</field>
+		<field datatype="1" title="单据处理费" hidden="true" width = "25%">billAmt</field>
+		<field datatype="1" title="授信网点名称" hidden="true" width = "20%" >bchNm</field>
+		<field datatype="1" title="协议起始日期" hidden="true" width = "20%" >lmtValidDt</field>
+		<field datatype="1" title="协议到期日期" hidden="true" width = "20%" >lmtDueDt</field>
+		<field datatype="1" title="转让费率" hidden="true" width = "25%">transChgrt</field>
+		<field datatype="1" title="间接客户编号" hidden="true" width = "25%">buyerId</field>
+		<field datatype="1" title="应收账款可融资额" hidden="true" width = "25%">arAvalLoan</field>
+		<!-- 隐藏字段 -->
+		<field datatype="1" title="追索标识" hidden="true" width = "25%">recourseTp</field><!-- 追索标识 -->
+		<field datatype="1" title="应收账款余额" hidden="true" width = "25%">arBal</field><!-- 应收账款余额 -->
+		<field datatype="1" title="扣息方式" hidden="true" width = "25%">payIntTp</field><!-- 扣息方式  -->
+		<field datatype="1" title="已融资敞口" hidden="true" width = "25%">openLoanAmt</field><!-- 已融资敞口 -->
+		<field datatype="1" title="协议金额" hidden="true" width = "25%">lmtAmt</field><!-- 协议金额 -->
+		<field datatype="1" title="协议余额" hidden="true" width = "25%">lmtBal</field><!-- 协议余额 -->
+		<field datatype="1" title="池水位" hidden="true" width = "25%">poolLine</field><!-- 池水位 -->
+	</select>
+	<condition><![CDATA[cntrctNo like %$cntrctNo$% and buyerNm like %$buyerNm$% and busiTp = 9 and sysTrxSts = M and sysLockFlag = F  and lmtValidDt <= $sysCurrentDate$ and lmtDueDt >= $sysCurrentDate$ and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

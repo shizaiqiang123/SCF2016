@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000676</id>
+	<module>价格调整台帐查询</module>
+	<name>价格调整台帐查询</name>
+	<desc>价格调整台帐查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_P_000941</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000634</catalog>
+	</page>
+	<page>
+		<id>P_P_000821</id>
+		<index>2</index>
+		<name>价格调整台帐查询</name>
+		<desc>价格调整台帐查询</desc>
+	</page>
+	<service>
+		<id>S_P_000489</id>
+		<trigger>M</trigger>
+		<name>生成Excel格式应收账款</name>
+	</service>
+</function>

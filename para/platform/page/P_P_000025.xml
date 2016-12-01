@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000025</id>
+	<name>审核预付类客户还款</name>
+	<desc>融资预付类客户还款</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>APPROVE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable>TRX.PMT_M</maintable>
+</page>

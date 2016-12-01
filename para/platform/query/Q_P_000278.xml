@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000278</id>
+    <desc>补充材料登记</desc>
+    <name>补充材料登记</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<condition>sysRefNo=$sysRefNo$ and sysLockFlag=F  </condition>
+<!-- 		and sysTrxSts=M and signSts=3  -->
+		<params>$sysRefNo$</params>
+		<orderby></orderby>
+		<fields></fields>
+		<sql/>
+		<asc>Y</asc>
+	</qnode>
+</query>

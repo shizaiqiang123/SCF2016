@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <type>Advice</type>
+    <id>S_P_000057</id>
+    <component></component>
+    <name>无信息流短信advice通知</name>
+  	<servicejs>S_P_00028.js</servicejs>
+  	<trigger>M</trigger>
+</service>

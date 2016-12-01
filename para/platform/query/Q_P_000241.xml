@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000241</id>
+    <desc>成员企业查询</desc>
+    <qnode>
+        <desc>成员企业查询</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc></asc>
+        <name>成员企业查询</name>
+        <component>componentClass</component>
+        <doname></doname>
+        <fields>sysRefNo,custNm</fields>
+        <cascadeevent>N</cascadeevent>
+        <params>$licenceNo$</params>
+        <tablename>TRX.CUST_M</tablename>
+        <sql><![CDATA[SELECT t.sysRefNo ,t.custNm from CustM t  where t.sysRefNo in (SELECT b.buyerId from CustBuyer b where b.licenceNo = ?)]]></sql>
+    </qnode>
+    <!-- <qnode>
+        <desc>成员企业查询</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <name>成员企业查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.CUST_M</tablename>
+        <condition>custTp = 1</condition>
+    </qnode> -->
+    <name>成员企业查询</name>
+    <nodeSize>1</nodeSize>
+</query>

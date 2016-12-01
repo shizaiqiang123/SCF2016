@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000611</id>
+    <autoassignSize>0</autoassignSize>
+    <name>提示回购</name>
+    <functype>PM</functype>
+    <shortnm>提示回购</shortnm>
+</function>

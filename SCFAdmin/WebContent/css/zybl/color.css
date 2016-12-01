@@ -1,0 +1,29 @@
+@charset "utf-8";
+.siteTop{
+	background: #333;
+}
+.header span {
+	 color: #fff; 
+}
+.siteInfoName,.siteInfoDate,.siteInfoExit {
+	background:url(../../images/index-icon1.png) left center no-repeat;
+	display: inline-block;
+    height: 18px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.siteInfoDate {
+	background:url(../../images/index-icon2.png) left center no-repeat;
+}
+
+.siteInfoExit {
+	background:url(../../images/index-icon3.png) left center no-repeat;
+}
+.siteInfoHelper {
+	background: url(../../images/index-icon1.png) left center no-repeat;
+}
+.siteInfoAdvice {
+	background: url(../../images/index-icon8.png) left center no-repeat;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000258</id>
+    <qnode>
+        <index>0</index>
+        <desc>look up 查询主表</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <component>componentClass</component>
+        <tablename>STD.GAPI_MSG</tablename>
+<!--        	<condition>gapiId = $gapiId$ and portId like %$portIdSearch$% and portExpMes like %$expType$%</condition> -->
+       	<condition>gapiId = $gapiId$ and resendTimes like %$resendTimesSearch$% and errorMsg like %$errorMsgSearch$% and gapiType like %$gapiTypeSearch$% </condition>
+        <name>node name</name>
+        <cascadeevent>N</cascadeevent>
+    </qnode>
+    <name>接口信息详细查询</name>
+    <nodeSize>1</nodeSize>
+</query>

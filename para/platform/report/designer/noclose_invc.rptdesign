@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">71</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">71</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">71</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="startDt" id="69">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="endDt" id="70">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="custNo" id="222">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="instNo" id="223">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="9">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.0.103:1521:orcl</property>
+            <property name="odaUser">STD</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">U1RE</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="71">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints"/>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">custNo</property>
+                    <property name="paramName">custNo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">instNo</property>
+                    <property name="paramName">instNo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">startNo</property>
+                    <property name="paramName">startDt</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">endDt</property>
+                    <property name="paramName">endDt</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">4</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CUST_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">CUST_NM_2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">BUSI_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">INV_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">SYS_OP_TM</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">INV_VAL_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">INV_DUE_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">INV_CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">INV_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">INV_BAL</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">ACCT_PERIOD</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CUST_NM</property>
+                    <property name="nativeName">CUST_NM</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">CUST_NM_2</property>
+                    <property name="nativeName">CUST_NM</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">BUSI_TP</property>
+                    <property name="nativeName">BUSI_TP</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">INV_NO</property>
+                    <property name="nativeName">INV_NO</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">SYS_OP_TM</property>
+                    <property name="nativeName">SYS_OP_TM</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">INV_VAL_DT</property>
+                    <property name="nativeName">INV_VAL_DT</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">INV_DUE_DT</property>
+                    <property name="nativeName">INV_DUE_DT</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">INV_CCY</property>
+                    <property name="nativeName">INV_CCY</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">INV_AMT</property>
+                    <property name="nativeName">INV_AMT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">INV_BAL</property>
+                    <property name="nativeName">INV_BAL</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">ACCT_PERIOD</property>
+                    <property name="nativeName">ACCT_PERIOD</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT  T1.CUST_NM, T2.CUST_NM,(CASE  WHEN T.BUSI_TP = '0' THEN '国内保理有追索权' ELSE '国内保理无追索权' END) AS BUSI_TP,T.INV_NO,T.SYS_OP_TM,T.INV_VAL_DT,T.INV_DUE_DT,T.INV_CCY,T.INV_AMT,T.INV_BAL,T.ACCT_PERIOD
+  FROM TRX.INVC_M T, TRX.CUST_M T1, TRX.CUST_M T2,TRX.CNTRCT_M T3
+ WHERE T.SEL_ID = T1.SYS_REF_NO
+   AND T.BUYER_ID = T2.SYS_REF_NO
+   AND T.CNTRCT_NO = T3.SYS_REF_NO
+   AND T.INV_BAL > 0
+   AND T.sel_id = ?
+   AND T3.cust_br_id = ?
+   AND to_char(T.inv_due_dt,'yyyy-mm-dd') >= ?
+   AND to_char(T.inv_due_dt,'yyyy-mm-dd') <= ?]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CNTRCT_NO</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CNTRCT_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CNTRCT_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SEL_ID</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SEL_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SEL_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>BUYER_ID</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>BUYER_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>BUYER_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CUST_NM</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>200</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CUST_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CUST_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>200</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CUST_NM</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>200</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CUST_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CUST_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>200</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="201">
+            <property name="textAlign">center</property>
+            <text-property name="text">未结案应收账款明细表</text-property>
+        </label>
+        <table id="273">
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">ACCT_PERIOD</property>
+                    <text-property name="displayName">ACCT_PERIOD</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ACCT_PERIOD"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">CUST_NM</property>
+                    <text-property name="displayName">CUST_NM</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BUSI_TP</property>
+                    <text-property name="displayName">BUSI_TP</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BUSI_TP"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_NO</property>
+                    <text-property name="displayName">INV_NO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_NO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SYS_OP_TM</property>
+                    <text-property name="displayName">SYS_OP_TM</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SYS_OP_TM"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_VAL_DT</property>
+                    <text-property name="displayName">INV_VAL_DT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_VAL_DT"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_DUE_DT</property>
+                    <text-property name="displayName">INV_DUE_DT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_DUE_DT"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_CCY</property>
+                    <text-property name="displayName">INV_CCY</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_CCY"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_AMT</property>
+                    <text-property name="displayName">INV_AMT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_AMT"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_BAL</property>
+                    <text-property name="displayName">INV_BAL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_BAL"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">CUST_NM_2</property>
+                    <text-property name="displayName">CUST_NM_2</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CUST_NM_2"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="310"/>
+            <column id="311"/>
+            <column id="312"/>
+            <column id="313"/>
+            <column id="314"/>
+            <column id="315"/>
+            <column id="316"/>
+            <column id="317"/>
+            <column id="318"/>
+            <column id="319"/>
+            <column id="320"/>
+            <header>
+                <row id="274">
+                    <cell id="275">
+                        <label id="324">
+                            <text-property name="text">卖方名称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="276">
+                        <label id="326">
+                            <text-property name="text">买方名称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="277">
+                        <label id="328">
+                            <text-property name="text">业务类别</text-property>
+                        </label>
+                    </cell>
+                    <cell id="278">
+                        <label id="330">
+                            <text-property name="text">应收账款凭证号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="279">
+                        <label id="332">
+                            <text-property name="text">转让日期</text-property>
+                        </label>
+                    </cell>
+                    <cell id="280">
+                        <label id="334">
+                            <text-property name="text">起算日</text-property>
+                        </label>
+                    </cell>
+                    <cell id="281">
+                        <label id="336">
+                            <text-property name="text">到期日</text-property>
+                        </label>
+                    </cell>
+                    <cell id="282">
+                        <label id="338">
+                            <text-property name="text">币种</text-property>
+                        </label>
+                    </cell>
+                    <cell id="283">
+                        <label id="340">
+                            <text-property name="text">应收账款金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="284">
+                        <label id="342">
+                            <text-property name="text">应收账款余额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="285">
+                        <label id="322">
+                            <text-property name="text">账期</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="286">
+                    <cell id="287">
+                        <data id="325">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">CUST_NM</property>
+                                    <text-property name="displayName">CUST_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">CUST_NM</property>
+                        </data>
+                    </cell>
+                    <cell id="288">
+                        <data id="344">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">CUST_NM_2</property>
+                                    <text-property name="displayName">CUST_NM_2</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["CUST_NM_2"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">CUST_NM_2</property>
+                        </data>
+                    </cell>
+                    <cell id="289">
+                        <data id="329">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">BUSI_TP</property>
+                                    <text-property name="displayName">BUSI_TP</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BUSI_TP"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">BUSI_TP</property>
+                        </data>
+                    </cell>
+                    <cell id="290">
+                        <data id="331">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_NO</property>
+                                    <text-property name="displayName">INV_NO</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_NO"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_NO</property>
+                        </data>
+                    </cell>
+                    <cell id="291">
+                        <data id="333">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">SYS_OP_TM</property>
+                                    <text-property name="displayName">SYS_OP_TM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["SYS_OP_TM"]</expression>
+                                    <property name="dataType">date-time</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">SYS_OP_TM</property>
+                        </data>
+                    </cell>
+                    <cell id="292">
+                        <data id="335">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_VAL_DT</property>
+                                    <text-property name="displayName">INV_VAL_DT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_VAL_DT"]</expression>
+                                    <property name="dataType">date-time</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_VAL_DT</property>
+                        </data>
+                    </cell>
+                    <cell id="293">
+                        <data id="337">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_DUE_DT</property>
+                                    <text-property name="displayName">INV_DUE_DT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_DUE_DT"]</expression>
+                                    <property name="dataType">date-time</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_DUE_DT</property>
+                        </data>
+                    </cell>
+                    <cell id="294">
+                        <data id="339">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_CCY</property>
+                                    <text-property name="displayName">INV_CCY</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_CCY"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_CCY</property>
+                        </data>
+                    </cell>
+                    <cell id="295">
+                        <data id="341">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_AMT</property>
+                                    <text-property name="displayName">INV_AMT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_AMT"]</expression>
+                                    <property name="dataType">decimal</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_AMT</property>
+                        </data>
+                    </cell>
+                    <cell id="296">
+                        <data id="343">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_BAL</property>
+                                    <text-property name="displayName">INV_BAL</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_BAL"]</expression>
+                                    <property name="dataType">decimal</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_BAL</property>
+                        </data>
+                    </cell>
+                    <cell id="297">
+                        <data id="323">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">ACCT_PERIOD</property>
+                                    <text-property name="displayName">ACCT_PERIOD</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["ACCT_PERIOD"]</expression>
+                                    <property name="dataType">decimal</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">ACCT_PERIOD</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="298">
+                    <cell id="299"/>
+                    <cell id="300"/>
+                    <cell id="301"/>
+                    <cell id="302"/>
+                    <cell id="303"/>
+                    <cell id="304"/>
+                    <cell id="305"/>
+                    <cell id="306"/>
+                    <cell id="307"/>
+                    <cell id="308"/>
+                    <cell id="309"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

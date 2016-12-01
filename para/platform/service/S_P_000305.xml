@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Message</type>
+    <id>S_P_000305</id>
+    <component></component>
+    <name>ss</name>
+    <propertyBean>false</propertyBean>
+</service>

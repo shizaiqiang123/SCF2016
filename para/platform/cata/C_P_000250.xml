@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000250</id>
+	<name>还款进度查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>还款进度查询Catalog</DESC>
+	 <tablename>TRX.PMT_M p,TRX.LOAN_M n</tablename>
+	<search>
+		<field datatype="4" title="业务类型" defaultvalue="" formatter="busiTpFmt" width = "100">busiTp</field>
+		<field datatype="4" title="还款状态" defaultvalue="" formatter="pmtStsFmt" width = "100">pmtSts</field>
+		<field datatype="3" title="还款日期" defaultvalue="" width = "100">pmtDt</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="还款编号" hidden="" width = "250" alis = "sysRefNo">p.sys_Ref_No</field>
+		<field datatype="1" title="融资编号" hidden="" width = "250" alis = "loanId">p.loan_Id</field>
+		<!-- <field datatype="1" title="还款日期" hidden="" width = "100" formatter="dateFormater" alis = "pmtDt">p.pmt_Dt</field> -->
+		<field datatype="1" title="还款金额" hidden="" width = "250" formatter="ccyFormater" alis = "ttlPmtAmt">p.ttl_Pmt_Amt</field>
+		<field datatype="1" title="还本金金额" hidden="true" width = "100" formatter="ccyFormater" alis = "payPrinAmt">p.pay_Prin_Amt</field>
+		<field datatype="1" title="借款余额" hidden="true" width = "100" formatter="ccyFormater" alis = "ttlLoanBal">n.ttl_Loan_Bal</field>
+		<field datatype="1" title="原始Function" hidden="true" width = ""  alis = "sysFuncId">p.sys_Func_Id</field>
+		<field datatype="1" title="原始Function" hidden="true" width = ""  alis = "sysEventTimes">p.sys_Event_Times</field>
+		<field datatype="1" title="还款状态" hidden="" width = "250" formatter="pmtStsFormater" alis = "pmtSts">p.pmt_Sts</field>
+		<field datatype="1" title="融资状态" hidden="true" width = "100" formatter="finaStsFormater" alis = "finaSts">n.fina_Sts</field>
+		<field datatype="1" title="业务状态" hidden="true" width = "100" formatter="trxStsFormater" alis = "sysTrxSts">p.sys_Trx_Sts</field>
+	</select>
+	<join>
+		<on seq="1"> p.loan_Id = n.sys_Ref_No</on>
+	</join>
+	<condition><![CDATA[ p.sys_Ref_No like '%$sysRefNo$%' and p.busi_Tp like '%$busiTp$%' and p.pmt_Sts like '%$pmtSts$%' and p.pmt_Dt like '%$pmtDt$%' and p.sel_Id = '$sysUserOwnerId$']]></condition>
+	<orderby>p.sys_Ref_No</orderby>
+</catalog>

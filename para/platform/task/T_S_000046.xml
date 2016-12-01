@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <desc>日终池水位管理</desc>
+    <id>T_S_000046</id>
+    <name>日终池水位管理</name>
+    <component>batchUpdateDailyPoolLineProcessor</component>
+    <trxdatapara>
+        <para>5</para>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread> 
+</task>

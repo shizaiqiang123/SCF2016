@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>1</grouptp>
+    <js>AD0000013.js</js>
+    <type>S</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的国内单笔保理融资申请业务，已通过您公司的内部授权。【SCF基线平台】&lt;/p&gt;
+</content>
+    <id>Adv000111</id>
+    <title>国内单笔保理融资申请通过内部授权</title>
+    <remindtp>1</remindtp>
+    <name>国内单笔保理融资申请复核通过(站内信)</name>
+    <senddt>2016-09-07</senddt>
+</advice>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000007</id>
+	<name>Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile></jspfile>
+	<DESC>预警信息查询</DESC>
+	<tablename>std.ADVICE_CLIENT</tablename>
+	<search>
+		<field datatype="1" title="发件人" defaultvalue="" width = "10%">sendNm</field>
+		<field datatype="3" title="发送时间" defaultvalue="" width = "10%">msgSendDate</field>
+		<field datatype="1" title="预警标题" defaultvalue="" width = "10%">msgTitle</field>
+		<field datatype="4" title="业务类别" defaultvalue="" formatter="busiTp" width = "10%">busiTp</field>
+		<field datatype="4" title="预警状态" defaultvalue="" formatter="adviceStsFmt" width = "10%">msgStatus</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="预警标题" hidden="" width = "200">msgTitle</field>
+		<field datatype="1" title="业务类别" hidden="" width = "200" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="发件人" hidden="" width = "200">sendNm</field>
+		<field datatype="1" title="发送时间" hidden="" width = "200" formatter="dateTimeFormater">msgSendDate</field>
+		<field datatype="1" title="接收时间" hidden="" width = "200" formatter="dateTimeFormater">msgRecDate</field>
+		<field datatype="1" title="再提醒时间" hidden="true" width = "150" >msgRemaindDate</field>
+		<field datatype="1" title="预警状态" hidden="" width = "200"  formatter="adviceFormter">msgStatus</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "100">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+	</select>
+	<condition>
+		 msgSendDate = $msgSendDate$ and sendNm like %$sendNm$% AND msgTitle like %$msgTitle$% and msgRemindTp=3 and busiTp = $busiTp$ and msgStatus = $msgStatus$ and recId = $sysUserRef$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

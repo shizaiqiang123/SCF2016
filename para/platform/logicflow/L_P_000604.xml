@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>仓单质押_融资申请</desc>
+    <id>L_P_000604</id>
+    <name>仓单质押_融资申请</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+   <!--  <lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.BILL_M</tablename>
+		<condition>loanId=?</condition>
+		<params>loanId</params>
+		<doname>bill</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode> -->
+	<lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddRecord</component>
+		<tablename>TRX.FEE_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CRTF_LOAN_M</tablename>
+		<doname>doname</doname>
+		<condition>loanId=?</condition>
+		<params>loanId</params>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_P_000098.js</nodejs>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<fields></fields>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>theirRef,lmtBal</fields>
+			<values>$trxId$,$lmtBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000119.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CRTF_REG_M</tablename>
+		<type>E</type>
+		<doname>doname</doname>
+		<fpParam>sysRefNo</fpParam>
+		<fields></fields>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>loanFlag</fields>
+			<values>1</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000155.js</nodejs>
+	</transfornode>
+</logicflow>

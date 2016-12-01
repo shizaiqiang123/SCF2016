@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000377</id>
+	<name>初始保證金賬號驗證</name>
+	<desc>初始保證金賬號驗證</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[sysRefNo <> $sysRefNo$ and selNm <> $selNm$  and marginAcNo = $marginAcNo$]]></condition>
+		<orderby></orderby>
+		<asc>N</asc>
+		<sql/>
+	</qnode>
+</query>

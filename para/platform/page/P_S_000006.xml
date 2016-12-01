@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000006</id>
+	<name>往来银行页面</name>
+	<desc>往来银行页面</desc>
+	<jspfile>screen/bankM/bankM.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.BANK_M</maintable>
+</page>

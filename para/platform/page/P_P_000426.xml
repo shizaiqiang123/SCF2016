@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<transaction>false</transaction>
+	<refsSize>0</refsSize>
+	<id>P_P_000426</id>
+	<index>1</index>
+	<name>仓库查询页面</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/loan/queryHousePatner.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+	<queryid>Q_P_000355</queryid>
+</page>

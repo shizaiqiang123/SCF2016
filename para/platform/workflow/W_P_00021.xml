@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00021</id>
+	<workid>1307</workid>
+	<workname>invcLoan</workname>
+	<name>融资申请复核</name>
+	<desc>融资申请复核</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

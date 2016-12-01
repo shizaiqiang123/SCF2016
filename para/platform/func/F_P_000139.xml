@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <desc>审核融资协议</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000228</id>
+        <name>审核融资协议</name>
+    </page>
+    <pagesSize>1</pagesSize>
+    <transactionPage>1</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>1</serviceSize>
+    <id>F_P_000139</id>
+    <service>
+        <ruleSize>0</ruleSize>
+        <id>S_P_000052</id>
+        <name>查询供应商用户</name>
+    </service>
+    <autoassignSize>0</autoassignSize>
+    <functype>PM</functype>
+</function>

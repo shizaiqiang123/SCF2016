@@ -1,0 +1,97 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <diskStore path="java.io.tmpdir"/>
+    <cacheManagerEventListenerFactory class="" properties=""/>
+    <defaultCache
+            maxElementsInMemory="100"
+            eternal="false"
+            timeToIdleSeconds="600"
+            timeToLiveSeconds="600"
+            overflowToDisk="false"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"
+            />
+    <cache name="CACHE_DATA"
+    		maxElementsInMemory="100"
+            eternal="false"
+            timeToIdleSeconds="600"
+            timeToLiveSeconds="600"
+            overflowToDisk="false"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU">
+           Cache Data        
+    </cache>
+    <cache name="CACHE_WEB_SESS"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web session Data        
+    </cache>
+    <cache name="CACHE_WEB_COMM"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Common Data        
+    </cache>
+    <cache name="CACHE_WEB_FUNC"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Function Data        
+    </cache>
+    <cache name="CACHE_WEB_PAGE"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Page Data        
+    </cache>
+    <cache name="CACHE_WEB_QUERY"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Query Data        
+    </cache>
+     <cache name="CACHE_PARA_DATA"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           AP 参数缓存       
+    </cache>
+    <cache name="CACHE_FILE_DATA"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           AP 文件缓存     
+    </cache>
+    <cache name="CACHE_DB_DATA"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           AP DB 缓存        
+    </cache>
+    <cache name="CACHE_HOLIDAY"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           AP 节假日缓存      
+    </cache>
+ </ehcache>

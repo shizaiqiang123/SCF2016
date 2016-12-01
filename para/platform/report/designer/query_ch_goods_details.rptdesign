@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">fixed layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="selNm" id="9">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cntrctNo" id="10">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="supervisorNm" id="11">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="collatNm" id="12">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="collatId" id="14">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521/ORCL</property>
+            <property name="odaUser">std</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">c3Rk</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">SYS_OP_TM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SYS_OP_TM</text-property>
+                    <text-property name="heading">SYS_OP_TM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COLLAT_ID</text-property>
+                    <text-property name="heading">COLLAT_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COLLAT_NM</text-property>
+                    <text-property name="heading">COLLAT_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_QTY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COLLAT_QTY</text-property>
+                    <text-property name="heading">COLLAT_QTY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_OUT_QTY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COLLAT_OUT_QTY</text-property>
+                    <text-property name="heading">COLLAT_OUT_QTY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CNTRCT_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CNTRCT_NO</text-property>
+                    <text-property name="heading">CNTRCT_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SEL_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SEL_NM</text-property>
+                    <text-property name="heading">SEL_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BUSI_TP</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BUSI_TP</text-property>
+                    <text-property name="heading">BUSI_TP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_CCY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COLLAT_CCY</text-property>
+                    <text-property name="heading">COLLAT_CCY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COLLAT_RD_PRICE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">COLLAT_RD_PRICE</text-property>
+                    <text-property name="heading">COLLAT_RD_PRICE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FUND_RT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">FUND_RT</text-property>
+                    <text-property name="heading">FUND_RT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REG_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">REG_NM</text-property>
+                    <text-property name="heading">REG_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">WARE_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">WARE_NM</text-property>
+                    <text-property name="heading">WARE_NM</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">SYS_OP_TM</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">COLLAT_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">COLLAT_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">COLLAT_QTY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">COLLAT_OUT_QTY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">CNTRCT_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">SEL_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">BUSI_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">COLLAT_CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">COLLAT_RD_PRICE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">FUND_RT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">REG_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">WARE_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[this.queryText="SELECT c.SYS_OP_TM,c.collat_Id,c.collat_Nm,c.COLLAT_QTY,c.collat_Out_Qty,a.CNTRCT_NO,a.sel_Nm,a.BUSI_TP,c.COLLAT_CCY,c.COLLAT_RD_PRICE,b.FUND_RT,b.reg_Nm,b.WARE_NM               "
++" from  TRX.COLLAT_CH_E c,TRX.CRTF_REG_M b,TRX.CNTRCT_M a                                   "
++" where  c.reg_No = b.sys_Ref_No and b.cntrct_No = a.sys_Ref_No and a.busi_Tp = '4'                   "
+var selNm = params["selNm"].value;
+var cntrctNo = params["cntrctNo"].value;
+var supervisorNm = params["supervisorNm"].value;
+var collatNm = params["collatNm"].value;
+var collatId = params["collatId"].value;
+if(selNm!=null &amp;&amp; selNm!=""){
+this.queryText+="AND a.sel_Nm like '%"+selNm+"%'";
+}
+if(cntrctNo!=null &amp;&amp; cntrctNo!=""){
+this.queryText+="AND a.cntrct_No like '%"+cntrctNo+"%'";
+}
+if(supervisorNm!=null &amp;&amp; supervisorNm!=""){
+this.queryText+="AND b.reg_Nm like '%"+supervisorNm+"%'";
+}
+if(collatNm!=null &amp;&amp; collatNm!=""){
+this.queryText+="AND c.collat_Nm like '%"+collatNm+"%'";
+}
+if(collatId!=null &amp;&amp; collatId!=""){
+this.queryText+="AND c.collat_Id like '%"+collatId+"%'";
+}
+]]></method>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">SYS_OP_TM</property>
+                    <property name="nativeName">SYS_OP_TM</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">COLLAT_ID</property>
+                    <property name="nativeName">COLLAT_ID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">COLLAT_NM</property>
+                    <property name="nativeName">COLLAT_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">COLLAT_QTY</property>
+                    <property name="nativeName">COLLAT_QTY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">COLLAT_OUT_QTY</property>
+                    <property name="nativeName">COLLAT_OUT_QTY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">CNTRCT_NO</property>
+                    <property name="nativeName">CNTRCT_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">SEL_NM</property>
+                    <property name="nativeName">SEL_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">BUSI_TP</property>
+                    <property name="nativeName">BUSI_TP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">COLLAT_CCY</property>
+                    <property name="nativeName">COLLAT_CCY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">COLLAT_RD_PRICE</property>
+                    <property name="nativeName">COLLAT_RD_PRICE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">FUND_RT</property>
+                    <property name="nativeName">FUND_RT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">REG_NM</property>
+                    <property name="nativeName">REG_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">WARE_NM</property>
+                    <property name="nativeName">WARE_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select  c.SYS_OP_TM,c.collat_Id,c.collat_Nm,c.COLLAT_QTY,c.collat_Out_Qty,a.CNTRCT_NO,a.sel_Nm,a.BUSI_TP,c.COLLAT_CCY,c.COLLAT_RD_PRICE,b.FUND_RT,b.reg_Nm,b.WARE_NM
+from  TRX.COLLAT_CH_E c,TRX.CRTF_REG_M b,TRX.CNTRCT_M a
+where  c.reg_No = b.sys_Ref_No and b.cntrct_No = a.sys_Ref_No and a.busi_Tp = '4']]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SYS_OP_TM</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>6</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SYS_OP_TM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SYS_OP_TM</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_ID</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>18</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>18</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_NM</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>70</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>70</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_QTY</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>20</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_QTY</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_QTY</design:label>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_OUT_QTY</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>18</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_OUT_QTY</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_OUT_QTY</design:label>
+            <design:formattingHints>
+              <design:displaySize>18</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CNTRCT_NO</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CNTRCT_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CNTRCT_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SEL_NM</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>200</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SEL_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SEL_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>200</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>BUSI_TP</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>BUSI_TP</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>BUSI_TP</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_CCY</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>3</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_CCY</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_CCY</design:label>
+            <design:formattingHints>
+              <design:displaySize>3</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COLLAT_RD_PRICE</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>18</design:precision>
+            <design:scale>4</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COLLAT_RD_PRICE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COLLAT_RD_PRICE</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>FUND_RT</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>6</design:precision>
+            <design:scale>4</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>FUND_RT</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>FUND_RT</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REG_NM</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REG_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REG_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>WARE_NM</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>WARE_NM</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>WARE_NM</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="23">
+            <column id="24"/>
+            <row id="25">
+                <cell id="26">
+                    <label id="87">
+                        <property name="textAlign">center</property>
+                        <text-property name="text">存货类货物出入库台账查询</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="27">
+                <cell id="28">
+                    <table id="31">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">SYS_OP_TM</property>
+                                <text-property name="displayName">SYS_OP_TM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SYS_OP_TM"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_ID</property>
+                                <text-property name="displayName">COLLAT_ID</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_ID"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_NM</property>
+                                <text-property name="displayName">COLLAT_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_QTY</property>
+                                <text-property name="displayName">COLLAT_QTY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_QTY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_OUT_QTY</property>
+                                <text-property name="displayName">COLLAT_OUT_QTY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_OUT_QTY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CNTRCT_NO</property>
+                                <text-property name="displayName">CNTRCT_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CNTRCT_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SEL_NM</property>
+                                <text-property name="displayName">SEL_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SEL_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">BUSI_TP</property>
+                                <text-property name="displayName">BUSI_TP</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["BUSI_TP"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_CCY</property>
+                                <text-property name="displayName">COLLAT_CCY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_CCY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COLLAT_RD_PRICE</property>
+                                <text-property name="displayName">COLLAT_RD_PRICE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COLLAT_RD_PRICE"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">FUND_RT</property>
+                                <text-property name="displayName">FUND_RT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["FUND_RT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">REG_NM</property>
+                                <text-property name="displayName">REG_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["REG_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">WARE_NM</property>
+                                <text-property name="displayName">WARE_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["WARE_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="74"/>
+                        <column id="75"/>
+                        <column id="76"/>
+                        <column id="77"/>
+                        <column id="78"/>
+                        <column id="79"/>
+                        <column id="80"/>
+                        <column id="81"/>
+                        <column id="82"/>
+                        <column id="83"/>
+                        <column id="84"/>
+                        <column id="85"/>
+                        <column id="86"/>
+                        <header>
+                            <row id="32">
+                                <cell id="33">
+                                    <label id="88">
+                                        <text-property name="text">业务日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="34">
+                                    <label id="90">
+                                        <text-property name="text">商品编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="35">
+                                    <label id="91">
+                                        <text-property name="text">商品名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="36">
+                                    <label id="92">
+                                        <text-property name="text">入库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="37">
+                                    <label id="93">
+                                        <text-property name="text">出库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="38">
+                                    <label id="94">
+                                        <text-property name="text">货押协议编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="39">
+                                    <label id="95">
+                                        <text-property name="text">客户名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="40">
+                                    <label id="96">
+                                        <text-property name="text">业务类别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="41">
+                                    <label id="97">
+                                        <text-property name="text">币种</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="42">
+                                    <label id="98">
+                                        <text-property name="text">最新认定价格</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="43">
+                                    <label id="99">
+                                        <text-property name="text">质押率</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="44">
+                                    <label id="100">
+                                        <text-property name="text">监管方名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="45">
+                                    <label id="101">
+                                        <text-property name="text">仓库名称</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="46">
+                                <cell id="47">
+                                    <data id="89">
+                                        <property name="resultSetColumn">SYS_OP_TM</property>
+                                    </data>
+                                </cell>
+                                <cell id="48">
+                                    <data id="102">
+                                        <property name="resultSetColumn">COLLAT_ID</property>
+                                    </data>
+                                </cell>
+                                <cell id="49">
+                                    <data id="103">
+                                        <property name="resultSetColumn">COLLAT_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="50">
+                                    <data id="104">
+                                        <property name="resultSetColumn">COLLAT_QTY</property>
+                                    </data>
+                                </cell>
+                                <cell id="51">
+                                    <data id="105">
+                                        <property name="resultSetColumn">COLLAT_OUT_QTY</property>
+                                    </data>
+                                </cell>
+                                <cell id="52">
+                                    <data id="106">
+                                        <property name="resultSetColumn">CNTRCT_NO</property>
+                                    </data>
+                                </cell>
+                                <cell id="53">
+                                    <data id="107">
+                                        <property name="resultSetColumn">SEL_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="54">
+                                    <data id="108">
+                                        <property name="resultSetColumn">BUSI_TP</property>
+                                    </data>
+                                </cell>
+                                <cell id="55">
+                                    <data id="109">
+                                        <property name="resultSetColumn">COLLAT_CCY</property>
+                                    </data>
+                                </cell>
+                                <cell id="56">
+                                    <data id="110">
+                                        <property name="resultSetColumn">COLLAT_RD_PRICE</property>
+                                    </data>
+                                </cell>
+                                <cell id="57">
+                                    <data id="111">
+                                        <property name="resultSetColumn">FUND_RT</property>
+                                    </data>
+                                </cell>
+                                <cell id="58">
+                                    <data id="112">
+                                        <property name="resultSetColumn">REG_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="59">
+                                    <data id="113">
+                                        <property name="resultSetColumn">WARE_NM</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="60">
+                                <cell id="61"/>
+                                <cell id="62"/>
+                                <cell id="63"/>
+                                <cell id="64"/>
+                                <cell id="65"/>
+                                <cell id="66"/>
+                                <cell id="67"/>
+                                <cell id="68"/>
+                                <cell id="69"/>
+                                <cell id="70"/>
+                                <cell id="71"/>
+                                <cell id="72"/>
+                                <cell id="73"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="29">
+                <cell id="30"/>
+            </row>
+        </grid>
+    </body>
+</report>

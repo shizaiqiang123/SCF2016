@@ -1,0 +1,88 @@
+ #loading-mask{
+        background-color:white;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        z-index:20000;
+    }
+    #loading{
+        height:auto;
+        position:absolute;
+        left:45%;
+        top:40%;
+        padding:2px;
+        z-index:20001;
+    }
+    #loading a {
+        color:#225588;
+    }
+    #loading .loading-indicator{
+        background:white;
+        color:#444;
+        font:bold 13px Helvetica, Arial, sans-serif;
+        height:auto;
+        margin:0;
+        padding:10px;
+    }
+    #loading-msg {
+        font-size: 10px;
+        font-weight: normal;
+    }
+.divdownload{
+	margin:0 auto; /* 居中 这个是必须的，，其它的属性非必须 */ 
+    width:986px; /* 给个宽度 顶到浏览器的两边就看不出居中效果了 */ 
+    background-color:#fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	_margin-top:10px;
+	_margin-bottom:10px;
+	padding-top:10px;
+	_padding-top:10px;
+}
+.divtitleimg{
+	margin-left:20px;
+	_margin-left:20px;
+	margin-top:10px;
+	_margin-top:10px;
+}
+.divlist{
+	margin-top:50px;
+	_margin-top:50px;
+}
+#downloadTemplate a{color:#516f83;display:block;line-height:1.0em;padding:0px 5px 5px 18px;text-decoration:none}
+#downloadTemplate a:hover,#downloadTemplate a:active,#downloadTemplate a:focus,#downloadTemplate a.active{
+	color:#2c3d48;text-decoration:underline}
+#downloadTemplate div{margin-bottom:2px}
+#downloadTemplate h3{border-bottom:1px solid #e4ecf2;
+	padding:8px 6px 8px 36px;position:relative}
+#downloadTemplate h3 .back-to-top{color:#af4b08;cursor:pointer;display:none;font-size:12px;font-weight:bold;
+	position:absolute;right:11px;top:9px;text-align:right;width:200px}
+#downloadTemplate h3.over .back-to-top{display:block}
+#downloadTemplate #sample-0+h3{margin-top:2px}
+#downloadTemplate #sample-0+h3 .back-to-top{display:none !important}
+
+#downloadTemplate dl{margin:12px 0}
+#downloadTemplate dd{
+	border:1px solid #fff;font-size:12px;line-height:1.2em;
+	margin:5px 5px 5px 20px;padding:0px 5px 6px 138px;
+	-webkit-border-radius:5px;-moz-border-radius:5px;
+	-ms-border-radius:5px;-o-border-radius:5px;
+	border-radius:5px;width:300px;display:inline-block;
+	*display:inline;*zoom:1;vertical-align:top;overflow:hidden;cursor:pointer}
+	
+#downloadTemplate dd h4{color:#fd8c06;font-size:13px}
+#downloadTemplate dd img{border:1px solid #fff;float:left;
+	margin-left:-132px;
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 2px rgba(0,0,0,0.3);box-shadow:0 1px 2px rgba(0,0,0,0.3)}
+#downloadTemplate dd p{margin:0}
+#downloadTemplate dd i{color:#C33;font-style:normal;font-weight:bold}
+#downloadTemplate dd.over{background-color:#eeffbc;border:1px solid #6caf02}
+#downloadTemplate dd.over h4{color:#45740f}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00030</id>
+	<workid>1307</workid>
+	<workname>addBailPay</workname>
+	<name>预付类-追加保证金</name>
+	<desc>预付类-追加保证金</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

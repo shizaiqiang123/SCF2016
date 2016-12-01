@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000047</id>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>P</type>
+    <name>账务小页</name>
+	<desc>业务调整-function修改中弹出 面凾小页</desc>
+	<target>P_P_000185</target>
+</inqdata>

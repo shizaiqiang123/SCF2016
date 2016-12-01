@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>DeletePending公共页面(带级联)</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>F</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000815</id>
+    <name>DP公共页面</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <maincomp>trxDelPendingManager</maincomp>
+    <jspfile>jsp/SYS_DeletePending.jsp</jspfile>
+    <pagetype>DP</pagetype>
+</page>

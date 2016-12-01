@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+ <pagesSize>1</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000640</id>
+    <autoassignSize>0</autoassignSize>
+    <functype>VW</functype>
+    <page>
+        <desc>存货类货物出入库信息筛选页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000941</id>
+        <name>存货类货物出入库信息</name>
+        <index>0</index>
+        <catalog>C_P_000600</catalog>
+    </page>
+    <page>
+		<id>P_P_000810</id>
+		<index>1</index>
+		<name>存货类出入库信息</name>
+		<desc>查询存货类出入库信息页面</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page>	
+    <service>
+		<id>S_P_000487</id>
+		<trigger>M</trigger>
+		<name>生成Excel格式应收账款</name>
+	</service>
+   
+</function>

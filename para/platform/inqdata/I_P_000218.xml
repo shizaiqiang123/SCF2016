@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000218</id>
+	<name>look up</name>
+	<desc>look up</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000913</target>
+</inqdata>
+

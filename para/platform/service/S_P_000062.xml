@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000062</id>
+    <name>逾期应收账款</name>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Report</type>
+    <component></component>
+    <propertyBean>false</propertyBean>
+    <servicejs>S_P_00036.js</servicejs>
+    <methodname>perViewServiceData</methodname>
+</service>

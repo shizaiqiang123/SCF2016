@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000144</id>
+    <module>qqq</module>
+    <desc>qq</desc>
+    <name>qqq</name>
+    <lnode>
+        <nodeName>lnode</nodeName>
+        <id>test</id>
+        <name>test</name>
+    </lnode>
+    <nodeName>logicflow</nodeName>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

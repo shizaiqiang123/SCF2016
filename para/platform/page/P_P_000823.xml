@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000823</id>
+	<name>会计科目子页面</name>
+	<desc>会计科目子页面</desc>
+	<jspfile>jsp/para/Accountting_Account_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<!-- <maintable>logicflow</maintable> -->
+	<maintable>page</maintable>
+	<!-- <queryid>Q_P_000134</queryid> 
+	<logicid>L_P_000147</logicid>-->
+</page>

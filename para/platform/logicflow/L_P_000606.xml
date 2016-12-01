@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000606</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<!-- <lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CUST_INSURE</tablename>
+		<doname>collat</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>sysRefNo=?</condition>
+		<params>sysRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_P_000088.js</nodejs>
+	</lnode> -->
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CNTRCT_PAT_M</tablename><!--额度关联监管方  -->
+		<condition>cntrctNo=?</condition>
+		<params>cntrctNo</params>
+		<doname>party</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.COLLAT_REG_M</tablename><!--额度关联货物表  -->
+		<doname>collateList</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>cntrctNo=?</condition>
+		<params>cntrctNo</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+	<!-- <lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.LMT_M</tablename>
+		<doname>lmt</doname>
+		<condition>cntrctNo =?</condition>
+		<params>cntrctNo</params>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode> -->
+</logicflow>

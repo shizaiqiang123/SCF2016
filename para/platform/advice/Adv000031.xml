@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000003.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;&amp;nbsp;您好，您于$trxDt$办理的$sysFuncNm$业务，因未能在当日完成平台的内部授权，已被系统取消。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000031</id>
+    <title>隔日交易取消通知</title>
+    <remindtp>1</remindtp>
+    <name>取消隔日交易(站内信)</name>
+    <senddt>2015-08-25</senddt>
+</advice>

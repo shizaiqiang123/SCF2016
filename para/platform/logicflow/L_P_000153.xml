@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <module>Comm</module>
+    <desc>整合功能</desc>
+    <lnode>
+        <desc>ADD,EDIT,DEL整合</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>commManagerRecord</component>
+        <tablename>apsyst</tablename>
+        <name>保理商参数维护</name>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+    <nodeName>logicflow</nodeName>
+    <id>L_P_000153</id>
+    <name>公共管理组件</name>
+    <propertyBean>false</propertyBean>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

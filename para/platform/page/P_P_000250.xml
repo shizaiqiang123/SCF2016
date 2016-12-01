@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000250</id>
+	<name>查看还款历史</name>
+	<desc>查看还款历史</desc>
+	<jspfile>screen/pmt/queryPmtHisTory.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<queryid>Q_P_000267</queryid>
+</page>

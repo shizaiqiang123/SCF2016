@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000181</id>
+	<name>保理商角色查询</name>
+	<desc>保理商角色查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>queryProductRoleMenu</component>
+		<tablename>STD.STD_ROLE_INFO</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>C</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<sql/>
+	</qnode>
+</query>

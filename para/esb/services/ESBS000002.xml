@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000002</id>
+	<name>Advice</name>
+	<type>Advice</type>
+	<protocol>adviceServiceImpl</protocol>
+	<postadapter>adviceAdapter</postadapter>
+	<queryadapter>queryAdvice</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

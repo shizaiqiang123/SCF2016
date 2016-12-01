@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000438</id>
+	<name>合格证查询</name>
+	<MODULE>SYST</MODULE>
+	<!-- <jspfile>screen/catalog.jsp</jspfile> -->
+	<DESC>合格证查询</DESC>
+	<tablename>TRX.CRTF_REG_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="融资编号" defaultvalue="" width = "200">loanId</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "20%">sysRefNo</field>
+		<field datatype="1" title="经销商名称" hidden="" width = "20%" >selNm</field>
+		<field datatype="1" title="融资编号" hidden="" width = "20%" >loanId</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "20%" >cntrctNo</field>
+		<field datatype="1" title="核心企业编号" hidden="true" width = "300" >buyerId</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "20%" >selId</field>
+		<field datatype="1" title="业务类别" hidden="true" width = "300" >busiTp</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+	</select>
+	<condition>
+	sysRefNo like %$sysRefNo$% and loanId like %$loanId$% and cntrctNo like %$cntrctNo$% and sysTrxSts = P and sysOrgId = $sysOrgId$ 
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

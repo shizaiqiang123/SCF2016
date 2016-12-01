@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000102</id>
+	<name>成功页面</name>
+	<desc>成功页面</desc>
+	<jspfile>jsp/success.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<functype>cn</functype>
+	<istransaction>N</istransaction>
+	<maincomp></maincomp>
+	<maintable>STD.USER_INFO_E</maintable>	
+</page>

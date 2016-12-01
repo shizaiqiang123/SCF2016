@@ -1,0 +1,497 @@
+@charset "utf-8";
+body,.panel-body {
+   /*  background-color: #ffffff; */
+    color: #545454;
+    font-family: Arial,"微软雅黑",sans-serif;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+
+ul, ol, dl {
+	list-style: none outside none;
+}
+.utTab {
+  width:100%;
+      margin-top: 20px;
+    margin-bottom: 20px;
+}
+.UTSCF{
+	width:100%;
+	margin: 0 auto;
+/* 	min-height:600px; */
+	min-height:370px;
+}
+
+.utTab tr td {
+  font-size: 14px;
+  font-family:"微软雅黑",Regular,sans-serif;
+  padding: 0 0 15px 0;
+}
+
+.utTab tr td:first-child{
+	width:18%;
+ 	text-align:right;
+}
+
+.utTab tr td:nth-child(2){
+	width:32%;
+}
+.utTab tr td:nth-child(3){
+	width:18%;
+ text-align:right;
+}
+.utTab tr td:nth-child(4){
+	width:32%;
+}
+
+.jiacu{
+  font-weight:800;
+}
+.datagrid-header .datagrid-cell span {
+	font-family:"微软雅黑",Regular,sans-serif;
+  	font-size: 14px;
+}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{
+	font-family:"微软雅黑",Regular,sans-serif;
+  	font-size: 14px;
+}
+.words{
+  font-family:"微软雅黑",Regular,sans-serif;
+  text-align:center;
+  font-size: 14px;
+}
+.combo{
+	width:180px;
+	height:32px;
+	border-radius:5px;
+}
+
+.f-mustinput{
+	color:red;
+	padding-left:2px;
+	margin-left:2px;
+}
+
+/*按钮 start*/
+.blockAreaTools {
+	padding:12px;
+	background:#fff;
+	border-bottom:solid 1px #e5e5e5;
+}
+
+.btnRed {
+	background-color:#014295;
+}
+.btnGrey{
+	background-color:#999999;	
+}
+.btnOrange{
+	background-color:#de5b43;
+}
+.btnBlue {
+	background-color:#6caab6;
+}
+/*property css 必须放最后*/
+/*按钮通用不可用或只读背景*/
+.disabled,input:disabled {
+	background:#aaa;
+	color:#777;
+}
+
+.toolBtn {
+	width:36px;
+	padding-left:32px;
+	height:30px;
+	line-height:30px;
+	border-radius:3px;
+}
+
+.toolAdd {
+	background:#014295 url(../images/toolAdd.png) 6px center no-repeat;
+}
+
+.toolFix {
+	background:#014295 url(../images/toolFix.png) 6px center no-repeat;
+}
+
+.toolDel {
+	background:#014295 url(../images/toolDel.png) 6px center no-repeat;
+}
+
+.toolImport {
+	background:#014295 url(../images/toolImport.png) 6px center no-repeat;
+}
+.schBtn {
+	background:#014295 url(../images/sch-icon.png) 14px 7px no-repeat;
+	padding-left:44px;
+	width:90px;
+	line-height:38px;
+	height:38px;
+	text-align:left;
+	cursor:pointer;
+	border-radius:3px;
+}
+/*按钮 end*/
+
+/*字体相关通用样式*/
+.red {
+	color:#014295;
+}
+.white {
+	color:#fff;
+}
+.blue {
+	color:#13598d;
+}
+.tC {
+	text-align:center;
+}
+.tR {
+	text-align:right;
+}
+.fWn {
+	font-weight:normal;
+}
+.fWb {
+	font-weight:700;
+}
+.f14 {
+	font-size:14px;
+}
+.f16 {
+	font-size:16px;
+}
+.f18 {
+	font-size:18px;
+}
+
+/*sys_catalog*/
+.SYS_Catalog{
+	/*min-height: 345px;*/
+}
+.inputWrap {
+	border-radius:3px;
+	padding:5px 5px;
+	border:solid 1px #d2d2d2;
+	background-color:#fff;
+	line-height:0;
+}
+.blockArea {
+	border:solid 1px #cfcfcf;
+	background-color:#f0f0f0;
+}
+.blockAreaH1,.blockAreaH2 {
+	background-color:#313540;
+	line-height:38px;
+	padding-left:14px;
+}
+
+.datagrid-header-row, .datagrid-row {
+	height: 35px;
+}
+.blockAreaBtn {
+	/* margin-top:55px; */
+	width:96px;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	/* background-color:#b50029; */
+	border-radius:3px;
+	cursor:pointer;
+}
+.condList {
+	padding: 0px 0 10px 15px;/* 为了使catalog查询框距离顶部22px */
+}
+
+.condLists {
+/* 	min-width:30%; */
+	/*margin: 15px 15px 10px 0px;*/
+	display:inline;
+	line-height:32px;
+}
+#inputM1::-webkit-input-placeholder {
+	color:#cbcbcb;
+	 }
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	content: "";
+	visibility: hidden;
+}
+.clearfix {
+	*zoom: 1; /*解决IE6\7兼容问题*/
+}
+.catlogBtn{
+	min-width:20%;
+	margin-right: 3%;
+}
+/*外边距通用样式*/
+.w95 {
+	width:95px;
+}
+.w150 {
+	width:150px;
+}
+.mB20 {
+	margin-bottom:20px;
+}
+.mR10 {
+	margin-right:10px;
+}
+.dsB {
+	display:block;
+}
+.dsIB {
+	display:inline-block;
+}
+.fL {
+	float:left;
+}
+.fR {
+	float:right;
+}
+.tC{
+	text-align: center;
+}
+.disabled,input:disabled {
+	background:#ddd;
+	color:#777;
+}
+/*更改easyui .panel-header 背景色 */
+.window,.panel-header {
+   background: linear-gradient(#ffffff, #e1e1e1); /* 标准的语法 ,默认从上到下线性渐变*/
+   border-radius: 0;
+   float: left;
+   padding-left: 5px;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#e1e1e1,GradientType=0);
+   border: 1px solid #cbcbcb;
+   border-radius: 5px 5px 0 0;
+}
+.panel-title {
+       color: #323030;
+    font-size: 14px;
+    /* font-weight: bold; */
+    height: 26px;
+    line-height: 26px;
+    margin-left: 14px;
+    font-family: "微软雅黑",Regular,sans-serif;
+}
+.panel-header, .panel-body{
+	 border-color: #cccbcb;	 
+}
+.validatebox-invalid,.textbox-invalid {
+	clear: both;
+  /*   border-color: #e70012; */
+    color: #e70012;
+}
+/* 给text后面增加*号 */
+.requried-item-ifo:after{
+	  content: ' *';
+  color: #e70012;
+  font-size: 100%;
+  clear: both;
+  display: inline;
+  margin-left: 5px;
+  font-family: verdana,sans-serif;
+}
+
+/* 给textbox后面增加*号 */
+.textbox-invalid:after{
+	  content: ' *';
+  color: #e70012;
+  font-size: 100%;
+  clear: both;
+  display: inline;
+  margin-left: 5px;
+  font-family: verdana,sans-serif;
+}
+/*面板外边距*/
+.easyui-panel.panel-body{
+	/* margin-bottom:20px;
+	padding-top: 20px; */
+}
+
+/*中国银行*/
+#wrap {	
+	overflow:hidden;
+	margin:0 auto;
+	width: 1000px;
+	height:100%;
+}
+#wrap .header{
+	background: url("../images/zybl/boc2013_logo.png") no-repeat scroll left 50%;
+    height: 70px;
+}
+#footer {
+	position:relative;
+	margin-top:-80px; /*该值为footer高度的负值*/
+	height:80px;
+	clear:both;
+	width: 1000px;
+}
+#toolBarTable {
+  /*   margin-top: -45px;    */
+    z-index: 8999;
+    clear:both;
+}
+.blockAreaNotice {	 
+	 max-width: 50%;
+	/*margin-left: 180px;
+    margin-top: -70px; */
+	padding:25px 0 0 25px;
+}
+.blockAreaBtns {
+	max-width:80%;	
+}
+
+.blockAreaNoticeTitle,.blockAreaNoticeTxt {
+	line-height:24px;
+	padding-left:20px;
+}
+
+.blockAreaNoticeTitle {
+	background:url(../images/icon-ok.png) left center no-repeat;
+}
+
+/* 鼠标手 */
+.hover{
+	cursor:pointer;
+}
+
+/*from custom.css*/
+.div_ul {
+	margin: 0 auto;	
+	font: 14px arial;
+}
+.div_ul ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.div_ul ul li {
+	padding: 3px 0 3px 50px;
+	border-bottom: dotted 0px #666;
+}
+.div_ul ul li label {
+	display: block;
+	width: 100px;
+	float: left;
+	font-size: 14px;	
+}
+.div_ul ul li textarea,.div_ul ul li .setinput {
+	width: 580px;
+	font-size: 13px;
+	font-family: Arial;
+}
+
+.div_ul ul li img.ShowImg {
+	margin-left: 160px;
+}
+#titlefont{
+	font-size:large;
+	font-weight: bold;
+	
+}
+.alldialog{	
+	padding: 5px;
+	width:500px !important;
+	height:300px !important;
+}
+.div_inlineBlock{
+	display:inline-block;
+}
+.div_grid{
+	position: absolute;
+	width:100%;
+}
+#addReset{
+	display: none;
+}
+.div_screen{	
+	border:1px solid #95b8e7;
+	text-align:center;	
+	padding: 3px 0 3px 50px;	
+}
+.table_screen{
+	width:100%;
+	align:left;		
+}
+.l-textbox-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+.lin-textbox-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+
+.textbox-combo-readonly{
+	background: none repeat scroll 0 0 #d7d7d7;	
+}
+.textbox-combo-readonly .textbox-text{
+	background: none repeat scroll 0 0 #d7d7d7;
+}
+.pageNav{
+  font-size: 12px;
+  font-weight: bold;
+  color: #0E2D5F;
+  height: 16px;
+  line-height: 16px;
+}
+
+/*checkbox 大小*/
+form .checkbox,.datagrid-header-check input, .datagrid-cell-check input{	
+	margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;	
+}
+
+input{
+	width:180px;
+	height:32px;
+	border-radius:5px;
+	border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;    
+    padding-bottom: 0 !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #fff;
+    font-family: "微软雅黑",Regular,sans-serif;
+    border-color: #cbcbcb;
+    padding-left: 4px;
+}
+input[type="radio"]{
+	width:30px;
+	height:18px;
+}
+
+
+/*弹出层 tool 按钮*/
+.panel-tool a:hover{
+	background-color: #e5e5e5; 
+}
+/*弹出层 tool 按钮*/
+
+/*不需要打印的部分*/
+@media print{
+	.noprint{
+		display:none;
+	}
+}
+/*不需要打印的部分*/
+
+/* 在结果页上面的提示文字背景样式(2017.07.27 new by JinJH) */
+.result-notice-bg{
+	background-color:#014295;
+	border-radius:5px 5px 0 0;
+	width:auto;
+	height:30px;
+	color:#ffffff;
+	font-weight: bold;
+	padding-left:20px;
+	padding-top:8px;
+}

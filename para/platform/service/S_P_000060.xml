@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <type>Advice</type>
+    <id>S_P_000060</id>
+    <component></component>
+    <name>advice通知</name>
+    <name>自动核销账号不匹配通知</name>
+    <servicejs>S_P_00033.js</servicejs>
+  	<trigger>M</trigger>
+</service>

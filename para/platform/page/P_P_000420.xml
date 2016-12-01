@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000420</id>
+	<name>添加商品信息</name>
+	<desc>添加商品信息</desc>
+	<jspfile>screen/loan/qualifiedPage.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+</page>

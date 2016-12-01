@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_100001022</id>
+	<name>间接还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>间接还款Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="客户合同号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="客户合同号" hidden="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200">selNm</field>
+		<field datatype="1" title=" 应收账款余额" hidden="true" width = "200">arBal</field>
+		<field datatype="1" title="应收账款可融资余额" hidden="true" width = "200">arAvalLoan</field>
+		<field datatype="1" title=" 融资余额（池）" hidden="true" width = "200">openLoanAmt</field>
+		<field datatype="1" title="融资利息余额（池）" hidden="true" width = "200">openIntAmt</field>
+		<field datatype="1" title="业务类别" hidden="true" width = "200">busiTp</field>
+		<field datatype="1" title="授信客户ID" hidden="true" width = "200">selId</field>
+		<field datatype="1" title="流水号" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="还款日期DATE" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "200">sysBusiUnit</field>
+		<field datatype="1" title="还款模式" hidden="true" width = "200">finaTp</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "200">payIntTp</field>
+		<field datatype="1" title="lmtBal" hidden="true" width = "200">lmtBal</field>
+	</select>
+	<condition>
+		cntrctNo like %$cntrctNo$% and selNm like %$selNm$%  and  sysTrxSts = M and sysLockFlag = F and sysBusiUnit = $sysBusiUnit$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

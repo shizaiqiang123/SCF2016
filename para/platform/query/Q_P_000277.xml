@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000277</id>
+    <nodeSize>0</nodeSize>
+    <desc>新增百联用户查询成员企业</desc>
+    <name>新增百联用户查询成员企业</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>新增百联用户查询成员企业</name>
+		<desc>新增百联用户查询成员企业</desc>
+		<component>componentClass</component> 
+		<tablename>TRX.CUST_M</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<condition>busiUnit=$sysBusiUnit$ and custTp = 1 and sysTrxSts = M</condition>
+	</qnode>
+</query>

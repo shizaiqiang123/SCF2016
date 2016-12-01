@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <desc>融资到期预警</desc>
+    <task>
+        <desc>融资到期预警</desc>
+        <id>T_S_000033</id>
+        <name>融资到期预警</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000033</id>
+    <schedule>
+        <terminativedate>2016-12-25</terminativedate>
+        <second>0</second>
+        <beginfrom>2016-09-06</beginfrom>
+        <condition>N</condition>
+        <checkholiday>Y</checkholiday>
+        <express>* */0 * * * ? *</express>
+        <minute>0</minute>
+        <scheduletype>每分钟</scheduletype>
+        <isbybu>Y</isbybu>
+        <initialize>E</initialize>
+    </schedule>
+    <name>融资到期预警</name>
+</batch>

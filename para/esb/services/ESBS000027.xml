@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000027</id>
+	<name>SCF http post</name>
+	<type>SCF_HTTP_POST</type><!-- 对内开放的服务类型，消费者凭此类型调用服务 -->
+	<initlize>S</initlize>
+	<protocoltp>URL</protocoltp><!-- 接口协议类型 -->
+	<address>http://localhost:8080/SCFWeb/scfPost</address>
+	<inorout>i</inorout><!-- 当前服务是对内还是对外开放的，对内开放，属性对接外部接口，对外开放，属性对接内部监听 -->
+	<timeout>60</timeout>
+	<characterset>UTF-8</characterset>
+</esbservice>

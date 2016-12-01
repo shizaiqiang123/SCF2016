@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>删除供应商用户</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000347</id>
+    <module>应收款融资</module>
+    <name>删除用户</name>
+    <functype>MM</functype>
+    <page>
+		<id>P_P_000241</id>
+		<index>0</index>
+		<name>用户筛选页面</name>
+		<desc>用户筛选页面</desc>
+		<catalog>C_P_000301</catalog>
+	</page>		
+	<page>
+		<id>P_P_000207</id>
+		<index>1</index>
+		<name>删除用户</name>
+		<desc>删除用户页面</desc>
+		<pagetype>DELETE</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+		<logicid>L_P_000187</logicid>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000014</id>
+    <name>批处理审核融资申请</name>
+    <js>T0000006.js</js>
+    <component>batchReleaseLoanProcessor</component>
+    <jspfile></jspfile>
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>  
+    <catalog>C_P_000225</catalog>  
+    <trxdatapara>    	
+    </trxdatapara>
+</task>

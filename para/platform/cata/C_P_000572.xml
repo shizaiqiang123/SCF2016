@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000572</id>
+	<name>协议复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>协议复核Catalog</DESC>
+	<tablename>TRX.CNTRCT_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" defaultvalue="" width = "100">sellerInstCd</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+        <field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="true" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="协议金额" hidden="true" width = "100" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="" hidden="true" width = "100">lmtBal</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysBusiUnit</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "25%">sellerInstCd</field>
+		<field datatype="1" title="业务类别" hidden="" width = "25%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysOpId</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysOpTm</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelId</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysRelTm</field>
+		<field datatype="1" title="" hidden="true" width = "250" formatter="">sysTrxSts</field>
+	</select>
+	<condition>
+		sysTrxSts = P  and sysFuncId=F_P_000845 and cntrctNo like %$cntrctNo$% and  sellerInstCd like %$sellerInstCd$%  and  selNm like %$selNm$% and sysBusiUnit=$sysBusiUnit$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+	<asc>N</asc>
+</catalog>

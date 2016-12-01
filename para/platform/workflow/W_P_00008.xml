@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00008</id>
+	<workid>1308</workid>
+	<workname>Invc01</workname>
+	<name>应收账款转让申请</name>
+	<desc>应收账款转让申请</desc>
+	<jspath>W_P_00008.js</jspath>
+</workflow>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000611</id>
+	<name>池融资应收账款转让</name>
+	<MODULE>SYST</MODULE>
+	<!--  <jspfile>screen/catalog.jsp</jspfile>  -->
+	<DESC>池融资应收账款转让</DESC>
+	<tablename>TRX.TRF_REG_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "200" >cntrctNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "200" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200" >selNm</field>
+		<field datatype="1" title="转让金额" hidden="" width = "200" >regAmt</field>
+		<field datatype="1" title="交易时间" hidden="" width = "200"  formatter="dateFormater">trxDt</field>
+		
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		
+	</select>
+	<condition>
+	sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and cntrctNo like %$cntrctNo$% and sysTrxSts = P and sysFuncId = F_P_000681 and sysOrgId = $sysOrgId$
+	</condition>
+	 <orderby>id.sysRefNo</orderby>
+	 <asc>N</asc>
+</catalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000101</id>
+	<name>个人信息查询</name>
+	<desc>个人信息查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

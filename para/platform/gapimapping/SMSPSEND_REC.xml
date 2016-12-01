@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="GBK"?>
+<trxDom>
+	<gapiSts path="XML_PACK/SMSPBODY">RETCODE</gapiSts>
+	<gapiMsg path="XML_PACK/SMSPBODY">ERRMSG</gapiMsg>
+</trxDom>

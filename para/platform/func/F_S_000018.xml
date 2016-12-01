@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_S_000018</id>
+		<module>SYST</module>
+		<name>end of day</name>
+		<desc>end of day</desc>
+		<functype>MM</functype>
+	<page>
+		<id>P_S_000008</id>
+		<index>1</index>
+		<name>end of day</name>
+		<desc>end of day</desc>
+		<maincomp>TrxMasterManager</maincomp>
+		<pagetype>Edit</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

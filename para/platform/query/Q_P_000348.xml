@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000348</id>
+	<name>查询M表中所有汇票</name>
+	<desc>查询M表中所有汇票</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CRTF_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>sysRefNo =$sysRefNo$  and crtfNo = $crtfNo$ and  sysLockFlag = $sysLockFlag$</condition>
+		<orderby></orderby>
+		<asc>N</asc>
+		<sql/>
+	</qnode>
+</query>

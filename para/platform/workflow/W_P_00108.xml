@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00108</id>
+	<workid>1314</workid>
+	<workname>BuyerCntrct</workname>
+	<name>协议管理--买方保理</name>
+	<desc>协议管理--买方保理</desc>
+	<jspath>W_P_00014.js</jspath>
+</workflow>

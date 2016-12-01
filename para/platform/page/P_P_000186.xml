@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000186</id>
+	<name>业务调整账务小页</name>
+	<desc>业务调整-function-账务小页</desc>
+	<jspfile>screen\para\Function_Workflow_View.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>func</maintable>
+	<queryid>Q_P_000206</queryid>
+	<!-- <logicid>L_P_000151</logicid>  -->
+</page>

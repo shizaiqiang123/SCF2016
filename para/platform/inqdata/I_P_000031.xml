@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000031</id>
+	<name>Report小页</name>
+	<desc>Function页面中弹开Report页面</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000144</target>
+</inqdata>

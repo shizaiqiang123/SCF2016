@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000755</id>
+	<name>退回处理追加保证金</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>退回处理</DESC>
+	<tablename>TRX.BAIL_PAY_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%" >cntrctNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "20%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "20%">selNm</field>
+		<field datatype="1" title="保证金余额" hidden="" width = "20%">marginBal</field>
+		<field datatype="1" title="本次追加保证金金额" hidden="" width = "20%" >marginCompen</field>
+		<field datatype="1" title="流水编号" hidden="true" width = "20%">sysRefNo</field>
+		<field datatype="1" title="融资编号" hidden="true" width = "16.66%" >loanId</field>
+		<field datatype="1" title="业务类别" hidden="true" width = "16.66%" >busiTp</field>
+		<field datatype="1" title="币种" hidden="true" width = "16.66%" >ccy</field>
+		<field datatype="1" title="交易日期" hidden="true" width = "16.66%" >trxDt</field>
+		<field datatype="1" title="融资截止日" hidden="true" width = "16.66%" >loanValDt</field>
+		<field datatype="1" title="融资截止日" hidden="true" width = "16.66%" >loanDueDt</field>
+		<field datatype="1" title="融资总金额" hidden="true" width = "16.66%" >ttlLoanAmt</field>
+		<field datatype="1" title="初始保证金金额" hidden="true" width = "16.66%" >marginAmt</field>
+		<field datatype="1" title="本次追加保证金金额" hidden="true" width = "16.66%" >initMarginPct</field>
+		<field datatype="1" title="追加保证金账号" hidden="true" width = "16.66%" >payBailAcno</field>
+		<field datatype="1" title="操作次数" hidden="true" width = "16.66%" >sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "16.66%" >sysOpId</field>
+		<field datatype="1" title="" hidden="true" width = "16.66%" >sysOpTm</field>
+		<field datatype="1" title="" hidden="true" width = "16.66%" >sysRelId</field>
+		<field datatype="1" title="" hidden="true" width = "16.66%" >sysRelTm</field>
+		<field datatype="1" title="" hidden="true" width = "16.66%" >sysTrxSts</field>
+		</select>
+	<condition>
+		  cntrctNo like %$sysRefNo$% and selId like %$selId$% and selNm like %$selNm$%  and  busiTp = 10 and (sysTrxSts = S or sysTrxSts = P) and sysFuncId = F_P_000813 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

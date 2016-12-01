@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>0</expdt>
+    <js>AD0000007.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的应收款融资业务，截止至$loanDueDt$已经超过了规定期限，请及时登录平台办理还款手续。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000074</id>
+    <title>融资逾期(短信)</title>
+    <remindtp>1</remindtp>
+    <name>融资逾期(短信)</name>
+    <senddt>2015-09-21</senddt>
+</advice>

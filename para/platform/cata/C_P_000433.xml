@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000433</id>
+	<name>Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>Catalog</DESC>
+	<tablename>TRX.BLACKLIST_M</tablename>
+	<search>
+		<field datatype="1" title="证件号码" defaultvalue="" width = "100">cretCode</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="流水号" hidden="true" width = "100">sysRefNo</field>
+		<field datatype="1" title="业务类别" hidden="" width = "250" formatter="bussTypeFormater">bussType</field>
+		<field datatype="1" title="证件类型" hidden="" width = "250" formatter="cretTypeFormater">cretType</field>
+		<field datatype="1" title="证件号码" hidden="" width = "250" >cretCode</field>
+		<field datatype="1" title="名称（个人）" hidden="" width = "250" >blackName</field>
+		
+	</select>
+	<condition><![CDATA[ cretCode like %$cretCode$%  and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

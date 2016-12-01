@@ -1,0 +1,10 @@
+ClearCase CopyAreaDB|4
+vobs\FSSDB-FCSP_VOB\fssdb-fcsp_j2ee\src\FCSP\WebContent\css
+2
+6
+8:home.css|1|145cef47111|12dd|9706224b|abf9b8a2d00b11e39377e41f131e4b14|0
+1a:jquery-ui-1.7.2.custom.css|1|1454551a6c9|6d50|2a4b7e36|eb57b9f6d6fb402ebeb77db8a584f195|0
+b:lianav3.css|1|145cef4718d|b90|c588e01e|c0c189bfcf7311e38496e41f131e4b14|0
+7:bar.css|1|1456fca5455|fcb|36d01e9e|a0da59fdc62c11e381e3e41f131e4b14|0
+9:login.css|1|145cef47138|c30|896a403|8e1b2747d01a11e38785e41f131e4b14|0
+d:ui.jqgrid.css|1|1454551a6d9|27e9|d399da7d|983c82464d9d438fad3b27c8e47091d1|0

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000004.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您的登录账号为【$userId$】，默认密码【$passwordAdvice$】。为保证您的账号安全，请及时登录平台修改您的默认密码。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000082</id>
+    <title>创建操作员(短信)</title>
+    <remindtp>1</remindtp>
+    <name>创建操作员(短信)</name>
+    <senddt>2015-09-25</senddt>
+</advice>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000021</id>
+	<name>手机验证码页面</name>
+	<desc>手机验证码页面</desc>
+	<jspfile>jsp/SYS_PhoneVerifyCode.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>CA</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxCatalogManager</maincomp>
+	<maintable></maintable>
+</page>

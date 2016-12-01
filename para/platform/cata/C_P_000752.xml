@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000752</id>
+	<name>仓单-追加保证金</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>仓单-追加保证金申请</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "20%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "20%">selNm</field>
+		<field datatype="1" title="协议下融资余额" hidden="" width = "20%">openLoanAmt</field>
+		<field datatype="1" title="库存总价值" hidden="" width = "20%" >ttlRegAmt</field>	
+		<field datatype="1" title="初始保证金比例" hidden="true" width = "20%" >initGartPct</field>
+		<field datatype="1" title="币种" hidden="true" width = "20%" >lmtCcy</field>
+		<field datatype="1" title="" hidden="true" width = "100" >sysEventTimes</field>
+		</select>
+	<condition>
+		   sysRefNo like %$sysRefNo$% and selId like %$selId$% and selNm like %$selNm$% and  busiTp = 10  and sysLockFlag = F and sysTrxSts = M and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

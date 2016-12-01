@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>删除参数定义页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>N</holdmaster> 
+    <istransaction>Y</istransaction>
+    <id>P_P_000156</id>
+    <jspfile>jsp/para/Para_Delete.jsp</jspfile>
+    <name>删除参数定义页面</name>
+     <maincomp>trxLockRecord</maincomp>
+    <maintable>std.para_define_m</maintable>
+</page>

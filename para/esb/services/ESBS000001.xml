@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000001</id>
+	<name>Accounting</name>
+	<type>Accounting</type>
+	<protocol>accountingServiceImpl</protocol>
+	<postadapter>accountingAdapter</postadapter>
+	<queryadapter>accountingQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

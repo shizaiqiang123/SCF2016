@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000863</id>
+	<name>综合查询--间接客户额度树查询</name>
+	<desc>综合查询--间接客户额度树查询</desc>
+	<jspfile>jsp/SYS_Catalog_Buyer.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>CA</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxCatalogManager</maincomp>
+	<maintable></maintable>
+</page>

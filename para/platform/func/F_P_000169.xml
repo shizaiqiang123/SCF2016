@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <id>F_P_000169</id>
+	<module>PARA</module>
+	<name>查询Logic</name>
+	<desc>Logic管理-查询Logic</desc>
+	<functype>PA</functype>
+    <page>
+        <desc>筛选logic页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选logic</name>
+        <index>0</index>
+        <catalog>C_P_000203</catalog>
+        <pagetype>CA</pagetype><!-- 这个我有疑问？ -->
+    </page>
+	<page>
+		<transaction>false</transaction>
+        <refsSize>0</refsSize> 
+        <nodeName>page</nodeName>
+        <id>P_P_000137</id>
+		<index>1</index>
+		<name>查询Logic</name>
+		<desc>查询Logic</desc>
+		 <pagetype>View</pagetype> 
+	</page>
+</function>

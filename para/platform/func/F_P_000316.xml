@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000316</id>
+	<module>应收款融资</module>
+	<name>融资申请</name>
+	<desc>融资申请</desc>
+	<functype>PM</functype>
+<!-- 	<isValidCode>true</isValidCode> -->
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>catalog查询页面</name>
+		<desc>catalog查询页面</desc>
+		<catalog>C_P_000084</catalog>
+	</page>
+	<page>
+		<id>P_P_000086</id>
+		<index>1</index>
+		<name>融资页面</name>
+		<desc>融资页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+<!-- 	<page> -->
+<!-- 		<id>P_S_000012</id> -->
+<!-- 		<index>2</index> -->
+<!-- 		<name>账务处理</name> -->
+<!-- 		<accountingjs>A00000003.js</accountingjs> -->
+<!-- 	</page> -->
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<!-- <report>
+		<id>R_TEST_00004</id>
+	</report> -->
+	<autoassign>
+    	<id>F_P_000327</id>
+    	<type>M</type>
+    </autoassign>
+    <service>
+        <id>S_P_000055</id>
+        <servicejs>S_P_00030.js</servicejs>
+        <trigger>R</trigger>
+    </service>
+</function>

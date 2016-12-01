@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000505</id>
+	<name>动产质押追加保证金 查询票据Bill_M</name>
+	<desc>查询Bill_M</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.BILL_M</tablename>
+		<doname></doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,billNo,loanId,cntrctNo,selId,buyerId,billCcy,billAmt,billBal,billValDt,billDueDt,billRecp,billRecpAcno,marginBal,marginCompen,remark</fields>
+		<condition>t.loan_Id = '$loanId$' and (t.sys_Trx_Sts = 'M' or t.sys_Lock_By = '$sysLockBy$')</condition>
+		<orderby></orderby>
+		<params></params>
+		<asc></asc>
+		<sql><![CDATA[select t.sys_Ref_No,t.bill_No,t.loan_Id,t.cntrct_No,t.sel_Id,t.buyer_Id,t.bill_Ccy,t.bill_Amt,t.bill_Bal,to_char(t.bill_Val_Dt,'yyyy-mm-dd'),to_char(t.bill_Due_Dt,'yyyy-mm-dd'),t.bill_Recp,t.bill_Recp_Acno,t.margin_Bal,t.margin_Compen,t.remark from TRX.BILL_M t]]></sql>
+	</qnode>
+</query>

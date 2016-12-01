@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000155</id>
+    <module>PARA</module>
+    <desc>保理商function中-保存面凾小页</desc>
+    <name>面凾保存</name>
+    <propertyBean>false</propertyBean>
+    <nodeSize>1</nodeSize>
+    <transforSize>1</transforSize>
+    <lnode>
+		<id>N00000001</id>
+		<name>增减参数定义</name>
+		<desc>参数工具-增减参数定义表记录</desc>
+		<module>PARA</module>
+		<event>TestEvent</event>
+		<component>paraResetRecord</component>
+		<tablename>func</tablename>
+		<doname></doname>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+		<!-- <nodejs>L_P_000018.js</nodejs> -->
+    </lnode>
+</logicflow>

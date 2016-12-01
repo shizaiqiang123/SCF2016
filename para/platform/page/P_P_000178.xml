@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>ESBService开发工具页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <logicid>L_P_000147</logicid>
+    <id>P_P_000178</id>
+    <name>ESBService页面</name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>paraAdd</maincomp>
+    <jspfile>jsp/para/ESBService_Add.jsp</jspfile>
+    <maintable>esb/services</maintable>	
+</page>

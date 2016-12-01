@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000152</id>
+	<name>修改贷项清单页面信息</name>
+	<desc>修改贷项清单</desc>
+	<type>P</type>
+	<target>P_P_000752</target>
+</inqdata>

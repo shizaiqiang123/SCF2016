@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">8</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">8</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">8</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="invNo" id="9">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="selNm" id="10">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="buyerNm" id="11">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521/ORCL</property>
+            <property name="odaUser">std</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">c3Rk</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="8">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">INV_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INV_NO</text-property>
+                    <text-property name="heading">INV_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SEL_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SEL_NM</text-property>
+                    <text-property name="heading">SEL_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BUYER_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BUYER_NM</text-property>
+                    <text-property name="heading">BUYER_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_AMT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">INV_AMT</text-property>
+                    <text-property name="heading">INV_AMT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INV_DT</text-property>
+                    <text-property name="heading">INV_DT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TTL_DSP_INV_AMT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TTL_DSP_INV_AMT</text-property>
+                    <text-property name="heading">TTL_DSP_INV_AMT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DSP_RSN</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DSP_RSN</text-property>
+                    <text-property name="heading">DSP_RSN</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NOTIFY_BY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">NOTIFY_BY</text-property>
+                    <text-property name="heading">NOTIFY_BY</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">INV_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">SEL_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">BUYER_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">INV_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">INV_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">TTL_DSP_INV_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">DSP_RSN</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">NOTIFY_BY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[this.queryText="SELECT  b.inv_No,b.sel_Nm,b.buyer_Nm,b.inv_Amt,b.inv_Dt,a.ttl_Dsp_Inv_Amt,b.dsp_Rsn,a.notify_By               "
++" from  TRX.INVC_DSP_M a                                    "
++" Left join  TRX.INVC_M b  on  a.sys_Ref_No = b.dsp_Ref                     "
+var invNo = params["invNo"].value;
+var selNm = params["selNm"].value;
+var buyerNm = params["buyerNm"].value;
+if(invNo!=null &amp;&amp; invNo!=""){
+this.queryText+="AND b.inv_No like '%"+invNo+"%'";
+}
+if(selNm!=null &amp;&amp; selNm!=""){
+this.queryText+="AND b.sel_Nm like '%"+selNm+"%'";
+}
+if(buyerNm!=null &amp;&amp; buyerNm!=""){
+this.queryText+="AND b.buyer_Nm like '%"+buyerNm+"%'";
+}
+]]></method>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">INV_NO</property>
+                    <property name="nativeName">INV_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">SEL_NM</property>
+                    <property name="nativeName">SEL_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">BUYER_NM</property>
+                    <property name="nativeName">BUYER_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">INV_AMT</property>
+                    <property name="nativeName">INV_AMT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">INV_DT</property>
+                    <property name="nativeName">INV_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">TTL_DSP_INV_AMT</property>
+                    <property name="nativeName">TTL_DSP_INV_AMT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">DSP_RSN</property>
+                    <property name="nativeName">DSP_RSN</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">NOTIFY_BY</property>
+                    <property name="nativeName">NOTIFY_BY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select b.inv_No,b.sel_Nm,b.buyer_Nm,b.inv_Amt,b.inv_Dt,a.ttl_Dsp_Inv_Amt,b.dsp_Rsn,a.notify_By
+from  TRX.INVC_DSP_M a
+Left join  TRX.INVC_M b  on  a.sys_Ref_No = b.dsp_Ref ]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="12">
+            <column id="13"/>
+            <row id="14">
+                <cell id="15">
+                    <label id="71">
+                        <property name="textAlign">center</property>
+                        <text-property name="text">争议发票查询</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="16">
+                <cell id="17">
+                    <table id="20">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">INV_NO</property>
+                                <text-property name="displayName">INV_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["INV_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SEL_NM</property>
+                                <text-property name="displayName">SEL_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SEL_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">BUYER_NM</property>
+                                <text-property name="displayName">BUYER_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["BUYER_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">INV_AMT</property>
+                                <text-property name="displayName">INV_AMT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["INV_AMT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">INV_DT</property>
+                                <text-property name="displayName">INV_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["INV_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">TTL_DSP_INV_AMT</property>
+                                <text-property name="displayName">TTL_DSP_INV_AMT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["TTL_DSP_INV_AMT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DSP_RSN</property>
+                                <text-property name="displayName">DSP_RSN</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DSP_RSN"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">NOTIFY_BY</property>
+                                <text-property name="displayName">NOTIFY_BY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["NOTIFY_BY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="48"/>
+                        <column id="49"/>
+                        <column id="50"/>
+                        <column id="51"/>
+                        <column id="52"/>
+                        <column id="53"/>
+                        <column id="54"/>
+                        <column id="55"/>
+                        <header>
+                            <row id="21">
+                                <cell id="22">
+                                    <label id="72">
+                                        <text-property name="text">发票号码</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="23">
+                                    <label id="74">
+                                        <text-property name="text">卖方名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="24">
+                                    <label id="75">
+                                        <text-property name="text">买方名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="25">
+                                    <label id="76">
+                                        <text-property name="text">发票总金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="26">
+                                    <label id="77">
+                                        <text-property name="text">发票日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="27">
+                                    <label id="78">
+                                        <text-property name="text">争议金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="28">
+                                    <label id="79">
+                                        <text-property name="text">争议原因</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="29">
+                                    <label id="80">
+                                        <text-property name="text">争议提出方</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="30">
+                                <cell id="31">
+                                    <data id="73">
+                                        <property name="resultSetColumn">INV_NO</property>
+                                    </data>
+                                </cell>
+                                <cell id="32">
+                                    <data id="81">
+                                        <property name="resultSetColumn">SEL_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="33">
+                                    <data id="82">
+                                        <property name="resultSetColumn">BUYER_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="34">
+                                    <data id="83">
+                                        <property name="resultSetColumn">INV_AMT</property>
+                                    </data>
+                                </cell>
+                                <cell id="35">
+                                    <data id="84">
+                                        <property name="resultSetColumn">INV_DT</property>
+                                    </data>
+                                </cell>
+                                <cell id="36">
+                                    <data id="85">
+                                        <property name="resultSetColumn">TTL_DSP_INV_AMT</property>
+                                    </data>
+                                </cell>
+                                <cell id="37">
+                                    <data id="86">
+                                        <property name="resultSetColumn">DSP_RSN</property>
+                                    </data>
+                                </cell>
+                                <cell id="38">
+                                    <data id="87">
+                                        <property name="resultSetColumn">NOTIFY_BY</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="39">
+                                <cell id="40"/>
+                                <cell id="41"/>
+                                <cell id="42"/>
+                                <cell id="43"/>
+                                <cell id="44"/>
+                                <cell id="45"/>
+                                <cell id="46"/>
+                                <cell id="47"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="18">
+                <cell id="19"/>
+            </row>
+        </grid>
+    </body>
+</report>

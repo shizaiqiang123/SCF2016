@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000136</id>
+    <desc>WS调用模拟</desc>
+    <name>WS调用模拟</name>
+    <target>L_P_000209</target>
+    <type>L</type>
+</inqdata>

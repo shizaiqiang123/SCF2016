@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<gapiSts path="XERP/BODY">RET_CODE</gapiSts>
+	<gapiMsg path="XERP/BODY">RET_MSG</gapiMsg>
+	<bankFinId path="XERP/BODY">INS_ID</bankFinId>
+	<erpInsId path="XERP/BODY">ERP_INS_ID</erpInsId>
+</trxDom>

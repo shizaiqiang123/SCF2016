@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000250</id>
+	<name>融资申请</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<transfornode>
+		<id>N00000001</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields></fields>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,invBal</fields>
+			<values>F,$invBal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000089.js</nodejs> 
+	</transfornode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00005</name>
+		<desc>DESC TEST5</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_LOAN_M</tablename>
+		<fields></fields>
+		<doname>invcLoan</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,loanAmt</fields>
+			<values>F,$loanAmt$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000089.js</nodejs>
+	</transfornode>
+</logicflow>

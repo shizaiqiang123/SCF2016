@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_S_10000002</id>
+	<name>权限信息</name>
+	<desc>权限信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxPermissionRecord</component>
+		<tablename>STD.STD_PERMISSION_INFO</tablename>
+		<doname></doname>
+		<type>E</type>				
+	</lnode>
+</logicflow>

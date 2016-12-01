@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000257</id>
+	<module>应收账款台帐查询</module>
+	<name>应收账款台帐查询</name>
+	<desc>应收账款台帐查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_S_000020</id>
+		<index>0</index>
+		<name>应收账款台帐查询</name>
+		<desc>应收账款台帐查询</desc>
+		<catalog>C_P_10000106</catalog>
+	</page>
+	<!-- <page>
+		<id>P_P_000159</id>
+		<index>1</index>
+		<name>应收账款台帐查询</name>
+		<desc>应收账款台帐查询</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page> -->
+</function>

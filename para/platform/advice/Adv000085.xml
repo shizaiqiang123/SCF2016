@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000004.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您已提交注册申请，等待平台审核，您可通过【注册进度查询】功能查看注册信息的审核进度。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000085</id>
+    <title>注册信息等待平台审核</title>
+    <remindtp>1</remindtp>
+    <name>注册待审核(站内信)</name>
+    <senddt>2015-09-18</senddt>
+</advice>

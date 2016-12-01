@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="custNm" id="9">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="sysRefNo" id="10">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521/ORCL</property>
+            <property name="odaUser">std</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">c3Rk</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">SYS_REF_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SYS_REF_NO</text-property>
+                    <text-property name="heading">SYS_REF_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CUST_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CUST_NM</text-property>
+                    <text-property name="heading">CUST_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LMT_AMT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">LMT_AMT</text-property>
+                    <text-property name="heading">LMT_AMT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LMT_BAL</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">LMT_BAL</text-property>
+                    <text-property name="heading">LMT_BAL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CCY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CCY</text-property>
+                    <text-property name="heading">CCY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">VALID_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">VALID_DT</text-property>
+                    <text-property name="heading">VALID_DT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DUE_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DUE_DT</text-property>
+                    <text-property name="heading">DUE_DT</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">SYS_REF_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">CUST_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">LMT_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">LMT_BAL</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">VALID_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">DUE_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[this.queryText="SELECT sys_Ref_No,cust_Nm,lmt_Amt,lmt_Bal,ccy,valid_Dt,due_Dt           "
++" FROM  TRX.CUST_M                                    "
++" WHERE  cust_Tp = 2 and sys_Trx_Sts = 'M'                      "
+var custNm = params["custNm"].value;
+var sysRefNo = params["sysRefNo"].value;
+if(custNm!=null &amp;&amp; custNm!=""){
+this.queryText+="AND cust_Nm like '%"+custNm+"%'";
+}
+if(sysRefNo!=null &amp;&amp; sysRefNo!=""){
+this.queryText+="AND sys_Ref_No like '%"+sysRefNo+"%'";
+}]]></method>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">SYS_REF_NO</property>
+                    <property name="nativeName">SYS_REF_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">CUST_NM</property>
+                    <property name="nativeName">CUST_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">LMT_AMT</property>
+                    <property name="nativeName">LMT_AMT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">LMT_BAL</property>
+                    <property name="nativeName">LMT_BAL</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">CCY</property>
+                    <property name="nativeName">CCY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">VALID_DT</property>
+                    <property name="nativeName">VALID_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">DUE_DT</property>
+                    <property name="nativeName">DUE_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select  sys_Ref_No,cust_Nm,lmt_Amt,lmt_Bal,ccy,valid_Dt,due_Dt
+from  TRX.CUST_M
+where cust_Tp = 2 and sys_Trx_Sts = 'M']]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="11">
+            <column id="12"/>
+            <row id="13">
+                <cell id="14">
+                    <label id="52">
+                        <property name="textAlign">center</property>
+                        <text-property name="text">间接客户额度树查询</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="15">
+                <cell id="16">
+                    <table id="19">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">SYS_REF_NO</property>
+                                <text-property name="displayName">SYS_REF_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CUST_NM</property>
+                                <text-property name="displayName">CUST_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">LMT_AMT</property>
+                                <text-property name="displayName">LMT_AMT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["LMT_AMT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">LMT_BAL</property>
+                                <text-property name="displayName">LMT_BAL</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["LMT_BAL"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CCY</property>
+                                <text-property name="displayName">CCY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CCY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">VALID_DT</property>
+                                <text-property name="displayName">VALID_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["VALID_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DUE_DT</property>
+                                <text-property name="displayName">DUE_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DUE_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                        </list-property>
+                        <column id="44"/>
+                        <column id="45"/>
+                        <column id="46"/>
+                        <column id="47"/>
+                        <column id="48"/>
+                        <column id="49"/>
+                        <column id="50"/>
+                        <header>
+                            <row id="20">
+                                <cell id="21">
+                                    <label id="51">
+                                        <text-property name="text">间接客户编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="22">
+                                    <label id="53">
+                                        <text-property name="text">间接客户名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="23">
+                                    <label id="54">
+                                        <text-property name="text">额度金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="24">
+                                    <label id="55">
+                                        <text-property name="text">额度余额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="25">
+                                    <label id="56">
+                                        <text-property name="text">额度币种</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="26">
+                                    <label id="57">
+                                        <text-property name="text">额度起始日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="27">
+                                    <label id="58">
+                                        <text-property name="text">额度到期日</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="28">
+                                <cell id="29">
+                                    <data id="59">
+                                        <property name="resultSetColumn">SYS_REF_NO</property>
+                                    </data>
+                                </cell>
+                                <cell id="30">
+                                    <data id="60">
+                                        <property name="resultSetColumn">CUST_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="31">
+                                    <data id="61">
+                                        <property name="resultSetColumn">LMT_AMT</property>
+                                    </data>
+                                </cell>
+                                <cell id="32">
+                                    <data id="62">
+                                        <property name="resultSetColumn">LMT_BAL</property>
+                                    </data>
+                                </cell>
+                                <cell id="33">
+                                    <data id="63">
+                                        <property name="resultSetColumn">CCY</property>
+                                    </data>
+                                </cell>
+                                <cell id="34">
+                                    <data id="64">
+                                        <property name="resultSetColumn">VALID_DT</property>
+                                    </data>
+                                </cell>
+                                <cell id="35">
+                                    <data id="65">
+                                        <property name="resultSetColumn">DUE_DT</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="36">
+                                <cell id="37"/>
+                                <cell id="38"/>
+                                <cell id="39"/>
+                                <cell id="40"/>
+                                <cell id="41"/>
+                                <cell id="42"/>
+                                <cell id="43"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="17">
+                <cell id="18"/>
+            </row>
+        </grid>
+    </body>
+</report>

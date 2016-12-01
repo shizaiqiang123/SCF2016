@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00058</id>
+	<workid>1307</workid>
+	<workname>dspBuyerRegister</workname>
+	<name>买方保理_争议登记</name>
+	<desc>买方保理_争议登记</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000332</id>
+    <name>用户上次登录时间</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_LOG_INFO</tablename>
+		<condition>userId=$userId$</condition>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<orderby>userLoginTime</orderby>
+		<asc>n</asc>
+	</qnode>
+</query>

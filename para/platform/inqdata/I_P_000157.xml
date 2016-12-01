@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000157</id>
+	<desc>回执单更新打印次数pmt</desc>
+	<name>回执单更新打印次数pmt</name>
+	<target>L_P_000003</target>
+	<type>L</type>
+</inqdata>

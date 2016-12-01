@@ -1,0 +1,248 @@
+/**
+ * @fileoverview  reset && common
+ * @author yubin
+ * @version v1
+ * @build 2015-03-25
+ */
+@charset "utf-8"; 
+/*******************reset************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, s,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video  {
+    margin:0 auto;
+/*     margin-top: 20; */
+    padding:0;
+    border:0;
+    outline:0;
+    background:transparent;
+}
+article,aside,details,summary,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+ul,li{ list-style: none;}
+
+a{color: #1F1F1F; text-decoration:none; cursor:pointer }
+/* a:hover{color:#015a9c;text-decoration:underline;} */
+
+em,var { font-style:normal;}
+input,textarea,select{ font-size:12px; border:solid 1px #fff; color:#999;}
+
+/**********************common**************************/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+
+/*css3 style*/
+.has-trans{
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    transition: all 0.3s ease-out;
+}
+
+.floatleft{ float: left}
+.floatright{ float:right}
+.yellow{ color:#FDEFD4}
+.blue{ color: #1F5DBE}
+.gray{ color: #666666}
+.hidden{display: none;}
+
+html{overflow-x: hidden; overflow-y:auto;}
+body{
+margin:0px auto;
+padding:0px;
+font:normal 12px/200% Helvetica, Tahoma, Arial, sans-serif;
+color: #333333;
+font-family:"Microsoft YaHei";
+}
+
+img,embed{border:0px;vertical-align:middle;}
+.clearfix{display:block;zoom:1;width:1000px;} 
+.clearys{clear:both}
+.box{width:960px;margin-left:auto;margin-right:auto;}
+
+
+/*  娑撹缍嬮弽宄扮础  */ 
+#wrapper{ margin-left:auto; margin-right:auto; width:auto;}
+#main{ width:1003px; margin-left:auto; margin-right:auto;}
+.bg_col{background-color:#272018;}
+.div_clear{ clear:both}
+
+/*  缂冩垹鐝径鎾劥閺傚洣娆� */  
+#head_bg{ margin-left:auto; margin-right:auto; width:auto; background:#1F5DBE; height:95px;}
+#head{ width:1195px; margin-left:auto; margin-right:auto; height:89px;}
+.logo{ width:150px; height:53px; float:left; margin-top:22px;}
+#sub_head { width:1195px; margin-left:auto; margin-right:auto; height:89px;}
+
+/*  缂冩垹鐝惔鏇㈠劥閺傚洣娆� */ 
+#bottom{ background:#fff; font-size:14px; margin:0px auto; text-align:center; color:#333; width:1195px; height:65px; line-height:65px;}
+#sub_foot{ background:#F9F9F9; font-size:14px; margin:0px auto; text-align:center; color:#333; width:1195px; height:65px; line-height:65px;}
+
+/*  妫ｆ牠銆夐悞锔惧仯閸ワ拷*/
+
+#mid_banner{position:relative; margin-left:auto; margin-right:auto; height:609px;}
+#banner{ margin-left:auto; margin-right:auto; height:609px; width:100%; background: url(../../images/image/login1_07.png) top center no-repeat;position:absolute; z-index:10;} 
+.iBan { height:609px; top:-145px;background:#fff; overflow:hidden; z-index:10;_zoom:10; clear: none;}
+.iBanScreen{  height:609px; background-image: url(../../images/image/index_06.png); background-repeat:no-repeat; background-position:center top;}
+.banFn{ width:1003px; height:358px; margin:0 auto; position:relative;top:-424px; z-index:99 }
+.ibanImg{ display:none;}
+.iBan .banNum{width:75px;height:19px;position:absolute;bottom:80px;left:50%;margin-left:-38px; z-index:50}
+.iBan .banNum a{width:15px;height:19px;background:url(../../images/image/icon/dots.png) no-repeat center ;_background:url(../../images/image/icon/dots.gif) no-repeat center ;display:inline;overflow:hidden;text-indent:-999em;float:left;}
+.iBan .banNum a.dots{background:url(../../images/image/icon/dotsFocus.png) no-repeat center ;_background:url(../../images/image/icon/dotsFocus.gif) no-repeat center ;}
+
+/*  娴兼艾鎲抽惂璇茬秿 */
+#vip{margin-left:auto; margin-right:auto; width:370px; height:373px; margin-top:90px; left:50%; float:left; margin-left:120px; position:absolute; z-index:90; background:url(../../images/image/login_09.png) top center} 
+#vip_left_mid{ width:310px; margin:25px auto 0px auto; height:315px;}
+.title_bgline_in{width:310px; background:url(../../images/image/login2_09.png) left bottom no-repeat; height:35px; line-height:35px; font-size:18px; font-weight:bold; color:#2681FF;}
+.input_in_bg{width:310px; margin-top:15px;}
+.input_in_bg .li_td{ border:#E0E0E0 1px solid; height:40px; margin-bottom:15px;}
+.input_in_bg .li_td .left_img{ margin-left:5px; width:19px; margin-top:10px; float:left}
+.input_in_bg .li_td .right_text{ width:275px; float:right; height:40px; font-size:15px; color:#999999}
+.input_in_bg .li_td .right_text input{ width:260px; height:35px;}
+
+.input_in_bg .li_code{ height:44px; margin-bottom:15px;}
+.input_in_bg .li_code .left_input_code{ border:#E0E0E0 1px solid; width:180px; float:left; height:42px;}
+.input_in_bg .li_code .left_input_code .left_img_code{ margin-left:5px; width:19px; margin-top:14px; float:left}
+.input_in_bg .li_code .left_input_code .right_text_code{ width:150px; float:right; height:40px; font-size:15px; color:#999999}
+.input_in_bg .li_code .left_input_code .right_text_code input{ width:140px; height:40px;}
+.input_in_bg .li_code .right_input_img{ border:#E0E0E0 1px solid; width:115px; float:right; height:42px;}
+
+.pwd_login_text{ width:310px; height:30px; margin:10px auto; font-size:12px;}
+.pwd_login_text .left_login{ width:100px; font-size:12px; float:left}
+.pwd_login_text .right_pwd{ width:100px; font-size:12px; float:right}
+
+.button{ width:309px; height:43px; margin:0px auto;}
+
+#flot_bg_in{ height:63px; background:url(../../images/image/login_13.png) center; position:absolute; z-index:90; top:546px; width:100%}
+#flot_bg_in .mid_text_title_in{ width:1095px; margin:0px auto; height:63px; line-height:63px; font-size:16px; color:#fff}
+#flot_bg_in .mid_text_title_in li{ width:365px; float:left; text-align:center}
+
+
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷---鐎佃壈鍩呴弶锟�/
+#nav{ float: right; width:450px; height:40px; margin-top:25px; color:#FFFFFF; margin-right:20px;}
+#nav li{ width:120px; font-size:14px; line-height:40px; text-align:center; background:url(../../images/image/subin-_03.png) right center no-repeat; float:right}
+#nav .nli{width:140px; font-size:14px; line-height:40px; text-align:center; background:url(../../images/image/subin-_03.png) right center no-repeat; float:right}
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷---banner */
+#banner_sub{ height:300px; margin:5px auto; background:url(../../images/image/subin-_06.png) center top no-repeat}
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷-娑擃參妫挎径鏉戝剼娣嚶ょ崟缁涳拷*/
+#info_sub{ height:114px; width:100%; margin:0px auto;}
+#info_sub .mid_con_sub{ height:114px; width:100%; margin:0px auto}
+#info_sub .mid_con_sub .left_img_info{ width:45%; height:80px; float:left; margin:15px auto 0px auto;}
+#info_sub .mid_con_sub .left_img_info .portrait_left{ width:25%; float:left;}
+#info_sub .mid_con_sub .left_img_info .name_time_right{ float:right; width:75%; font-size:14px;}
+#info_sub .mid_con_sub .left_img_info .name_time_right li{ height:35px; line-height:35px; font-size:15px;}
+
+
+#info_sub .mid_con_sub .right_text_info{ width:50%; float:right; margin:15px 15px 0px auto;}
+#info_sub .mid_con_sub .right_text_info .company_text{width:100%; text-align:right; color:#898989; font-size:18px; line-height:35px;}
+#info_sub .mid_con_sub .right_text_info .attest_credit{width:100%; height:35px; line-height:35px; color:#b50029; font-size:16px;}
+#info_sub .mid_con_sub .right_text_info .attest_credit .attest{width:60px; float:right; text-align:right}
+#info_sub .mid_con_sub .right_text_info .attest_credit .credit{width:300px; float:right; margin-right:95px; text-align:right}
+
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷-娑撹鍞寸�鐟板隘閸╋拷*/
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷-瀵板懎濮欐禒璇插缁涳拷*/
+#submain{ width:100%; margin:22px auto 0px auto;font-size:20px}
+#submain .left_news_img{ width:100%; float:left;}
+#remind{ width:896px; height:103px; margin:0px auto;}
+#remind .li1{ width:199px; height:103px; float:left; margin-right:22px; background:url(../../images/image/subin-_33.png) left center no-repeat;}
+#remind .li2{ width:199px; height:103px; float:left; margin-right:22px; background:url(../../images/image/subin-_35.png) left center no-repeat;}
+#remind .li3{ width:199px; height:103px; float:left; margin-right:22px; background:url(../../images/image/subin-_37.png) left center no-repeat;}
+#remind .li4{ width:232px; height:103px; float:left;}
+#remind div{ float:right; margin-right:15px; font-size:40px; color:#fff; text-align:right; line-height:70px; width:120px;}
+#remind a{ color:#fff}
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷-鐎广垺鍩涚紒鐔活吀閸欏﹨鐎虹挧鍕埠鐠侊拷*/
+#client_financing{width:896px;  height:260px;padding-bottom: 35px;}
+#client_financing1{width:47%;  height:230px;float:left;margin: 80px 0 80px 50px;/* padding-bottom: 35px;margin-left:50px */}
+#client_financing2{width:47%;  height:230px;float:left;margin: 80px 0 80px 0;/* padding-bottom: 35px; */}
+.client_left{ border:#DDD 1px solid; height:215px; width:90%; float:left;border-top: 5px solid #014295;border-radius: 5px;box-shadow: 0px 0px 10px #909090;margin-left:10px}
+.client{ height:220px; width:99%; float:left}
+.client_left .title_head{ height:44px; width:95%; margin:0px auto;    font-weight: 600;}
+.client_left .title_head .left_title_client{ float:left; line-height:44px; width:60%; font-size:16px; color:#545454 ;}
+.client_left .title_head .right_new_client{ float:right; line-height:44px; text-align: right; font-size:14px; color:#018CF5 }
+.client_left .title_head .right_new_client a{color: #014295;}
+
+.client_left .con_list_client{ height:54px;  border-top:#C1C0C0 1px solid; font-size:14px; color:#545454}
+.client_left .con_list_client .left_tit_client{ line-height:54px;float:left;padding-left:10px;}
+.client_left .con_list_client .right_con_client{line-height:54px;float:right;padding-right:10px}
+.right_new_client_div{background: url("../../images/style/btn/right.png") no-repeat scroll left 50%;cursor: pointer;width: 20px;height: 20px;margin-top: 10px;}
+
+.financing_right{ background:#F9F9F9; border:#DDD 1px solid; height:215px; width:449px; float:right}
+
+.financing_right .title_head_fin{ height:44px; width:422px; margin:0px auto;}
+.financing_right .title_head_fin .left_title_financ{ float:left; line-height:44px; width:200px; font-size:16px; color:#5A5A5A }
+.financing_right .title_head_fin .right_new_financ{ float:right; line-height:44px; width:80px; text-align: right; font-size:14px; color:#018CF5 }
+
+.financing_right .con_list_financ{ height:54px; width:422px; margin:0px auto; border-top:#DDD 1px solid; font-size:14px; color:#5A5A5A}
+.financing_right .con_list_financ .left_tit_financ{ line-height:54px; width:102px; border-right:#DDD 1px solid; float:left;}
+.financing_right .con_list_financ .right_con_financ{line-height:54px; width:310px; float:right}
+
+
+
+
+
+/*  閻ц缍嶉崥搴ㄣ�闂堬拷-閸欏厖鏅剁搾鍛存懠 */
+/* #submain .link_right{width:19%; float:right;height: 71%;} */
+#submain .link_right{width:19%; float:right;}
+#submain .link_right .title_bg{ background:#b50029; text-align:center; color:#fff; font-size:16px; height:33px; line-height:33px; width:100%; margin-bottom:7px;}
+#submain .link_right .link{ height:37px; line-height:250%; background:#F4F4F4; font-size:15px; border:#DDD 1px solid; color:#6A6A6A; margin-bottom:10px;}
+#submain .link_right .link li{ background: url(../../images/image/subin-_49.png) right center no-repeat; width:90%;  margin:0px auto}
+#submain .link_right .linkadd a{color:#6A6A6A;}
+#submain .link_right .linkadd{ height:37px; line-height:84%; background:#F4F4F4; font-size:40px; border:#DDD 1px solid; color:#6A6A6A; margin-bottom:10px;}
+#submain .link_right .linkadd li{ width:84%;  margin-left:42%}
+#submain .link_right .linkadd a{color:#6A6A6A;}
+
+/* 娓氀嗙珶閹凤箑鎻╅幑宄邦嚤閼割亝鐗卞锟�/
+.link_right{width:19%; float:right;}
+ .link_right .title_bg{ background:#b50029; text-align:center; color:#fff; font-size:14px; height:33px; line-height:33px; width:100%; margin-bottom:7px;}
+ .link_right .link{ height:37px; line-height:250%; background:#F4F4F4; font-size:15px; border:#DDD 1px solid; color:#6A6A6A; margin-bottom:10px;}
+ .link_right .link li{ background: url(../../images/image/subin-_49.png) right center no-repeat; width:90%;  margin:0px auto}
+.link_right .linkadd a{color:#6A6A6A;}
+ .link_right .linkadd{ height:37px; line-height:84%; background:#F4F4F4; font-size:40px; border:#DDD 1px solid; color:#6A6A6A; margin-bottom:10px;}
+.link_right .linkadd li{ width:84%;  margin-left:42%}
+ .link_right .linkadd a{color:#6A6A6A;}
+
+
+
+
+

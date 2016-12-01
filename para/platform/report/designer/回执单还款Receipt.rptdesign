@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="1230">
+            <property name="FILELIST">datasourcePmt.xml</property>
+            <property name="ENCODINGLIST">UTF-8</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="1382">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">loanId</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">loanId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">printNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">printNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">selNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payPrinAmt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">payPrinAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanRt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">loanRt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanValDt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">loanValDt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">pmtDt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">pmtDt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">GreatPayIntAmt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">GreatPayIntAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payIntAmt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">payIntAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">loanDueDt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">loanDueDt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sysData</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">sysData</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">clearPmt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">clearPmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">oldpayPrinAmt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">oldpayPrinAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">remark</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">remark</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">loanId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">printNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">selNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">payPrinAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">loanRt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">loanValDt</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">pmtDt</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">GreatPayIntAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">payIntAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">loanDueDt</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">sysData</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">clearPmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">oldpayPrinAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">remark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">loanId</property>
+                    <property name="nativeName">loanId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">printNumber</property>
+                    <property name="nativeName">printNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">selNm</property>
+                    <property name="nativeName">selNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">payPrinAmt</property>
+                    <property name="nativeName">payPrinAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">loanRt</property>
+                    <property name="nativeName">loanRt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">loanValDt</property>
+                    <property name="nativeName">loanValDt</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">pmtDt</property>
+                    <property name="nativeName">pmtDt</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">GreatPayIntAmt</property>
+                    <property name="nativeName">GreatPayIntAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">payIntAmt</property>
+                    <property name="nativeName">payIntAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">loanDueDt</property>
+                    <property name="nativeName">loanDueDt</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">sysData</property>
+                    <property name="nativeName">sysData</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">clearPmt</property>
+                    <property name="nativeName">clearPmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">oldpayPrinAmt</property>
+                    <property name="nativeName">oldpayPrinAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">remark</property>
+                    <property name="nativeName">remark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root]#:#{loanId;STRING;/trxDom/loanId},{printNumber;STRING;/trxDom/printNumber},{selNm;STRING;/trxDom/selNm},{payPrinAmt;STRING;/trxDom/payPrinAmt},{loanRt;STRING;/trxDom/loanRt},{loanValDt;DATE;/trxDom/loanValDt},{pmtDt;DATE;/trxDom/pmtDt},{GreatPayIntAmt;STRING;/trxDom/GreatPayIntAmt},{payIntAmt;STRING;/trxDom/payIntAmt},{loanDueDt;DATE;/trxDom/loanDueDt},{sysData;DATE;/trxDom/sysData},{clearPmt;STRING;/trxDom/clearPmt},{oldpayPrinAmt;STRING;/trxDom/oldpayPrinAmt},{remark;STRING;/trxDom/remark}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanId</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>printNumber</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>printNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selNm</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>payPrinAmt</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>payPrinAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanRt</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanRt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanValDt</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanValDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>pmtDt</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>pmtDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>GreatPayIntAmt</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>GreatPayIntAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>payIntAmt</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>payIntAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>loanDueDt</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>loanDueDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysData</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysData</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>clearPmt</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>clearPmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="9">
+            <property name="fontSize">24pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">百联财务集团有限责任公司 计息通知单（贷款）&#13;
+</text-property>
+        </label>
+        <table id="1178">
+            <property name="width">7.9375in</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">loanId</property>
+                    <text-property name="displayName">loanId</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">printNumber</property>
+                    <text-property name="displayName">printNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["printNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selNm</property>
+                    <text-property name="displayName">selNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payPrinAmt</property>
+                    <text-property name="displayName">payPrinAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payPrinAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">loanRt</property>
+                    <text-property name="displayName">loanRt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanRt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">loanValDt</property>
+                    <text-property name="displayName">loanValDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanValDt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pmtDt</property>
+                    <text-property name="displayName">pmtDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pmtDt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">GreatPayIntAmt</property>
+                    <text-property name="displayName">GreatPayIntAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["GreatPayIntAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payIntAmt</property>
+                    <text-property name="displayName">payIntAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payIntAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">loanDueDt</property>
+                    <text-property name="displayName">loanDueDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanDueDt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">sysData</property>
+                    <text-property name="displayName">sysData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysData"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">clearPmt</property>
+                    <text-property name="displayName">clearPmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["clearPmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="1185">
+                <property name="width">0.8125in</property>
+            </column>
+            <column id="1186">
+                <property name="width">4.385416666666667in</property>
+            </column>
+            <column id="1220">
+                <property name="width">1.0416666666666667in</property>
+            </column>
+            <column id="1222">
+                <property name="width">0.34375in</property>
+            </column>
+            <column id="1224">
+                <property name="width">0.5520833333333334in</property>
+            </column>
+            <column id="1187">
+                <property name="width">0.8020833333333334in</property>
+            </column>
+            <detail>
+                <row id="1179">
+                    <property name="height">0.35in</property>
+                    <cell id="1180">
+                        <label id="1188">
+                            <property name="fontSize">12pt</property>
+                            <text-property name="text">合同号：</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1181">
+                        <data id="1387">
+                            <property name="fontSize">12pt</property>
+                            <property name="resultSetColumn">loanId</property>
+                        </data>
+                    </cell>
+                    <cell id="1219"/>
+                    <cell id="1221">
+                        <label id="1227">
+                            <property name="textAlign">right</property>
+                            <text-property name="text">(第</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1223">
+                        <data id="1255">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">printNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1183">
+                        <label id="1217">
+                            <property name="textAlign">right</property>
+                            <text-property name="text">次打印）</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <table id="1256">
+            <property name="width">7.947916666666667in</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">GreatPayIntAmt</property>
+                    <text-property name="displayName">GreatPayIntAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["GreatPayIntAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">loanDueDt</property>
+                    <text-property name="displayName">loanDueDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanDueDt"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">loanValDt</property>
+                    <text-property name="displayName">loanValDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanValDt"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">loanRt</property>
+                    <text-property name="displayName">loanRt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanRt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">loanId</property>
+                    <text-property name="displayName">loanId</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["loanId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">printNumber</property>
+                    <text-property name="displayName">printNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["printNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selNm</property>
+                    <text-property name="displayName">selNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payPrinAmt</property>
+                    <text-property name="displayName">payPrinAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payPrinAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pmtDt</property>
+                    <text-property name="displayName">pmtDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pmtDt"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">payIntAmt</property>
+                    <text-property name="displayName">payIntAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payIntAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">sysData</property>
+                    <text-property name="displayName">sysData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysData"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">clearPmt</property>
+                    <text-property name="displayName">clearPmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["clearPmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">oldpayPrinAmt</property>
+                    <text-property name="displayName">oldpayPrinAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["oldpayPrinAmt"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">remark</property>
+                    <text-property name="displayName">remark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["remark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="1338">
+                <property name="width">0.9583333333333334in</property>
+            </column>
+            <column id="1339">
+                <property name="width">0.9166666666666666in</property>
+            </column>
+            <column id="1340">
+                <property name="width">0.7395833333333334in</property>
+            </column>
+            <column id="1341">
+                <property name="width">1.1354166666666667in</property>
+            </column>
+            <column id="1342">
+                <property name="width">0.9791666666666666in</property>
+            </column>
+            <column id="1343">
+                <property name="width">0.8229166666666666in</property>
+            </column>
+            <column id="1344">
+                <property name="width">1.3541666666666667in</property>
+            </column>
+            <column id="1345">
+                <property name="width">1.0416666666666667in</property>
+            </column>
+            <detail>
+                <row id="1266">
+                    <property name="height">0.40625in</property>
+                    <cell id="1267">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1346">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">借款人</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1268">
+                        <property name="colSpan">3</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1388">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">selNm</property>
+                        </data>
+                    </cell>
+                    <cell id="1271">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1347">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">借款金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1272">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1393">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">payPrinAmt</property>
+                        </data>
+                    </cell>
+                    <cell id="1273">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1348">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">提前还款金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1274">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1394">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">oldpayPrinAmt</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="1275">
+                    <property name="height">0.40625in</property>
+                    <cell id="1276">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1381">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">借款利率</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1277">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1386">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">loanRt</property>
+                        </data>
+                    </cell>
+                    <cell id="1278">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1349">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">借款日</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1279">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1391">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">loanValDt</property>
+                        </data>
+                    </cell>
+                    <cell id="1280">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1351">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">还款日</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1281">
+                        <property name="colSpan">3</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1390">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">pmtDt</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="1284">
+                    <property name="height">0.40625in</property>
+                    <cell id="1285">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1350">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">利息(元)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1286">
+                        <property name="colSpan">3</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1383">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">GreatPayIntAmt</property>
+                        </data>
+                    </cell>
+                    <cell id="1289">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1392">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">payIntAmt</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="1293">
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <property name="height">0.40625in</property>
+                    <cell id="1294">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1396">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">right</property>
+                            <text-property name="text">自</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1352">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <data id="1385">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">loanValDt</property>
+                        </data>
+                    </cell>
+                    <cell id="1354">
+                        <label id="1397">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">至</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1355">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <data id="1384">
+                            <property name="fontSize">14pt</property>
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">loanDueDt</property>
+                        </data>
+                    </cell>
+                    <cell id="1357">
+                        <label id="1398">
+                            <property name="fontSize">14pt</property>
+                            <text-property name="text">止</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1358"/>
+                </row>
+                <row id="1302">
+                    <property name="height">0.40625in</property>
+                    <cell id="1303">
+                        <property name="colSpan">8</property>
+                        <property name="rowSpan">3</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <data id="1395">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">remark</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="1311">
+                    <property name="height">0.40625in</property>
+                </row>
+                <row id="1320">
+                    <property name="height">0.40625in</property>
+                </row>
+            </detail>
+        </table>
+        <grid id="1374">
+            <property name="width">7.947916666666667in</property>
+            <column id="1375">
+                <property name="width">5.541666666666667in</property>
+            </column>
+            <column id="1376">
+                <property name="width">2.40625in</property>
+            </column>
+            <row id="1377">
+                <cell id="1378">
+                    <label id="1380">
+                        <property name="fontSize">14pt</property>
+                        <property name="textAlign">right</property>
+                        <text-property name="text">打印时间</text-property>
+                    </label>
+                </cell>
+                <cell id="1379">
+                    <data id="1389">
+                        <property name="fontSize">14pt</property>
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sysData</property>
+                                <text-property name="displayName">sysData</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sysData"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">sysData</property>
+                    </data>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

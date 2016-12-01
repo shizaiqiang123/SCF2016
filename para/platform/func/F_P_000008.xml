@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000008</id>
+	<module>删除协议</module>
+	<name>删除协议</name>
+	<desc>协议管理-删除协议</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000087</catalog>
+	</page>
+	<page>
+		<id>P_P_000003</id>
+		<index>1</index>
+		<name>删除协议</name>
+		<desc>删除协议页面</desc>
+		<pagetype>DELETE</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+		<logicid>L_P_000029</logicid>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

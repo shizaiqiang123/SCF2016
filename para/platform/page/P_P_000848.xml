@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>应收账款池融资---争议解决申请</desc>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <logicid>L_P_000582</logicid>
+    <jspfile>screen/invc/dspPoolSolve.jsp</jspfile>
+    <id>P_P_000848</id>
+    <name>应收账款池融资---争议解决申请</name>
+    <lockcheck>N</lockcheck>
+    <maintable>TRX.INVC_DSP_M</maintable>
+    <cascadeevent>Y</cascadeevent>
+</page>

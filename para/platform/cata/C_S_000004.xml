@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000004</id>
+	<name>申请网点页面Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>申请往来银行页面Catalog</DESC>
+	<tablename>STD.BANK_M</tablename>
+	<search>
+		<field datatype="1" title="银行编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="银行名称" defaultvalue="" width = "200">bkNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="银行编号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="银行名称" hidden="" width = "250">bkNm</field>
+		<field datatype="1" title="银行网点名称(英文)" hidden="" width = "250" >bkEnNm</field>
+		<field datatype="1" title="所属国家" hidden="" width = "250" >bkOwnerCtry</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and bkNm like %$bkNm$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

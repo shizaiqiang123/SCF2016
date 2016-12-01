@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000588</id>
+	<name>额度信息查询</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.Invc_M</tablename>
+		<doname>doname</doname>
+		<lockcheck>N</lockcheck>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<!-- <condition>a.sysLockFlag='F' and a.sysTrxSts='M' and a.cntrctNo = b.sysRefNo and a.buyerId = '$buyerId$' and a.invBal > 0</condition> -->
+		<condition>sysLockFlag=F and sysTrxSts=M and cntrctNo = $cntrctNo$ and buyerId = $buyerId$ and invBal > 0</condition>
+		<orderby>invDueDt</orderby>
+		<asc>Y</asc>
+		<sql></sql>
+	</qnode>
+</query>

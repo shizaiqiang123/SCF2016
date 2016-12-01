@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<coreReturnCode path="Message/Message_Body">coreReturnCode</coreReturnCode>
+	<ACN path="Message/Message_Body">ACN</ACN>
+	<BALAVL path="Message/Message_Body">BALAVL</BALAVL>
+</trxDom>

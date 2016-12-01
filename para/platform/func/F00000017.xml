@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F00000017</id>
+	<module>国内保理业务</module>
+	<name>审核国内保理业务</name>
+	<desc>审核国内保理业务功能</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P00000170</id>
+		<index>1</index>
+		<name>交易信息</name>
+		<desc>主交易信息</desc>
+	</page>
+</function>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00066</id>
+	<workid>1307</workid>
+	<workname>wideInvcM</workname>
+	<name>外网环境-应收账款转让</name>
+	<desc>外网环境-应收账款转让</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000710</id>
+	<name>费用查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>费用查询Catalog</DESC>
+	<tablename>TRX.FEE_M a,TRX.CUST_M b</tablename>
+	<search>
+		<field datatype="1" title="卖方名称" defaultvalue="" width="50">selNm
+		</field>
+		<field datatype="12" title="业务类别" defaultvalue="" width="50">busiTp
+		</field>
+		<field datatype="13" title="费用类型" defaultvalue="" width="50">costTp
+		</field>
+		<field datatype="3" title="查询起始日" defaultvalue="" width="50">FeeStartDt
+		</field>
+		<field datatype="3" title="查询结束日期" defaultvalue="" width="50">FeeEndDt
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "130" alis = "sysRefNo">a.sys_ref_no</field>
+		<field datatype="1" title="selId" hidden="true" width = "130" alis = "selId">a.sel_id</field>
+		<field datatype="1" title="卖方名称" hidden="" width="12.5%"  alis="selNm">b.cust_nm
+		</field>
+		<field datatype="1" title="业务类别" hidden="" width="12.5%" formatter = 'busiTypeFormater' alis="busiTp">a.busi_tp
+		</field>
+		<field datatype="1" title="费用类型" hidden="" width="12.5%" formatter="costTypeFormater" alis="costTp">a.cost_tp
+		</field>
+		<field datatype="1" title="币别 " hidden="" width="12.5%" alis="costCcy" formatter="ccyFormater">a.cost_ccy
+		</field>
+		<field datatype="1" title="关联业务交易流水号" hidden="" width="12.5%" alis="theirRef">a.their_ref
+		</field>
+		<!-- <field datatype="1" title="扣款账号 " hidden="" width="12.5%" alis="selAcNo">a.sel_ac_no
+		</field> -->
+		<field datatype="1" title="费用收取日期 " hidden="" width="12.5%" formatter="dateFormater" alis="currFinPayDt">a.curr_fin_pay_dt
+		</field>
+		<field datatype="1" title="收取费用金额" hidden="" width="12.5%" formatter="ccyFormater"  alis="currFinPayCost">a.curr_fin_pay_cost
+		</field>
+		<!-- <field datatype="1" title="收取处理费金额" hidden="" width = "12.5%" formatter="ccyFormater" alis = "currTransPayCost">a.curr_trans_pay_cost</field> -->
+		<field datatype="1" title="FunctionId" hidden="true" width = "130" alis = "sysFuncId">a.sys_Func_Id</field>
+		<field datatype="1" title="EventTimes" hidden="true" width = "130" alis = "sysEventTimes">a.sys_Event_Times</field>
+	</select>
+	<join>
+		<on seq="1">a.sel_id = b.sys_ref_no</on>
+	</join>
+	<condition><![CDATA[b.cust_nm like '%$selNm$%' and a.busi_Tp like '%$busiTp$%' and a.cost_Tp like '%$costTp$%' and (a.curr_Fin_Pay_Dt >= to_date('$FeeStartDt$', 'yyyy-mm-dd') and a.curr_Fin_Pay_Dt <= to_date('$FeeEndDt$', 'yyyy-mm-dd')) and a.sys_Org_Id like $sysOrgId$% and b.sys_Org_Id like $sysOrgId$%]]></condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

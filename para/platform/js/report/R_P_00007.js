@@ -1,0 +1,16 @@
+$.print("---------begin---------R_P_00007.js---");
+var trxData = $.getTrxJsonData();
+var custNo = $.getStringValue(trxData,'custNo');
+var instNo = $.getStringValue(trxData,'instNo');
+var startDt = $.getStringValue(trxData,'startDt');
+var endDt = $.getStringValue(trxData,'endDt');
+$.print("---------trxData------------"+trxData);
+$.print("---------instNo------------"+instNo);
+$.print("---------custNo------------"+custNo);
+$.print("---------startDt------------"+startDt);
+$.print("---------endDt------------"+endDt);
+$.updateParameterValues("custNo",custNo);
+$.updateParameterValues("instNo",instNo);
+$.updateParameterValues("startDt",startDt);
+$.updateParameterValues("endDt",endDt);
+$.print("---------end------------");

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_0000055</id>
+	<name>应收账款转让逻辑流</name>
+	<desc>应收账款转让逻辑流</desc>
+	<module></module>
+	<transfornode>
+		<id>N00000004</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>invLoanBal,invLoanAval,invSts,batchNo,cntrctNo,busiTp,loanPerc,cbkAmt,isInvcLoan</fields>
+			<values>0,$invLoanAval$,4,$batchNo$,$cntrctNo$,$busiTp$,$loanPerc$,0,0</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+	<nodejs>L_S_000001.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000004</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>arAvalLoan,theirRef</fields>
+			<values>$arAvalLoan$,$trxId$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000011.js</nodejs>
+	</transfornode>
+	
+	
+	
+<!-- 	<lnode> -->
+<!-- 		<id>N00000002</id> -->
+<!-- 		<name>TEST 00002</name> -->
+<!-- 		<desc>DESC TEST1</desc> -->
+<!-- 		<module>TEST</module> -->
+<!-- 		<event>TestEvent</event> -->
+<!-- 		<component>TrxAddRecord</component> -->
+<!-- 		<tablename>TRX.CNTRCT_CHANGE</tablename> -->
+<!-- 		<doname>cntChange</doname> -->
+<!-- 		<type>E</type> -->
+<!-- 		<cascadeevent>N</cascadeevent> -->
+<!-- 	</lnode> -->
+ 	<transfornode>
+		<id>N00000004</id>
+		<name>客户信息表</name>
+		<desc>客户信息表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<fields></fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>lmtCcy,lmtBal,lmtAmt,lmtRecover,lmtAllocate</fields>
+			<values>$custLmtCcy$,$custLmtBal$,$custLmtAmt$,$custLmtRecover$,$custLmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000063.js</nodejs> 
+	</transfornode>
+	
+ 	<transfornode>
+		<id>N00000005</id>
+		<name>额度关联关系表</name>
+		<desc>额度关联关系表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<fields></fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>trxId,lmtCcy,buyerLmtBat,buyerLmtAmt,lmtRecover,lmtAllocate</fields>
+			<values>$trxId$,$cntrctSbrLmtCcy$,$cntrctSbrLmtBal$,$cntrctSbrLmtAmt$,$cntrctSbrLmtRecover$,$cntrctSbrLmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000111.js</nodejs> 
+	</transfornode>
+	<lnode>
+		<id>N00000006</id>
+		<name>插入FEE费用表</name>
+		<desc>插入FEE费用表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.FEE_M</tablename>
+		<doname>fee</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>theirRef = ?</condition>
+		<params>theirRef</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+	<transfornode>
+		<id>N00000005</id>
+		<name>更新买方额度表</name>
+		<desc>更新买方额度表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LMT_M</tablename>
+		<fields></fields>
+		<doname>buyerLmt</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>lmtBal,lmtAllocate</fields>
+			<values>$lmtBal$,$lmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_S_000001.js</nodejs> 
+	</transfornode>
+	<!-- <transfornode>
+		<id>N00000005</id>
+		<name>更新卖方额度表</name>
+		<desc>更新卖方额度表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LMT_M</tablename>
+		<fields></fields>
+		<doname>sellerLmt</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>lmtBal,lmtAllocate</fields>
+			<values>$lmtBal$,$lmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_S_000001.js</nodejs> 
+	</transfornode> -->
+</logicflow>

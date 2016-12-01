@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000255</id>
+    <name>短信验证码页面</name>
+    <istransaction>Y</istransaction>
+    <jspfile>jsp/mobPhoneCode.jsp</jspfile>
+</page>

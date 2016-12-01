@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000563</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>用户查询</DESC>
+	<tablename>STD.USER_INFO_M</tablename>
+	<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "33.33%">userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "33.33%">userNm</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "250">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="" width = "33.33%" >sysEventTimes</field>
+		<field datatype="1" title="用户类型" hidden="true" width = "200">userTp</field>
+		<field datatype="1" title="上次修改密码日期" hidden="true" width = "250" formatter="dateTimeFormater">pwdEditDt</field>
+	</select>
+	<condition>
+	userId like %$userId$% and userNm like %$userNm$% and (userTp =0 or userTp=1) and sysTrxSts = M and sysLockFlag = F
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

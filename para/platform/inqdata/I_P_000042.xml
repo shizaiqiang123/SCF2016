@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000042</id>
+    <desc>Batch弹出的Task小页</desc>
+    <name>Task小页</name>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <target>P_P_000173</target>
+    <type>P</type>
+</inqdata>

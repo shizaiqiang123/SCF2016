@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000300</id>
+	<name>测试用户页面</name>
+	<desc>测试用户页面</desc>
+	<jspfile>user_add.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>std.user_info_m</maintable>	
+</page>

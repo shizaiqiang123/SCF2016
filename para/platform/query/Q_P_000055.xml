@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000055</id>
+	<name>Test Look up</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>国内保理-卖方还款复核列表查询</name>
+		<desc>国内保理-卖方还款复核列表查询</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_PMT_E</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>		
+		<condition><![CDATA[invPmtRef=$invPmtRef$ and sysLockBy=$invPmtRef$]]></condition>
+		<asc>Y</asc>
+		<sql />
+	</qnode>
+</query>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000702</id>
+	<name>内网--放款出账--国内单笔保理</name>
+	<desc>内网--放款出账--国内单笔保理</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询发票融资主表</desc>
+		<component>componentClass</component>
+		<tablename>InvcLoanM a,InvcM b</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,invNo,invValDt,invDueDt,invCcy,invBal,loanPerc,invLoanBal,invLoanAval,buyerId,buyerNm,sysEventTimes</fields>
+		<condition>a.invRef = b.sysRefNo and a.invcLoanId = '$invcLoanId$' and b.cntrctNo = '$cntrctNo$' and b.selId = '$selId$' and (b.invSts = 5 or b.invSts = 6)</condition>
+		<orderby>b.invDueDt</orderby>
+		<asc>Y</asc>
+		<sql>select b.sysRefNo,b.invNo,b.invValDt,b.invDueDt,b.invCcy,b.invBal,b.loanPerc,b.invLoanBal,b.invLoanAval,b.buyerId,b.buyerNm,b.sysEventTimes from InvcLoanM a,InvcM b</sql>
+	</qnode>	
+</query>
+
+

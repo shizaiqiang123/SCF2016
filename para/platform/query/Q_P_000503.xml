@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000503</id>
+	<name>预付类-融资申请复核-查询订单登记关联商品子表</name>
+	<desc>预付类-融资申请复核-查询订单登记关联商品子表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.COLLATERAL_E</tablename>
+		<lockcheck>N</lockcheck>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+   		<condition><![CDATA[sysRefNo = $sysRefNo$ and sysTrxSts = T]]></condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

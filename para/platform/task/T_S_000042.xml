@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000042</id>
+    <name>最低库存价值小于协议下融资余额预警</name>
+    <component>batchTtlRegAmtLessOpenLoanAmtAlarmProcessor</component>
+    <desc>alarm</desc>
+    <trxdatapara>
+    	<para></para>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

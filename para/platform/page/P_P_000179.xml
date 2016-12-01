@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000179</id>
+	<name>账务页面</name>
+	<desc>业务调整-function-账务页面</desc>
+	<jspfile>screen\para\Function_accounting_View.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<transaction>true</transaction>
+	<refsSize>0</refsSize>
+	<propertyBean>false</propertyBean>
+	<cascadeevent>N</cascadeevent>
+	<maintable>func</maintable> 
+	 <queryid>Q_P_000201</queryid> 
+</page>

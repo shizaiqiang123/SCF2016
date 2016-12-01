@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000010</id>
+	<name>批处理Task信息页面</name>
+	<desc>批处理Task信息页面</desc>
+	<jspfile>jsp/sys/SYS_Task.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<!-- <maintable>STD.SOD_EOD</maintable> -->
+</page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000181</id>
+	<desc>融资申请复核</desc>
+	<name>融资申请复核</name>
+	<target>S_P_000074</target>
+	<type>S</type>
+</inqdata>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000027</id>
+	<name>TransforNode小页</name>
+	<desc>Logicflow页面中弹开TransforNode页面</desc>
+	<type>p</type>
+	<target>P_P_000142</target>
+</inqdata>

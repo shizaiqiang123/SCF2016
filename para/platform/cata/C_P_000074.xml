@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000074</id>
+	<name>保理商客户复核的信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>融资复核的协议信息Catalog</DESC>
+	<tablename>TRX.CUST_E</tablename>
+	<search>
+		<field datatype="1" title="组织机构代码" hidden="" width = "100">custInstCd</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "25%" >custInstCd</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">custNm</field>
+		<field datatype="1" title="序列号" hidden="" width = "25%" >sysEventTimes</field>
+		<field datatype="1" title="交易流水号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="网点" hidden="true" width = "100">custBrId</field> 
+		<field datatype="1" title="sysOpId" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="Bussiness Unit" hidden="true" width = "300" >sysBusiUnit</field>
+		</select>
+	<condition>
+		  custInstCd like %$custInstCd$% and custNm like %$custNm$% and sysTrxSts = P and (custTp=1 or custTp=2 or custTp=3) and sysBusiUnit =$sysBusiUnit$ and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

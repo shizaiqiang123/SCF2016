@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000318</id>
+	<module>应收款融资</module>
+    <desc>融资进度查询</desc>
+    <name>融资进度查询</name>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000226</catalog>
+	</page>
+	<page>
+		<id>P_P_000223</id>
+		<index>2</index>
+		<name>融资申请历史list</name>
+		<desc>融资申请历史list</desc>
+	</page>
+	<page>
+		<id>P_P_000220</id>
+		<index>2</index>
+		<name>融资信息</name>
+		<desc>融资信息页面</desc>
+	</page>
+	<service>
+        <id>S_P_000058</id>
+        <servicejs>S_P_00034.js</servicejs>
+        <trigger>M</trigger>
+    </service>
+</function>

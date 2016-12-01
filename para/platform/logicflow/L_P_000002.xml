@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>DESC TEST</desc>
+    <lnode>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>TrxDeleteRecord</component>
+        <tablename>STD.STD_CUST_CL</tablename>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+    <nodeName>logicflow</nodeName>
+    <id>L_P_000002</id>
+    <name>TEST 00001</name>
+    <propertyBean>false</propertyBean>
+    <nodeSize>1</nodeSize>
+    <transforSize>1</transforSize>
+</logicflow>

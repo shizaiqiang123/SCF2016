@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+	<name>File Listener</name>
+	<protocol_type>File</protocol_type>
+	<protocol>
+		<inbound>
+			<path>D:\Temp\Test\Input</path>
+			<timeout>10000</timeout>
+		</inbound>
+		<backup>
+			<path>D:\Temp\Test\Backup</path>
+			<pattern/>
+		</backup>
+	</protocol>
+	<logic_flow>
+		<component>com.ut.test.components.FileProcess</component>
+	</logic_flow>
+</flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000816</id>
+	<name>新增币别信息页面</name>
+	<desc>新增币别信息页面</desc>
+	<jspfile>screen/ccy/ccy.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>STD.STD_CCY</maintable>
+</page>
+

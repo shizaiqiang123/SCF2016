@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000000</id>
+	<name>测试上传</name>
+	<desc>测试上传</desc>
+	<jspfile>jsp/test.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<functype>cn</functype>
+	<pagetype></pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>trx.t_cntrct_m</maintable>	
+</page>

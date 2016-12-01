@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000158</id>
+	<name>测试页面</name>
+	<desc>测试开发工具页面</desc>
+	<jspfile>jsp/para/Report_Gapi_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<nodeName>node</nodeName>
+	<maintable>page</maintable>
+	<queryid>Q_P_000156</queryid>
+</page>

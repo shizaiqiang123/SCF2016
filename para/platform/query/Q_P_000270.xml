@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000270</id>
+    <nodeSize>0</nodeSize>
+     <desc>注册签约查询custImp</desc>
+    <name>注册签约查询custImp</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>注册签约查询custImp</desc>
+		<component>componentClass</component> 
+		<tablename>TRX.CUST_IMP</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<asc>Y</asc>
+		<sql/>
+		<condition>licenceNo=$licenceNo$</condition>
+		<params>$licenceNo$</params>
+		<orderby></orderby>
+	</qnode>
+</query>

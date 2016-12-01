@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000616</id>
+	<name>FP根据batchNo得到invcM中的信息</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.InvcM a,TRX.CntrctSbrM b,TRX.TrfRegM c</tablename>
+		<doname>doname</doname>
+		<lockcheck>N</lockcheck>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>buyerId,buyerNm,invNo,invCcy,invAmt,acctAmt,invBal,invDt,invValDt,invDueDt,acctPeriod,batchNo,invSts,loanPerc,sysRefNo,cntrctNo,sellerInstCd,selNm,busiTp,ccy</fields>
+		<condition><![CDATA[b.cntrctNo='$cntrctNo$' and b.buyerId = a.buyerId and a.selId = '$selId$'  and a.invCcy = '$ccy$' and ((a.sysTrxSts = 'M' and a.sysLockFlag='F') or (a.sysTrxSts = 'M' and a.sysLockBy='$sysRefNo$') or (a.sysTrxSts = 'P' and a.sysLockBy = 'Trf01542')) and (a.invSts = 0 or (a.invSts <> 0 and a.cbkAmt > 0))]]></condition>
+ 		<orderby>b.sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql>select a.buyerId,a.buyerNm,a.invNo,a.invCcy,a.invAmt,a.acctAmt,a.invBal,a.invDt,a.invValDt,a.invDueDt,a.acctPeriod,a.batchNo,a.invSts,b.loanPct,a.sysRefNo,b.cntrctNo,b.sellerInstCd,b.selNm,a.busiTp,b.ccy from InvcM a,CntrctSbrM b</sql>
+	</qnode>
+<!-- 	当发票状态为0登记状态可以查询到，发票不为登记状态但是可转让金额大于0的也可以查到 -->
+</query>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <desc>新增Inqdata</desc>
+    <id>F_P_000174</id>
+    <name>新增Inqdata</name>
+    <functype>PA</functype>
+    <page>
+        <id>P_P_000139</id>
+        <pagetype>paraAdd</pagetype>
+    </page>
+    <page>
+        <desc>交易成功或失败</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000003</id>
+        <name>交易结果页面</name>
+        <index>1</index>
+    </page>
+</function>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000113</id>
+	<name>产品信息页面</name>
+	<desc>产品信息页面</desc>
+	<jspfile>screen/product/product.jsp</jspfile>
+	<!-- <jsfile>script/product/product.js</jsfile> -->
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>TRX.STD_PRODUCT</maintable>
+	<logicid>L_P_0000054</logicid>
+</page>

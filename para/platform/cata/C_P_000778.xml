@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000778</id>
+	<name>国内保理-授信客户还款修改在途的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内保理-授信客户还款修改在途的协议信息Catalog</DESC>
+	<tablename>TRX.PMT_E m,TRX.INVC_PMT_E p</tablename>
+	<search>
+		<field datatype="1" title="流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<!-- <field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field> -->
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>		
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="流水号" hidden="" width = "33.33%" distinct = "true" alis = "sysRefNo">M.SYS_REF_NO</field>		
+		<field datatype="1" title="授信客户名称" hidden="" width = "33.33%" alis = "selNm">m.SEL_NM</field>
+		<!-- <field datatype="1" title="间接客户名称" hidden="" width = "25%" alis = "buyerNm">m.BUYER_NM</field> -->
+		<field datatype="1" title="还款金额" hidden="" width = "33.33%" alis = "ttlPmtAmt" formatter="ccyFormater">m.TTL_PMT_AMT</field>
+		<field datatype="1" title="" hidden="true" width = "100" alis = "sysFuncId">m.sys_Func_Id</field>		
+		<field datatype="1" title="" hidden="true" width = "100" alis = "sysEventTimes">m.sys_Event_times</field>		
+		<field datatype="1" title="系统流水号" hidden="true" width = "222" alis = "sysOpId">m.sys_Op_Id</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222" alis = "sysOpTm">m.sys_Op_Tm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222" alis = "sysTrxSts">m.sys_Trx_Sts</field>
+	</select>
+	<join>
+		<on seq="1"> p.INV_PMT_REF = m.SYS_REF_NO</on>				
+	</join>
+	<condition>
+	 m.sel_Id = '$custId$' and m.BUSI_TP=0 and m.PMT_TP = 0 and m.SYS_REF_NO like $sysRefNo$ and m.SEL_NM like $selNm$ and m.BUYER_NM like $buyerNm$ and m.SYS_BUSI_UNIT ='$sysBusiUnit$' and ((m.SYS_TRX_STS='S' and m.sys_Func_Id = 'F_P_000934') or (m.confirm_Flag = '0' and m.sys_Trx_Sts = 'M' and m.sys_Lock_Flag = 'F'))
+	</condition>
+	<orderby>M.SYS_REF_NO</orderby>
+</catalog>

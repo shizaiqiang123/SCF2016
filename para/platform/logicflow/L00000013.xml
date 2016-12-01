@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L00000013</id>
+	<name>应收账款转让</name>
+	<desc>应收账款转让</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+</logicflow>

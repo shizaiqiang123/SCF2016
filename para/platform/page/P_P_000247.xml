@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>查询产品</desc>
+    <transaction>true</transaction>
+    <queryid>Q_P_000265</queryid>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000247</id>
+    <name>查询产品</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen/cntrct/cntrctModel_addProduct.jsp</jspfile>
+</page>

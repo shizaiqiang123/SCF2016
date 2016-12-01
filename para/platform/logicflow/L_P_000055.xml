@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000055</id>
+	<name>应收账款转让</name>
+	<desc>应收账款转让</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.COST_MASTER</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>E</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<fields>sysLockFlag,lmtBal,busiTp,lmtFlg,lmtAllocate,lmtRecover,theirRef,rcustId,rcustNm,lmtDt</fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal,busiTp,lmtFlg,lmtAllocate,lmtRecover,theirRef,rcustId,rcustNm,lmtDt</fields>
+			<values>F,$lmtBalHD$,$busiTp$,0,$regAmt$,0,$sysRefNoHD$,$selId$,$selNm$,$trxDt$</values>
+		</release>
+		<nodejs>L_P_000010.js</nodejs>
+		<!-- <mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>buyerId</sysRefNo>
+		</mapping> -->
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields>sysLockFlag,arBal,arAvalLoan</fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,arBal,arAvalLoan</fields>
+			<values>F,$arBal$,$arAvalLoan$</values>
+		</release>
+		<nodejs>L_S_000003.js</nodejs>
+		<!-- <mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>cntrctNo</sysRefNo>
+		</mapping> -->
+	</transfornode>
+</logicflow>

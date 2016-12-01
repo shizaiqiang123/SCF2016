@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000517</id>
+	<module>融资台账查询</module>
+	<name>融资台账查询</name>
+	<desc>融资台账查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>融资台账查询</name>
+		<desc>融资台账查询</desc>
+		<catalog>C_P_000216</catalog>
+	</page>
+	<!-- <page>
+		<id>P_P_000172</id>
+		<index>1</index>
+		<name>融资台账查询</name>
+		<desc>融资台账查询</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page> -->
+</function>

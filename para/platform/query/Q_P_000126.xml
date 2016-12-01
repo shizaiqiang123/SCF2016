@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000126</id>
+	<name>查询担保信息表</name>
+	<desc>查询担保信息表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_COLLA</tablename>
+		<doname>doname</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>trxId = $trxId$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XERP>
+	<HEAD>
+		<batch_no type="v">loan0000001</batch_no>
+		<BIZCODE type="v">8370</BIZCODE>
+<!-- 交易明细查询  -->
+	</HEAD>
+	<BODY>
+		<ACNT_NO path="trxDom">bankFinId</ACNT_NO>
+	</BODY>
+</XERP>
+

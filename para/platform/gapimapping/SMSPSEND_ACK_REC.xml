@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="GBK"?>
+<trxDom>
+	<MESSAGE path="XML_PACK/SMSPBODY">MESSAGE</MESSAGE>
+	<MOBILE path="XML_PACK/SMSPBODY">MOBILE</MOBILE>
+</trxDom>

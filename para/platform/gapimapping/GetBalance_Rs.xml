@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<invoiceApprvData
+		path="Message/Message_Body/invoiceApprvData/invoiceApprv"
+		loop="true" >
+		<cmsNo path="invoiceApprv" loopPath="Message/Message_Body/invoiceApprvData">cmsNo</cmsNo>
+		<cmsNm path="invoiceApprv" loopPath="Message/Message_Body/invoiceApprvData">cmsNm</cmsNm>
+	</invoiceApprvData>
+</trxDom>

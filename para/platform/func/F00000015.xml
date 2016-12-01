@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<function>
+		<id>F00000015</id>
+		<module>Test</module>
+		<name>Edit Contract</name>
+		<desc>Edit Contract</desc>
+		<page>
+			<id>P00000009</id>
+			<index>0</index>
+			<name>e表修改</name>
+			<desc>修改e表数据</desc>
+		</page>
+</function>
+

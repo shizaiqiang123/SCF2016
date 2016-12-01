@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000068</id>
+	<name>动产质押池状态查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>动产质押业务融资申请Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议流水号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+		<field datatype="1" title="监管机构" defaultvalue="" width = "100">patnerNm</field>
+		<field datatype="1" title="仓库名称" defaultvalue="" width = "100">storageNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议流水号" hidden="" width = "16.66%" >sysRefNo</field>
+		<field datatype="1" title="协议编号" hidden="" width = "16.66%" >cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "16.66%" >selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "16.66%" >selNm</field>
+		<field datatype="1" title="监管机构" hidden="" width = "16.66%" >patnerNm</field>
+		<field datatype="1" title="仓库名称" hidden="" width = "16.66%" >storageNm</field>
+		<field datatype="1" title="客户类型" hidden="true" width = "150" >busiTp</field>
+		<field datatype="1" title="" hidden="true" width = "150" >sysEventTimes</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and selId like %$selId$% and cntrctNo like %$cntrctNo$% and patnerNm like %$patnerNm$% and storageNm like %$storageNm$%  and busiTp=2 and  sysLockFlag = F and  sysTrxSts = M  and cntrctSts <> 1]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

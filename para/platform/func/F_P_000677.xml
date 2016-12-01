@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<pagesSize>0</pagesSize>
+	<transactionPage>0</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<name>（应收账款池融资）应收账款登记</name>
+	<desc>（应收账款池融资）应收账款登记</desc>
+	<id>F_P_000677</id>
+	<autoassignSize>0</autoassignSize>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>应收账款登记添加</name>
+		<desc>应收账款登记添加</desc>
+		<catalog>C_P_000693</catalog>
+	</page>
+	<!-- <page>
+		<desc>客户信息页面</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>N</istransaction>不是交易页面 
+		<id>P_P_000827</id>
+		<name>交易进入页面</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>N</cascadeevent>不级联 
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>VIEW</pagetype>查询页面 
+	</page> -->
+	<page>
+		<id>P_P_000828</id>
+		<index>2</index>
+		<name>应收账款登记添加</name>
+		<desc>应收账款登记添加</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+ 	<workflow>W_P_00040</workflow>
+</function>

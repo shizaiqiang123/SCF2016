@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000756</id>
+	<name>仓单-客户还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>仓单-客户还款Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>
+	<search>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="放款编号" hidden="" width = "33.33%">sysRefNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "33.33%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "33.33%">selNm</field>
+		<field datatype="1" title="业务类型" hidden="true" width = "200">busiTp</field>
+		<field datatype="1" title="融资支付方式" hidden="true" width = "33.33%">loanTp</field>
+		<field datatype="1" title="保证金金额" hidden="true" width = "150" >marginAmt</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and selId like %$selId$% and  busiTp = 10  and ttlLoanBal > 0 and sysLockFlag = F and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

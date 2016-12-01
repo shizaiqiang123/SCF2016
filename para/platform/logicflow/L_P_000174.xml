@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>删除成员企业</desc>
+    <lnode>
+        <id>N00000001</id>
+        <name>删除账号</name>
+		<desc>删除账号</desc>
+		<component>TrxDeleteDoRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>accountList</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>acOwnerid =?</condition>
+		<params>acOwnerid</params>
+    </lnode>
+    <id>L_P_000174</id>
+    <name>删除成员企业</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

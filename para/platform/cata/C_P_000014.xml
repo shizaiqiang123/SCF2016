@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000014</id>
+	<name>复核间接客户还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>复核间接客户还款Catalog</DESC>
+	<tablename>TRX.PMT_M</tablename>
+	<search>
+		<field datatype="1" title="还款批次号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="还款批次号" hidden="" width = "300">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "350">buyerNm</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "350">selNm</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+	</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$%  and buyerNm like %$buyerNm$%  and selNm like %$selNm$% and sysTrxSts = P  and busiTp = 0 and pmtTp = 1
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

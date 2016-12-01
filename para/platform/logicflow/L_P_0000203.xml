@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>额度变更信息</desc>
+    <lnode>
+        <module>TEST</module>
+        <desc>DESC TEST1</desc>
+        <type>E</type>
+        <id>N00000002</id>
+        <component>TrxEditRecord</component>
+        <tablename>TRX.INVC_M</tablename>
+        <event>TestEvent</event>
+        <name>TEST 00001</name>
+        <doname>invc</doname>
+        <cascadeevent>Y</cascadeevent>
+    </lnode>
+    <lnode>
+        <module>TEST</module>
+        <desc>DESC TEST1</desc>
+        <type>E</type>
+        <id>N00000003</id>
+        <component>TrxAddRecord</component>
+        <tablename>TRX.CNTRCT_CHANGE</tablename>
+        <event>TestEvent</event>
+        <name>TEST 00002</name>
+        <doname>cntChange</doname>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+    <id>L_P_0000203</id>
+    <name>额度变更信息</name>
+    <nodeSize>2</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000321</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>用户信息打回处理</DESC>
+	<tablename>STD.USER_INFO_E</tablename>
+	<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "500">userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "500">userNm</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "250">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "250" >sysEventTimes</field>
+		<field datatype="1" title="用户类型" hidden="true" width = "200">userTp</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition>
+		sysTrxSts = S and userId like %$userId$% and userNm like %$userNm$% and (userTp =0 or userTp=1)
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

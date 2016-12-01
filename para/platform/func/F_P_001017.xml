@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_001017</id>
+	<module>查询协议</module>
+	<name>查询协议</name>
+	<desc>协议管理-查询协议</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000526</catalog>
+	</page>
+	<page>
+		<id>P_P_000931</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现用户信息页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<id>R_TEST_00008</id>
+	<name>动产质押融资明细</name>
+	<desc>转让明细report</desc>
+	<type>P</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>pdf</reporttype><!-- docx,excl,csv -->
+	<template>collatLoan_detail.rptdesign</template>
+	<!-- <outputtype>F</outputtype>F:file G:gapi M:mail S:SFTP -->
+	<output>G_TEST_00001</output>
+	<js>R_P_00001.js</js>
+	<datasourcetype>xml</datasourcetype><!-- db,json -->
+	<datasource>jndi</datasource>
+</report>

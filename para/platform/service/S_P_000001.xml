@@ -1,0 +1,10 @@
+<service>
+	<id>S_P_000001</id>
+	<name>查询Advice接口</name>
+	<type>Advice</type>
+	<servicejs></servicejs>
+	<component></component>
+	<gapiid></gapiid>		<!-- 协议类型 -->
+	<!-- <rule>E000001</rule>
+	<rule>E000001</rule> -->
+</service>

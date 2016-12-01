@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<XML_PACK>
+	<CSP_HEAD>
+		<TRANCODE type="v">SMSPSEND</TRANCODE>
+		<PACKPORP type="v">00</PACKPORP>
+		<TRANDATE path="comm">sysOpDate</TRANDATE>
+		<TRANTIME path="comm">sysOpTime</TRANTIME>
+		<TRANTRAC path="trxDom">sysRefNo</TRANTRAC>
+	</CSP_HEAD>
+	<SMSPBODY>
+		<MESSAGE path="trxDom">advContent</MESSAGE>
+		<MOBILE path="trxDom">mobPhone</MOBILE>
+	</SMSPBODY>
+</XML_PACK>
+

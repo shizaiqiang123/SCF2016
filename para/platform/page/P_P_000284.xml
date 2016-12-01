@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<desc>新增Product</desc>
+	<id>P_P_000284</id>
+	<name>新增Product</name>
+	<jspfile>jsp/para/Product_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>PD</maintable>
+	<logicid>L_P_000147</logicid>
+	<maincomp>paraAdd</maincomp>
+</page>

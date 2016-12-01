@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000231</id>
+	<name>审核融资协议申请Catalog</name>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>审核融资协议申请Catalog</DESC>
+	<tablename>TRX.CNTRCT_TEMP</tablename>
+	<search>
+		<field datatype="1" title="文本编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="产品名称" hidden="" width = "100">productNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="文本编号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="产品名称" hidden="" width = "250">productNm</field>
+		<field datatype="1" title="协议文本版本编号" hidden="" width = "250">editionNo</field>
+		<field datatype="1" title="协议文本生效日" hidden="" width = "250" formatter="dateFormater">dueDt</field>
+		<field datatype="1" title="" hidden="true" width = "">cntrctURL</field>
+		<field datatype="1" title="" hidden="true" width = "">productId</field>
+		<field datatype="1" title="" hidden="true" width = "">busiTp</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		</select>
+	<condition>
+		  cntrctNo like %$sysRefNo$% and productNm like %$productNm$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>
+

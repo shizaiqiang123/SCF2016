@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000207</id>
+	<name>查询菜单名称</name>
+	<desc>查询菜单名称</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>查询菜单名称</name>
+		<desc>查询菜单名称</desc>
+		<component>componentClass</component> 
+		<tablename>STD.STD_MENU_INFO</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<condition>menuId=$menuId$ </condition>		
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000352</id>
+    <name>联系我们</name>
+    <functype>VW</functype>
+    <page>
+		<id>P_P_000273</id>
+		<name>联系我们</name>
+		<desc>联系我们</desc>
+	</page>	
+</function>

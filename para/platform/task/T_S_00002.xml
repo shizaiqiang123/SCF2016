@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_00002</id>
+    <name>Auto EOD</name>
+    <component>BatchSodEodProcessor</component>
+    <desc>Auto SOD</desc>
+    <type>E</type>
+</task>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>CCC001</id>
+	<name>应收款融资Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>应收款融资Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="4" title="业务类别" hidden="true" width = "200" formatter="busiTpFmt">busiTp</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "13%">sysRefNo</field>
+		<field datatype="1" title="公司编号" hidden="" width = "13%">selId</field>
+		<field datatype="1" title="公司名称" hidden="" width = "30%">selNm</field>
+		<field datatype="1" title="融资额度" hidden="" width = "15%" formatter="ccyFormater">arAvalLoan</field>
+		<field datatype="1" title="融资余额" hidden="" width = "15%" formatter="ccyFormater">openLoanAmt</field>
+		<field datatype="1" title="业务类别" hidden="" width = "13%" formatter="busiTpFormater">busiTp</field>
+		<field datatype="1" title="可用额度" hidden="true" width = "200">lmtBal</field>
+		<field datatype="1" title="应收账款余额" hidden="true" width = "200">arBal</field>
+		<field datatype="1" title="融资比例" hidden="true" width = "200">loanPerc</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "200">payIntTp</field>
+		<field datatype="1" title="扣费方式" hidden="true" width = "200">payChgTp</field>
+		<field datatype="1" title="融资类型" hidden="true" width = "200">finaTp</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "200">sysBusiUnit</field>
+	</select>
+		<!-- <condition>sysRefNo like %$sysRefNo$% and busiTp = $busiTp$ and  sysLockFlag = F and approvalSts = 1 and sysBusiUnit = $sysBusiUnit$ and selId = Fac01565
+	</condition> -->
+	<condition>sysRefNo like %$sysRefNo$% and busiTp = $busiTp$ and  sysLockFlag = F and approvalSts = 1 
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

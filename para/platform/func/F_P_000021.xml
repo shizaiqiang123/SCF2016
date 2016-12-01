@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000021</id>
+	<module>Test</module>
+	<name>国内保理-贷项清单</name>
+	<desc>国内保理-贷项清单</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>国内保理-贷项清单的协议信息查询</name>
+		<desc>国内保理-贷项清单的协议信息查询</desc>
+		<catalog>C_P_000057</catalog>
+	</page>
+	<page>
+		<id>P_P_000058</id>
+		<index>1</index>
+		<name>国内保理-贷项清单</name>
+		<desc>国内保理-贷项清单页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000003.js</accountingjs>
+	</page> -->
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

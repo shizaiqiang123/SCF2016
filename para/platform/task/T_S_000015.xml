@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000015</id>
+    <name>还款自动核销</name>
+    <js>T0000007.js</js>
+    <component>batchReleaseLoanProcessor</component>
+    <jspfile></jspfile>
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>  
+    <catalog>C_P_000225</catalog>  
+    <trxdatapara>    	
+    </trxdatapara>
+</task>

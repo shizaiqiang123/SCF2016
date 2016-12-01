@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000018</id>
+	<name>监控管理</name>
+	<desc>监控管理</desc>
+	<jspfile>monitoring</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<pagetype>RS</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxResutlManager</maincomp>
+	<maintable></maintable>
+</page>

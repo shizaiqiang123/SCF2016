@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_0000617</id>
+	<name>动产质押--质物置换--退回处理</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>动产质押--质物置换--退回处理</DESC>
+	<tablename>TRX.GOODS_CHANGE_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "16.6%">sysRefNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "16.6%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "16.6%">selNm</field>
+		<field datatype="1" title="协议编号" hidden="" width = "16.6%">cntrctNo</field>
+		<field datatype="1" title="换出货物总价值" hidden="" width = "16.6%">ttlOutVal</field>
+		<field datatype="1" title="换入货物总价值" hidden="" width = "16.6%">ttlInVal</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="业务类别" hidden="true" width = "100" >busiTp</field>
+		<field datatype="1" title="质押率" hidden="true" width = "100" >fundRt</field>
+		<field datatype="1" title="授信额度余额" hidden="true" width = "100" >lmtBal</field>
+		<field datatype="1" title="币种" hidden="true" width = "100" >ccy</field>
+		<field datatype="1" title="监管机构代码" hidden="true" width = "100" >regId</field>
+		<field datatype="1" title="监管机构名称" hidden="true" width = "100" >regNm</field>
+		<field datatype="1" title="仓库编号" hidden="true" width = "100" >wareId</field>
+		<field datatype="1" title="仓库名称" hidden="true" width = "100" >wareNm</field>
+		<field datatype="1" title="仓库地址" hidden="true" width = "100" >wareAdd</field>
+		<field datatype="1" title="仓库联系人" hidden="true" width = "100" >wareContact</field>
+		<field datatype="1" title="库存价值总额" hidden="true" width = "100" >ttlRegAmt</field>
+		<field datatype="1" title="最低库存价值" hidden="true" width = "100" >ttlLowPayNum</field>
+		</select>
+	<condition>
+		  sysTrxSts = S and sysLockFlag = F and id.sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and  busiTp = 4 and sysOrgId=$sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

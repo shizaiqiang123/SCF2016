@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>供应商用户信息</desc>
+    <id>P_P_000207</id>
+    <name>供应商用户信息</name>
+    <jspfile>screen/supplier/supplierUser.jsp</jspfile>
+	<cascadeevent>y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+<!-- 	<logicid>L_P_000186</logicid> -->
+</page>

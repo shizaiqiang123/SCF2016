@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+/* 上顶部全屏 */
+.siteTop{
+	background-color:#0d0d0d;
+	height:80px;
+}
+.siteCenter{
+	top:80px;
+	background-color:#001c40;
+	height:620px;
+}
+.siteBottom{
+	color: #000000;
+    background-color: #ffffff;
+    height:60px;
+}
+/*最大的div 1440x640*/
+.keshi {
+	width: 1440px;
+	height: 640px;
+}
+/*顶部的横条背景*/
+.topTileBg{
+	position: absolute;/* absolute 为绝对的，指是绝对位置 */
+	top: 0px;
+	left: 220px;
+	width: 1000px;
+	height: 80px;
+	background: #0d0d0d;
+}
+/*顶部中的公司logo*/
+.topTile{
+	position: absolute;/*absolute 为绝对的，指是绝对位置*/
+	top: 14px;
+	left: 0px;
+	bottom: 13px;
+	width: 100%;
+	background:url(../../images/welcome/supply_title.png) left center no-repeat; 
+/* 	url(../../WebContent/images/welcome/supply_title.png.png); */
+}
+.bottomTitle {
+	text-align: center;
+	font-size: 18px;
+	font-family: "微软雅黑",Regular,sans-serif;
+	line-height: 22px;
+	padding:27px 308px  31px 287px;
+	}

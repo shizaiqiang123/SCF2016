@@ -1,0 +1,121 @@
+@charset "utf-8";
+#navigation,#navigation li ul {
+	list-style-type: none;
+	z-index: 8000;
+}
+
+#navigation li {
+	float: left;
+	min-width: 140px;
+	text-align: center;
+	position: relative;	
+	color: #fff;
+}
+
+#navigation li:hover {	
+	color:#fff;	
+	background-image: linear-gradient(to bottom, #d70039, #9e0f11);
+    border-radius: 3px;   
+}
+
+#navigation li:visited {
+	display: block;
+	text-decoration: none;	
+	line-height: 52px;
+	border: 1px solid #fff;
+	background-image: linear-gradient(to bottom, #d70039, #9e0f11);  
+    border-radius: 3px;    
+}
+
+#navigation li ul li:hover {
+	color: #fff;	
+	display: block;
+	text-decoration: none;	
+	line-height: 30px;	
+}
+
+#navigation li ul {
+	display: none;
+	position: absolute;
+	padding-top:0px;	
+	top:40px;		
+	line-height: 30px;
+	color: #fff;	
+	text-decoration: none;	
+	border: 0px solid #fff;
+	/* background:#b50029;	 */
+	background-image: linear-gradient(to bottom, #d70039, #9e0f11); 
+    border-radius: 3px;   
+}
+
+#navigation li ul li ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+.navList {
+    border-right: 1px solid #ff1414;
+    display:inline-block;
+    white-space:nowrap;
+    border-radius: 3px;
+}
+.curPage{    
+	border-left: 1px solid #ff1414;
+}
+
+.ulL{
+	left: 140px;
+}
+.ulR{
+	right: 140px;
+}
+#navigation a {
+	text-decoration:none;
+	color:#fff;
+}
+#navigation a:visited {
+	outline:none;
+}
+#navigation a:hover {	
+	text-decoration:none;
+	color:#fff;
+}
+
+/*小三角*/
+#navigation ul li:first-child >a{
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+	border-radius:3px 3px 0 0;
+}
+#navigation ul li:first-child >a:after{
+	content:'';
+	position:absolute;
+	left:60px;
+	top:-6px;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-bottom:6px solid #d70039;	
+}
+#navigation ul ul li:first-child >a:after{	
+	left:-6px;
+	top:50%;
+	margin-top:-6px;
+	border-left:0;
+	border-bottom:6px solid transparent;
+	border-top:6px solid transparent;
+	border-right:6px solid #d70039;
+}
+#navigation ul li:first-child >a:hover:after{
+	border-bottom-color:#d70039;
+}
+#navigation ul ul li:first-child >a:hover:after{
+	border-right-color:#d70039;
+	border-bottom-color:transparent;
+}
+#navigation ul li:last-child > a{
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+	border-radius:0 0 3px 3px;
+}
+/*小三角*/

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_00002038</id>
+	<name>动产质押业务质物出库Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>动产质押业务质物出库Catalog</DESC>
+	<tablename>TRX.COLLAT_REG</tablename>
+	<search>
+		<field datatype="1" title="批次号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="批次号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="协议编号" hidden="" width = "250">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "250">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250">selNm</field>
+		<field datatype="1" title="客户类型" hidden="true" width = "150">busiTp</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and selId like %$selId$% and cntrctNo like %$cntrctNo$%  and busiTp=2 sysLockFlag = F and  sysTrxSts = M ]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

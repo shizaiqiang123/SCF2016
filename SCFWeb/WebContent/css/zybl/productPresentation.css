@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+/* Section 1
+ * --------------------------------------- */
+#section0{
+	/* background-color: #BFDA00; */
+	background: url(../../images/zybl/meeting.png) left center no-repeat;
+}
+
+#section1{
+	/* background-color: #2EBE21; */
+	background: url(../../images/zybl/office.png) left center no-repeat;
+}
+
+#section2{
+	/* background-color: #2C3E50; */
+	background: url(../../images/zybl/lamp.png) left center no-repeat;
+}
+
+#section3{
+	/* background-color: #2C3E50; */
+	background: url(../../images/zybl/section1_slide2.png) left center no-repeat;
+}

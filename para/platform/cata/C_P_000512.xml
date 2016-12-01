@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000512</id>
+	<name>应收账款调整Catalog</name>
+	<MODULE>国内单保理</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>应收账款调整Catalog</DESC>
+	<tablename>TRX.FEE_E</tablename>
+	<search>
+		<field datatype="1" title="应收账款流水号" defaultvalue="" width = "200">sysRefNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="应收账款流水号" hidden="" width = "150">sysRefNo</field>
+	</select>
+	<condition><![CDATA[id.sysRefNo like %$sysRefNo$% sysTrxSts = P and sysLockFlag = F ]]></condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

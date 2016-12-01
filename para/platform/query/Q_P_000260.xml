@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000260</id>
+	<name>应收款融资签约查询协议表用户ID</name>
+	<desc>应收款融资签约查询协议表用户ID</desc>
+	<qnode>
+		<id>N00000001</id>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<params>$selId$,$buyerId$</params>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<sql>SELECT c from CntrctM c where selId = ? and buyerId = ?</sql>
+	</qnode>	
+</query>

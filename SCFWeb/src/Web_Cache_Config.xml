@@ -1,0 +1,62 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EE_Cache_Config.xsd">
+   <diskStore path="java.io.tmpdir"/>
+    <cacheManagerEventListenerFactory class="" properties=""/>
+    <defaultCache
+            maxElementsInMemory="100"
+            eternal="false"
+            timeToIdleSeconds="600"
+            timeToLiveSeconds="600"
+            overflowToDisk="false"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"
+            />
+    <cache name="CACHE_WEB_DATA"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Cache Data        
+    </cache>
+    <cache name="CACHE_WEB_SESS"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web session Data        
+    </cache>
+    <cache name="CACHE_WEB_COMM"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Common Data        
+    </cache>
+    <cache name="CACHE_WEB_FUNC"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Function Data        
+    </cache>
+    <cache name="CACHE_WEB_PAGE"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Page Data        
+    </cache>
+    <cache name="CACHE_WEB_QUERY"
+           maxElementsInMemory="0"
+           eternal="true"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           overflowToDisk="false">
+           Web Query Data        
+    </cache>
+ </ehcache>

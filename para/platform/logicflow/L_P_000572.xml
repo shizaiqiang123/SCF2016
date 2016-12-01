@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <module>PARA</module>
+    <desc>会计科目ESB_ACCOUNTING逻辑流</desc>
+    <nodeName>logicflow</nodeName>
+    <id>L_P_000572</id>
+    <name>新增会计科目ESB_ACCOUNTING逻辑流</name>
+    <propertyBean>false</propertyBean>
+    <nodeSize>1</nodeSize>
+    <transforSize>1</transforSize>
+    <lnode>
+		<id>N00000001</id>
+		<name>会计科目ESB_ACCOUNTING逻辑流</name>
+		<desc>会计科目ESB_ACCOUNTING逻辑流</desc>
+		<module>PARA</module>
+		<event>TestEvent</event>
+		<component>TrxEditDoRecord</component>
+		<tablename>TRX.ESB_ACCOUNTING</tablename>
+		<doname>account</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>accId =?</condition>
+		<params>accId</params>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_S_000002.js</nodejs>
+    </lnode>
+</logicflow>

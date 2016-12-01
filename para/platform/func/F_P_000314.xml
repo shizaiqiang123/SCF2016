@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <desc>协议签约申请</desc>
+    <id>F_P_000314</id>
+    <name>协议签约申请</name>
+    <module>协议签约申请</module>
+    <functype>MM</functype>
+    <isValidCode>true</isValidCode>
+    <page>
+		<id>P_P_000283</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+	</page>
+	<page>
+		<id>P_P_000251</id>
+		<index>1</index>
+		<name>供应商融资协议申请</name>
+		<desc>供应商融资协议申请</desc>
+		<logicid>L_P_000171</logicid>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>	
+	<!-- <page>
+		<id>P_P_000225</id>
+		<index>2</index>
+		<name>供应商融资协议申请</name>
+		<desc>供应商融资协议申请</desc>
+		<logicid>L_P_000171</logicid>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>	 -->
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

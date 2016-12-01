@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000012</id>
+	<name>合格证导入模板</name>
+	<desc>合格证导入功能</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>Excel</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>导入合格证.xlsx</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!--自定义逻辑 -->
+	<reformatclass>QualTemplateReformatImpl</reformatclass>	
+	<head name="Sheet1"></head>
+	<mapping name="Sheet1" beginRow="1" endRow="1280" beginColumn="0" endColumn="8">		
+			<mfield key="1" isnull="false" isunique="false" desc="汇票票号" type="java.lang.String" defaultvalue="">billNo</mfield>
+			<mfield key="2" isnull="false" isunique="false" desc="送达通知书编号" type="java.lang.String" defaultvalue="">adviceNo</mfield>
+			<mfield key="3" isnull="false" isunique="false" desc="送达通知书日期" type="java.util.Date" defaultvalue="">adviceDt</mfield>
+			<mfield key="4" isnull="false" isunique="false" desc="合格证编号" type="java.lang.String" defaultvalue="">crtfNo</mfield>
+			<mfield key="5" isnull="false" isunique="false" desc="子品牌" type="java.lang.String" defaultvalue="">brandNo</mfield>
+			<mfield key="6" isnull="false" isunique="false" desc="底盘号" type="java.lang.String" defaultvalue="">chassisNo</mfield>
+			<mfield key="7" isnull="false" isunique="false" desc="发动机号" type="java.lang.String" defaultvalue="">engineNo</mfield>
+			<mfield key="8" isnull="false" isunique="false" desc="车辆送达金额" type="java.lang.Double" defaultvalue="">adviceAmt</mfield>
+			<mfield key="9" isnull="false" isunique="false" desc="管理员释放日期" type="java.util.Date" defaultvalue="">releaseDt</mfield>
+	</mapping>
+</template>

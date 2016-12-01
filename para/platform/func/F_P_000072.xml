@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000072</id>
+	<module>动产质押-质物出库</module>
+	<name>动产质押-质物出库-复核</name>
+	<desc>动产质押-质物出库-复核</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000069</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核质物出库</name>
+		<desc>质物出库复核页面</desc>
+	</page>
+</function>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000082</id>
+	<name>国内保理-授信客户还款Catalog</name>
+	<MODULE>SYS</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内保理-授信客户还款Catalog</DESC>
+	<tablename>TRX.LOAN_M a,TRX.CNTRCT_M b</tablename>
+	<search>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+<!-- 		<field datatype="1" title="间接客户编号" defaultvalue="" width = "200">buyerId</field>		 -->
+<!-- 		<field datatype="1" title="间接客户名称" defaultvalue="" width = "200">buyerNm</field> -->
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "33.33%" alis="sysRefNo">a.sys_Ref_No</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "33.33%" alis="selId">a.sel_Id</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "33.33%" alis="selNm">a.sel_Nm</field>
+		<field datatype="1" title="间接客户编号" hidden="true"  width = "200" alis="buyerId">a.buyer_Id</field>		
+		<field datatype="1" title="间接客户名称" hidden="true"  width = "200" alis="buyerNm">a.buyer_Nm</field>			
+		<field datatype="1" title="业务类型" hidden="true" width = "100" alis="busiTp">a.busi_Tp</field>
+		<field datatype="1" title="授信模式" hidden="true" width = "100" alis="serviceReq">a.service_Req</field>
+		<field datatype="1" title="放款币别" hidden="true" width = "100" alis="ccy">a.ccy</field>
+		<field datatype="1" title="融资余额" hidden="true" width = "100" alis="ttlLoanBal">a.ttl_Loan_Bal</field>
+		<field datatype="1" title="放款到期日" hidden="true" width = "100" alis="loanDueDt">a.loan_Due_Dt</field>		
+		<field datatype="1" title="协议编号" hidden="true" width = "100" alis="cntrctNo">a.cntrct_No</field>	
+		<field datatype="1" title="扣息方式" hidden="true" width = "100" alis="payIntTp">a.pay_Int_Tp</field>		
+		<field datatype="1" title="融资起始日" hidden="true" width = "100" alis="loanValDt">a.loan_Val_Dt</field>		
+	</select>
+<!-- 	<condition> -->
+<!-- 		  sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  -->
+<!-- 		  and selId like %$selId$%  and buyerNm like %$buyerNm$%  -->
+<!-- 		  and buyerId like %$buyerId$% and sysTrxSts = M and loanValDt&lt;$sysCurrentDate$ -->
+<!-- 		  and  ttlLoanBal>0 and sysBusiUnit =$sysBusiUnit$ and (sysFuncId = F_P_000020 or sysFuncId = F_P_000134) -->
+<!-- 	</condition> -->
+	<join>
+		<on seq="1">a.cntrct_No = b.sys_Ref_No</on>
+	</join>
+	<condition><![CDATA[a.sys_Ref_No like '%$sysRefNo$%' and a.sel_Nm like '%$selNm$%' and a.sel_Id like '%$selId$%'  and a.buyer_Nm like '%$buyerNm$%'  and a.buyer_Id like '%$buyerId$%' and a.sys_Trx_Sts = 'M' and a.loan_Val_Dt<TO_DATE('$sysCurrentDate$','yyyy-mm-dd HH24:mi:ss')  and  a.ttl_Loan_Bal>0 and a.sys_Busi_Unit ='$sysBusiUnit$' and (a.sys_Func_Id = 'F_P_000020' or a.sys_Func_Id = 'F_P_000134') and  (b.pay_sts=0 or b.pay_sts=2) and a.sys_Org_Id='$sysOrgId$' ]]></condition>
+	<orderby>a.sys_Ref_No</orderby>	
+</catalog>

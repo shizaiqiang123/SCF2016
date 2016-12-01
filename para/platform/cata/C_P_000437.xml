@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000436</id>
+	<name>额度在途删除Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>在途额度列表</DESC>
+	<tablename>TRX.CNTRCT_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" defaultvalue="" width = "100">sellerInstCd</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "150">cntrctNo</field>
+		<field datatype="1" title="授信客户编号" hidden="true" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200">selNm</field>
+		<field datatype="1" title="授信额度金额" hidden="" width = "200" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="授信额度余额" hidden="" width = "200" formatter="ccyFormater">lmtBal</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "150" formatter="">sellerInstCd</field>
+		<field datatype="1" title="业务类别" hidden="" width = "100" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition><![CDATA[sysLockFlag <>T and cntrctNo like %$cntrctNo$% and  sellerInstCd like %$sellerInstCd$%  and  selNm like %$selNm$%  and (sysTrxSts=P or sysTrxSts=S) and (sysFuncId=F_P_000006 or sysFuncId=F_P_000007 or sysFuncId=F_P_000008) and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000586</id>
+	<name>客户评级增加子表逻辑流</name>
+	<desc>客户评级增加子表逻辑流</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddDoRecord</component>
+		<tablename>TRX.CUSTRAT_DETAIL_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<condition>custRatTp=?</condition>
+		<params>custRatTp</params>
+		<doname>custRat</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode> 
+</logicflow>

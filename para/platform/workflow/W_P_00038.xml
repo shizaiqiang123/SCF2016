@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00038</id>
+	<workid>1307</workid>
+	<workname>collatPrice</workname>
+	<name>动产质押-价格变动</name>
+	<desc>动产质押-价格变动</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000615</id>
+	<name>用户角色信息修改</name>
+	<desc>用户角色信息修改逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname>roleIds</doname>
+		<condition>userId = ?</condition>
+		<params>userId</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

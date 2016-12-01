@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000062</id>
+	<name>登录修改密码小页</name>
+	<desc>登录修改密码小页</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000194</target>
+</inqdata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000752</id>
+	<name>修改贷项清单页面信息</name>
+	<desc>修改贷项清单页面信息</desc>
+	<jspfile>screen/invc/invcCdnEdit.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+</page>

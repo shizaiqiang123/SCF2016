@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000004.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的注册申请，因您寄送的材料不完整未能通过平台审核，请及时补寄相关材料信息。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000086</id>
+    <title>补寄注册材料通知</title>
+    <remindtp>1</remindtp>
+    <name>补寄注册材料(站内信)</name>
+    <senddt>2015-09-19</senddt>
+</advice>

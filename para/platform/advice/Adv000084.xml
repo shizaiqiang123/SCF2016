@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000002.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的注册申请，因平台尚未收到您寄送的材料无法进行平台审核，请及时确认相关材料信息是否已寄出。【百联金融服务平台】 &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;
+</content>
+    <id>Adv000084</id>
+    <title>纸质材料未达提醒</title>
+    <remindtp>1</remindtp>
+    <name>材料未达(站内信)</name>
+    <senddt>2015-09-15</senddt>
+</advice>

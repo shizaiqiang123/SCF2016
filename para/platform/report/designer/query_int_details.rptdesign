@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="startDt" id="330">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="endDt" id="331">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="selNm" id="332">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="busiTp" id="333">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="intTp" id="334">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="9">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521/ORCL</property>
+            <property name="odaUser">std</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">c3Rk</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="10">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">CUST_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CUST_NM</text-property>
+                    <text-property name="heading">CUST_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BUSI_TP</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BUSI_TP</text-property>
+                    <text-property name="heading">BUSI_TP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INT_TP</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INT_TP</text-property>
+                    <text-property name="heading">INT_TP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PAY_INT_TP</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">PAY_INT_TP</text-property>
+                    <text-property name="heading">PAY_INT_TP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INT_CCY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INT_CCY</text-property>
+                    <text-property name="heading">INT_CCY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">THEIR_REF</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">THEIR_REF</text-property>
+                    <text-property name="heading">THEIR_REF</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SEL_AC_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SEL_AC_NO</text-property>
+                    <text-property name="heading">SEL_AC_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CREATE_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CREATE_DT</text-property>
+                    <text-property name="heading">CREATE_DT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CURR_INT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CURR_INT</text-property>
+                    <text-property name="heading">CURR_INT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CURR_INT_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CURR_INT_DT</text-property>
+                    <text-property name="heading">CURR_INT_DT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CURR_PAY_INT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CURR_PAY_INT</text-property>
+                    <text-property name="heading">CURR_PAY_INT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CURR_INT_PAY_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CURR_INT_PAY_DT</text-property>
+                    <text-property name="heading">CURR_INT_PAY_DT</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CUST_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">BUSI_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">INT_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">PAY_INT_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">INT_CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">THEIR_REF</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">SEL_AC_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">CREATE_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">CURR_INT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">CURR_INT_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">CURR_PAY_INT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">CURR_INT_PAY_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[this.queryText="SELECT b.cust_Nm,a.busi_Tp,a.int_Tp,a.pay_Int_Tp,a.int_Ccy,a.their_Ref, a.sel_Ac_No,a.create_Dt,a.curr_Int,a.curr_Int_Dt,a.curr_Pay_Int,a.curr_Int_Pay_Dt                 "
++" FROM  TRX.INT_M a                                    "
++" left join TRX.CUST_M b  on  a.sel_Id = b.sys_Ref_No  where  a.sys_Trx_Sts = 'M' and a.sys_Lock_Flag = 'F'                     "
+var selNm = params["selNm"].value;
+var busiTp = params["busiTp"].value;
+var intTp = params["intTp"].value;
+var startDt = params["startDt"].value;
+var endDt = params["endDt"].value;
+if(selNm!=null &amp;&amp; selNm!=""){
+this.queryText+="AND b.cust_Nm like '%"+selNm+"%'";
+}
+if(busiTp!=null &amp;&amp; busiTp!=""){
+this.queryText+="AND a.busi_Tp = '"+busiTp+"'";
+}
+if(intTp!=null &amp;&amp; intTp!=""){
+this.queryText+="AND a.int_Tp like '%"+intTp+"%'";
+}
+if(startDt!=null &amp;&amp; startDt!="" &amp;&amp; endDt!=null &amp;&amp; endDt!="" ){
+this.queryText+="AND (to_char(a.create_Dt,'yyyy-mm-dd') between '"+startDt+"' and '"+endDt+"') AND (to_char(a.curr_Int_Dt,'yyyy-mm-dd') between '"+startDt+"' and '"+endDt+"') AND (to_char(a.curr_Int_Pay_Dt,'yyyy-mm-dd') between '"+startDt+"' and '"+endDt+"')";
+}
+]]></method>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CUST_NM</property>
+                    <property name="nativeName">CUST_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">BUSI_TP</property>
+                    <property name="nativeName">BUSI_TP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">INT_TP</property>
+                    <property name="nativeName">INT_TP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">PAY_INT_TP</property>
+                    <property name="nativeName">PAY_INT_TP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">INT_CCY</property>
+                    <property name="nativeName">INT_CCY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">THEIR_REF</property>
+                    <property name="nativeName">THEIR_REF</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">SEL_AC_NO</property>
+                    <property name="nativeName">SEL_AC_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">CREATE_DT</property>
+                    <property name="nativeName">CREATE_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">CURR_INT</property>
+                    <property name="nativeName">CURR_INT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">CURR_INT_DT</property>
+                    <property name="nativeName">CURR_INT_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">CURR_PAY_INT</property>
+                    <property name="nativeName">CURR_PAY_INT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">CURR_INT_PAY_DT</property>
+                    <property name="nativeName">CURR_INT_PAY_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select   b.cust_Nm,a.busi_Tp,a.int_Tp,a.pay_Int_Tp,a.int_Ccy,a.their_Ref,a.sel_Ac_No,a.create_Dt,a.curr_Int,a.curr_Int_Dt,a.curr_Pay_Int,a.curr_Int_Pay_Dt
+from  TRX.INT_M a
+left join TRX.CUST_M b  on  a.sel_Id = b.sys_Ref_No  where  a.sys_Trx_Sts = 'M' and a.sys_Lock_Flag = 'F'
+]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="244">
+            <column id="245"/>
+            <row id="246">
+                <cell id="247">
+                    <label id="304">
+                        <property name="textAlign">center</property>
+                        <text-property name="text">利息查询</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="248">
+                <cell id="249">
+                    <table id="252">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">CUST_NM</property>
+                                <text-property name="displayName">CUST_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">BUSI_TP</property>
+                                <text-property name="displayName">BUSI_TP</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["BUSI_TP"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">INT_TP</property>
+                                <text-property name="displayName">INT_TP</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["INT_TP"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PAY_INT_TP</property>
+                                <text-property name="displayName">PAY_INT_TP</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PAY_INT_TP"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">INT_CCY</property>
+                                <text-property name="displayName">INT_CCY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["INT_CCY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">THEIR_REF</property>
+                                <text-property name="displayName">THEIR_REF</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["THEIR_REF"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SEL_AC_NO</property>
+                                <text-property name="displayName">SEL_AC_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SEL_AC_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CREATE_DT</property>
+                                <text-property name="displayName">CREATE_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CREATE_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CURR_INT</property>
+                                <text-property name="displayName">CURR_INT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CURR_INT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CURR_INT_DT</property>
+                                <text-property name="displayName">CURR_INT_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CURR_INT_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CURR_PAY_INT</property>
+                                <text-property name="displayName">CURR_PAY_INT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CURR_PAY_INT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CURR_INT_PAY_DT</property>
+                                <text-property name="displayName">CURR_INT_PAY_DT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CURR_INT_PAY_DT"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                        </list-property>
+                        <column id="292"/>
+                        <column id="293"/>
+                        <column id="294"/>
+                        <column id="295"/>
+                        <column id="296"/>
+                        <column id="297"/>
+                        <column id="298"/>
+                        <column id="299"/>
+                        <column id="300"/>
+                        <column id="301"/>
+                        <column id="302"/>
+                        <column id="303"/>
+                        <header>
+                            <row id="253">
+                                <cell id="254">
+                                    <label id="305">
+                                        <text-property name="text">卖方名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="255">
+                                    <label id="306">
+                                        <text-property name="text">业务类别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="256">
+                                    <label id="308">
+                                        <text-property name="text">利息类型</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="257">
+                                    <label id="307">
+                                        <text-property name="text">收取方式</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="258">
+                                    <label id="309">
+                                        <text-property name="text">币别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="259">
+                                    <label id="310">
+                                        <text-property name="text">关联业务交易流水号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="260">
+                                    <label id="311">
+                                        <text-property name="text">扣款账号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="261">
+                                    <label id="312">
+                                        <text-property name="text">利息产生时间</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="262">
+                                    <label id="314">
+                                        <text-property name="text">本次应收利息金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="263">
+                                    <label id="315">
+                                        <text-property name="text">本次应收利息日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="264">
+                                    <label id="316">
+                                        <text-property name="text">本次实收利息金额</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="265">
+                                    <label id="317">
+                                        <text-property name="text">本次实收利息日期</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="266">
+                                <cell id="267">
+                                    <data id="318">
+                                        <property name="resultSetColumn">CUST_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="268">
+                                    <data id="319">
+                                        <property name="resultSetColumn">BUSI_TP</property>
+                                    </data>
+                                </cell>
+                                <cell id="269">
+                                    <data id="320">
+                                        <property name="resultSetColumn">INT_TP</property>
+                                    </data>
+                                </cell>
+                                <cell id="270">
+                                    <data id="321">
+                                        <property name="resultSetColumn">PAY_INT_TP</property>
+                                    </data>
+                                </cell>
+                                <cell id="271">
+                                    <data id="322">
+                                        <property name="resultSetColumn">INT_CCY</property>
+                                    </data>
+                                </cell>
+                                <cell id="272">
+                                    <data id="323">
+                                        <property name="resultSetColumn">THEIR_REF</property>
+                                    </data>
+                                </cell>
+                                <cell id="273">
+                                    <data id="324">
+                                        <property name="resultSetColumn">SEL_AC_NO</property>
+                                    </data>
+                                </cell>
+                                <cell id="274">
+                                    <data id="325">
+                                        <property name="resultSetColumn">CREATE_DT</property>
+                                    </data>
+                                </cell>
+                                <cell id="275">
+                                    <data id="326">
+                                        <property name="resultSetColumn">CURR_INT</property>
+                                    </data>
+                                </cell>
+                                <cell id="276">
+                                    <data id="327">
+                                        <property name="resultSetColumn">CURR_INT_DT</property>
+                                    </data>
+                                </cell>
+                                <cell id="277">
+                                    <data id="328">
+                                        <property name="resultSetColumn">CURR_PAY_INT</property>
+                                    </data>
+                                </cell>
+                                <cell id="278">
+                                    <data id="329">
+                                        <property name="resultSetColumn">CURR_INT_PAY_DT</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="279">
+                                <cell id="280"/>
+                                <cell id="281"/>
+                                <cell id="282"/>
+                                <cell id="283"/>
+                                <cell id="284"/>
+                                <cell id="285"/>
+                                <cell id="286"/>
+                                <cell id="287"/>
+                                <cell id="288"/>
+                                <cell id="289"/>
+                                <cell id="290"/>
+                                <cell id="291"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="250">
+                <cell id="251"/>
+            </row>
+        </grid>
+    </body>
+</report>

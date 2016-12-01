@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <module>PARA</module>
+    <desc>参数工具-新增参数定义</desc>
+    <nodeName>logicflow</nodeName>
+    <id>L_P_000147</id>
+    <name>新增参数定义</name>
+    <propertyBean>false</propertyBean>
+    <nodeSize>1</nodeSize>
+    <transforSize>1</transforSize>
+    <lnode>
+		<id>N00000001</id>
+		<name>增减参数定义</name>
+		<desc>参数工具-增减参数定义表记录</desc>
+		<module>PARA</module>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.PARA_DEFINE_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_P_000018.js</nodejs>
+    </lnode>
+</logicflow>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>用户等级信息直接保存</desc>
+    <id>L_P_000173</id>
+    <name>用户等级信息</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+    <module>Comm</module>
+    <lnode>
+        <desc>修改用户等级信息</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>commManagerRecord</component>
+        <tablename>STD.STD_CUST_LEVEL</tablename>
+        <name>修改用户等级信息</name>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+</logicflow>

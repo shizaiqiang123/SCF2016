@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000692</id>
+	<module>应收账款池融资</module>
+	<name>保证金出池</name>
+	<desc>保证金出池</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>池协议catalog</name>
+		<desc>池协议catalog</desc>
+		<catalog>C_P_000729</catalog>
+	</page>
+	<page>
+		<id>P_P_000852</id>
+		<index>1</index>
+		<name>保证金出池页面</name>
+		<desc>保证金出池</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000020.js</accountingjs>
+	</page> --> 
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<workflow>W_P_00052</workflow>
+</function>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000253</id>
+    <name>首次登陆修改密码查询手机号</name>
+	<desc>首次登陆修改密码查询手机号</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+	</qnode>
+</query>

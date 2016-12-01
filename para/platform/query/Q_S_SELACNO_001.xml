@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_S_SELACNO_001</id>
+	<name>卖方保理专户查询</name>
+	<desc>卖方保理专户查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>acOwnerid=$acOwnerid$ and acTp = 1 and acFlag = R</condition>		
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

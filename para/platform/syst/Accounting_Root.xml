@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<accounting>
+	<accountdefine>
+		<account type="Factoring_RecFee" desc="客户活期存款">20110101</account>
+		<account type="Factoring_PayFee" desc="国内保理业务手续费收入">60211306</account>
+		
+		<account type="Factoring_Receivable" desc="有价单证">80010101</account>
+		<account type="Factoring_Payable" desc="备忘科目配平">88880101</account>
+		
+		<account type="Factoring_Deposit" desc="存款相关科目">2010000</account>
+		
+		<account type="Factoring_Advance" desc="国内保理融资">1470301</account>
+		<account type="Factoring_Interest" desc="递延收益─未实现国内保理预支价金收益">2680005</account>
+		
+		<account type="Exchange_Account_D" desc="外币转换Debit专户">4110034</account>
+		<account type="Exchange_Account_C" desc="外币转换Credit专户">4110035</account>
+		
+		<account type="Short_term" desc="短期商业贷款">7003201</account>
+		<account type="Linkage_deposit" desc="联动存款科目">7004302</account>
+		
+		
+		<account type="Account_Balance_D" desc="回款专项账户">20020101</account>
+		<account type="Account_Balance_C" desc="客户活期存款">20110101</account>
+	</accountdefine>
+</accounting>

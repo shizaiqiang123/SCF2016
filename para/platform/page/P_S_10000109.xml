@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000109</id>
+	<name>查询数据监控</name>
+	<desc>查询数据监控页面</desc>
+	<jspfile>jsp/sys/SYS_Monitor.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+</page>

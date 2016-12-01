@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000245</id>
+    <name>动产质押新增协议筛选货物小页</name>
+    <type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000763</target>
+</inqdata>

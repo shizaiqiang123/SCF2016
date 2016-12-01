@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <header>
+        <ec-flag>F</ec-flag>
+        <jndi-flag>Y</jndi-flag>
+        <gapi-type>Message Queue</gapi-type>
+        <gapi-type-value>TrxGAPIReformatComponent</gapi-type-value>
+        <reformat-class>com.cs.hsbc.ee.ap.cim.CIMSyncToCEFormater</reformat-class>
+        <time-out-ack-delay>0</time-out-ack-delay>
+        <time-out-ack>
+            <send-queue-id/>
+            <recv-queue-id/>
+            <recv-time-out>0</recv-time-out>
+        </time-out-ack>
+        <other-system-id>HSBC</other-system-id>
+        <other-system-interface>EE_CE_CIM</other-system-interface>
+        <recv-time-out>20</recv-time-out>
+        <is-trx>N</is-trx>
+        <send-queue-id>EE.CE.Request.Q</send-queue-id>
+        <recv-queue-id>EE.CE.Response.Q</recv-queue-id>
+        <msg-format>Text</msg-format>
+        <module>CUST</module>
+        <interface-mapping-name>EE_CE_CIM</interface-mapping-name>
+        <other-system-desc/>
+        <trx-type>R</trx-type>
+        <gapi-mode conditional="false" gapiMode="" mode="SYNC"/>
+        <gapi-resend>N</gapi-resend>
+        <atth-queue-id/>
+    </header>
+    <selector-setting>
+        <send/>
+        <recv/>
+    </selector-setting>
+    <send-msg-map>
+        <CUST_CNTRY ec-tag="N" fv-type="F" op-tag="N" order="1">CUST_CNTRY</CUST_CNTRY>
+        <CUST_STAT_CD ec-tag="N" fv-type="F" op-tag="N" order="2">CUST_STAT_CD</CUST_STAT_CD>
+        <CUST_BOS_ID ec-tag="N" fv-type="F" op-tag="N" order="3">CUST_BOS_ID</CUST_BOS_ID>
+        <MntncFctnInd ec-tag="N" fv-type="V" op-tag="N" order="4">A</MntncFctnInd>
+        <CUST_BU_CODE ec-tag="N" fv-type="V" op-tag="N" order="5"/>
+        <CUST_BU_MAIN_REF ec-tag="N" fv-type="V" op-tag="N" order="6"/>
+        <CUST_BU_TYPE ec-tag="N" fv-type="V" op-tag="N" order="7"/>
+        <CUST_PARENT_HSBCNET_ID ec-tag="N" fv-type="V" op-tag="N" order="8"/>
+        <CUST_PARENT_ID ec-tag="N" fv-type="V" op-tag="N" order="9"/>
+        <CUST_PARENT_NM ec-tag="N" fv-type="V" op-tag="N" order="10"/>
+    </send-msg-map>
+    <recv-msg-map/>
+    <translateRule/>
+    <send-item/>
+</service>

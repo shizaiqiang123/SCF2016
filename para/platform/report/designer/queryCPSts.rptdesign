@@ -1,0 +1,2493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="488">
+            <property name="FILELIST">xmlsource/动产质押池状态查询.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="form" id="489">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">patnerNm</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">patnerNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">patnerBal</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">patnerBal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumAmt</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">sumAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lmtAmt</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">lmtAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lmtBal</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">lmtBal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">maxlmtAmt</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">maxlmtAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">openLoanAmt</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">openLoanAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumAmtRt</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">sumAmtRt</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">patnerNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">patnerBal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">sumAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">lmtAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">lmtBal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">maxlmtAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">openLoanAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">sumAmtRt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">patnerNm</property>
+                    <property name="nativeName">patnerNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">patnerBal</property>
+                    <property name="nativeName">patnerBal</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">sumAmt</property>
+                    <property name="nativeName">sumAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">lmtAmt</property>
+                    <property name="nativeName">lmtAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">lmtBal</property>
+                    <property name="nativeName">lmtBal</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">maxlmtAmt</property>
+                    <property name="nativeName">maxlmtAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">openLoanAmt</property>
+                    <property name="nativeName">openLoanAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">sumAmtRt</property>
+                    <property name="nativeName">sumAmtRt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/trxDom]#:#{patnerNm;STRING;/patnerNm},{patnerBal;STRING;/patnerBal},{sumAmt;STRING;/sumAmt},{lmtAmt;STRING;/lmtAmt},{lmtBal;STRING;/lmtBal},{maxlmtAmt;STRING;/maxlmtAmt},{openLoanAmt;STRING;/openLoanAmt},{sumAmtRt;STRING;/sumAmtRt}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>patnerNm</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>patnerNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>patnerBal</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>patnerBal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sumAmt</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sumAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="collat" id="490">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">collatNm</property>
+                    <text-property name="heading">collatNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">arrivalDt</property>
+                    <text-property name="heading">arrivalDt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">qty</property>
+                    <text-property name="heading">qty</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">collatQty</property>
+                    <text-property name="heading">collatQty</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">collatVal</property>
+                    <text-property name="heading">collatVal</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">collatNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">arrivalDt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">qty</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">collatQty</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">collatVal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">collatNm</property>
+                    <property name="nativeName">collatNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">arrivalDt</property>
+                    <property name="nativeName">arrivalDt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">qty</property>
+                    <property name="nativeName">qty</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">collatQty</property>
+                    <property name="nativeName">collatQty</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">collatVal</property>
+                    <property name="nativeName">collatVal</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/trxDom/COLLAT/records/e]#:#{sysRefNo;STRING;/sysRefNo},{collatNm;STRING;/collatNm},{arrivalDt;STRING;/arrivalDt},{qty;STRING;/qty},{collatQty;STRING;/collatQty},{collatVal;STRING;/collatVal}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>collatNm</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>collatNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arrivalDt</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arrivalDt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>qty</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>qty</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>collatQty</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>collatQty</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>collatVal</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>collatVal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="loan" id="491">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ccy</property>
+                    <text-property name="heading">ccy</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ttlLoanAmt</property>
+                    <text-property name="heading">ttlLoanAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">marginAcNo</property>
+                    <text-property name="heading">marginAcNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">marginAmt</property>
+                    <text-property name="heading">marginAmt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">marginBal</property>
+                    <text-property name="heading">marginBal</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">ccy</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ttlLoanAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">marginAcNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">marginAmt</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">marginBal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">ccy</property>
+                    <property name="nativeName">ccy</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ttlLoanAmt</property>
+                    <property name="nativeName">ttlLoanAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">marginAcNo</property>
+                    <property name="nativeName">marginAcNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">marginAmt</property>
+                    <property name="nativeName">marginAmt</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">marginBal</property>
+                    <property name="nativeName">marginBal</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/trxDom/LOAN/records1/e]#:#{sysRefNo;STRING;/sysRefNo},{ccy;STRING;/ccy},{ttlLoanAmt;STRING;/ttlLoanAmt},{marginAcNo;STRING;/marginAcNo},{marginAmt;STRING;/marginAmt},{marginBal;STRING;/marginBal}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ccy</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ccy</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ttlLoanAmt</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ttlLoanAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>marginAcNo</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>marginAcNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>marginAmt</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>marginAmt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>marginBal</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>marginBal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="7">
+            <property name="fontFamily">"华文中宋"</property>
+            <property name="fontSize">14pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="paddingTop">25pt</property>
+            <property name="paddingBottom">20pt</property>
+            <property name="textAlign">center</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[动产质押池状态查询]]></text-property>
+        </text>
+        <grid id="8">
+            <column id="9"/>
+            <column id="10"/>
+            <column id="75"/>
+            <column id="72"/>
+            <row id="11">
+                <cell id="12">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="68">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[监管方名称]]></text-property>
+                    </text>
+                </cell>
+                <cell id="13">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="572">
+                        <property name="paddingTop">5pt</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">patnerNm</property>
+                                <text-property name="displayName">patnerNm</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["patnerNm"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">patnerNm</property>
+                    </data>
+                </cell>
+                <cell id="73">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="76">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[监管方额度]]></text-property>
+                    </text>
+                </cell>
+                <cell id="70">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="574">
+                        <property name="paddingTop">5pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">patnerBal</property>
+                                <text-property name="displayName">patnerBal</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["patnerBal"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">patnerBal</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="14">
+                <cell id="15">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="69">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[有效质物价值总计]]></text-property>
+                    </text>
+                </cell>
+                <cell id="16">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="575">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sumAmt</property>
+                                <text-property name="displayName">sumAmt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumAmt"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">sumAmt</property>
+                    </data>
+                </cell>
+                <cell id="74">
+                    <property name="colSpan">2</property>
+                    <property name="rowSpan">1</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </cell>
+            </row>
+        </grid>
+        <table id="492">
+            <property name="dataSet">collat</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">sysRefNo</property>
+                    <text-property name="displayName">sysRefNo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">collatNm</property>
+                    <text-property name="displayName">collatNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["collatNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">arrivalDt</property>
+                    <text-property name="displayName">arrivalDt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["arrivalDt"]</expression>
+                    <property name="dataType">date</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">qty</property>
+                    <text-property name="displayName">qty</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["qty"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">collatQty</property>
+                    <text-property name="displayName">collatQty</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["collatQty"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">collatVal</property>
+                    <text-property name="displayName">collatVal</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["collatVal"]</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="514"/>
+            <column id="515"/>
+            <column id="516"/>
+            <column id="517"/>
+            <column id="518"/>
+            <column id="519"/>
+            <header>
+                <row id="493">
+                    <cell id="494">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="520">
+                            <text-property name="text">质物流水号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="495">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="522">
+                            <text-property name="text">质物品种</text-property>
+                        </label>
+                    </cell>
+                    <cell id="496">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="524">
+                            <text-property name="text">质物入库日期</text-property>
+                        </label>
+                    </cell>
+                    <cell id="497">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="526">
+                            <text-property name="text">质物数量</text-property>
+                        </label>
+                    </cell>
+                    <cell id="498">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="528">
+                            <text-property name="text">质物计价量</text-property>
+                        </label>
+                    </cell>
+                    <cell id="499">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="530">
+                            <text-property name="text">质物价值</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="500">
+                    <property name="textAlign">center</property>
+                    <cell id="501">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="521">
+                            <property name="resultSetColumn">sysRefNo</property>
+                        </data>
+                    </cell>
+                    <cell id="502">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="523">
+                            <property name="resultSetColumn">collatNm</property>
+                        </data>
+                    </cell>
+                    <cell id="503">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="525">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Short Date</property>
+                                <property name="pattern">Short Date</property>
+                                <property name="locale">lkt_US</property>
+                            </structure>
+                            <property name="resultSetColumn">arrivalDt</property>
+                        </data>
+                    </cell>
+                    <cell id="504">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="527">
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="resultSetColumn">qty</property>
+                        </data>
+                    </cell>
+                    <cell id="505">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="529">
+                            <property name="backgroundAttachment">scroll</property>
+                            <property name="backgroundPositionX">0%</property>
+                            <property name="backgroundPositionY">0%</property>
+                            <property name="backgroundRepeat">repeat</property>
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">normal</property>
+                            <property name="fontStyle">normal</property>
+                            <property name="fontVariant">normal</property>
+                            <property name="color">black</property>
+                            <property name="textLineThrough">none</property>
+                            <property name="textOverline">none</property>
+                            <property name="textUnderline">none</property>
+                            <property name="borderBottomColor">black</property>
+                            <property name="borderBottomStyle">none</property>
+                            <property name="borderBottomWidth">medium</property>
+                            <property name="borderLeftColor">black</property>
+                            <property name="borderLeftStyle">none</property>
+                            <property name="borderLeftWidth">medium</property>
+                            <property name="borderRightColor">black</property>
+                            <property name="borderRightStyle">none</property>
+                            <property name="borderRightWidth">medium</property>
+                            <property name="borderTopColor">black</property>
+                            <property name="borderTopStyle">none</property>
+                            <property name="borderTopWidth">medium</property>
+                            <property name="marginTop">0pt</property>
+                            <property name="marginLeft">0pt</property>
+                            <property name="marginBottom">0pt</property>
+                            <property name="marginRight">0pt</property>
+                            <property name="paddingTop">1pt</property>
+                            <property name="paddingLeft">1pt</property>
+                            <property name="paddingBottom">1pt</property>
+                            <property name="paddingRight">1pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">center</property>
+                            <property name="letterSpacing">normal</property>
+                            <property name="lineHeight">normal</property>
+                            <property name="orphans">2</property>
+                            <property name="textTransform">none</property>
+                            <property name="whiteSpace">normal</property>
+                            <property name="widows">2</property>
+                            <property name="wordSpacing">normal</property>
+                            <property name="display">block</property>
+                            <property name="pageBreakAfter">auto</property>
+                            <property name="pageBreakBefore">auto</property>
+                            <property name="pageBreakInside">auto</property>
+                            <property name="showIfBlank">false</property>
+                            <property name="canShrink">false</property>
+                            <property name="overflow">hidden</property>
+                            <property name="resultSetColumn">collatQty</property>
+                        </data>
+                    </cell>
+                    <cell id="506">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="531">
+                            <property name="backgroundAttachment">scroll</property>
+                            <property name="backgroundPositionX">0%</property>
+                            <property name="backgroundPositionY">0%</property>
+                            <property name="backgroundRepeat">repeat</property>
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">normal</property>
+                            <property name="fontStyle">normal</property>
+                            <property name="fontVariant">normal</property>
+                            <property name="color">black</property>
+                            <property name="textLineThrough">none</property>
+                            <property name="textOverline">none</property>
+                            <property name="textUnderline">none</property>
+                            <property name="borderBottomColor">black</property>
+                            <property name="borderBottomStyle">none</property>
+                            <property name="borderBottomWidth">medium</property>
+                            <property name="borderLeftColor">black</property>
+                            <property name="borderLeftStyle">none</property>
+                            <property name="borderLeftWidth">medium</property>
+                            <property name="borderRightColor">black</property>
+                            <property name="borderRightStyle">none</property>
+                            <property name="borderRightWidth">medium</property>
+                            <property name="borderTopColor">black</property>
+                            <property name="borderTopStyle">none</property>
+                            <property name="borderTopWidth">medium</property>
+                            <property name="marginTop">0pt</property>
+                            <property name="marginLeft">0pt</property>
+                            <property name="marginBottom">0pt</property>
+                            <property name="marginRight">0pt</property>
+                            <property name="paddingTop">1pt</property>
+                            <property name="paddingLeft">1pt</property>
+                            <property name="paddingBottom">1pt</property>
+                            <property name="paddingRight">1pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Currency</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">center</property>
+                            <property name="letterSpacing">normal</property>
+                            <property name="lineHeight">normal</property>
+                            <property name="orphans">2</property>
+                            <property name="textTransform">none</property>
+                            <property name="whiteSpace">normal</property>
+                            <property name="widows">2</property>
+                            <property name="wordSpacing">normal</property>
+                            <property name="display">block</property>
+                            <property name="pageBreakAfter">auto</property>
+                            <property name="pageBreakBefore">auto</property>
+                            <property name="pageBreakInside">auto</property>
+                            <property name="showIfBlank">false</property>
+                            <property name="canShrink">false</property>
+                            <property name="overflow">hidden</property>
+                            <property name="resultSetColumn">collatVal</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <label id="137"/>
+        <grid id="138">
+            <column id="139"/>
+            <column id="140"/>
+            <column id="141"/>
+            <column id="142"/>
+            <row id="143">
+                <cell id="144">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="145">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[额度金额]]></text-property>
+                    </text>
+                </cell>
+                <cell id="146">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="576">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">lmtAmt</property>
+                                <text-property name="displayName">lmtAmt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["lmtAmt"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">lmtAmt</property>
+                    </data>
+                </cell>
+                <cell id="147">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="148">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[额度余额]]></text-property>
+                    </text>
+                </cell>
+                <cell id="149">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="577">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">lmtBal</property>
+                                <text-property name="displayName">lmtBal</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["lmtBal"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">lmtBal</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="156">
+                <cell id="157">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="161">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[最大可用敞口]]></text-property>
+                    </text>
+                </cell>
+                <cell id="158">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="578">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">maxlmtAmt</property>
+                                <text-property name="displayName">maxlmtAmt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["maxlmtAmt"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">maxlmtAmt</property>
+                    </data>
+                </cell>
+                <cell id="159">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="162">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[已占用敞口]]></text-property>
+                    </text>
+                </cell>
+                <cell id="160">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="579">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">openLoanAmt</property>
+                                <text-property name="displayName">openLoanAmt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["openLoanAmt"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">openLoanAmt</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="150">
+                <cell id="151">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <text id="152">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FFFFFF</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"仿宋"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="textIndent">0em</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[质物价值*质押率]]></text-property>
+                    </text>
+                </cell>
+                <cell id="153">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <data id="580">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">normal</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <structure name="numberFormat">
+                            <property name="category">Currency</property>
+                            <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                        </structure>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <property name="dataSet">form</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sumAmtRt</property>
+                                <text-property name="displayName">sumAmtRt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumAmtRt"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">sumAmtRt</property>
+                    </data>
+                </cell>
+                <cell id="154">
+                    <property name="colSpan">2</property>
+                    <property name="rowSpan">1</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                </cell>
+            </row>
+        </grid>
+        <table id="532">
+            <property name="dataSet">loan</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">sysRefNo</property>
+                    <text-property name="displayName">sysRefNo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ccy</property>
+                    <text-property name="displayName">ccy</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ccy"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ttlLoanAmt</property>
+                    <text-property name="displayName">ttlLoanAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ttlLoanAmt"]</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">marginAcNo</property>
+                    <text-property name="displayName">marginAcNo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["marginAcNo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">marginAmt</property>
+                    <text-property name="displayName">marginAmt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["marginAmt"]</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">marginBal</property>
+                    <text-property name="displayName">marginBal</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["marginBal"]</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="554"/>
+            <column id="555"/>
+            <column id="556"/>
+            <column id="557"/>
+            <column id="558"/>
+            <column id="559"/>
+            <header>
+                <row id="533">
+                    <cell id="534">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="560">
+                            <text-property name="text">放款编号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="535">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="562">
+                            <text-property name="text">币别</text-property>
+                        </label>
+                    </cell>
+                    <cell id="536">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="564">
+                            <text-property name="text">放款金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="537">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="566">
+                            <text-property name="text">保证金账号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="538">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="568">
+                            <text-property name="text">初始保证金金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="539">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="570">
+                            <text-property name="text">保证金余额</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="540">
+                    <property name="textAlign">center</property>
+                    <cell id="541">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="561">
+                            <property name="resultSetColumn">sysRefNo</property>
+                        </data>
+                    </cell>
+                    <cell id="542">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="563">
+                            <property name="resultSetColumn">ccy</property>
+                        </data>
+                    </cell>
+                    <cell id="543">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="565">
+                            <structure name="numberFormat">
+                                <property name="category">Currency</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="resultSetColumn">ttlLoanAmt</property>
+                        </data>
+                    </cell>
+                    <cell id="544">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="567">
+                            <property name="backgroundAttachment">scroll</property>
+                            <property name="backgroundPositionX">0%</property>
+                            <property name="backgroundPositionY">0%</property>
+                            <property name="backgroundRepeat">repeat</property>
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">normal</property>
+                            <property name="fontStyle">normal</property>
+                            <property name="fontVariant">normal</property>
+                            <property name="color">black</property>
+                            <property name="textLineThrough">none</property>
+                            <property name="textOverline">none</property>
+                            <property name="textUnderline">none</property>
+                            <property name="borderBottomColor">black</property>
+                            <property name="borderBottomStyle">none</property>
+                            <property name="borderBottomWidth">medium</property>
+                            <property name="borderLeftColor">black</property>
+                            <property name="borderLeftStyle">none</property>
+                            <property name="borderLeftWidth">medium</property>
+                            <property name="borderRightColor">black</property>
+                            <property name="borderRightStyle">none</property>
+                            <property name="borderRightWidth">medium</property>
+                            <property name="borderTopColor">black</property>
+                            <property name="borderTopStyle">none</property>
+                            <property name="borderTopWidth">medium</property>
+                            <property name="marginTop">0pt</property>
+                            <property name="marginLeft">0pt</property>
+                            <property name="marginBottom">0pt</property>
+                            <property name="marginRight">0pt</property>
+                            <property name="paddingTop">1pt</property>
+                            <property name="paddingLeft">1pt</property>
+                            <property name="paddingBottom">1pt</property>
+                            <property name="paddingRight">1pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Unformatted</property>
+                            </structure>
+                            <property name="textAlign">center</property>
+                            <property name="letterSpacing">normal</property>
+                            <property name="lineHeight">normal</property>
+                            <property name="orphans">2</property>
+                            <property name="textTransform">none</property>
+                            <property name="whiteSpace">normal</property>
+                            <property name="widows">2</property>
+                            <property name="wordSpacing">normal</property>
+                            <property name="display">block</property>
+                            <property name="pageBreakAfter">auto</property>
+                            <property name="pageBreakBefore">auto</property>
+                            <property name="pageBreakInside">auto</property>
+                            <property name="showIfBlank">false</property>
+                            <property name="canShrink">false</property>
+                            <property name="overflow">hidden</property>
+                            <property name="resultSetColumn">marginAcNo</property>
+                        </data>
+                    </cell>
+                    <cell id="545">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="569">
+                            <property name="backgroundAttachment">scroll</property>
+                            <property name="backgroundPositionX">0%</property>
+                            <property name="backgroundPositionY">0%</property>
+                            <property name="backgroundRepeat">repeat</property>
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">normal</property>
+                            <property name="fontStyle">normal</property>
+                            <property name="fontVariant">normal</property>
+                            <property name="color">black</property>
+                            <property name="textLineThrough">none</property>
+                            <property name="textOverline">none</property>
+                            <property name="textUnderline">none</property>
+                            <property name="borderBottomColor">black</property>
+                            <property name="borderBottomStyle">none</property>
+                            <property name="borderBottomWidth">medium</property>
+                            <property name="borderLeftColor">black</property>
+                            <property name="borderLeftStyle">none</property>
+                            <property name="borderLeftWidth">medium</property>
+                            <property name="borderRightColor">black</property>
+                            <property name="borderRightStyle">none</property>
+                            <property name="borderRightWidth">medium</property>
+                            <property name="borderTopColor">black</property>
+                            <property name="borderTopStyle">none</property>
+                            <property name="borderTopWidth">medium</property>
+                            <property name="marginTop">0pt</property>
+                            <property name="marginLeft">0pt</property>
+                            <property name="marginBottom">0pt</property>
+                            <property name="marginRight">0pt</property>
+                            <property name="paddingTop">1pt</property>
+                            <property name="paddingLeft">1pt</property>
+                            <property name="paddingBottom">1pt</property>
+                            <property name="paddingRight">1pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Currency</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">center</property>
+                            <property name="letterSpacing">normal</property>
+                            <property name="lineHeight">normal</property>
+                            <property name="orphans">2</property>
+                            <property name="textTransform">none</property>
+                            <property name="whiteSpace">normal</property>
+                            <property name="widows">2</property>
+                            <property name="wordSpacing">normal</property>
+                            <property name="display">block</property>
+                            <property name="pageBreakAfter">auto</property>
+                            <property name="pageBreakBefore">auto</property>
+                            <property name="pageBreakInside">auto</property>
+                            <property name="showIfBlank">false</property>
+                            <property name="canShrink">false</property>
+                            <property name="overflow">hidden</property>
+                            <property name="resultSetColumn">marginAmt</property>
+                        </data>
+                    </cell>
+                    <cell id="546">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="571">
+                            <property name="backgroundAttachment">scroll</property>
+                            <property name="backgroundPositionX">0%</property>
+                            <property name="backgroundPositionY">0%</property>
+                            <property name="backgroundRepeat">repeat</property>
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="fontWeight">normal</property>
+                            <property name="fontStyle">normal</property>
+                            <property name="fontVariant">normal</property>
+                            <property name="color">black</property>
+                            <property name="textLineThrough">none</property>
+                            <property name="textOverline">none</property>
+                            <property name="textUnderline">none</property>
+                            <property name="borderBottomColor">black</property>
+                            <property name="borderBottomStyle">none</property>
+                            <property name="borderBottomWidth">medium</property>
+                            <property name="borderLeftColor">black</property>
+                            <property name="borderLeftStyle">none</property>
+                            <property name="borderLeftWidth">medium</property>
+                            <property name="borderRightColor">black</property>
+                            <property name="borderRightStyle">none</property>
+                            <property name="borderRightWidth">medium</property>
+                            <property name="borderTopColor">black</property>
+                            <property name="borderTopStyle">none</property>
+                            <property name="borderTopWidth">medium</property>
+                            <property name="marginTop">0pt</property>
+                            <property name="marginLeft">0pt</property>
+                            <property name="marginBottom">0pt</property>
+                            <property name="marginRight">0pt</property>
+                            <property name="paddingTop">1pt</property>
+                            <property name="paddingLeft">1pt</property>
+                            <property name="paddingBottom">1pt</property>
+                            <property name="paddingRight">1pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Currency</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">center</property>
+                            <property name="letterSpacing">normal</property>
+                            <property name="lineHeight">normal</property>
+                            <property name="orphans">2</property>
+                            <property name="textTransform">none</property>
+                            <property name="whiteSpace">normal</property>
+                            <property name="widows">2</property>
+                            <property name="wordSpacing">normal</property>
+                            <property name="display">block</property>
+                            <property name="pageBreakAfter">auto</property>
+                            <property name="pageBreakBefore">auto</property>
+                            <property name="pageBreakInside">auto</property>
+                            <property name="showIfBlank">false</property>
+                            <property name="canShrink">false</property>
+                            <property name="overflow">hidden</property>
+                            <property name="resultSetColumn">marginBal</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>登录修改密码逻辑流</desc>
+    <id>L_P_000161</id>
+    <name>登录修改密码逻辑流</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+    <lnode>
+    	<id>N00000001</id>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.USER_PWD</tablename>
+		<doname></doname>
+		<type>E</type>
+		<nodejs>L_P_000008.js</nodejs>	
+    </lnode>
+    <lnode>
+    	<id>N00000002</id>
+		<event>y</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<cascadeevent>y</cascadeevent>
+		<doname></doname>
+		<type>E</type>
+		<nodejs>L_P_000025.js</nodejs>	
+    </lnode>
+</logicflow>

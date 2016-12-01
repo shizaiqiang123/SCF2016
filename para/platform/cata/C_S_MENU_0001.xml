@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_MENU_0001</id>
+	<name>Catalog</name>
+	<MODULE>菜单</MODULE>
+	<jspfile></jspfile>
+	<DESC>菜单筛选</DESC>
+	<tablename>STD.STD_MENU_INFO</tablename>
+	<search>
+		<field datatype="1" title="模块编号" defaultvalue="" width = "200">menuId</field>
+		<field datatype="1" title="模块名称" defaultvalue="" width = "200">menuName</field>
+	</search>	
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="系统Key" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="模块编号" hidden="" width = "25%">menuId</field>
+		<field datatype="1" title="模块名称" hidden="" width = "25%">menuName</field>
+		<field datatype="1" title="父模块" hidden="" width = "25%">menuParentid</field>
+		<field datatype="1" align="center" styler="getRed" title="是否为父模块" hidden="" width = "25%" formatter ="isBooleanFormater">isparent</field>
+	</select>
+	<condition><![CDATA[menuId like %$menuId$% and menuName like %$menuName$% and menuTp <= $sysUserRole$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

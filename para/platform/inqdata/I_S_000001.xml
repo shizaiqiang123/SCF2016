@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_S_000001</id>
+	<name>查询流水号</name>
+	<desc>页面加载流水号</desc>
+	<type>Q</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>Q_S_000001</target>
+</inqdata>

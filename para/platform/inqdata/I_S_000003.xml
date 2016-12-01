@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_S_000003</id>
+	<name>查询预警</name>
+	<desc>查询预警</desc>
+	<type>S</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>S_P_000001</target>
+</inqdata>

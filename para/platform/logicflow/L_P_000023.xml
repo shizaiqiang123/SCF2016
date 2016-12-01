@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000023</id>
+	<name>删除保理商</name>
+	<desc>删除保理商</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>删除机构</name>
+		<desc>删除机构</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxDeleteRecord</component>
+		<tablename>STD.STD_ORG_INFO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>删除账号</name>
+		<desc>删除账号</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxDeleteDoRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>acOwnerid =?</condition>
+		<params>acOwnerid</params>
+	</lnode> 
+	<!--  <lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxFactorPermissionDelete</component>
+		<tablename>STD.STD_PERMISSION_INFO</tablename>
+		<doname></doname>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>  -->
+	 <lnode>
+		<id>N00000003</id>
+		<name>删除产品</name>
+		<desc>删除产品</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxDeleteDoRecord</component>
+		<tablename>STD.FACTOR_PRODUCT</tablename>
+		<doname>productId</doname>
+		<condition>factorId =?</condition>
+		<params>factorId</params>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs></nodejs>
+	</lnode> 
+	<lnode>
+		<id>N00000004</id>
+		<name>删除保理商用户M</name>
+		<desc>删除保理商用户M</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxDeleteDoRecord</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<doname></doname>
+		<condition>busiUnit =?</condition>
+		<params>busiUnit</params>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+<!-- 		<nodejs>L_P_000022.js</nodejs> -->
+	</lnode>
+	<lnode>
+		<id>N00000005</id>
+		<name>删除保理商用户</name>
+		<desc>删除保理商用户</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxDeleteDoRecord</component>
+		<tablename>STD.USER_INFO_E</tablename>
+		<doname></doname>
+		<condition>busiUnit =?</condition>
+		<params>busiUnit</params>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+<!-- 		<nodejs>L_P_000022.js</nodejs> -->
+	</lnode>
+</logicflow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000060</id>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>L</type>
+    <name>业务调整的function修改的重置所有</name>
+	<desc>业务调整-function修改-重置所有</desc>
+	<target>L_P_000159</target>
+</inqdata>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <pagesSize>0</pagesSize>
+    <desc>查询function</desc>
+    <transactionPage>0</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <workflow>1</workflow>
+    <id>F_P_000227</id>
+    <name>查询function</name>
+    <functype>PA</functype>
+</function>

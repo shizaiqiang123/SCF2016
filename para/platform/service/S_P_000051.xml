@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <type>Verify</type>
+    <id>S_P_000051</id>
+    <component></component>
+    <name>短信通知服务</name>
+    <gapiid>b2e00083</gapiid>
+    <servicejs>S_P_00012.js</servicejs>
+</service>

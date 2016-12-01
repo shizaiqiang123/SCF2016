@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>供应商注入角色</desc>
+    <id>L_P_000181</id>
+    <name>供应商注入角色</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+    	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxAddRecord </component>
+		<tablename>STD.USER_PWD</tablename>
+		<doname></doname>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<type>E</type>	
+		<nodejs>L_P_000029.js</nodejs>
+	</lnode>
+    <lnode>
+		<id>N00000002</id>
+		<name>用户角色注入</name>
+		<desc>用户角色注入</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddDoRecord</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname>roleIds</doname>
+		<condition>userId = ?</condition>
+		<params>sysRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

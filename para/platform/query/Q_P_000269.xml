@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000269</id>
+    <desc>账号查询</desc>
+    <qnode>
+        <desc>账号查询</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <name>成员企业查询</name>
+        <doname></doname>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.CUST_AC</tablename>
+       	<!--  <params>$licenceNo$,$buyerId$</params> -->
+        <!-- <sql>SELECT c from CustAc c where c.licenceNo = ? and c.buyerId = ?</sql> -->
+        <condition>licenceNo = $licenceNo$ and buyerId = $buyerId$</condition>
+    </qnode>
+    <name>账号查询</name>
+    <nodeSize>1</nodeSize>
+</query>

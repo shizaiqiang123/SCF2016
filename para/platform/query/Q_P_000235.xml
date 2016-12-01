@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000235</id>
+    <name>查询监控信息</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+     <desc>查询接口监控信息</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc></asc>
+        <name>查询接口监控信息</name>
+        <cascadeevent>N</cascadeevent>
+        <tablename>STD.PORT_MONITOR</tablename>
+        <component>componentClass</component>
+        <lockcheck>N</lockcheck>
+        <condition>portType = $portType$ </condition>
+       </qnode>
+</query>

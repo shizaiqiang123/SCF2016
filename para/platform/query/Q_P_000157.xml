@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000157</id>
+	<name>用户复核中权限信息</name>
+	<desc>用户复核中权限信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>权限信息</name>
+		<desc>权限信息</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+		<fields></fields>
+		<condition>userId = $userId$ and sysTrxSts = P</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

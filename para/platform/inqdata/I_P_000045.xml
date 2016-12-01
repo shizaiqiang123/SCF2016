@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000045</id>
+	<name>常用功能查询小页</name>
+	<desc>完善我的信息弹出常用功能删除小页</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000191</target>
+</inqdata>

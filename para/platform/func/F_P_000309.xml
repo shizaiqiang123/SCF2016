@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <desc>基础利率/费率维护</desc>
+    <id>F_P_000309</id>
+    <name>基础利率/费率维护</name>
+    <functype>MM</functype>
+    <module>应收款融资</module>
+    <page>
+    	<id>P_P_000200</id>	
+    </page>
+</function>

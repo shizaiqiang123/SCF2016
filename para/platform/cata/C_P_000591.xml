@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000591</id>
+	<name>国内买方保池---争议解决复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内买方保理池---争议解决复核Catalog</DESC>
+	<tablename>TRX.INVC_DSP_E</tablename>
+	<search>
+		<field datatype="1" title="争议流水号" hidden="" width="100">sysRefNo
+		</field>
+		<field datatype="1" title="供应商名称" hidden="" width="100">selNm
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="争议流水号" hidden="" width="33.33%">sysRefNo
+		</field>
+		<field datatype="1" title="争议提出方" hidden="" width="33.33%">notifyBy
+		</field>
+		<field datatype="1" title="供应商名称" hidden="" width="33.33%">selNm
+		</field>
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes
+		</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysOpId
+		</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysOpTm
+		</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysRelId
+		</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysRelTm
+		</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysTrxSts
+		</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and sysLockFlag = F and sysTrxSts=P and sysFuncId=F_P_000801 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

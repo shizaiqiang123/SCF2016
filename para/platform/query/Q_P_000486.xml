@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000486</id>
+    <nodeSize>1</nodeSize>
+    <qnode>
+        <desc>现货入库验证数量</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <name>成员企业查询</name>
+        <component>componentClass</component>
+        <doname></doname>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.CRTF_M</tablename>
+        <params>$cntrctNo$,$crtfNo$,$sysRefNo$</params>
+        <fields>sumPoInNum</fields>
+       <!--  <sql><![CDATA[SELECT Sum(m.poInNum) from CrtfM m where m.loanId = ? and m.goodsId = ? and m.sysTrxSts = 'M' group by m.loanId,m.goodsId ]]></sql> -->
+        <!--modify by shizaiqiang 2016-08-18 现在查询可入库数量不能根据loanid来查询了 这样会导致一笔协议下不同融资的可入库数量不相同 应该以协议编号来查询  -->
+        <!-- crtfNo为订单关联的货物编号   sysRefNo 为流水号 退回处理时 当删除记录是会将此流水号传过来 此时计算的入库总量不包含删除的入库数量-->
+        <sql><![CDATA[SELECT Sum(m.poInNum) from CrtfM m where m.cntrctNo = ? and m.crtfNo = ? and m.sysRefNo <> ? group by m.cntrctNo,m.crtfNo ]]></sql>
+    </qnode>
+</query>

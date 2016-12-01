@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_S_000002</id>
+	<name>部门信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>部门信息Catalog</DESC>
+	<tablename>STD.STD_DEPT_M</tablename>
+	<search>
+		<field datatype="1" title="部门编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="部门名称" defaultvalue="" width = "200">deptDesc</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="部门编号" hidden="" width = "300">sysRefNo</field>
+		<field datatype="1" title="交易批次号" hidden="" width = "350">sysEventTimes</field>
+		<field datatype="1" title="部门名称" hidden="" width = "350">deptDesc</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and deptDesc like %$deptDesc$%
+	</condition>
+</catalog>

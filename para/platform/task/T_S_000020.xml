@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000020</id>
+    <name>黑名单预警</name>
+    <component>BatchLzBlackListProcessor</component>
+    <desc>message</desc>
+    <trxdatapara>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

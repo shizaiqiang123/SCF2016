@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<name>File Listener</name>
+	<type>File</type>
+	<protocol>
+		<inbound>
+			<path>D:\Temp\Test\Input</path>
+			<timeout>10000</timeout>
+		</inbound>
+		<backup>
+			<path>D:\Temp\Test\Backup</path>
+			<pattern/>
+		</backup>
+	</protocol>
+	<logicflow>
+		<component>com.ut.test.components.FileProcess</component>
+	</logicflow>
+</esbservice>

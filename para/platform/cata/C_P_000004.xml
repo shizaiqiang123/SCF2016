@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000004</id>
+	<name>协议Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>协议Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="流水号" hidden="true" width = "100">sysRefNo</field>
+		<field datatype="1" title="所属模组" hidden="true" width = "100">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysBusiUnit</field>
+		<field datatype="1" title="协议编号" hidden="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200">selNm</field>
+		<field datatype="1" title="协议金额" hidden="" width = "200" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="协议余额" hidden="" width = "200" formatter="ccyFormater">lmtBal</field>
+	</select>
+	<condition>
+		  cntrctNo like %$cntrctNo$% and sysTrxSts = M and sysLockFlag = F and arBal = 0 
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000195</id>
+	<name>查询关联表卖方的买方信息</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>buyerId = $buyerId$ and selId = $selId$ and trxId =$trxId$ and sysTrxSts = M</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

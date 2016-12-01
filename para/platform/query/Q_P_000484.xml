@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000484</id>
+	<name>查询collateralM</name>
+	<desc>查询collateralM</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 参数定义主表</desc>
+		<component>componentClass</component>
+		<!-- <tablename>TRX.COLLATERAL_M</tablename> -->
+		<tablename>CollateralM a,StdGoodsCata b</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>n</cascadeevent>
+		<fields>poNo,goodsId,goodsNm,goodsCata,subCata,producer,unit,ccy,poNum,poPrice,crtfNo,sysRefNo</fields>	                            
+		<condition>b.goodsNm like '%$goodsNm$%' and b.goodsId like '%$goodsId$%' and a.sysLockFlag = 'F' and a.sysTrxSts = 'M' and a.cntrctNo = '$cntrctNo$' and a.buyerId = '$buyerId$' and a.goodsId = b.goodsId</condition>
+		<orderby>a.goodsId</orderby>
+		<asc>Y</asc>
+		<sql>select a.poNo,a.goodsId,b.goodsNm,b.goodsCata,b.subCata,b.producer,b.unit,b.ccy,a.poNum,b.price,a.sysRefNo,a.sysRefNo from CollateralM a,StdGoodsCata b</sql>
+	</qnode>
+</query>

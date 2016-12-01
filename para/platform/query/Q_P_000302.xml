@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000302</id>
+	<desc>供应商信息查询查custbuyer</desc>
+	<name>供应商信息查询查custbuyer</name>
+	<nodeSize>0</nodeSize>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_IMP,TRX.CUST_M,TRX.CUST_BUYER</tablename>
+		<doname></doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>b.Buyer_Id='$buyerId$' and i.sys_Busi_Unit='$sysBusiUnit$' and i.Cust_Nm like '%$iCustNm$%' and  i.licence_No like '%$iLicenceNo$%' and b.Buyer_Id like '%$bBuyerId$%'  </condition>
+		<orderby>i.licence_no</orderby>
+		<params>$buyerId$,$sysBusiUnit$,%$iLicenceNo$%,%$iCustNm$%,%$bBuyerId$%</params>
+		<sql><![CDATA[ select i.licence_no,m.sys_ref_no,i.cust_nm,b.buyer_id,m.reg_dt from trx.cust_imp i left join trx.cust_buyer b on  ( i.licence_no=b.licence_no )   left join trx.cust_m m on(i.licence_no=m.licence_no) ]]></sql>
+		<fields>licenceNo,sysRefNo,iCustNm,buyerId,mRegDt</fields>
+		<asc>Y</asc>
+	</qnode>
+</query>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000435</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>在途用户列表</DESC>
+	<tablename>STD.USER_INFO_E</tablename>
+		<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "500">userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "500">userNm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition><![CDATA[ sysLockFlag = F  and userId like %$userId$% and userNm like %$userNm$% and sysRefNo like %$sysRefNo$%  and  (sysTrxSts = S or sysTrxSts = P) and (sysFuncId=F_S_10000101 or sysFuncId=F_S_10000102 or sysFuncId=F_S_10000104)]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

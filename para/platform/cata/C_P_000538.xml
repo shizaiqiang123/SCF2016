@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000538</id>
+	<name>订单录入复核</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>订单录入复核</DESC>
+	<tablename>TRX.PO_E</tablename>
+	<search>
+		<field datatype="1" title="订单编号" hidden="" width = "100">poNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="订单编号" hidden="" width = "14.28%">poNo</field>
+		<field datatype="1" title="交易流水号" hidden="true" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "14.28%">cntrctNo</field> 
+		<field datatype="1" title="经销商编号" hidden="" width = "14.28%">selId</field>
+		<field datatype="1" title="经销商名称" hidden="" width = "14.28%">selNm</field>
+		<field datatype="1" title="核心企业编号" hidden="" width = "14.28%">buyerId</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "14.28%">buyerNm</field>
+		<field datatype="1" title="币别" hidden="true" width = "50">poCcy</field>
+		<field datatype="1" title="订单金额" hidden="" width = "14.28%" formatter="ccyFormater">poAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysTrxSts = P and sysLockFlag = F and sysFuncId = F_P_000980 and poNo like %$poNo$%
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

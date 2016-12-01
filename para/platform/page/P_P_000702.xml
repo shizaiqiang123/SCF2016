@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000702</id>
+	<name>查询在途页面</name>
+	<desc>查询在途页面</desc>
+	<jspfile>jsp/sys/SYS_WorkItemList.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+</page>

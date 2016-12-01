@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<page>
+		<transaction>false</transaction>
+		<refsSize>0</refsSize>
+		<id>P_P_000278</id>
+		<index>0</index>
+		<name>注册新用户页面</name>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<transaction>false</transaction>
+		<refsSize>0</refsSize>
+		<id>P_P_000204</id>
+		<index>1</index>
+		<name>注册新用户页面</name>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_P_000245</id>
+		<index>2</index>
+		<transaction>false</transaction>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+		<pagetype>rs</pagetype>
+		<maincomp>trxResutlManager</maincomp>
+	</page>
+	<pagesSize>2</pagesSize>
+	<transactionPage>1</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<id>F_P_000346</id>
+	<name>注册新供应商</name>
+	<functype>MM</functype>
+	<service>
+		<id>S_P_000055</id>
+		<servicejs>S_P_00015.js</servicejs>
+		<trigger>M</trigger>
+	</service>
+</function>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_S_000007</id>
+	<name>修改通知用户信息</name>
+	<desc>通知用户信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>n</event>
+		<component>trxHeaderReciveRecord</component>
+		<tablename>STD.Advice_Header_Recive</tablename>
+		<type>S</type>
+	</lnode>
+</logicflow>

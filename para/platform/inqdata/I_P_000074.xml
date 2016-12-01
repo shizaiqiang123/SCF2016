@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000074</id>
+    <desc>基础利率修改</desc>
+    <name>基础利率修改</name>
+    <target>L_P_000167</target>
+    <type>L</type>
+</inqdata>

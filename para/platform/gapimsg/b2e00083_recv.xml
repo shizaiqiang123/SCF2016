@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+    <id>b2e00083_recv</id>
+    <msgtype>SMSP</msgtype><!-- 表示为对接短信平台的消息 -->
+    <name>短信验证码ACK消息</name>
+    <modle>non</modle><!-- 接口通信模式,同步或异步，或者不需要响应 -->
+    <ack>N</ack><!-- 接口交互模式,是否需要及时应答 -->
+    <ackMsg>b2e_ack</ackMsg>
+    <characterset>GBK</characterset>
+    <sendtemp>SMSPSEND_ACK</sendtemp><!-- 发送模版 -->
+    <receivetemp>SMSPSEND_ACK_REC</receivetemp><!-- 接收模版 -->
+    <gapi></gapi><!-- 只定义底层通信协议 -->
+    <validateclass></validateclass><!-- 通信层验证 -->
+    <validatejs></validatejs>
+    <generator>gapiMsgManager</generator>
+    <msgstore>N</msgstore><!-- 重发使用 -->
+    <sendinterrupt>N</sendinterrupt><!-- 发送异常后中断当前操作-->
+    <receiveinterrupt>N</receiveinterrupt><!-- 接收异常后中断当前操作-->
+    <sendservice></sendservice>
+    <receiveservice></receiveservice>
+</gapimsg>

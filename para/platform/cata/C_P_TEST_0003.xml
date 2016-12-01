@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_TEST_0003</id>
+	<name>复合页面Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>test catalog</DESC>
+	<tablename>TRX.T_CNTRCT_E</tablename>
+	<search>
+		<field datatype="1" title="交易批次号" defaultvalue="" width = "200">sysEventTimes</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "150">sysRefNo</field>
+		<field datatype="1" title="交易批次号" hidden="" width = "150">sysEventTimes</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "150">buyerId</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "150">selId</field>
+		<field datatype="1" title="批次号" hidden="" width = "200">sysFuncId</field>
+		<field datatype="1" title="交易状态" hidden="" width = "200">sysTrxSts</field>
+	</select>
+	<condition>
+		id.sysRefNo like %$sysRefNo$% and id.sysEventTimes = like %$sysEventTimes$%
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

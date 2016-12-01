@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000711</id>
+	<name>客户页面</name>
+	<desc>客户页面</desc>
+	<!-- <jspfile>screen/cust/Cust.jsp</jspfile> -->
+	<jspfile>screen/invc/indirectPmtPage.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

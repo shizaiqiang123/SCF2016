@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000437</id>
+	<name>根据发票流水号得到invcM中的invBal信息</name>
+	<desc>根据发票流水号得到invcM中的invBal信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询发表表</desc>
+		<component>componentClass</component>
+		<tablename>InvcM</tablename>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>invBal,invLoanAval</fields>
+		<condition>t.sysRefNo = ?</condition>
+		<orderby></orderby>
+		<params>$sysRefNo$</params>
+		<asc></asc>
+		<sql><![CDATA[select t.invBal,t.invLoanAval from InvcM t]]></sql>
+	</qnode>
+</query>

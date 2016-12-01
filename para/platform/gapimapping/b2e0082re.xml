@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh-CN">
+	<head>
+		<termid type="v">E00000000001</termid>
+		<trnid type="v">20151201</trnid>
+		<custid type="v">0000000001</custid>
+		<cusopr type="v">0000000001</cusopr>
+		<trncod type="v">b2e0082</trncod>
+	</head>
+	<trans>
+		<trn-b2e0082-rq>
+			<b2e0082-rq>
+				<scfp>
+					<generalInfo>
+						<mainRef></mainRef>
+						<msgType></msgType>
+						<msgSendTime></msgSendTime>
+					</generalInfo>
+				</scfp>
+			</b2e0082-rq>
+		</trn-b2e0082-rq>
+	</trans>
+</bocb2e>

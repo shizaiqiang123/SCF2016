@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000873</id>
+	<index>1</index>
+	<name>买方保理应付账款登记查询供应商</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/cntrct/querySelNo.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000629</queryid>
+</page>

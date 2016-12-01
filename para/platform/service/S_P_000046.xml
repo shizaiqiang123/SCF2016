@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>    
+    <id>S_P_000046</id>
+    <component></component>
+    <name>供应商材料未达提醒</name>
+    <nodeName>service</nodeName>
+    <type>Advice</type>    
+    <servicejs>S_P_00007.js</servicejs>
+</service>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000083</id>
+	<name>发货通知申请时查押品信息</name>
+	<desc>发货通知申请时查押品信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.COLLATERAL</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>regNo = $regNo$</condition>
+		<orderby>collatId</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

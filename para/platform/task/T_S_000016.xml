@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000016</id>
+    <name>供应商信息初始化</name>    
+    <component>batchCustImpProcessor</component>   
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>
+    <trxdatapara>  
+    	<templateId>T0000007</templateId><!--供应商模板  -->
+    	<filePath>D:\test目录</filePath>
+    	<fileBakPath>D:\bak</fileBakPath>
+    	<fileExtensions>.xls,.xlsx</fileExtensions>    	
+    </trxdatapara>
+</task>

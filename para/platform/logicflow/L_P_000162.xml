@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <module>Comm</module>
+    <lnode>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <cascadeevent>N</cascadeevent>
+        <component>commManagerRecord</component>
+        <tablename>apsyst/batchs</tablename>
+        <propertyBean>false</propertyBean>
+    </lnode>
+    <nodeName>logicflow</nodeName>
+    <id>L_P_000162</id>
+    <name>Batch_Root管理组件</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

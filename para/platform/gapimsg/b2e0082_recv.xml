@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+	<id>b2e0082_recv</id>
+	<msgtype></msgtype><!-- 表示为对接短信平台的消息BLZW -->
+	<name>应收账款入池确认</name>
+	<modle>SYNC</modle><!-- 接口通信模式,同步(SYNC)或异步(ASYNC) -->
+	<ack>N</ack><!-- 接口交互模式,是否需要及时应答 -->
+	<characterset>GBK</characterset>
+	<sendtemp></sendtemp><!-- 发送模版 -->
+	<receivetemp>b2e0082_REC</receivetemp><!-- 接收模版 -->
+	<validateclass></validateclass><!-- 通信层验证 -->
+	<validatejs></validatejs>
+	<generator>gapiMsgManager</generator>
+	<msgstore>N</msgstore><!-- 重发使用 -->
+	<sendinterrupt>N</sendinterrupt><!-- 发送异常后中断当前操作 -->
+	<receiveinterrupt>N</receiveinterrupt><!-- 接收异常后中断当前操作 -->
+	<sendservice></sendservice>
+	<receiveservice></receiveservice>
+	<onsuccess>I_P_000112</onsuccess>
+	<onfailed></onfailed>
+</gapimsg>

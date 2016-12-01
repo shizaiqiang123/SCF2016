@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000065</id>
+	<module>删除商品</module>
+	<name>删除商品</name>
+	<desc>商品管理-删除商品</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000055</catalog>
+	</page>
+	<page>
+		<id>P_P_000055</id>
+		<index>1</index>
+		<name>删除商品</name>
+		<desc>删除商品页面</desc>
+		<pagetype>DELETE</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

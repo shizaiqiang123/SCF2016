@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000129</id>
+	<name>用户注册ID查询</name>
+	<desc>用户注册ID查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+		<fields></fields>
+		<condition>userId = $userId$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

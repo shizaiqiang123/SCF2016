@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>新增账号信息</desc>
+    <transaction>true</transaction>
+    <queryid>Q_P_000269</queryid>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000256</id>
+    <name>获取账号</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen/cntrct/applyLoan_acNo_add.jsp</jspfile>
+</page>

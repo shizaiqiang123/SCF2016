@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000186</id>
+	<nodeSize>0</nodeSize>
+	<transforSize>0</transforSize>
+	<lnode>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<type>E</type>
+		<id>N00000002</id>
+		<component>TrxAddRecord</component>
+		<tablename>STD.USER_PWD</tablename>
+		<event>y</event>
+		<name>用户密码表</name>
+		<doname></doname>
+		<nodejs>L_P_000029.js</nodejs>
+	</lnode>
+</logicflow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000204</id>
+    <desc>look up</desc>
+    <name>look up</name>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>P</type>
+    <target>P_P_000831</target>
+</inqdata>

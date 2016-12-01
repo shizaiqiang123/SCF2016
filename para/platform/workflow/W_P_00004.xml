@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00004</id>
+	<workid>1304</workid>
+	<workname>LZBuyRepayment</workname>
+	<name>买方还款</name>
+	<desc>买方还款</desc>
+	<jspath>W_P_00001.js</jspath>
+</workflow>

@@ -1,0 +1,1221 @@
+.header {
+	height: 80px;
+	background-color: #000;
+	width: 100%;
+	z-index: 6;
+	transition: all 1s ease-in-out;
+	position: relative;
+}
+
+.eventA {
+	position: relative;
+	top: 148px;
+	right: 3px;
+}
+
+.headerBottom {
+	margin-top: 77px;
+	display: none;
+}
+
+.ImageDiv {
+	width: 26px;
+	height: 26px;
+	float: left;
+	position: relative;
+	margin-top: 22px;
+	margin-left: 20px;
+	margin-right: 15px;
+}
+/* 菜单栏头导航上的蓝色小图标 */
+.BlIcon {
+	width: 36px;
+	height: 36px;
+	float: left;
+}
+
+.header .headerDiv {
+	width: 70%;
+	height: 80px;
+	margin: 0 auto;
+	background: url("../../images/style/logo.png") no-repeat scroll left 50%;
+}
+
+.header .headerDiv .menuUl {
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 14px;
+	float: right;
+	margin-right: 12px;
+}
+
+.header .headerDiv .menuUl .menuLi {
+	float: right;
+	margin-top: 27px;
+}
+
+.header .headerDiv .menuUl .menuHead {
+	float: right;
+	margin-top: 27px;
+}
+
+.header .headerDiv .menuUl .menuHead .menuA {
+	float: right;
+	color: #ffffff;
+	margin-left: 17px;
+}
+
+.header .headerDiv .menuUl .menuLi .menuA {
+	color: #9d9d9d;
+	float: right;
+	margin-left: 17px;
+}
+
+.header .headerDiv .menuUl .menuLi .menuA:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menuP {
+	color: #e70012;
+	font-size: 14px;
+	float: right;
+	margin-left: 17px;
+}
+
+.bodyHr {
+	/*  height: 10px; */
+	size: 10px;
+	margin: 0 auto;
+	background-color: #014295;
+	border: none;
+	position: relative;
+	z-index: 6;
+	/*    box-shadow: 2px 2px 10px #909090; */
+}
+
+.body {
+	
+}
+
+.body .title {
+	width: 1000px;
+	margin: 0 auto;
+	/* background: url("../../images/style/banner1.png") no-repeat scroll left 50%; */
+	height: 510px;
+}
+
+#mainTb {
+	float: left;
+}
+
+.banner1 {
+	float: left;
+	width: 851px;
+	background-color: #fff;
+}
+
+.banner2 {
+	float: left;
+	width: 604px;
+	background-color: #000;
+}
+
+.catalogQuery {
+	background: url("../../images/style/catalogQuery.png") no-repeat scroll
+		left 50%;
+	width: 36px;
+	height: 60px;
+	float: left;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.catalogReset {
+	background: url("../../images/style/catalogReset.png") no-repeat scroll
+		left 50%;
+	width: 36px;
+	height: 60px;
+	float: left;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.sysCatalogBtn{
+	background: linear-gradient(#ffffff, #e1e1e1); /* 标准的语法 ,默认从上到下线性渐变*/
+	background: -webkit-linear-gradient(#ffffff, #e1e1e1); /* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(#ffffff, #e1e1e1); /* Opera 11.1 - 12.0 */
+  	background: -moz-linear-gradient(#ffffff, #e1e1e1); /* Firefox 3.6 - 15 */
+	border: 1px solid #cccbcb;
+    border-radius: 5px;
+	color:#000000;
+}
+.sysCatalogBtnHover{
+	border: 1px solid #014295;
+	color:#014295;
+}
+.sysCatalogBtn:hover{
+	border: 1px solid #014295;
+	color:#014295;
+}
+.sysCatalogImg{
+	margin:10px 22px;
+}
+/* sysCatalog中的查询和取消调用的class */
+.sysCatalogQuery {
+	/*background: url("../../images/style/catalogQuery.png") no-repeat scroll
+		center 50%;*/
+	width: 60px;
+	height: 32px;
+	float: left;
+	cursor: pointer;
+}
+.moreQuery{
+	float:left;
+    width: 108px;
+    margin-top: 9px;
+    margin-left:10px;
+    background: url("../../images/style/queryUp.png") no-repeat right;
+    /*color:blue;*/
+}
+.labelStyle{
+	width:110px;
+	margin-right:10px;
+	margin-left:10px;
+}
+.labelStyleCatalog{
+	width:110px;
+	margin-right:8px;
+}
+.labelStyleCatalogComm{
+	width:100px;
+	margin-right:4px;
+}
+.queryDown{
+	background: url("../../images/style/queryDown.png") no-repeat right;
+}
+.queryUp{
+	background: url("../../images/style/queryUp.png") no-repeat right;
+}
+.sysCatalogReset {
+	/*background: url("../../images/style/catalogReset.png") no-repeat scroll
+		center 50%;*/
+	width: 60px;
+	height: 32px;
+	float: left;
+	cursor: pointer;
+}
+.inputOfCenterLine{
+	float: left; 
+	height: 14px; 
+	/*width: 1px;*/
+	margin-top:11px;
+	border-right: 1px solid #bcbcbc; 
+	margin-right: 6px;
+	margin-left: 6px;
+	border-left: 1px solid #bcbcbc;
+}
+#aBtnEvent div{
+	color:#014295 !important;
+}
+#aBtnEvent div:hover{
+	cursor:pointer;
+	color:red !important;
+}
+.height34{
+	height:34px;
+}
+.inputWidth140{
+	width:140px;
+}
+.banner3 {
+	float: left;
+	width: 608px;
+	background-color: #00a4b8;
+}
+
+.banner4 {
+	float: left;
+	width: 529px;
+	background-color: #ffc7c4;
+}
+
+.body .title .bannerBox {
+	float: right;
+	height: 420px;
+	width: 396px;
+	z-index: 5;
+	margin-left: 606px;
+	position: absolute;
+	background: #ffffff;
+	background: #ffffff top right;
+	box-shadow: 0px 0px 10px #c5cfd9;
+
+	/*     float: right;
+	right: 0;
+	width: 394px;
+	height: 398px;
+	background: #ffffff top right;
+	-webkit-box-shadow: #666 0px 0px 10px;
+	-moz-box-shadow: #666 0px 0px 10px;
+	box-shadow: #000000 0px 0px 10px;
+	box-shadow:0px 0px 10px #000000; */
+}
+
+.body .title .bannerBox .bannerLoginBox {
+	margin-left: 38px;
+}
+
+.body .title .bannerBox .bannerLoginBox .bannerLgoinLogo {
+	background: url("../../images/style/home.png") no-repeat scroll left 50%;
+	height: 31px;
+	margin: 20px 0 0 0;
+}
+
+.body .title .bannerBox .bannerLoginBox .bannerLgoinLogo .bannerLgoinLogoTitle
+	{
+	/*  font-family: '瀵邦喛钂嬮梿鍛寸拨';
+  font-size: 16px;
+  color: #e00712;
+  margin:8px 0 0 39px;
+  float:left; */
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 20px;
+	color: #000000;
+	margin: 4px 0 0 45px;
+	float: left;
+}
+
+.body .title .bannerBox .bannerLoginBox .bannerLgoinLogo .bannerLgoinLogoA
+	{
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 14px;
+	color: #59a3db;
+	float: right;
+	margin: 8px 35px 0 0;
+}
+
+.body .title .bannerBox .bannerLoginBox .bannerLgoinLogo .bannerLgoinLogoP
+	{
+	color: #666;
+	float: right;
+	margin: 8px 0 0 0;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 14px;
+}
+
+.bannerLgoinLogoHr {
+	width: 322px;
+	padding-top: 1px;
+	border: none;
+	margin-top: 20px;
+	background-color: #014295;
+}
+
+.bannerLoginInputDiv {
+	float: left;
+	width: 322px;
+	background-color: #fff;
+	height: 48px;
+	border-radius: 5px;
+	margin-top: 12px;
+	border: solid 1px #014295;
+}
+
+.bannerLoginInput {
+	margin: 12px 0 0 17px;
+	height: 22px;
+	padding-left: 22px;
+	width: 200px;
+	width: 260px;
+	font-size: 14px;
+}
+
+.bannerLoginDiv {
+	margin-left: 38px;
+}
+
+.phone {
+	background: url("../../images/style/phone.png") no-repeat scroll left
+		50%;
+}
+
+.user {
+	background: url("../../images/style/user.png") no-repeat scroll left 50%;
+}
+
+.password {
+	background: url("../../images/style/password.png") no-repeat scroll left
+		50%;
+}
+
+.code {
+	background: url("../../images/style/code.png") no-repeat scroll left 50%;
+	width: 170px;
+	border-right: #808285 solid 1px;
+}
+
+.bodyBox {
+	height: 507px;
+	width: 1000px;
+}
+
+.rightBody {
+	float: left;
+	z-index: 2;
+	position: relative;
+	width: 100%;
+}
+
+.leftMenu {
+	float: left;
+	width: 15%;
+	/* 	background-color:#323232; */
+	background-color: #014295;
+	position: fixed;
+	height: 120%;
+	top: -80px;
+	/*     z-index: 3; */
+}
+
+.leftMenuDiv {
+	/* 	margin-top: 44px; */
+	margin-left: 4%;
+	float: left;
+	width: 11%;
+	position: absolute;
+}
+
+.leftMenuData {
+	padding-top: 23px;
+	font-size: 14px;
+	margin-left: 76px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	letter-spacing: 12px;
+	position: absolute;
+}
+
+.leftMenuData:hover {
+	text-decoration: underline;
+}
+
+.blockAreaFooterDiv {
+	/*border: 1px solid #888888;
+    border-radius: 5px;*/
+	width: 1000px;
+	/* padding: 20px 0px 20px 0px; */
+	/*margin-bottom: 80px;
+    margin-left: 59px;*/
+	background-color: #ffffff;
+}
+
+.coordinate1 {
+	/* width: 14px; */
+	/* height: 12px; */
+	background-color: transparent;
+	float: left;
+	margin-left: 332px;
+	border-left: 7px solid transparent;
+	/*     border-right: 7px solid #fff; */
+	border-top: 12px solid #0d0d0d;
+	/*         box-shadow: 2px 2px 10px #909090; */
+}
+
+.comMsg {
+	height: 320px;
+	width: 1000px;
+}
+
+.coordinate2 {
+	/* width: 14px; */
+	/* height: 12px; */
+	background-color: transparent;
+	float: left;
+	/*     margin-left: 332px; */
+	/*     border-left: 12 solid #fff; */
+	border-right: 7px solid transparent;
+	border-top: 12px solid #0d0d0d;
+	/*     box-shadow: 2px 2px 10px #909090; */
+}
+
+.leftMenuBody {
+	/* 	background: url("../../images/style/menu/query.png") no-repeat scroll left 50%; */
+	color: #fff;
+	height: 68px;
+	/* 	margin-left: 30px; */
+	/*     padding-left: 40px; */
+	background-position-x: 20px;
+	width: 220px;
+	float: left;
+	z-index: 7;
+	position: relative;
+	cursor: pointer;
+}
+
+.leftMenuBody:hover {
+	
+}
+
+.inputReset {
+	background: url("../../images/style/reset.png") no-repeat scroll left
+		50%;
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
+.remindDiv {
+	color: #cbcbcb;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	float: left;
+	margin-top: 22px;
+	font-size: 14px;
+}
+
+.blockAreaNoticeTitles {
+	float: left;
+	color: #014295;
+	margin-top: 3%;
+}
+
+.selectDiv {
+	/* 	height: 63px; */
+	width: 260px;
+	background-color: #ffffff;
+	border: 1px solid #cbcbcb;
+	border-radius: 5px;
+	float: left;
+	padding-left: 14px;
+	margin-left: -15px;
+    margin-bottom: 30px;
+}
+
+.blockAreaNoticeTxts {
+	margin-top: 3%;
+	/*   padding-bottom: 25px; */
+	float: left;
+}
+
+.blockAreaNotices {
+	margin-left: 79px;
+	/* 	    margin-top: 25px; */
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 14px;
+	color: #888888;
+	word-spacing: 8px;
+	letter-spacing: 4px;
+}
+
+.menus-wrap {
+	height: 390px;
+	background-color: #e5e5e5;
+	margin-bottom: 32px;
+}
+
+.menus {
+	height: 500px;
+	background-color: #e5e5e5;
+	width: 1000px;
+}
+
+.bannerLoginButton {
+	float: left;
+	width: 322px;
+	background-color: #014295;
+	height: 48px;
+	border-radius: 5px;
+	border: none;
+	margin: 24px 0 0 38px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.bannerLoginButton:hover {
+	background-color: #003579;
+}
+
+.bannerLoginButtonDiv {
+	
+}
+
+.askPass {
+	float: right;
+	margin: 26px 35px 0 0;
+}
+
+.askPassA {
+	color: #58a3db;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+}
+
+.product {
+	height: 580px;
+}
+
+.green {
+	background-color: #8bbd2c;
+}
+
+.shadow {
+	position: relative;
+	width: 118px;
+	height: 95px;
+	cursor: pointer;
+}
+
+.shadowhover {
+	box-shadow: 2px 2px 20px #014295;
+}
+
+.eventAHover {
+	color: #014295;
+}
+
+.eventA:hover {
+	text-decoration: none;
+	color: #014295;
+}
+
+.menuDiv {
+	width: 222px;
+	height: 220px;
+	float: left;
+	text-align: center;
+	margin-top: 22px;
+	padding: 40px 42px;
+	background-color: white;
+}
+
+.menuDiv:hover {
+	border-bottom: 2px solid blue;
+}
+
+.menuHeadDiv {
+	width: 80px;
+	height: 80px;
+	margin-top: 18px;
+	border-radius: 50%;
+	/* background-color: #9d9d9d; */
+}
+/* .menuHeadDiv:hover{ */
+/* 	background-color: #014295; */
+/* } */
+.menuPDiv {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	letter-spacing: 5px;
+	margin-top: 8px;
+}
+
+.menuBodyDiv {
+	color: #545454;
+	font-size: 14px;
+	height: 29px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+/* .menuBodyDiv:hover{
+	color:#014295;
+	cursor: pointer;
+	text-decoration: underline;
+} */
+.productDiv {
+	width: 1000px;
+	height: 580px;
+}
+
+.demo1 {
+	background: url("../../images/style/product1.png") no-repeat scroll left
+		50%;
+	width: 349px;
+	height: 299px;
+	float: left;
+	margin-top: 80px;
+}
+
+.demo2 {
+	background: url("../../images/style/product2.png") no-repeat scroll left
+		50%;
+	width: 333px;
+	height: 323px;
+	float: right;
+	margin-top: 80px;
+}
+
+.demo3 {
+	background: url("../../images/style/product3.png") no-repeat scroll left
+		50%;
+	width: 379px;
+	height: 302px;
+	float: left;
+	margin-top: 80px;
+}
+
+.demo4 {
+	background: url("../../images/style/product4.png") no-repeat scroll left
+		50%;
+	width: 372px;
+	height: 327px;
+	float: right;
+	margin-top: 80px;
+}
+
+.demo5 {
+	background: url("../../images/style/product5.png") no-repeat scroll left
+		50%;
+	width: 389px;
+	height: 343px;
+	float: right;
+	margin-top: 80px;
+}
+
+.demo6 {
+	background: url("../../images/style/product6.png") no-repeat scroll left
+		50%;
+	width: 391px;
+	height: 320px;
+	float: left;
+	margin-top: 80px;
+}
+
+.demo7 {
+	background: url("../../images/style/investigate.png") no-repeat scroll
+		left 50%;
+	width: 389px;
+	height: 343px;
+	float: right;
+	margin-top: 80px;
+}
+
+.demo1P {
+	margin-top: 359px;
+	font-size: 60px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	text-align: center;
+}
+
+.demo1DivP {
+	font-size: 30px;
+	font-family: 'Microsoft YaHei';
+	text-align: center;
+	float: right;
+	margin: 270px 80px 0 0;
+	letter-spacing: 25px;
+}
+
+.demo2DivP {
+	font-size: 30px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	text-align: center;
+	float: left;
+	margin: 270px 0 0 16px;
+	letter-spacing: 25px;
+}
+
+.demo7DivP {
+	font-size: 30px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	text-align: center;
+	float: left;
+	margin: 270px 0 0 140px;
+	letter-spacing: 25px;
+}
+
+.orange {
+	background-color: #f39800;
+}
+
+.marginTop10 {
+	margin: 10px 0 0 0;
+}
+
+.marginTop4 {
+	margin: 4px 0 0 0;
+}
+
+.yellow {
+	background-color: #fdb913;
+}
+
+.pink {
+	background-color: #e56768;
+}
+
+.black {
+	background-color: #000;
+}
+
+.coffee {
+	background-color: #e79c37;
+}
+
+.paleGreen {
+	background-color: #6cbb52;
+}
+
+.applyDiv {
+	width: 1000px;
+	height: 580px;
+}
+
+.apply {
+	height: 580px;
+}
+
+.applyDivContext {
+	background: url("../../images/style/apply.png") no-repeat scroll left
+		50%;
+	width: 942px;
+	height: 342px;
+	float: left;
+	margin-top: 77px;
+}
+
+.applyDivContextDiv1 {
+	
+}
+
+.Button1 {
+	width: 299px;
+	height: 74px;
+	border: #e56768 2px solid;
+	border-radius: 5px;
+	float: left;
+	margin: 25px 0 0 123px;
+	background-color: #000;
+	font-size: 20px;
+	color: #e56768;
+	cursor: pointer;
+	letter-spacing: 5px;
+}
+
+.Button1:hover {
+	color: #fff;
+}
+
+.footer {
+	background-color: #000000;
+}
+
+.menuBody {
+	margin: 23px 0 0 19px;
+	font-size: 14px;
+	height: 53px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+}
+
+.menuParent {
+	float: left;
+	/* 	margin-left: 51px; */
+	color: #000;
+	/*     font-weight: bold; */
+	text-align: center;
+	cursor: pointer;
+}
+
+.menuParentTwo {
+	float: left;
+	/* 	margin-left: 51px; */
+	color: #000;
+	/*     font-weight: bold; */
+	text-align: center;
+	cursor: pointer;
+	margin-left: 12px;
+}
+
+.menuChildrenclick {
+	
+}
+
+.menuChildren {
+	float: left;
+	/* 	margin-left: 51px; */
+	color: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.menuChildren:hover {
+	text-decoration: underline;
+}
+
+.menuBtn {
+	float: left;
+	font-family: -webkit-body;
+	color: #e70012;
+	cursor: pointer;
+	width: 7px;
+	height: 13px;
+	margin-top: 5px;
+	background: url("../../images/style/btn/left.png") no-repeat scroll left
+		50%;
+}
+
+.menuBtn2 {
+	float: right;
+	font-family: -webkit-body;
+	color: #e70012;
+	cursor: pointer;
+	width: 7px;
+	height: 13px;
+	margin-top: 5px;
+	background: url("../../images/style/btn/right.png") no-repeat scroll
+		left 50%;
+}
+
+.position {
+	height: 68px;
+	background-color: #e5e5e5;
+	position: absolute;
+	width: 100%;
+	float: left;
+	/*     top: 134px; */
+	/*     z-index:1; */
+}
+
+.positionDiv {
+	height: 46px;
+	padding-top: 22px;
+	padding-right: 28px;
+	/*     background-color: #e5e5e5; */
+	color: #000000;
+	font-size: 14px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-weight: 100;
+}
+
+.positionBody {
+	float: right;
+}
+
+.footer .footerBody {
+	background-color: #ffffff;
+	/* height: 136px; */
+	width: 1000px;
+	letter-spacing: 1px;
+	position: inherit;
+	bottom: 0px;
+	z-index:
+}
+
+.footer .footerHead {
+	background-color: #dee2e5;
+	height: 50px;
+	margin-top: -20px;
+}
+
+.footer .footerDiv {
+	float: left;
+	/*  margin-top: 41px; */
+	margin-top: 16px;
+	margin-left: 30%;
+}
+
+.footer .footerP {
+	font-size: 14px;
+	color: #ffffff;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+}
+
+.footer .footerP a {
+	font-size: 18px;
+	color: #000000;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+}
+
+.footer  .footDivRight {
+	font-size: 16px;
+	color: #000000;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	float: right;
+	margin-top: 41px;
+}
+
+.fontBlack {
+	color: #000;
+	float:
+}
+
+.investigate {
+	float: left;
+	color: #000;
+	font-size: 25px;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	text-align: center;
+	margin: 185px 0 0 40px;
+}
+
+.investigateHead {
+	height: 35px;
+}
+
+.investigateBody {
+	background: url("../../images/style/dimensionalBarcode.png") no-repeat
+		scroll left 50%;
+	width: 138px;
+	height: 135px;
+}
+
+.investigateFooter {
+	margin-top: 12px;
+}
+
+.bannerDemo {
+	width: 100%;
+	height: 510px;
+	float: left;
+	-webkit-transition: -webkit-transform 0.5s ease;
+}
+
+.bannerDemo1 {
+	background-color: #e5e5e5;
+	width: 100%;
+	height: 550px;
+	float: left;
+}
+
+.bannerDemo2 {
+	background-image: linear-gradient(to right, #000, #e70012);
+	width: 100%;
+	height: 510px;
+	float: left;
+}
+
+.bannerDemo3 {
+	background-color: #00a4b8;
+	width: 100%;
+	height: 510px;
+	float: left;
+}
+
+.bannerDemo4 {
+	background-color: #ffc7c3;
+	width: 100%;
+	height: 510px;
+	float: left;
+}
+
+.bannerDemo1Div {
+	width: 1000px;
+	height: 538px;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin: 40px 0px 0px -500px;
+	background: #e5e5e5 url(../../images/welcome/login_bg.png) no-repeat
+		scroll left 50%;
+	overflow: hidden;
+}
+
+.bannerDemo2Div {
+	width: 1000px;
+	height: 510px;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin: 0px 0px 0px -500px;
+	background: url("../../images/style/banner2.png") no-repeat scroll left
+		50%;
+	overflow: hidden;
+}
+
+.bannerDemo3Div {
+	width: 1000px;
+	height: 510px;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin: 0px 0px 0px -500px;
+	background-color: #fff;
+	background: url("../../images/style/banner3.png") no-repeat scroll left
+		50%;
+	overflow: hidden;
+}
+
+.bannerDemo4Div {
+	width: 1000px;
+	height: 510px;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin: 0px 0px 0px -500px;
+	background-color: #fff;
+	background: url("../../images/style/banner4.png") no-repeat scroll left
+		50%;
+	overflow: hidden;
+}
+
+.investigateA {
+	text-decoration: none;
+	color: #808285;
+}
+
+.investigateA:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.remUser {
+	float: left;
+	margin: 26px 0 0 38px;
+	color: #000000;
+	font-family: "Microsoft YaHei", Regular, sans-serif;
+	font-size: 14px;
+}
+
+.width1000 {
+	width: 1000px;
+}
+
+.userLogo {
+	background: url("../../images/style/userLogo.png") no-repeat scroll left
+		50%;
+	width: 36px;
+	height: 36px;
+	margin-left: 30px;
+	margin-top: -5px;
+	cursor: pointer;
+}
+
+.home2 {
+	background: url("../../images/style/home2.png") no-repeat scroll left
+		50%;
+	width: 36px;
+	height: 36px;
+	margin-left: 30px;
+	margin-top: -5px;
+	cursor: pointer;
+}
+
+.menuP2 {
+	color: #808285;
+	font-size: 14px;
+	float: right;
+	margin-left: 17px;
+}
+
+.SystemDate {
+	float: right;
+	font-size: 14px;
+	color: #545454;
+}
+
+.innerWidthHeight {
+	width: 124px;
+	height: 124px;
+}
+
+.pageMenu {
+	color: #014295;
+	float: right;
+}
+/*  form{ */
+/*   margin-top: 20px; */
+/*  } */
+.rightDivFloat {
+	float: right;
+}
+
+.body #MyID .num_a2 {
+	width: 120px;
+	position: absolute;
+	top: 8.78%;
+	right: 50%;
+	margin: 0 -60px 0 0;
+}
+
+.body #MyID .num_a2 li {
+	width: 10px;
+	height: 10px;
+	margin-bottom: 50px;
+	position: relative;
+	float: left;
+	margin-left: 15px;
+}
+
+.body #MyID .num_a2 .current {
+	color: #fff;
+	background-color: #fff;
+}
+
+.body #MyID .num_a2 a {
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	border-radius: 50%;
+	text-indent: -70px;
+	color: #808285;
+	background-color: #808285;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: -webkit-transform 0.5s ease, background-color 0.5s
+		ease;
+	transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* index椤甸潰鍙嬫儏鎻愮ず鍏抽棴鎸夐挳*/
+.cancelNotice {
+	margin-left: 772px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background: url(../../images/index/cancel.png) center no-repeat;
+	width: 51px;
+	height: 53px;
+}
+
+.centerDivPadding {
+	padding-left: 20px;
+	padding-right: 28px;
+}
+
+.firstLevelMenu {
+	float: left;
+	width: 4%;
+	background-color: #000000;
+	position: fixed;
+	height: 120%;
+	top: -80px;
+}
+
+.firstLevelMenuDiv {
+	float: left;
+	width: 4%;
+	position: absolute;
+}
+
+.firstLevelMenuDivLi {
+	border-bottom: 1px solid #575757;
+}
+
+.firstLevelMenu {
+	float: left;
+	width: 4%;
+	background-color: #000000;
+	position: fixed;
+	height: 120%;
+	top: -80px;
+}
+
+.firstLevelMenuDiv {
+	float: left;
+	width: 4%;
+	position: absolute;
+}
+
+.firstLevelMenuDivLi {
+	border-bottom: 1px solid #575757;
+}
+
+.mainPageCenterDivHight{
+	overflow: hidden;
+    height: 217px;
+}
+
+/* marginBot22样式用在进入待办工作流时候加入在positionDiv上 */
+.marginBot22{
+	margin-bottom : 22px;
+}

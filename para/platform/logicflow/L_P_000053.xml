@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000053</id>
+	<name>国内保理-卖方还款-自定义逻辑流</name>
+	<desc>国内保理-卖方还款-自定义逻辑流</desc>
+	<module></module>	
+	<lnode>
+		<id>N00000001</id>
+		<name>新增还款应收账款表</name>
+		<desc>新增还款应收账款表</desc>
+		<module>TRX</module>
+		<event>E</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INVC_PMT_M</tablename>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>新增还款表</name>
+		<desc>新增还款表</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<fields>ttlLoanBal</fields>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>ttlLoanBal</fields>
+			<values>$ttlLoanBal$</values>
+		</release>
+		<nodejs>L_P_000053N00000002</nodejs>
+		<!-- <mapping>
+			<sysRefNo>loanId</sysRefNo>			
+		</mapping> -->
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>更新融资子表</name>
+		<desc>更新融资子表</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_LOAN_M</tablename>		
+		<doname>invc</doname>	
+		<type>E</type>
+		<fields>sysLockFlag,invLoanEbal,invSts</fields>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,invLoanEbal,invSts</fields>
+			<values>F,$invLoanEbal$,$invSts$</values>
+		</release>
+		<nodejs>L_P_000053N00000003</nodejs>
+		<!-- <mapping>
+			<sysRefNo>invcLoanRef</sysRefNo>
+		</mapping> -->	
+	</transfornode>
+	<transfornode>
+		<id>N00000004</id>
+		<name>更新应收账款表</name>
+		<desc>更新应收账款表</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields>sysLockFlag,invLoanEbal,invSts,invLoanBal</fields>
+		<doname>invc</doname>		
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,invLoanEbal,invSts,invLoanBal</fields>
+			<values>F,$invLoanEbal$,$invSts$,$invLoanBal$</values>
+		</release>
+		<nodejs>L_P_000053N00000004</nodejs>
+		<!-- <mapping>			
+			<sysRefNo>invRef</sysRefNo>
+		</mapping> -->
+	</transfornode>		
+	<transfornode>
+		<id>N00000005</id>
+		<name>更新客户主表</name>
+		<desc>归还客户额度</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<fields>sysLockFlag,lmtBal</fields>		
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal</fields>
+			<values>F,$selLmtBal$</values>
+		</release>
+		<nodejs>L_P_000053N00000005</nodejs>
+		<!-- <mapping>
+			<sysRefNo>selId</sysRefNo>
+		</mapping> -->
+	</transfornode>
+	<transfornode>
+		<id>N00000006</id>
+		<name>更新协议主表</name>
+		<desc>归还协议额度</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields>sysLockFlag,lmtBal</fields>
+		<doname></doname>		
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal</fields>
+			<values>F,$lmtBal$</values>
+		</release>
+		<nodejs>L_P_000053N00000006</nodejs>
+		<!-- <mapping>
+			<sysRefNo>cntrctNo</sysRefNo>
+		</mapping> -->		
+	</transfornode>		
+</logicflow>

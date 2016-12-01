@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000869</id>
+	<name>添加评价基础表信息</name>
+	<desc>添加评价基础表信息</desc>
+	<jspfile>screen/custRat/addCustRatBase.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000622</queryid>
+</page>

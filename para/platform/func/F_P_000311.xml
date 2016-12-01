@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <desc>注册进度查询</desc>
+    <id>F_P_000311</id>
+    <name>注册进度查询</name>
+    <functype>VW</functype>
+    <module>应收款融资</module>
+<!--     <page> -->
+<!-- 		<id>P_P_000240</id> -->
+<!-- 		<index>0</index> -->
+<!-- 		<name>审核签约用户</name> -->
+<!-- 		<desc>审核签约用户筛选页面</desc> -->
+<!-- 		<catalog>C_P_000223</catalog> -->
+<!-- 	</page>	 -->
+	<page>
+		<id>P_P_000226</id>
+	</page>	
+    <page>
+        <id>P_P_000217</id>
+    </page>
+</function>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000401</id>
+	<name>Email</name>
+	<type>Email</type>
+<!-- 	<protocol>emailServiceImpl</protocol> -->
+<!-- 	<postadapter>emailPostAdapter</postadapter> -->
+<!-- 	<queryadapter>emailQueryAdapter</queryadapter> -->
+	<port>25</port>
+	<address>smtp.mxhichina.com</address>
+	<initlize>S</initlize>
+	<timeout>60</timeout>
+	<user>YingHY@Starutian.com</user>
+	<pwd>yinghangyang2!!</pwd>
+	<characterset>GBK</characterset>
+	<protocoltp>Email</protocoltp><!-- 接口协议类型 -->
+</esbservice>

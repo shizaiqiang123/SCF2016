@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>业务利率调整</desc>
+    <id>P_P_000208</id>
+    <name>业务利率调整</name>
+    <jspfile>screen\para\BuRate_Edit.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+<!-- 	<maintable>func</maintable> -->
+<!-- 	<queryid>Q_P_000202</queryid> -->
+	<!-- <logicid>L_P_000151</logicid>  -->
+</page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000307</id>
+	<name>黑名单导入页面</name>
+	<desc>黑名单导入页面</desc>
+	<jspfile>jsp/blacklist/impBlackListP.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.BLACKLIST_M</maintable>
+	<doname>doname</doname>
+	<type>E</type>
+</page>

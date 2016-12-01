@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000009</id>
+    <component>batchInvcExecutor</component>
+    <name>应收账款调整</name>
+    <trxdatapara>    	 	
+    	<templateId>T0000006</templateId>
+    	<filePath>D:\test目录</filePath>
+    	<fileBakPath>D:\bak</fileBakPath>
+    	<fileExtensions>.xls,.xlsx</fileExtensions>
+    	<trxType>0</trxType>   <!--0:入池 ；1:出池-->
+    </trxdatapara>
+    <nodeName>task</nodeName>
+    <singlethread>Y</singlethread>    
+</task>

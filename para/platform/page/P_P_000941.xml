@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <name>综合查询</name>
+	<desc>综合查询</desc>
+	<jspfile>jsp/SYS_Catalog_common.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>CA</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxCatalogManager</maincomp>
+	<maintable></maintable>
+    <id>P_P_000941</id>
+</page>

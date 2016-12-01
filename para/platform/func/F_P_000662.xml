@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<pagesSize>0</pagesSize>
+	<desc>修改币别信息</desc>
+	<id>F_P_000662</id>
+	<name>修改币别信息</name>
+	<module>修改币别信息</module>
+	<functype>MM</functype>
+	<page>
+		<id>P_P_000817</id>
+		<index>0</index>
+		<name>筛选页面</name>
+		<desc>修改币别信息</desc>
+		<catalog>C_P_10000134</catalog>
+	</page>
+	<page>
+		<id>P_P_000818</id>
+		<index>1</index>
+		<name>修改币别信息</name>
+		<desc>修改币别信息</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>trxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>0</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>
+

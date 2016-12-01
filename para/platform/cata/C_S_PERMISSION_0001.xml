@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_PERMISSION_0001</id>
+	<name>Catalog</name>
+	<MODULE>权限</MODULE>
+	<jspfile></jspfile>
+	<DESC>权限筛选</DESC>
+	<tablename>STD.STD_PERMISSION_INFO</tablename>
+	<bybu>true</bybu>
+	<search>
+		<field datatype="1" title="权限编号" defaultvalue="" width = "200">perId</field>
+		<field datatype="1" title="权限名称" defaultvalue="" width = "200">perName</field>
+	</search>	
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="系统Key" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="权限编号" hidden="" width = "50%">perId</field>
+		<field datatype="1" title="权限名称" hidden="" width = "50%">perName</field>
+	</select>
+	<condition>perId like %$perId$% and perName like %$perName$%</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

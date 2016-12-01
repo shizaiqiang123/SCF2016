@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000062</id>
+	<name>预付类-追加保证金</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>预付类-追加保证金</DESC>
+	<tablename>TRX.CNTRCT_M a,TRX.LOAN_M b</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">cntrctNo</field>
+		<field datatype="1" title="放款编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="订单编号" hidden="" width = "100">poNo</field>
+		<field datatype="1" title="间接客户编号" hidden="" width = "100">buyerId</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "100">buyerNm</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "100" alis = "sysRefNo">a.sys_ref_no</field>
+		<field datatype="1" title="放款编号" hidden="" width = "100" alis = "loanId">b.sys_ref_no</field>
+		<field datatype="1" title="订单编号" hidden="" width = "100" alis = "poNo">b.po_No</field>
+		<field datatype="1" title="间接客户编号" hidden="" width = "100" alis = "buyerId">b.buyer_Id</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "150" alis = "buyerNm">b.buyer_Nm</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "150" alis = "selId">b.sel_Id</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "150" alis = "selNm">b.sel_Nm</field>
+		<field datatype="1" title="放款金额" hidden="" width = "150" alis = "ttlLoanBal">b.ttl_Loan_Bal</field>	
+		<field datatype="1" title="" hidden="true" width = "100" alis = "sysEventTimes">a.sys_Event_Times</field>
+	</select>
+	<join>
+		<on seq="1"> b.CNTRCT_NO = a.SYS_REF_NO</on>
+	</join>
+	<condition>
+		  a.sys_Ref_No like '%$cntrctNo$%' and b.sys_ref_no like '%$sysRefNo$%' and b.po_No like '%$poNo$%' and b.sel_Id like '%$selId$%' and b.sel_Nm like '%$selNm$%' and b.buyer_Id like '%$buyerId$%' and b.buyer_Nm like '%$buyerNm$%' and a.sys_Lock_Flag = 'F' and a.sys_Trx_Sts = 'M'  and b.ttl_Loan_Bal > '0'  and  b.busi_Tp = '1'
+	</condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

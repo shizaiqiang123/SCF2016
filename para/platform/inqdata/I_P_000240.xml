@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000240</id>
+	<name>修改池融资_贷项清单</name>
+	<desc>修改池融资_贷项清单</desc>
+	<type>P</type>
+	<target>P_P_000898</target>
+</inqdata>

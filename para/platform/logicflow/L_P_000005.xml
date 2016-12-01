@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000005</id>
+	<name>预付类 融资申请-自定义逻辑流</name>
+	<desc>预付类 融资申请-自定义逻辑流</desc>
+	<module>TEST</module>	
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.COLLATERAL</tablename>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.PO_M</tablename>
+		<fields>sysLockFlag,invSts,poLoanBal</fields>		
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,invSts,poLoanBal</fields>
+			<values>F,LOAN,$poLoanBal$</values>
+		</release>
+		<mapping>
+			<!-- 将poId mapping 成 sysRefNo 可配置多个-->
+			<sysRefNo>poId</sysRefNo>
+		</mapping>
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>更新协议主表</name>
+		<desc>归还协议额度</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields>sysLockFlag,lmtBal</fields>
+		<doname></doname>		
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal</fields>
+			<values>F,$lmtBal$</values>
+		</release>
+		<mapping>
+			<sysRefNo>cntrctNo</sysRefNo>
+		</mapping>		
+	</transfornode>
+</logicflow>

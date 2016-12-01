@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_10000008</id>
+	<module>新增权限</module>
+	<name>新增权限</name>
+	<desc>权限管理-新增权限</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_10000004</id>
+		<index>0</index>
+		<name>新增权限</name>
+		<desc>新增权限页面</desc>
+		<pagetype>ADD</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>	
+</function>

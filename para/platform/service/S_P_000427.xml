@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<ruleSize>0</ruleSize>
+	<type>Advice</type>
+	<id>S_P_000427</id>
+	<servicejs>S_P_00056.js</servicejs>
+	<trigger>R</trigger>
+	<component></component>
+	<name>先票款后货--订单登记Advice通知</name>
+</service>

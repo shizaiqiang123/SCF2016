@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <desc>应收账款逾期预警</desc>
+    <task>
+        <desc>应收账款逾期预警</desc>
+        <id>T_S_000032</id>
+        <name>应收账款逾期预警</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000032</id>
+    <schedule>
+        <terminativedate>2016-09-11</terminativedate>
+        <second>0</second>
+        <beginfrom>2016-09-06</beginfrom>
+        <condition>N</condition>
+        <express>* */0 * * * ? *</express>
+        <minute>0</minute>
+        <scheduletype>每分钟</scheduletype>
+        <isbybu>Y</isbybu>
+        <initialize>E</initialize>
+    </schedule>
+    <name>应收账款逾期预警</name>
+</batch>

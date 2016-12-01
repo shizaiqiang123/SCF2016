@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>卖方信息查询页面</desc>   
+    <id>P_P_000766</id>
+    <name>卖方信息查询页面</name>  
+	<index>1</index>
+	<jspfile>screen/cntrct/querySellerCustNo.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000482</queryid>	
+</page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>注册签约状态查询</desc>
+    <id>P_P_000217</id>
+    <name>注册签约查询</name>
+    <jspfile>screen/supplier/supplierQueryRegist.jsp</jspfile>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+	<maintable>TRX.CUST_E</maintable>
+<!-- 	<maincomp>TrxViewManager</maincomp> -->
+</page>

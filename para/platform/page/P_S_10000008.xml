@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000008</id>
+	<name>删除机构信息</name>
+	<desc>删除机构信息页面</desc>
+	<jspfile>jsp/user/DeleteInstInfo.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maintable>STD.STD_ORG_INFO</maintable>
+	<maincomp>TrxMasterManager</maincomp>
+	<pagejs>L_P_000015.js</pagejs>
+</page>

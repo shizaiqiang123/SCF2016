@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>1</grouptp>
+    <type>S</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的手动还款点销业务，因未能通过您公司的内部授权未能成功销账，请及时处理这笔业务。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000106</id>
+    <title>点销未通过内部授权通知</title>
+    <remindtp>1</remindtp>
+    <name>点销未通过内部授权（短信）</name>
+    <senddt>2015-10-30</senddt>
+     <js>AD0000011.js</js>
+</advice>

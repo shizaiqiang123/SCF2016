@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000305</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/supplier/supplier.jsp</jspfile>
+	<DESC>删除融资协议审核</DESC>
+	<tablename>TRX.CNTRCT_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search> 
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="协议文本编号" hidden="" width = "250">cntrctNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "250">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250">selNm</field>
+		<field datatype="1" title="交易批次" hidden="true" >sysEventTimes</field>
+		<field datatype="1" title="交易功能" hidden="true" >sysFuncId</field>
+	</select>
+	<condition><![CDATA[sysLockFlag <>T and sysRefNo like %$sysRefNo$% and selId like %$selId$% and selNm like %$selNm$% and sysTrxSts=P and sysFuncId=F_P_000325]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

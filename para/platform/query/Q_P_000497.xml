@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000497</id>
+    <name>现货入库货物表查询</name>
+    <nodeSize>1</nodeSize>
+    <desc>现货入库货物表查询</desc>
+    <qnode>
+        <desc>look up 查询主表</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+       <!--  <tablename>TRX.CRTF_M</tablename> -->
+       <tablename>CrtfM a,StdGoodsCata b</tablename>
+        <name>协议文本查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <fields>sysRefNo,loanId,poRef,cntrctNo,goodsCata,subCata,goodsNm,goodsId,goodsCharacter,producer,unit,ccy,price,poInNum,ttlPoOutNum</fields>	 
+        <condition>a.cntrctNo = '$cntrctNo$' and a.sysTrxSts = 'M' and a.sysLockFlag = 'F' and a.goodsId = b.goodsId</condition>
+        <orderby>a.goodsId</orderby>
+		<asc>Y</asc>
+		<sql>select a.sysRefNo,a.loanId,a.poRef,a.cntrctNo,b.goodsCata,b.subCata,b.goodsNm,a.goodsId,a.goodsCharacter,b.producer,b.unit,b.ccy,b.price,a.poInNum,a.ttlPoOutNum from CrtfM a,StdGoodsCata b</sql>
+    </qnode>
+</query>

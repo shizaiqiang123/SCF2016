@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000748</id>
+	<name>仓单质押-融资申请Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>仓单质押-融资申请Catalog</DESC>
+	<tablename>TRX.CNTRCT_M a,TRX.COLLAT_CH_M b</tablename>
+	<search>
+		<!-- <field datatype="1" title="协议流水号" defaultvalue="" width = "100">sysRefNo</field> -->
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+<!-- 		<field datatype="1" title="监管机构" defaultvalue="" width = "100">patnerNm</field> -->
+<!-- 		<field datatype="1" title="仓库名称" defaultvalue="" width = "100">storageNm</field> -->
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议流水号" hidden="true"  width = "20%" distinct = "true" alis="sysRefNo" >a.sys_Ref_No</field>
+		<field datatype="1" title="协议编号" hidden=""  width = "20%"  distinct = "false" alis="cntrctNo">a.cntrct_No</field>
+		<field datatype="1" title="授信客户ID" hidden=""  width = "20%" distinct = "false" alis="selId">a.sel_Id</field>
+		<field datatype="1" title="授信客户名称" hidden=""  width = "38%" distinct = "false" alis="selNm">a.sel_Nm</field>
+		<field datatype="1" title="协议内融资余额" hidden=""  width = "20%" distinct = "false" alis="openLoanAmt">a.open_Loan_Amt</field>
+		<field datatype="1" title="最低库存价值" hidden="true"  width = "20%" distinct = "false" alis="regLowestVal">a.reg_lowest_val</field>
+		<field datatype="1" title="质押率" hidden="true"  width = "150" distinct = "false" alis="pldPerc">a.pld_Perc</field>
+<!-- 		<field datatype="1" title="监管机构" hidden="" width = "200" >patnerNm</field> -->
+<!-- 		<field datatype="1" title="仓库名称" hidden="" width = "200" >storageNm</field> -->
+		<field datatype="1" title="客户类型" hidden="true"  width = "150" distinct = "false" alis="busiTp">a.busi_Tp</field>
+		<field datatype="1" title="" hidden="true"  width = "150" distinct = "false" alis="sysEventTimes">a.sys_Event_Times</field>
+	</select>
+	<join>
+		<on seq="1">a.sys_Ref_No = b.cntrct_No</on>
+	</join>
+<!-- 	<condition><![CDATA[sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and selId like %$selId$% and cntrctNo like %$cntrctNo$% and patnerNm like %$patnerNm$% and storageNm like %$storageNm$%  and busiTp=4 and  sysLockFlag = F and  sysTrxSts = M and lmtBal > 0 and cntrctSts <> 1 and sysBusiUnit =$sysBusiUnit$]]></condition> -->
+	<condition><![CDATA[a.sys_Ref_No like '%$sysRefNo$%' and a.sel_Nm like '%$selNm$%'  and a.sel_Id like '%$selId$%' and a.cntrct_No like '%$cntrctNo$%'  and a.busi_Tp=10 and  a.sys_Lock_Flag = 'F' and  a.sys_Trx_Sts = 'M' and a.lmt_Bal > 0 and a.sys_Busi_Unit ='$sysBusiUnit$' and b.collat_qty_bal >0 and a.lmt_Due_Dt >= to_date('$sysCurrentDate$','yyyy-MM-dd') and a.lmt_Valid_Dt <= to_date('$sysCurrentDate$','yyyy-MM-dd') and a.sys_Org_Id = $sysOrgId$ and b.sys_Org_Id = $sysOrgId$]]></condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

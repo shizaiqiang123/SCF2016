@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000093</id>
+	<name>内网--放款出账页面</name>
+	<desc>内网--放款出账页面</desc>
+	<jspfile>screen/loan/poThrLoanSure.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.LOAN_M</maintable>
+	<pagejs>L_P_000078.js</pagejs>
+</page>

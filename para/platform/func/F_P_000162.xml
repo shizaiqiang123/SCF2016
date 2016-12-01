@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <page>
+        <maintable>page</maintable>
+        <desc>客户页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>n</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000135</id>
+        <name>客户页面</name>
+        <lockcheck>n</lockcheck>
+        <cascadeevent>n</cascadeevent>
+        <index>0</index>
+        <jspfile>jsp/para/Page_Add.jsp</jspfile>
+        <pagetype>paraAdd</pagetype>
+    </page>
+    <page>
+        <desc>交易成功或失败</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000003</id>
+        <name>交易结果页面</name>
+        <index>1</index>
+    </page>
+    <pagesSize>4</pagesSize>
+    <desc>新增Page</desc>
+    <transactionPage>3</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000162</id>
+    <name>新增Page</name>
+    <functype>PA</functype>
+</function>

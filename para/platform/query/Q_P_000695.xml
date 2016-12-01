@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000695</id>
+	<name>根据batchNo得到invcM中的信息</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.Invc_M</tablename>
+		<doname>doname</doname>
+		<lockcheck>N</lockcheck>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>cntrctNo = $cntrctNo$ and invSts = 3 and selId = $selId$ and buyerId = $buyerId$ and batchNo = $batchNo$</condition>
+ 		<orderby></orderby><!--and a.invSts=0 -->
+		<asc></asc>
+		<sql></sql>
+	</qnode>
+<!-- 	目前暂时不用INV_STS=0作为搜索条件，等以后需要再加上 -->
+</query>

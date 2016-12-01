@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000418</id>
+	<name>追加保证金页面</name>
+	<desc>追加保证金页面</desc>
+	<jspfile>screen/addMarginPre/addBailPay.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.BAIL_PAY_M</maintable>
+	<logicid>L_P_000020</logicid>
+</page>
+

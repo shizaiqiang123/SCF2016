@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000410</id>
+	<module>应收款融资</module>
+	<name>还款登记(百联端口还款)</name>
+	<desc>还款登记申请</desc>
+	<functype>MM</functype>
+	<isValidCode>true</isValidCode>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>catalog查询页面</name>
+		<desc>catalog查询页面</desc>
+		<catalog>C_P_000316</catalog>
+	</page>
+	<page>
+		<id>P_P_000287</id>
+		<index>1</index>
+		<name>还款页面</name>
+		<desc>还款页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

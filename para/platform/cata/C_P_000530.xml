@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000530</id>
+	<name>三方保兑仓-融资复核的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>三方保兑仓-融资复核的协议信息Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>	
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "16.66%">sysRefNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "16.66%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="间接客户ID" hidden="" width = "16.66%">buyerId</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "16.66%">buyerNm</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "16.66%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "16.66%">selNm</field>
+		<field datatype="1" title="总金额" hidden="true" width = "100">ttlLoanAmt</field>
+		<field datatype="1" title="订单编号" hidden="true" width = "100">poNo</field>
+		<field datatype="1" title="订单金额" hidden="true" width = "100">pdgAmt</field>
+		<field datatype="1" title="交易日期" hidden="true" width = "100" >trxDt</field>
+		<field datatype="1" title="利率" hidden="true" width = "100">loanRt</field>
+		<field datatype="1" title="起息日" hidden="true" width = "100" >loanValDt</field>
+		<field datatype="1" title="到期日" hidden="true" width = "100" >loanDueDt</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "100" >cntrctNo</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysTrxSts = M and sysLockFlag = F and confirmFlag = 5 and sysRefNo like %$sysRefNo$% and busiTp = 11
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

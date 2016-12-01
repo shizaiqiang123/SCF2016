@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000763</id>
+	<index>1</index>
+	<name>商品查询页面</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/goods/queryThrGoods.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+	<queryid>Q_P_000703</queryid>
+</page>

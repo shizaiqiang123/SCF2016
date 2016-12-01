@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000227</id>
+	<name>查询供应商材料未达提醒</name>
+	<MODULE>batch</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>参数管理Catalog</DESC>
+	<tablename>TRX.CUST_M</tablename>
+	<bybu>false</bybu>
+	<search></search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="资料预计到达日" hidden="true" width = "200" >arrivalDt</field>
+		<field datatype="1" title="注册用户编号" hidden="true" width = "200" >sysRefNo</field>
+		<field datatype="1" title="签约状态" hidden="true" width = "200" >signSts</field>
+	</select>
+	<condition>
+	signSts=0
+	</condition>
+</catalog>

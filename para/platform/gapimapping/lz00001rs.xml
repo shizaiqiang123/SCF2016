@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<retCode path="XERP/BODY">RET_CODE</retCode>
+	<retMsg path="XERP/BODY">RET_MSG</retMsg>
+	<accNo path="XERP/BODY">CMS_CUST_NO</accNo>
+</trxDom>

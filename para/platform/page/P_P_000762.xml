@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000762</id>
+	<index>1</index>
+	<name>仓单质押新增协议筛选货物小页</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/goods/queryCanDGoods.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+	<queryid>Q_P_000436</queryid>
+</page>

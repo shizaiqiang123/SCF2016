@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000018</id>
+        <name>导入节假日数据</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000011</id>
+    <name>导入节假日数据</name>    
+</batch>

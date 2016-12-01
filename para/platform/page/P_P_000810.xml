@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000810</id>
+    <name>存货类货物出入库台帐</name>
+	<desc>存货类货物出入库台帐</desc>
+	<jspfile>screen/collatRef/collaTQY.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewRecord</maincomp>
+	<maintable>TRX.CNTRCT_M</maintable>	
+</page>

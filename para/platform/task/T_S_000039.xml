@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000039</id>
+    <name>预付类融资将到期预警</name>
+    <component>batchPrePayLoanDueAlarmProcessor</component>
+    <desc>alarm</desc>
+    <trxdatapara>
+    	<para>15</para>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

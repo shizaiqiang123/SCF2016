@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000590</id>
+	<name>客户查询</name>
+	<desc>客户查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询融资主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>
+		sysTrxSts=M and sysLockFlag =F and ttlLoanBal>0 and cntrctNo = $cntrctNo$ and busiTp = 6
+		</condition>
+		<orderby>loanDueDt</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00064</id>
+	<workid>1307</workid>
+	<workname>godownMortgagedOut</workname>
+	<name>仓单质押-质物出库</name>
+	<desc>仓单质押-质物出库</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

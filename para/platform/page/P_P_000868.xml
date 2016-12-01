@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000868</id>
+	<name>客户评级申请</name>
+	<desc>客户评级申请</desc>
+	<jspfile>screen/custRat/addCustRat.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>ADD</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>TRX.CUSTRAT_M</maintable>
+	<logicid>L_P_000586</logicid>
+</page>

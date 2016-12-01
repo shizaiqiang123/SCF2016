@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000054</id>
+	<name>国内保理-卖方还款复核</name>
+	<desc>国内保理-卖方还款复核审核页面</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>APPROVE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>	
+</page>

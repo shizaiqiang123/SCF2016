@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000060</id>
+	<index>1</index>
+	<name>报表预览页面</name>
+	<desc>报表预览页面</desc>
+	<jspfile>jsp/View_Report.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid></queryid>
+	<!--<logicid>L00000002</logicid>
+	<gapi>G00000001</gapi>
+	<service>S00000002</service>
+	<report>R00000002 </report>-->
+</page>

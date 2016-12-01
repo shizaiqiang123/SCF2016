@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000728</id>
+	<name>(买方保理)应付账款登记复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>(买方保理)应付账款登记复核Catalog</DESC>
+	<tablename>TRX.INVC_REG_E</tablename>
+	<search>
+		<field datatype="1" title="组织机构代码" hidden="" width="100">custInstCd
+		</field>
+		<field datatype="1" title="核心企业名称" hidden="" width="100">buyerNm
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width="33.33%">sysRefNo
+		</field>
+		<field datatype="1" title="组织机构代码" hidden="" width="33.33%">custInstCd
+		</field>
+		<field datatype="1" title="核心企业名称" hidden="" width="33.33%">buyerNm
+		</field>
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes
+		</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysFuncId
+		</field>
+		<field datatype="1" title="" hidden="true" width="200">sysOpId</field>
+		<field datatype="1" title="" hidden="true" width="200">sysOpTm</field>
+		<field datatype="1" title="" hidden="true" width="200">sysRelId</field>
+		<field datatype="1" title="" hidden="true" width="200">sysRelTm</field>
+		<field datatype="1" title="" hidden="true" width="200">sysTrxSts</field>
+	</select>
+	<condition>
+	custInstCd like %$custInstCd$% and buyerNm like %$buyerNm$% and sysFuncId = F_P_000729 and (sysTrxSts = P or sysTrxSts = S)  and sysLockFlag = F and sysOrgId=$sysOrgId$ 
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+	<asc>N</asc>
+</catalog>

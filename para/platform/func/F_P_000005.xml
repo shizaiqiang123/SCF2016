@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>CUST</module>
+    <page>
+        <desc>筛选主交易信息</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_S_000002</id>
+        <name>筛选信息</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>Y</cascadeevent>
+        <catalog>C_P_000074</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+    <page>
+        <desc>客户复核页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_S_000011</id>
+        <name>复核客户</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>Y</cascadeevent>
+        <pagetype>VIEW</pagetype>
+    </page>
+    <pagesSize>2</pagesSize>
+    <desc>复核客户</desc>
+    <transactionPage>1</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000005</id>
+    <name>复核客户</name>
+    <propertyBean>false</propertyBean>
+    <functype>RE</functype>
+</function>

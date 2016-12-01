@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+		<channel type="v">14</channel>
+		<fromNodeId type="v">cmis</fromNodeId>
+		<toServiceCode type="v">cmis_0001</toServiceCode>
+		<externalReferenceNo type="trxDom">sysRefNo</externalReferenceNo>
+		<transactionBranch type="v">700001</transactionBranch>
+		<transactionDate type="trxDom">date</transactionDate>
+		<msgPri type="v">1</msgPri>
+		<msgVer type="v">1.0</msgVer>
+		<replyCode></replyCode>
+		<repluText></repluText>
+	</Message_Header>
+	<Message_Body>
+		<tradCode>600127</tradCode>
+		<ACN path="trxDom">cmsCustNo</ACN>
+	</Message_Body>
+</Message>

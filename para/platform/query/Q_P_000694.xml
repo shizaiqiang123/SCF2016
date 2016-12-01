@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000694</id>
+    <cacheAble>false</cacheAble>
+    <name>应收账款转让(外网)复核-fee_e表查询</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.FEE_E</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>
+		selId = $selId$ and theirRef = $sysRefNo$ and (sysLockBy = $sysRefNo$ or sysLockFlag = F)
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>	
+</query>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_TEST_0004</id>
+	<module>国内保理业务测试AP</module>
+	<name>国内保理业务测试AP</name>
+	<desc>国内保理业务功能</desc>
+	<functype>PM</functype>
+	
+	<page>
+		<id>P00000018</id>
+		<index>0</index>
+		<name>交易信息</name>
+		<desc>主交易信息</desc>
+		<pagetype>Add</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	
+	<!-- <page>
+		<id>P_S_000012</id>
+		<name>账务公共页面</name>
+		<desc>账务公共页面</desc>
+		<index>1</index>
+	</page>  
+	 <page>
+		<id>P_T_000002</id>
+		<index>2</index>
+		<name>交易信息</name>
+		<desc>主交易信息</desc>
+		<pagetype>Add</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+		<doname>doname2</doname>
+	</page>  -->
+	<page>
+		<id>P00000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<report>
+		<id>R_TEST_00001</id>
+	</report>
+	<workflow>W_TEST_00001</workflow>
+</function>

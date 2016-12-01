@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000356</id>
+	<name>新增成员企业信息</name>
+	<desc>新增成员企业信息</desc>
+	<module>新增成员企业信息</module>
+	<functype>MM</functype>
+	<page>
+		<id>P_P_000216</id>
+		<logicid>L_P_000171</logicid>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+		<index>0</index>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

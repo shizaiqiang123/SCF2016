@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <desc>融资到期预警</desc>
+    <id>T_S_000033</id>
+    <name>融资到期预警</name>
+    <component>BatchLzLoanDueAlarmProcessor</component>
+    <trxdatapara>
+        <para>5</para>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread> 
+</task>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<!-- <Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+	</Message_Header>
+	<Message_Body>
+		<user_id path="trxDom">user_id</user_id>
+		<user_pwd path="trxDom">user_pwd</user_pwd>
+	</Message_Body> -->
+	<!-- <Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+		<channel type="v">24</channel>
+		<fromNodeId type="v">gjjs</fromNodeId>
+		<toServiceCode ></toServiceCode>
+		<externalReferenceNo path="trxDom">sysRefNo</externalReferenceNo>
+		<transactionBranch></transactionBranch>
+		<transactionDate path="trxDom">currentdate</transactionDate>
+		<msgPri type="v">1</msgPri>
+		<msgVer type="v">1.0</msgVer>
+		<replyCode></replyCode>
+		<replyText></replyText>
+	</Message_Header> -->
+	<Header>
+		<msgId></msgId>
+		<msgRef></msgRef>
+		<channel type="v">24</channel>
+		<fromNodeId></fromNodeId>
+		<toServiceCode ></toServiceCode>
+		<externalReferenceNo></externalReferenceNo>
+		<transactionBranch></transactionBranch>
+		<transactionDate></transactionDate>
+		<msgPri type="v">1</msgPri>
+		<msgVer type="v">1.0</msgVer>
+		<replyCode></replyCode>
+		<replyText></replyText>
+	</Header>
+	<!-- <Message_Body>
+		<user_id path="trxDom">user_id</user_id>
+		<user_pwd path="trxDom">user_pwd</user_pwd>
+	</Message_Body> -->
+	<Body>
+		<user_id></user_id>
+		<user_pwd></user_pwd>
+	</Body>
+</Message>

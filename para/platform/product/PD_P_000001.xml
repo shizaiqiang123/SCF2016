@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+	<id>PD_P_000001</id>
+	<name>应收账款融资</name>
+	<desc>保理业务-应付款融资业务</desc>
+	<fintp>1</fintp><!-- 0:单资金来源1:多资金来源 -->
+	<finfrec>M</finfrec><!-- M,S,Y,HY -->
+	<finsources>
+		<finsource>
+			<id>10001</id>
+			<type>1</type>
+			<desc>百联</desc>
+			<priority>0</priority>
+			<maxamt>100000.00</maxamt>
+			<ccy>RMB</ccy>
+		</finsource>
+		<finsource>
+			<id>10002</id>
+			<desc>中行</desc>
+			<type>2</type>
+			<priority>1</priority>
+			<maxamt>300000.00</maxamt>
+			<ccy>RMB</ccy>
+		</finsource>
+		<finsource>
+			<id>10003</id>
+			<desc>成员企业</desc>
+			<type>3</type>
+			<priority>2</priority>
+			<maxamt>400000.00</maxamt>
+			<ccy>RMB</ccy>
+		</finsource>
+		<finsource>
+			<id>10004</id>
+			<desc>其他财团</desc>
+			<type>4</type>
+			<priority>3</priority>
+			<maxamt>400000.00</maxamt>
+			<ccy>RMB</ccy>
+		</finsource>
+		<finsource>
+			<id>10000</id>
+			<desc>默认出资方</desc>
+		</finsource>
+	</finsources>
+
+	<finsinglesource>10002</finsinglesource>
+
+	<finreceiptors>
+		<finreceiptor>
+			<id>20001</id>
+			<desc>成员单位</desc>
+			<type>2</type>
+		</finreceiptor>
+		<finreceiptor>
+			<id>20002</id>
+			<desc>百联财务</desc>
+			<type>0</type>
+		</finreceiptor>
+		<finreceiptor>
+			<id>20003</id>
+			<desc>中行</desc>
+			<type>1</type>
+		</finreceiptor>
+		<finreceiptor>
+			<id>20004</id>
+			<desc>其他资金提供方</desc>
+			<type>3</type>
+		</finreceiptor>
+	</finreceiptors>
+
+	<finallocations>
+		<finallocation>
+			<id>10001</id>
+			<type>P</type>
+			<finsinglesource> 10001</finsinglesource>
+			<finreceiptor value="40" id = "20001"></finreceiptor>
+			<finreceiptor value="60" id = "20002"></finreceiptor>
+		</finallocation>
+		<finallocation>
+			<id>10002</id>
+			<type>P</type>
+			<finsinglesource> 10002</finsinglesource>
+			<finreceiptor value="20" id = "20001"></finreceiptor>
+			<finreceiptor value="30" id = "20002"></finreceiptor>
+			<finreceiptor value="50" id = "20003"></finreceiptor>
+		</finallocation>
+		<finallocation>
+			<id>10003</id>
+			<type>P</type>
+			<finsinglesource> 10003</finsinglesource>
+			<finreceiptor value="60" id = "20001"></finreceiptor>
+			<finreceiptor value="40" id = "20002"></finreceiptor>
+		</finallocation>
+		<finallocation>
+			<id>10004</id>
+			<type>P</type>
+			<finsinglesource> 10004</finsinglesource>
+			<finreceiptor value="24" id = "20001"></finreceiptor>
+			<finreceiptor value="36" id = "20002"></finreceiptor>
+			<finreceiptor value="40" id = "20003"></finreceiptor>
+		</finallocation>
+	</finallocations>
+
+</product>

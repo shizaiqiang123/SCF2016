@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000031</id>
+	<name>QueryCustNo</name>
+	<type>QueryCustNo</type>
+	<protocol>cmsService</protocol>
+	<postadapter>cmsPostAdapter</postadapter>
+	<queryadapter>cmsQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>查询供应商用户</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000348</id>
+    <module>应收款融资</module>
+    <name>查询用户</name>
+    <functype>VW</functype>
+    <page>
+		<id>P_P_000241</id>
+		<index>0</index>
+		<name>筛选页面</name>
+		<desc>查询用户筛选页面</desc>
+		<catalog>C_P_000301</catalog>
+	</page>
+	<page>
+		<id>P_P_000207</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现用户信息页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

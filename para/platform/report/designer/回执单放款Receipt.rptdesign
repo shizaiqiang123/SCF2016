@@ -1,0 +1,1933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="1230">
+            <property name="FILELIST">datasource.xml</property>
+            <property name="ENCODINGLIST">UTF-8</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="1231">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">GreatMoney</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">GreatMoney</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">buyerAc</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">buyerAc</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">buyerBkNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">buyerBkNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">buyerNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">buyerNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber1</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber10</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber10</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber11</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber11</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber12</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber12</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber2</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber3</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber3</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber4</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber4</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber5</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber5</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber6</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber6</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber7</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber7</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber8</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber8</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">moneyNumber9</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">moneyNumber9</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">printNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">printNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">remark</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">remark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selAc</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">selAc</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selBkNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">selBkNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">selNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sysData</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">sysData</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">userNm</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">userNm</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">GreatMoney</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">buyerAc</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">buyerBkNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">buyerNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">moneyNumber1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">moneyNumber10</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">moneyNumber11</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">moneyNumber12</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">moneyNumber2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">moneyNumber3</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">moneyNumber4</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">moneyNumber5</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">moneyNumber6</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">moneyNumber7</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">moneyNumber8</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">moneyNumber9</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">printNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">remark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">selAc</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">selBkNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">selNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">sysData</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">userNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">GreatMoney</property>
+                    <property name="nativeName">GreatMoney</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">buyerAc</property>
+                    <property name="nativeName">buyerAc</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">buyerBkNm</property>
+                    <property name="nativeName">buyerBkNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">buyerNm</property>
+                    <property name="nativeName">buyerNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">moneyNumber1</property>
+                    <property name="nativeName">moneyNumber1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">moneyNumber10</property>
+                    <property name="nativeName">moneyNumber10</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">moneyNumber11</property>
+                    <property name="nativeName">moneyNumber11</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">moneyNumber12</property>
+                    <property name="nativeName">moneyNumber12</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">moneyNumber2</property>
+                    <property name="nativeName">moneyNumber2</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">moneyNumber3</property>
+                    <property name="nativeName">moneyNumber3</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">moneyNumber4</property>
+                    <property name="nativeName">moneyNumber4</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">moneyNumber5</property>
+                    <property name="nativeName">moneyNumber5</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">moneyNumber6</property>
+                    <property name="nativeName">moneyNumber6</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">moneyNumber7</property>
+                    <property name="nativeName">moneyNumber7</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">moneyNumber8</property>
+                    <property name="nativeName">moneyNumber8</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">moneyNumber9</property>
+                    <property name="nativeName">moneyNumber9</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">printNumber</property>
+                    <property name="nativeName">printNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">remark</property>
+                    <property name="nativeName">remark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">selAc</property>
+                    <property name="nativeName">selAc</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">selBkNm</property>
+                    <property name="nativeName">selBkNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">selNm</property>
+                    <property name="nativeName">selNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">sysData</property>
+                    <property name="nativeName">sysData</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">userNm</property>
+                    <property name="nativeName">userNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/trxDom]#:#{GreatMoney;STRING;/GreatMoney},{buyerAc;STRING;/buyerAc},{buyerBkNm;STRING;/buyerBkNm},{buyerNm;STRING;/buyerNm},{moneyNumber1;STRING;/moneyNumber1},{moneyNumber10;STRING;/moneyNumber10},{moneyNumber11;STRING;/moneyNumber11},{moneyNumber12;STRING;/moneyNumber12},{moneyNumber2;STRING;/moneyNumber2},{moneyNumber3;STRING;/moneyNumber3},{moneyNumber4;STRING;/moneyNumber4},{moneyNumber5;STRING;/moneyNumber5},{moneyNumber6;STRING;/moneyNumber6},{moneyNumber7;STRING;/moneyNumber7},{moneyNumber8;STRING;/moneyNumber8},{moneyNumber9;STRING;/moneyNumber9},{printNumber;STRING;/printNumber},{remark;STRING;/remark},{selAc;STRING;/selAc},{selBkNm;STRING;/selBkNm},{selNm;STRING;/selNm},{sysData;DATE;/sysData},{sysRefNo;STRING;/sysRefNo},{userNm;STRING;/userNm}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>buyerAc</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>buyerAc</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>buyerBkNm</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>buyerBkNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>buyerNm</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>buyerNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>type</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber1</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber10</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber10</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber11</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber11</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber12</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber12</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber2</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber3</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber3</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber4</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber4</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber5</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber5</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber6</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber6</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber7</design:name>
+              <design:position>14</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber7</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber8</design:name>
+              <design:position>15</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber8</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>moneyNumber9</design:name>
+              <design:position>16</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>moneyNumber9</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>remark</design:name>
+              <design:position>17</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>remark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selAc</design:name>
+              <design:position>18</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selAc</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selBkNm</design:name>
+              <design:position>19</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selBkNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selNm</design:name>
+              <design:position>20</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysData</design:name>
+              <design:position>21</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysData</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>22</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="9">
+            <property name="fontSize">24pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">百联财务集团有限责任公司</text-property>
+        </label>
+        <label id="1256">
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">right</property>
+            <text-property name="text">  *请注意打印次数，避免重复记账。</text-property>
+        </label>
+        <table id="1178">
+            <property name="width">7.9375in</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">sysData</property>
+                    <text-property name="displayName">sysData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysData"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">sysRefNo</property>
+                    <text-property name="displayName">sysRefNo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">printNumber</property>
+                    <text-property name="displayName">printNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["printNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="1185">
+                <property name="width">2.65625in</property>
+            </column>
+            <column id="1186">
+                <property name="width">2.5416666666666665in</property>
+            </column>
+            <column id="1220">
+                <property name="width">1.0416666666666667in</property>
+            </column>
+            <column id="1222">
+                <property name="width">0.34375in</property>
+            </column>
+            <column id="1224">
+                <property name="width">0.5520833333333334in</property>
+            </column>
+            <column id="1187">
+                <property name="width">0.8020833333333334in</property>
+            </column>
+            <detail>
+                <row id="1179">
+                    <property name="height">0.35in</property>
+                    <cell id="1180">
+                        <label id="1188">
+                            <property name="fontSize">12pt</property>
+                            <text-property name="text">币种：人民币     </text-property>
+                        </label>
+                    </cell>
+                    <cell id="1181">
+                        <data id="1279">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">sysData</property>
+                        </data>
+                    </cell>
+                    <cell id="1219">
+                        <data id="1280">
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">sysRefNo</property>
+                        </data>
+                    </cell>
+                    <cell id="1221">
+                        <label id="1227">
+                            <property name="textAlign">right</property>
+                            <text-property name="text">(第</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1223">
+                        <data id="1274">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">printNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1183">
+                        <label id="1217">
+                            <property name="textAlign">right</property>
+                            <text-property name="text">次打印）</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <table id="715">
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="width">7.958333333333333in</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">buyerAc</property>
+                    <text-property name="displayName">buyerAc</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["buyerAc"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">buyerNm</property>
+                    <text-property name="displayName">buyerNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["buyerNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">buyerBkNm</property>
+                    <text-property name="displayName">buyerBkNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["buyerBkNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber1</property>
+                    <text-property name="displayName">moneyNumber1</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber2</property>
+                    <text-property name="displayName">moneyNumber2</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber2"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber3</property>
+                    <text-property name="displayName">moneyNumber3</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber3"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber4</property>
+                    <text-property name="displayName">moneyNumber4</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber4"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber5</property>
+                    <text-property name="displayName">moneyNumber5</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber5"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber6</property>
+                    <text-property name="displayName">moneyNumber6</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber6"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber7</property>
+                    <text-property name="displayName">moneyNumber7</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber7"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber8</property>
+                    <text-property name="displayName">moneyNumber8</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber8"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber9</property>
+                    <text-property name="displayName">moneyNumber9</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber9"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber10</property>
+                    <text-property name="displayName">moneyNumber10</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber10"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber11</property>
+                    <text-property name="displayName">moneyNumber11</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber11"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">moneyNumber12</property>
+                    <text-property name="displayName">moneyNumber12</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["moneyNumber12"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">remark</property>
+                    <text-property name="displayName">remark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["remark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">userNm</property>
+                    <text-property name="displayName">userNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["userNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">GreatMoney</property>
+                    <text-property name="displayName">GreatMoney</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["GreatMoney"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selAc</property>
+                    <text-property name="displayName">selAc</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selAc"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selBkNm</property>
+                    <text-property name="displayName">selBkNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selBkNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selNm</property>
+                    <text-property name="displayName">selNm</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selNm"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="995">
+                <property name="width">0.4583333333333333in</property>
+            </column>
+            <column id="996">
+                <property name="width">0.5104166666666666in</property>
+            </column>
+            <column id="997">
+                <property name="width">0.4166666666666667in</property>
+            </column>
+            <column id="998">
+                <property name="width">0.11458333333333333in</property>
+            </column>
+            <column id="999">
+                <property name="width">0.0625in</property>
+            </column>
+            <column id="1000">
+                <property name="width">0.14583333333333334in</property>
+            </column>
+            <column id="1001">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1002">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1003">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1004">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1005">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1006">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1007">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1008">
+                <property name="width">0.2604166666666667in</property>
+            </column>
+            <column id="1009">
+                <property name="width">0.010416666666666666in</property>
+            </column>
+            <column id="1010">
+                <property name="width">0.458in</property>
+            </column>
+            <column id="1011">
+                <property name="width">0.375in</property>
+            </column>
+            <column id="1012">
+                <property name="width">0.5625in</property>
+            </column>
+            <column id="1013">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1014">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1015">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1016">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1017">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1018">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1019">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1020">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1021">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1022">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1023">
+                <property name="width">0.21in</property>
+            </column>
+            <column id="1024">
+                <property name="width">0.25in</property>
+            </column>
+            <detail>
+                <row id="747">
+                    <property name="height">0.375in</property>
+                    <cell id="748">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">3</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1025">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">收&#13;
+款&#13;
+人</text-property>
+                        </label>
+                    </cell>
+                    <cell id="749">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1031">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">全称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="751">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1278">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">selNm</property>
+                        </data>
+                    </cell>
+                    <cell id="763">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">3</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1086">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">付&#13;
+款&#13;
+人</text-property>
+                        </label>
+                    </cell>
+                    <cell id="764">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1040">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">全称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="766">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1258">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">buyerNm</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="778">
+                    <property name="height">0.3541666666666667in</property>
+                    <cell id="780">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1037">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">帐号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="782">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1276">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">selAc</property>
+                        </data>
+                    </cell>
+                    <cell id="795">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1041">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">帐号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="797">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1257">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">buyerAc</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="809">
+                    <property name="height">0.375in</property>
+                    <cell id="811">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1038">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">开户行</text-property>
+                        </label>
+                    </cell>
+                    <cell id="813">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1277">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">selBkNm</property>
+                        </data>
+                    </cell>
+                    <cell id="826">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1042">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">开户行</text-property>
+                        </label>
+                    </cell>
+                    <cell id="828">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1259">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">buyerBkNm</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="840">
+                    <property name="height">0.34375in</property>
+                    <cell id="841">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1026">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">金&#13;
+额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="842">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <label id="1029">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">人民币&#13;
+（大写）</text-property>
+                        </label>
+                    </cell>
+                    <cell id="844">
+                        <property name="colSpan">15</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1260">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">GreatMoney</property>
+                        </data>
+                    </cell>
+                    <cell id="859">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1063">
+                            <text-property name="text">十</text-property>
+                        </label>
+                    </cell>
+                    <cell id="860">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1055">
+                            <text-property name="text">亿</text-property>
+                        </label>
+                    </cell>
+                    <cell id="861">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1056">
+                            <text-property name="text">千</text-property>
+                        </label>
+                    </cell>
+                    <cell id="862">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1057">
+                            <text-property name="text">百</text-property>
+                        </label>
+                    </cell>
+                    <cell id="863">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1058">
+                            <text-property name="text">十</text-property>
+                        </label>
+                    </cell>
+                    <cell id="864">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1059">
+                            <text-property name="text">万</text-property>
+                        </label>
+                    </cell>
+                    <cell id="865">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1060">
+                            <text-property name="text">千</text-property>
+                        </label>
+                    </cell>
+                    <cell id="866">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1061">
+                            <text-property name="text">百</text-property>
+                        </label>
+                    </cell>
+                    <cell id="867">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1062">
+                            <text-property name="text">十</text-property>
+                        </label>
+                    </cell>
+                    <cell id="868">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1064">
+                            <text-property name="text">元</text-property>
+                        </label>
+                    </cell>
+                    <cell id="869">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1065">
+                            <text-property name="text">角</text-property>
+                        </label>
+                    </cell>
+                    <cell id="870">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1066">
+                            <text-property name="text">分</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="871">
+                    <property name="height">0.3541666666666667in</property>
+                    <cell id="890">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1273">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber12</property>
+                        </data>
+                    </cell>
+                    <cell id="891">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1272">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber11</property>
+                        </data>
+                    </cell>
+                    <cell id="892">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1271">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber10</property>
+                        </data>
+                    </cell>
+                    <cell id="893">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1270">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber9</property>
+                        </data>
+                    </cell>
+                    <cell id="894">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1269">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber8</property>
+                        </data>
+                    </cell>
+                    <cell id="895">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1268">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber7</property>
+                        </data>
+                    </cell>
+                    <cell id="896">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1267">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber6</property>
+                        </data>
+                    </cell>
+                    <cell id="897">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1266">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber5</property>
+                        </data>
+                    </cell>
+                    <cell id="898">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1265">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber4</property>
+                        </data>
+                    </cell>
+                    <cell id="899">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1264">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber3</property>
+                        </data>
+                    </cell>
+                    <cell id="900">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1263">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber2</property>
+                        </data>
+                    </cell>
+                    <cell id="901">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1261">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">moneyNumber1</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="902">
+                    <property name="height">0.6770833333333334in</property>
+                    <cell id="903">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1027">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">用&#13;
+途</text-property>
+                        </label>
+                    </cell>
+                    <cell id="904">
+                        <property name="colSpan">14</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1281">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">userNm</property>
+                        </data>
+                    </cell>
+                    <cell id="918">
+                        <property name="colSpan">15</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                    </cell>
+                </row>
+                <row id="933">
+                    <property name="height">0.6666666666666666in</property>
+                    <cell id="934">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="1028">
+                            <property name="fontFamily">sans-serif</property>
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">备&#13;
+注</text-property>
+                        </label>
+                    </cell>
+                    <cell id="935">
+                        <property name="colSpan">14</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="1275">
+                            <property name="fontSize">16pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">remark</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_P_000262</id>
+		<module>SYST</module>
+		<name>查询批处理</name>
+		<desc>批处理查询功能</desc>
+		<functype>VW</functype>
+	<page>
+		<id>P_S_000020</id>
+		<index>1</index>
+		<maincomp>TrxBatchManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+	<page>
+		<id>P_S_000021</id>
+		<index>2</index>
+		<name>系统参数修改</name>
+		<pagetype>paraEdit</pagetype>
+		<desc>系统参数修改</desc>
+	</page>
+</function>

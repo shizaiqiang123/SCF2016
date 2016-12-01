@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000634</id>
+	<module>国内保理融资明细查询</module>
+	<name>国内保理融资明细查询</name>
+	<desc>国内保理融资明细查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_P_000941</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000515</catalog>
+	</page>
+	<page>
+		<id>P_P_000791</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现所有历史列表</desc>
+	</page>
+	<!-- <page>
+		<id>P_P_000794</id>
+		<index>2</index>
+		<name>国内保理融资明细信息</name>
+		<desc>国内保理融资明细页面</desc>
+	</page> -->
+	<service>
+		<id>S_P_000483</id>
+		<trigger>M</trigger>
+		<name>生成Excel格式应收账款</name>
+	</service>
+</function>

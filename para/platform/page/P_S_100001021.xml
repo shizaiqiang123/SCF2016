@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_100001021</id>
+	<name>用户信息筛选页面</name>
+	<desc>用户信息筛选</desc>
+	<jspfile>jsp/SYS_Catalog.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>CA</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxCatalogManager</maincomp>
+	<maintable></maintable>	
+</page>

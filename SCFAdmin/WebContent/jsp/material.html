@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>查看纸质材料寄送要求</title>
+</head>
+<style type="text/css">
+.btnt .btn-img {
+	width: 322px;
+	height: 34px;
+	line-height: 34px;
+	background: #e4393c;
+	color: #FFF;
+	border-radius: 3px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.btn-img {
+	cursor: pointer;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+.btnt {
+	text-align: center;
+}
+
+.blockAreaFooter {
+	padding: 20px;
+	border: 1px solid;
+	border-color: #b50029;
+	margin-top: -11px;
+	/* border-top:0px; */
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.fL {
+	float: left;
+}
+
+.blockAreaNotice {
+	max-width: 95%;
+	/*margin-left: 180px;
+    margin-top: -70px; */
+	padding: 0 0 0 25px;
+}
+
+.red {
+	color: #b50029;
+}
+
+/* .blockAreaNoticeTitle { */
+/* 	background: url(../../images/icon-ok.png) left center no-repeat; */
+/* } */
+
+.fWb {
+	font-weight: 700;
+}
+
+.blockAreaNoticeTitle,.blockAreaNoticeTxt {
+	line-height: 24px;
+	padding-left: 20px;
+}
+</style>
+<script type="text/javascript">
+	function materialClose(win) {
+		var target = win.getData('callback');
+		target();
+		win.close();
+	}
+
+	function materialReg(win) {
+		alert("等待详细文本出现");
+		// 	location.href=SCFUtils.DOWNLOAD+"?filePath=E:\\ZHBLsvn\\test\\test1中文.txt";
+	}
+	function printReg(win) {
+		window.print();
+	}
+</script>
+<body class="UTSCF" style="width: 100%; margin: 0 auto">
+	<form id="regForm">
+		<div id="regist" style="height: 100px;">
+			<!-- 	<div style="height: 100px; text-align: center;"> -->
+			<!-- 		您现在看到的是查看纸质材料寄送要求的详情信息，在提交交易之前请您再次确认已知悉并完全理解本协议的全部内容。</div> -->
+			<div class="blockAreaFooter clearfix mB20">
+				<div class="fL blockAreaNotice red">
+					<p class="blockAreaNoticeTitle fWb">用户注册后寄送材料列表（供参考，需贸供应链金融最终确认）：</p>
+					<p class="blockAreaNoticeTxt">
+						<br> 1、组织机构代码证（副本）及营业执照（副本）的复印件 。<br>
+						2、法定代表人或单位负责人有效身份证件的复印件。<br> 
+						3、平台超级管理员用户有效身份证件的复印件。<br>
+						4、如平台超级管理员用户不是法定代表人或单位负责人，
+						则需提供单位授权书（授权书中应注明：授权人及被授权人姓名、身份证号码、被授权的权限等，并加盖单位公章、法人或单位负责人签章）。<br>
+						<br> 注：上述所有复印件材料均需加盖单位公章，并注明“本复印件仅用于申请供应链金融服务平台”。<br>
+					</p>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000199</id>
+	<name>商品(STD_GOODS_CATA)查询LookUplook up</name>
+	<desc>Test look up</desc>
+	<type>P</type>
+	<target>P_P_000788</target>
+</inqdata>

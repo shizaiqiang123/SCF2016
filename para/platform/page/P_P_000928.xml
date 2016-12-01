@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.PMT_M</maintable>
+    <desc>卖方还款(外网)</desc>
+    <cacheAble>false</cacheAble>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000928</id>
+    <name>卖方还款(外网)</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/ACCR/wideSellRepayment.jsp</jspfile>
+    <logicid>L_P_000623</logicid>
+</page>

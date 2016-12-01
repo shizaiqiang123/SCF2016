@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+		<id>F_S_000002</id>
+		<module>SYST</module>
+		<name>修改流水号规则</name>
+		<desc>修改流水规则</desc>
+		<functype>MM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_S_000001</catalog>
+	</page>
+	<page>
+		<id>P_S_000001</id>
+		<index>1</index>
+		<name>新增流水号规则页面</name>
+		<desc>新增流水号规则页面</desc>
+		<maincomp>TrxMasterManager</maincomp>
+		<pagetype>Edit</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

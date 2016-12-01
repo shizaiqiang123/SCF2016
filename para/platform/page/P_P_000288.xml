@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<desc>报表小页</desc>
+	<id>P_P_000288</id>
+	<name>融资报表小页</name>
+	<jspfile>script/Loan_View_Report.js</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+	<queryid></queryid>
+	<!--<logicid>L00000002</logicid> <gapi>G00000001</gapi> <service>S00000002</service> 
+		<report>R00000002 </report> -->
+</page>

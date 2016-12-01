@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_S_000006</id>
+	<name>Notice page look up role</name>
+	<desc>look up role</desc>
+	<type>P</type>
+	<target>P_S_000017</target>
+</inqdata>

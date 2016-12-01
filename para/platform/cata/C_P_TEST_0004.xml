@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_TEST_0004</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>Customer catalog</DESC>
+	<tablename>TRX.CUST_M</tablename>
+	<search>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="授信客户编号" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250">custNm</field>
+		<field datatype="1" title="客户类型" hidden="" width = "250">custTp</field>
+		<field datatype="1" title="客户网点" hidden="" width = "250">custBrId</field>
+		<field datatype="1" title="客户经理" hidden="" width = "250">custMgrId</field>
+	</select>
+	<condition>
+		sysRefNo like %$sysRefNo$% and custNm like %$custNm$% and custMgrId = $userId$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

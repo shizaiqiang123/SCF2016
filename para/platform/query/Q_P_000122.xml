@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000122</id>
+	<name>复核应收账款转让时 查协议e表</name>
+	<desc>复核应收账款转让时 查协议e表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_E</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<orderby>id.sysEventTimes</orderby>
+		<asc>N</asc>
+		<sql/>
+	</qnode>	
+</query>

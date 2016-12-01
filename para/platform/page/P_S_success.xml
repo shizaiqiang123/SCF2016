@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_success</id>
+	<name>操作成功</name>
+	<desc>操作成功页面</desc>
+	<jspfile>jsp/success.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<functype>cn</functype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxResutlManager</maincomp>
+	<maintable></maintable>	
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000232</id>
+    <name>查询接口监控信息</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+        <desc>查询接口监控信息</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc></asc>
+        <name>查询接口监控信息</name>
+        <cascadeevent>N</cascadeevent>
+        <tablename>STD.GAPI_MSG</tablename>
+        <component>componentClass</component>
+        <sql>SELECT count(a.gapiId),a.gapiId,a.gapiName,a.gapiType from GapiMsg a where a.sysLockFlag='F' group by a.gapiId,a.gapiName,a.gapiType</sql>
+       	<fields>count,gapiId,gapiName,gapiType</fields>
+        <lockcheck>N</lockcheck>
+    </qnode>
+</query>

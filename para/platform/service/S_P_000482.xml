@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000482</id>
+    <name>应收账款明细报表查询</name>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Report</type>
+    <component></component>
+    <propertyBean>false</propertyBean>
+    <servicejs>S_P_00057.js</servicejs>
+    <methodname>perViewServiceData</methodname>
+</service>

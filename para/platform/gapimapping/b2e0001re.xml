@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh-CN">
+	<head>
+		<termid path="trxDom">termid</termid>
+		<trnid path="trxDom">sysRefNo</trnid>
+		<custid path="trxDom">custid</custid>
+		<cusopr path="trxDom">cusopr</cusopr>
+		<trncod type="v">b2e0001</trncod>
+	</head>
+	<trans>
+		<trn-b2e0001-rq>
+			<b2e0001-rq>
+				<custdt path="trxDom">sysEventBusiDt</custdt>
+				<oprpwd path="trxDom">password</oprpwd>
+			</b2e0001-rq>
+		</trn-b2e0001-rq>
+	</trans>
+</bocb2e>

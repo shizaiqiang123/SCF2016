@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000004.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的注册申请未能通过平台审核，目前暂不能办理我平台支持的金融业务。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000066</id>
+    <title>注册审核不通过(短信)</title>
+    <remindtp>1</remindtp>
+    <name>注册审核不通过(短信)</name>
+    <senddt>2015-09-19</senddt>
+</advice>

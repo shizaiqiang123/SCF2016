@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000592</id>
+	<name>国内买方保理池--争议解决 查询争议登记信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内买方保理池--争议解决 查询争议登记信息Catalog</DESC>
+	<tablename>TRX.INVC_DSP_M</tablename>
+	<search>
+		<field datatype="1" title="争议流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="供应商名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="争议流水号" hidden="" width = "33.33%">sysRefNo</field>
+		<field datatype="1" title="供应商名称" hidden="" width = "33.33%">selNm</field>
+		<field datatype="1" title="争议登记日期" hidden="" width = "33.33%" formatter="dateFormater">trxDt</field>
+		<field datatype="1" title="供应商编号" hidden="true" width = "25%">selId</field>
+		<field datatype="1" title="争议提出方" hidden="true" width = "25%">notifyBy</field>
+		<field datatype="1" title="争议登记数量" hidden="true" width = "25%">ttlDspInvNo</field>
+		<field datatype="1" title="争议登记金额" hidden="true" width = "25%">ttlDspInvAmt</field>
+		<field datatype="1" title="争议登记标识" hidden="true" width = "25%">dspFlag</field>
+		<field datatype="1" title="协议编号" hidden="true" width = "25%">cntrctNo</field>
+	</select>
+	<condition>
+		  sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and sysTrxSts = M and sysLockFlag = F and (dspFlag = 1 or dspFlag = 2) and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

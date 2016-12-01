@@ -1,0 +1,20 @@
+<query>
+    <id>Q_P_000429</id>
+    <desc>账号查询</desc>
+    <qnode>
+    	<id>N00000001</id>
+		<index>0</index>
+		<desc>账号查询</desc>
+        <name>账号查询</name>
+		<component>componentClass</component> 
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+        <cascadeevent>N</cascadeevent>
+        <fields>custNm,custAcNo,acNm,acBkNm</fields>
+        <params>$acBkNo$</params>
+        <sql><![CDATA[select m.custNm,m.custAcNo,n.acNm,n.acBkNm from CustM  m,StdAcNo n where n.acOwnerid = m.sysRefNo  and n.acBkNo = ?
+        ]]></sql>
+    </qnode>
+    
+</query>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000395</id>
+    <autoassignSize>0</autoassignSize>
+     <pagesSize>0</pagesSize>
+    <desc>供应商额度查询</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <module>应收款融资</module>
+    <autoassignSize>0</autoassignSize>
+    <name>额度查询</name>
+    <functype>VW</functype>
+    <page>
+    	<id>P_P_000264</id>	
+    	<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+    </page>
+    	<page>
+		<id>P_P_000265</id>
+		<index>1</index>
+		<name>额度查询报表统计</name>
+		<desc>额度查询报表统计</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

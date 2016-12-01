@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000287</id>
+    <desc>新建百联用户企业查询</desc>
+    <qnode>
+        <desc>新建百联用户企业查询</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc></asc>
+        <name>新建百联用户企业查询</name>
+        <component>componentClass</component>
+        <cascadeevent>N</cascadeevent>
+        <params>$busiUnit$</params>
+        <tablename>TRX.CUST_M</tablename>
+        <sql>from CustM t where t.custTp = '1' or t.custTp = '3' and t.busiUnit = ?</sql>
+    </qnode>
+    <name>成员企业查询</name>
+    <nodeSize>1</nodeSize>
+</query>

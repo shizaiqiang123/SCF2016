@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000205</id>
+    <desc>池融资协议信息查询</desc>
+    <name>池融资协议信息查询</name>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>P</type>
+    <target>P_P_000838</target>
+</inqdata>

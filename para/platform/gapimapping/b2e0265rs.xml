@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<rspcod path="bocb2e/trans/trn-b2e0265-rs/status">rspcod</rspcod>
+	<rspmsg path="bocb2e/trans/trn-b2e0265-rs/status">rspmsg</rspmsg>
+	<sysRefNo path="bocb2e/head">trnid</sysRefNo>
+	<dataInfo path="bocb2e/trans/trn-b2e0265-rs/b2e0265-rs"
+		loop="true">
+		<respcod path="status" loopPath="bocb2e/trans/trn-b2e0265-rs/b2e0265-rs">respcod</respcod>
+		<rspmsg path="status" loopPath="bocb2e/trans/trn-b2e0265-rs/b2e0265-rs">rspmsg</rspmsg>
+	</dataInfo>
+</trxDom>

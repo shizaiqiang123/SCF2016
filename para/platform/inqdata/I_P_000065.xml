@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000065</id>
+    <desc>ESBRoot弹出的esbservice小页</desc>
+    <name>Batch小页</name>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <target>P_P_000196</target>
+    <type>P</type>
+</inqdata>

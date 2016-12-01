@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000313</id>
+	<name>额度调整申请复核Catalog</name>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>额度调整申请复核Catalog</DESC>
+	<tablename>TRX.CNTRCT_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="4" title="业务类别" width = "100" formatter="busiTp">busiTp</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "300" >sysRefNo</field>
+		<field datatype="1" title="业务类别" hidden="" width = "350" formatter = "busiTpFormater">busiTp</field>
+		<field datatype="1" title="成员企业" hidden="" width = "350">buyerNm</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		</select>
+	<condition><![CDATA[sysTrxSts = P and lmtSts <> 1 and lmtSts <> 0 and sysRefNo like %$sysRefNo$% ]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

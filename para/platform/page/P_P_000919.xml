@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <cacheAble>false</cacheAble>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000919</id>
+    <refsSize>0</refsSize>
+	<name>买方保理池流程页面</name>
+	<desc> 流程页面</desc>
+	<jspfile>screen/busFirstPage/mfblc.jsp</jspfile>
+	<holdmaster>t</holdmaster>
+</page>

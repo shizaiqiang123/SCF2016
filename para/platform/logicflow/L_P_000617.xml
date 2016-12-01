@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>国内单保理(外网)应收账款登记</desc>
+    <cacheAble>false</cacheAble>
+    <id>L_P_000617</id>
+    <name>国内单保理(外网)应收账款登记</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+    <lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>invc</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>theirRef=?</condition>
+		<params>theirRef</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+</logicflow>

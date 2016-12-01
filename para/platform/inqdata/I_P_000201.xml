@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000201</id>
+	<name>新增会计科目小页</name>
+	<desc>新增会计科目小页面</desc>
+	<type>p</type>
+	<target>P_P_000823</target>
+</inqdata>

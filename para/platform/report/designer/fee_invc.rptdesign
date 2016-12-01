@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="custNo" id="285">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="instNo" id="286">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="startDt" id="287">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="endDt" id="288">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="9">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.0.103:1521:orcl</property>
+            <property name="odaUser">STD</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">U1RE</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="295">
+            <list-property name="columnHints"/>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">custNo</property>
+                    <property name="paramName">custNo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">instNo</property>
+                    <property name="paramName">instNo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">startDt</property>
+                    <property name="paramName">startDt</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">endDt</property>
+                    <property name="paramName">endDt</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">4</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">BR_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">SEL_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CUST_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">INV_CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">PAY_TRAN_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">PAY_BILL_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">BR_NM</property>
+                    <property name="nativeName">BR_NM</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">SEL_ID</property>
+                    <property name="nativeName">SEL_ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CUST_NM</property>
+                    <property name="nativeName">CUST_NM</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">INV_CCY</property>
+                    <property name="nativeName">INV_CCY</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">PAY_TRAN_AMT</property>
+                    <property name="nativeName">PAY_TRAN_AMT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">PAY_BILL_AMT</property>
+                    <property name="nativeName">PAY_BILL_AMT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT * FROM (
+select T3.Br_Nm,t.sel_id,t2.cust_nm,t.inv_ccy,SUM(t.PAY_TRAN_AMT) as PAY_TRAN_AMT,SUM(t.PAY_BILL_AMT) as PAY_BILL_AMT
+  from trx.invc_m t, TRX.CNTRCT_M T1,trx.cust_m t2,std.std_inst_m t3
+ where T.CNTRCT_NO = T1.SYS_REF_NO
+ 	and t.sel_id = t2.sys_ref_no
+ 	and t1.cust_br_id = t3.sys_ref_no
+   AND T.sys_trx_sts = 'M'
+      and t.sel_id = ?
+   and t1.cust_br_id = ?
+   AND to_char(T.fee_dt,'yyyy-mm-dd') >= ?
+   AND to_char(T.fee_dt,'yyyy-mm-dd') <= ?
+   AND (T.PAY_TRAN_AMT > 0 OR T.PAY_BILL_AMT > 0)
+ GROUP BY T3.Br_Nm,T.SEL_ID,t2.cust_nm,t.inv_ccy
+ ) 
+]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="274">
+            <property name="textAlign">center</property>
+            <text-property name="text">保理费收取汇总表</text-property>
+        </label>
+        <table id="296">
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">BR_NM</property>
+                    <text-property name="displayName">BR_NM</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BR_NM"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CUST_NM</property>
+                    <text-property name="displayName">CUST_NM</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_CCY</property>
+                    <text-property name="displayName">INV_CCY</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_CCY"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">PAY_BILL_AMT</property>
+                    <text-property name="displayName">PAY_BILL_AMT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PAY_BILL_AMT"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">PAY_TRAN_AMT</property>
+                    <text-property name="displayName">PAY_TRAN_AMT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PAY_TRAN_AMT"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <column id="315"/>
+            <column id="316"/>
+            <column id="317"/>
+            <column id="318"/>
+            <column id="319"/>
+            <header>
+                <row id="297">
+                    <cell id="298">
+                        <label id="320">
+                            <text-property name="text">网点名称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="299">
+                        <label id="322">
+                            <text-property name="text">客户名称</text-property>
+                        </label>
+                    </cell>
+                    <cell id="300">
+                        <label id="324">
+                            <text-property name="text">币种</text-property>
+                        </label>
+                    </cell>
+                    <cell id="301">
+                        <label id="326">
+                            <text-property name="text">手续费金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="302">
+                        <label id="329">
+                            <text-property name="text">处理费金额</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="303">
+                    <cell id="304">
+                        <data id="321">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">BR_NM</property>
+                                    <text-property name="displayName">BR_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["BR_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">BR_NM</property>
+                        </data>
+                    </cell>
+                    <cell id="305">
+                        <data id="323">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">CUST_NM</property>
+                                    <text-property name="displayName">CUST_NM</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["CUST_NM"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">CUST_NM</property>
+                        </data>
+                    </cell>
+                    <cell id="306">
+                        <data id="325">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">INV_CCY</property>
+                                    <text-property name="displayName">INV_CCY</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["INV_CCY"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">INV_CCY</property>
+                        </data>
+                    </cell>
+                    <cell id="307">
+                        <data id="328">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">PAY_TRAN_AMT</property>
+                                    <text-property name="displayName">PAY_TRAN_AMT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["PAY_TRAN_AMT"]</expression>
+                                    <property name="dataType">decimal</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">PAY_TRAN_AMT</property>
+                        </data>
+                    </cell>
+                    <cell id="308">
+                        <data id="330">
+                            <property name="dataSet">Data Set</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">PAY_BILL_AMT</property>
+                                    <text-property name="displayName">PAY_BILL_AMT</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["PAY_BILL_AMT"]</expression>
+                                    <property name="dataType">decimal</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">PAY_BILL_AMT</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="309">
+                    <cell id="310"/>
+                    <cell id="311"/>
+                    <cell id="312"/>
+                    <cell id="313"/>
+                    <cell id="314"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

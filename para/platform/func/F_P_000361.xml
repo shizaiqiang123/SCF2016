@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>客户等级维护</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000361</id>
+    <name>客户等级维护</name>
+    <module>应收款融资</module>
+    <functype>MM</functype>
+   <page>
+    	<id>P_P_000221</id>	
+    </page>
+</function>

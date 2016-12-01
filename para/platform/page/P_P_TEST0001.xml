@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_TEST0001</id>
+	<name>测试查询参数</name>
+	<desc>测试查询参数</desc>
+	<jspfile>screen/ExcuteQuery.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>Edit</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>ajax</maincomp>
+	<maintable>TRX.T_CNTRCT_M</maintable>
+<!-- 	<queryid>Q00000002</queryid>
+	<logicid>L00000002</logicid>
+	<gapi>G00000001</gapi>
+	<service>S00000002</service>
+	<report>R00000002 </report>-->
+</page>

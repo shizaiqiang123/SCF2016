@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000423</id>
+	<name>保险公司信息</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.CUST_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>sysRefNo like %$sysRefNo$%  and  custNm like %$custNm$% and custTp = 3 and sysLockFlag = F and sysTrxSts = M</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

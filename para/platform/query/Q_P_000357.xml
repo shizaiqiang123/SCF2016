@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000357</id>
+	<name>额度信息查询</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[cntrctNo like %$cntrctNo$% and sellerInstCd like %$sellerInstCd$% and busiTp like %$busiTp$% and lmtCcy like %$lmtCcy$% and selNm like %$selNm$% and sysTrxSts = M and sysLockFlag = F and lmtDueDt > $sysCurrentDate$ and lmtValidDt <= $sysCurrentDate$ and busiTp = 0]]></condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

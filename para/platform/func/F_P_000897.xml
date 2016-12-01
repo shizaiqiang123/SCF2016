@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <cacheAble>false</cacheAble>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000916</id>
+    </page>
+    <pagesSize>1</pagesSize>
+    <cacheAble>false</cacheAble>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <id>F_P_000897</id>
+    <autoassignSize>0</autoassignSize>
+    <name>流程图</name>
+    <functype>VW</functype>
+    <bfServiceSize>0</bfServiceSize>
+    <serviceSize>0</serviceSize>
+    <shortnm>流程图</shortnm>
+</function>

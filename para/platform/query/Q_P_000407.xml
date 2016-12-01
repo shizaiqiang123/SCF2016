@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000407</id>
+	<name>商品查询</name>
+	<desc>商品查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询商品主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.COLLATERAL_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>
+		sysTrxSts=M and sysLockFlag =F and selId = $selId$ and cntrctNo = $cntrctNo$ and buyerId = $buyerId$ and refNo = $poNo$
+		</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

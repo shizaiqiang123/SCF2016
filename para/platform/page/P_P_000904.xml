@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.GOODS_INOUT_M</maintable>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000904</id>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/dispatchNote/godownMortgagedOut.jsp</jspfile>
+    <logicid>L_P_000608</logicid>
+</page>

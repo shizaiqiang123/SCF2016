@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000570</id>
+	<name>客户查询</name>
+	<desc>客户查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询融资主表</desc>
+		<component>componentClass</component>
+		<tablename>LoanE a,IntM b </tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,payIntTp,ttlLoanBal,loanRt,loanValDt,currInt,payIntAmt,payPrinAmt,pmtAmt,intAmt</fields>
+		<condition>a.id.sysRefNo = b.theirRef and a.sysTrxSts='T' and a.sysLockFlag ='T' and a.sysLockBy = '$sysLockBy$' and a.cntrctNo = '$cntrctNo$' and a.busiTp = '6'</condition>
+		<orderby>a.loanDueDt</orderby>
+		<asc>Y</asc>
+		<sql>select a.id.sysRefNo,a.payIntTp,a.ttlLoanBal,a.loanRt,a.loanValDt,b.currInt,a.payIntAmt,a.payPrinAmt,a.pmtAmt,a.intAmt from LoanE a,IntM b</sql>
+	</qnode>	
+</query>

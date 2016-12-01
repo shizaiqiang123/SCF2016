@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00002</id>
+	<workid>303</workid>
+	<workname>新建平台用户</workname>
+	<name>新建平台用户申请</name>
+	<desc>新建平台用户申请流程</desc>
+	<jspath>W_P_00002.js</jspath>
+</workflow>

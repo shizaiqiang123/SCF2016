@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000005</id>
+	<name>附件</name>
+	<desc>附件</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>word</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>测试附件.doc</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!--自定义逻辑 -->
+	<reformatclass></reformatclass>	
+</template>

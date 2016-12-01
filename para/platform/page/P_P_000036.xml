@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000036</id>
+	<index>1</index>
+	<name>预付类-融资申请订单查询页面</name>
+	<desc>查询页面</desc>
+	<jspfile>screen/PORegist/poLoanLookUp.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000036</queryid>
+	<!--<logicid>L00000002</logicid>
+	<gapi>G00000001</gapi>
+	<service>S00000002</service>
+	<report>R00000002 </report>-->
+</page>

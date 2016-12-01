@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<desc>国内买方保理--争议登记</desc>
+	<id>L_P_000592</id>
+	<name>国内买方保理--争议登记</name>
+	<nodeSize>0</nodeSize>
+	<transforSize>0</transforSize>
+	<transfornode>
+		<id>N00000001</id>
+		<name>发票信息更新</name>
+		<desc>发票信息更新</desc>
+		<module>PARA</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>invc</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>dspDt,dspFlag,dspAmt,dspRsn,otherRsn,dspRef,invSts</fields>
+			<values>$dspDt$,$dspFlag$,$dspAmt$,$dspRsn$,$otherRsn$,$dspRef$,7</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_0000771.js</nodejs>
+	</transfornode>
+	
+</logicflow>

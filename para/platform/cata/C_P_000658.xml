@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000658</id>
+	<name>国内买方保理--贷项清单 查询协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内买方保理--贷项清单 查询协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M a,TRX.CNTRCT_SBR_M b</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" defaultvalue="" width = "200">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "16.66%" alis="cntrctNo">a.cntrct_No</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "16.66%" alis="sellerInstCd">a.seller_Inst_Cd</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "16.66%" alis="buyerNm">a.buyer_Nm</field>
+		<field datatype="1" title="供应商名称" hidden="" width = "16.66%" alis="selNm">b.sel_Nm</field>
+		<field datatype="1" title="业务类别" hidden="" width = "16.66%" formatter="busiTypeFormater" alis="busiTp">a.busi_Tp</field>
+		<field datatype="1" title="币种" hidden="" width = "16.66%" formatter="ccyFormater" alis="lmtCcy">a.lmt_Ccy</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "25%" alis="sysRefNo">a.sys_Ref_No</field>
+		<field datatype="1" title="供应商编号" hidden="true" width = "25%" alis="selId">b.sel_Id</field>
+		<field datatype="1" title="核心企业编号" hidden="true" width = "25%" alis="buyerId">a.buyer_Id</field>
+		<field datatype="1" title="额度余额" hidden="true" width = "25%" alis="lmtBal">a.lmt_Bal</field>
+		<field datatype="1" title="单据处理费" hidden="true" width = "25%" alis="billAmt">a.bill_Amt</field>
+		<field datatype="1" title="转让费率" hidden="true" width = "25%" alis="transChgrt">a.trans_Chgrt</field>
+	</select>
+	<join>
+		<on seq="1">a.sys_Ref_No = b.cntrct_No</on>
+	</join>
+	<condition><![CDATA[a.cntrct_No like '%$cntrctNo$%' and a.buyer_Nm like '%$buyerNm$%' and a.sys_Trx_Sts = 'M' and a.sys_Lock_Flag = 'F' and a.lmt_Due_Dt >= TO_DATE('$sysCurrentDate$','yyyy-mm-dd HH24:mi:ss') and a.lmt_Valid_Dt <= TO_DATE('$sysCurrentDate$','yyyy-mm-dd HH24:mi:ss') and a.busi_Tp = 8 and a.ar_Aval_Loan > 0 and a.sys_Org_Id=$sysOrgId$ and b.sys_Org_Id=$sysOrgId$]]></condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

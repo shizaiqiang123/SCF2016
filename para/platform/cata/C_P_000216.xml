@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+	<id>C_P_000216</id>
+
+	<name>融资平台查询Catalog</name>
+
+	<MODULE>SYST</MODULE>
+
+	<jspfile>screen/catalog.jsp</jspfile>
+
+	<DESC>融资平台查询Catalog</DESC>
+
+	<tablename>TRX.LOAN_M</tablename>
+
+	<search>
+		<field datatype="1" title="融资编号" defaultvalue="" width="200">invcLoanId</field>
+		<!-- <field datatype="1" title="操作类型" defaultvalue="" width = "200">modestepId</field> -->
+		<field datatype="3" title="开始日期" defaultvalue="" width="200">startDate</field>
+		<field datatype="3" title="结束日期" defaultvalue="" width="200">endDate</field>
+	</search>
+
+
+	<select>
+		<field datatype="1" title="交易日期" hidden="" width="100" formatter="dateFormater">sysOpTm</field>
+		<field datatype="1" title="授信客户编号" hidden="" width="100" >selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width="100" >selNm</field>
+		<field datatype="1" title="融资金额" hidden="" width="100" formatter="ccyFormater">ttlLoanAmt</field>
+		<field datatype="1" title="融资余额" hidden="" width="100" formatter="ccyFormater">ttlLoanBal</field>
+		<!--<field datatype="1" title="function_Id" hidden="" width = "200" alis="sysFuncId">a.sys_Func_Id</field> -->
+		<field datatype="1" title="融资编号" defaultvalue="" width="100" >sysRefNo</field>
+		<!-- <field datatype="1" title="操作类型" defaultvalue="" width = "200" alis="modestepId">modestepId</field> -->
+		<!-- <field datatype="1" title="应收账款融资金额" hidden="" width="200" alis="invLoanBal">a.inv_Loan_Bal</field>-->
+		<field datatype="1" title="融资起始日" hidden="" width="150" formatter="dateFormater">loanValDt</field>
+		<field datatype="1" title="融资到期日" hidden="" width="150" formatter="dateFormater">loanDueDt</field>
+		<field datatype="1" title="利率" hidden="" width="100">loanRt</field>
+
+	</select>
+	<condition><![CDATA[sysRefNo like %$invcLoanId$% and sysOpTm>=$startDate$ and sysOpTm<=$endDate$ and sysBusiUnit =$sysBusiUnit$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

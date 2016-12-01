@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000315</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>供应商信息查询报表</DESC>
+	<tablename>TRX.CUST_BUYER</tablename>
+	<search>
+		<field datatype="1" title="营业执照" hidden="" width="100">licenceNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="营业执照" hidden="" width="300">licenceNo</field>
+		<field datatype="1" title="公司编号" hidden="true" width="300">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes</field>
+	</select>
+	<join>
+	</join>
+	<condition><![CDATA[buyerId =$sysUserOwnerId$  and  sysBusiUnit=$sysBusiUnit$]]></condition>
+	<orderby>licenceNo</orderby>
+</catalog>

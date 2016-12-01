@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000018</id>
+	<name>质物入库的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>质物入库的协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="流水号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="sysEventTimes" hidden="true" width = "100">sysEventTimes</field>
+		<field datatype="1" title="质押率" hidden="true" width = "100">pldPerc</field>
+		<field datatype="1" title="授信额度币别" hidden="true" width = "100">lmtCcy</field>
+		<field datatype="1" title="授信额度余额" hidden="true" width = "100">lmtBal</field>
+		<field datatype="1" title="业务类型" hidden="true" width = "100">busiTp</field>
+		<field datatype="1" title="监管id" hidden="true" width = "100">patnerId</field>
+		<field datatype="1" title="监管名称" hidden="true" width = "100">patnerNm</field>
+		<field datatype="1" title="仓库id" hidden="true" width = "100">storageId</field>
+		<field datatype="1" title="仓库名称" hidden="true" width = "100">storageNm</field>
+		<field datatype="1" title="仓库地址" hidden="true" width = "100">storageAdr</field>
+		<field datatype="1" title="仓库联系人" hidden="true" width = "100">contactNm</field>
+		<field datatype="1" title="库存价值" hidden="true" width = "100">ttlRegAmt</field>
+	</select>
+	<condition><![CDATA[cntrctNo like %$cntrctNo$% and selNm like %$selNm$% and (busiTp= 4 or busiTp= 5) and sysLockFlag = F and sysTrxSts = M and lmtValidDt <= $sysCurrentDate$ and lmtDueDt >= $sysCurrentDate$ and sysOrgId=$sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

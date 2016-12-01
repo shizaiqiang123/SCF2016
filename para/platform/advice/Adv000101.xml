@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的还款登记业务，平台已查收到还款资金，对您的这笔还款已经进行了销账处理。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000101</id>
+    <title>还款成功通知</title>
+    <remindtp>1</remindtp>
+    <name>自动核销成功(站内信)</name>
+    <senddt>2015-09-21</senddt>
+    <js>AD0000010.js</js>
+</advice>

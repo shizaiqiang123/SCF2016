@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000037</id>
+    <name>预付类协议到期，预警放货出库</name>
+    <component>batchCrtfOutAlarmProcessor</component>
+    <desc>alarm</desc>
+    <trxdatapara>
+    	<para>15</para>
+    </trxdatapara>
+    <type>E</type>
+    <singlethread>Y</singlethread>    
+</task>

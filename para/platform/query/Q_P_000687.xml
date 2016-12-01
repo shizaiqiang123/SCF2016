@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000687</id>
+	<name>根据客户id查询客户名称（用户信息）</name>
+	<desc>根据客户id查询客户名称（用户信息）</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+	</qnode>	
+</query>

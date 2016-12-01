@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_S_000305</id>
+	<name>短信发送</name>
+	<desc>短信发送</desc>
+	<type>S</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>Message</target>
+</inqdata>
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" 
+	  xmlns="http://www.mulesoft.org/schema/mule/core" 
+	  xmlns:ws="http://www.mulesoft.org/schema/mule/ws"
+	  xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
+	  xmlns:vm="http://www.mulesoft.org/schema/mule/vm" 
+	  xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.5.0" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+	http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+	http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+	http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+	http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+	http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <custom-transformer class="com.ut.scf.mule.transformer.StringToFileTrasnformer" name="StringToFile" doc:name="Java"/>
+	<ws:consumer-config name="Web_Service_Consumer" wsdlLocation="wsdl/hello.wsdl" service="EchoServiceImplService" 
+						port="EchoServiceImplPort" serviceAddress="http://localhost:8080/CXFWeb/webservices/HelloWorld"/>
+    <flow name="sendWebServiceRequestFlow1" doc:name="sendWebServiceRequestFlow1">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="SendWebService" doc:name="WebServiceConnector"/>
+        <custom-filter class="com.ut.test.filter.MuleESBLogFilter" doc:name="Custom"/>
+        <component class="com.ut.scf.mule.message.webservice.MuleSendWebServiceMsgImpl"></component>
+    </flow>
+    
+     <flow name="sendFileService" >
+        <vm:inbound-endpoint exchange-pattern="request-response" path="outgoing file"/>
+        <custom-filter class="com.ut.test.filter.MuleESBLogFilter" doc:name="Custom"/>
+        <file:outbound-endpoint path="D:\Temp\Test\Output3" outputPattern="#[function:datestamp-yy-MM-dd]-#[function:systime].xml" responseTimeout="10000"/>
+    </flow>
+
+</mule>

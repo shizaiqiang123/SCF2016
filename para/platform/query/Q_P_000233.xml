@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000233</id>
+	<name>业务费率查询</name>
+	<desc>业务费率查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<tablename>STD.STD_RT</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[custLevel = $custLevel$ and finaTp = $finaTp$ and busiTp = $busiTp$ and feeOrIntr = 1 and acctPeriod >=$acctPeriod$ ]]></condition>
+		<orderby>acctPeriod</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

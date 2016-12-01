@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_10000002</id>
+	<name>菜单信息</name>
+	<desc>菜单信息页面</desc>
+	<jspfile>jsp/sys/MenuManage.jsp</jspfile>
+	<jsfile>js/sys/MenuManage.js</jsfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable>STD.STD_MENU_INFO</maintable>	
+</page>

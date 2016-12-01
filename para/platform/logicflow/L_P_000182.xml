@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000182</id>
+    <name>修改密码锁表</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+      <lnode>
+		<id>N00000001</id>
+		<name>修改密码锁表</name>
+		<desc>修改密码锁表</desc>
+		<module>PARA</module>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.USER_INFO_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<condition>sysRefNo = $sysRefNo$</condition>
+		<nodejs>L_P_000040.js</nodejs>
+    </lnode>
+</logicflow>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000109</id>
+	<name>应收账款查询</name>
+	<desc>应收账款查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<!-- <condition>buyerId = $buyerId$  and selId=$selId$ and cntrctNo = $cntrctNo$ and   invBal >0 and sysLockFlag = F and sysTrxSts = M and invLoanBal = 0 and invSts=1</condition> -->
+		<condition>invNo = $invNo$ and buyerId = $buyerId$ and selId=$selId$ and cntrctNo = $cntrctNo$ and invLoanBal = 0 and invBal >0 and (sysLockFlag = F or sysLockBy = $sysRefNo$) and sysTrxSts = M  and invSts=4</condition>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>	
+</query>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000200</id>
+	<name>查询保理商可修改的Function</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component> 
+		<tablename>STD.std_menu_info</tablename>
+		<doname>doname</doname>
+		<type>S</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc></asc>
+		<sql><![CDATA[SELECT a FROM StdMenuInfo a WHERE a.menuTp <= 4 AND a.isparent='N' AND menuId like ?  AND menuName like ? AND a.menuId IN ( SELECT b.perId FROM StdProductPromission b WHERE b.productId IN ( SELECT c.productId FROM FactorProduct c WHERE c.factorId = ( SELECT d.sysRefNo FROM CustM d WHERE d.custTp = 'F' AND d.busiUnit= ?)))]]></sql>
+		<params>%$menuId$%,%$menuName$%,$busiUnit$</params>
+	</qnode>
+</query>

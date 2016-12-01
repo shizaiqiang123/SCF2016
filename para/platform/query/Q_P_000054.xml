@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000054</id>
+	<name>国内保理-卖方还款 融资信息查询</name>
+	<desc>国内保理-卖方还款 融资信息查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询融资表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LOAN_E</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[sysRefNo=$loanId$ and sysTrxSts=T]]></condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

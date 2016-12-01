@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000220</id>
+	<name>手工注销-查询融资look up</name>
+	<desc>手工注销-查询融资look up</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000942</target>
+</inqdata>

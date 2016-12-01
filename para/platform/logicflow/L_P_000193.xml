@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>账户资金划转</desc>
+    <id>L_P_000193</id>
+    <name>账户资金划转</name>
+    <lnode>
+        <desc>修改表</desc>
+        <nodeName>lnode</nodeName>
+        <type>S</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+         <sql>update BalanceoutM set remark=? where sysRefNo = ?</sql>
+        <params>$message$,$sysRefNo$</params>
+        <component>TrxEditRecord</component> 
+        <tablename>trx.BALANCEOUT_M</tablename>
+        <name>修改表</name>
+        <cascadeevent>N</cascadeevent>
+    </lnode>
+</logicflow>

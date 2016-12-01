@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000079</id>
+    <desc>客户等级维护小页</desc>
+    <name>客户等级维护小页</name>
+    <type>P</type>
+        <target>P_P_000222</target>
+    <propertyBean>false</propertyBean>
+</inqdata>

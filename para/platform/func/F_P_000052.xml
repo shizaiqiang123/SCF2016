@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000052</id>
+	<module>复核质物入库</module>
+	<name>复核质物入库</name>
+	<desc>复核质物入库</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000021</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核订单</name>
+		<desc>订单复核页面</desc>
+	</page>
+</function>

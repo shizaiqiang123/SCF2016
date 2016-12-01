@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<desc>找回密码页面</desc>
+	<transaction>false</transaction>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<refsSize>0</refsSize>
+	<id>P_P_000206</id>
+	<queryid>Q_P_000222</queryid>
+	<maincomp>trxMasterManager</maincomp>
+	<name>找回密码页面</name>	
+	<jspfile>jsp/user/FindPassword.jsp</jspfile>
+</page>

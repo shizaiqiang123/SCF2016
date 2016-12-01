@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000627</id>
+	<name>订单录入</name>
+	<desc>订单录入</desc>
+	<module>订单录入</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>COLLAT REG</name>
+		<desc>COLLAT REG</desc>
+		<module>COLLAT</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.COLLATERAL_M</tablename>
+		<doname>COLLAT</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>refNo =?</condition>
+		<params>refNo</params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+</logicflow>

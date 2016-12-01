@@ -1,0 +1,136 @@
+.l-icon{ width:16px; height:16px; overflow:hidden;}
+.l-icon-add {
+    background:url('../images/tlbars/btn_add.gif') no-repeat ;
+}
+.l-icon-modify {
+    background:url('../images/tlbars/btn_upd.gif') no-repeat ;
+}
+.l-icon-delete {
+    background:url('../images/tlbars/btn_del.gif') no-repeat ;
+}
+.l-icon-query {
+    background:url('../images/tlbars/btn_qry.gif') no-repeat ;
+}
+.l-icon-save {
+    background:url('../images/tlbars/btn_save.gif') no-repeat ;
+}
+.l-icon-print {
+    background:url('../images/tlbars/btn_print.gif') no-repeat ;
+}
+.l-icon-back {
+    background:url('../images/tlbars/btn_back.gif') no-repeat ;
+}
+.l-icon-appr {
+    background:url('../images/tlbars/btn_appr.gif') no-repeat ;
+}
+.l-icon-saveall {
+    background:url('../images/btns/btn-saveall.gif') no-repeat ;
+}
+.l-icon-home{
+    background:url('../images/tlbars/btn_home.gif') no-repeat ;
+}
+.l-icon-logout{
+    background:url('../images/tlbars/btn-logout.gif') no-repeat ;
+}
+.l-icon-chgpwd{
+    background:url('../images/tlbars/btn-pwd.gif') no-repeat ;
+}
+.l-icon-download{
+    background:url('../images/tlbars/btn-down.gif') no-repeat ;
+}
+.l-icon-help{
+    background:url('../images/tlbars/btn_help.png') no-repeat ;
+}
+.l-icon-helps{
+    background:url('../images/tlbars/btn-help.gif') no-repeat ;
+}
+.l-icon-into{
+    background:url('../images/tlbars/btn_into.gif') no-repeat ;
+}
+.l-icon-ok{
+    background:url('../images/tlbars/btn_ok.png') no-repeat ;
+}
+.l-icon-cancel{
+    background:url('../images/tlbars/btn_close.gif') no-repeat ;
+}
+.l-icon-close{
+    background:url('../images/tlbars/btn_cancel.png') no-repeat ;
+}
+.l-icon-setting{
+    background:url('../images/tlbars/btn_setting.gif') no-repeat ;
+}
+.panel-home {
+	background:url('../images/tlbars/btn_home.gif') no-repeat ;
+}
+.panel-appr {
+	background:url('../images/panel/panel-appr.gif') no-repeat ;
+}
+.panel-del {
+	background:url('../images/panel/panel-del.gif') no-repeat ;
+}
+.panel-notify {
+	background:url('../images/panel/panel-notify.gif') no-repeat ;
+}
+.tree-cl-share {
+	background:url('../images/cl/share.gif') no-repeat ;
+}
+.tree-cl-noshare {
+	background:url('../images/cl/noshare.gif') no-repeat ;
+}
+.l-icon-btn {
+    background:url('../images/btns/btn-column.gif') no-repeat ;
+}
+.l-icon-money {
+    background:url('../images/btns/btn-money.gif') no-repeat ;
+}
+.l-icon-uptop {
+    background:url('../images/home/uptop.png') no-repeat ;
+    background-position:top center; 
+    _background:url('../images/home/uptop.gif') no-repeat top center;
+   
+}
+.l-icon-downbottom {
+    background:url('../images/home/downbottom.png') no-repeat ;
+    background-position:top center;
+    _background:url('../images/home/downbottom.gif') no-repeat top center;
+}
+.l-icon-publish {
+    background:url('../images/home/publish.png') no-repeat ;
+    background-position:top center; 
+    _background:url('../images/home/publish.gif') no-repeat top center;
+    
+}
+.l-icon-flowend {
+    background:url('../images/workflow/1616/end16x16.png') no-repeat ;
+}
+.l-icon-flowstart {
+    background:url('../images/workflow/1616/start16x16.png') no-repeat ;
+}
+.l-icon-human {
+    background:url('../images/workflow/1616/formtask16x16.png') no-repeat ;
+}
+.l-icon-autotask {
+    background:url('../images/workflow/1616/interf16x16.png') no-repeat ;
+}
+.l-icon-filelist-xls {
+    background:url('../images/file/xls.png') no-repeat  15px 1px;
+}
+.l-icon-filelist-pdf {
+    background:url('../images/file/pdf.png') no-repeat  15px 1px;
+}
+.l-icon-filelist-doc {
+    background:url('../images/file/doc.png') no-repeat  15px 1px;
+}
+.l-icon-filelist-txt {
+    background:url('../images/file/txt.png') no-repeat  15px 1px;
+}
+.l-icon-filelist-img {
+    background:url('../images/file/img.png') no-repeat  15px 1px;
+}
+.l-icon-filelist-add {
+    background:url('../images/file/fadd.png') no-repeat 15px 1px;
+    
+}
+.l-icon-filelist-html {
+    background:url('../images/file/html.png') no-repeat  15px 1px;
+}

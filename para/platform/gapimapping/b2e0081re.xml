@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh-CN">
+	<head>
+		<termid path="trxDom">termid</termid>
+		<trnid path="trxDom">sysRefNo</trnid>
+		<custid path="trxDom">custid</custid>
+		<cusopr path="trxDom">cusopr</cusopr>
+		<trncod type="v">b2e0081</trncod>
+		<token path="trxDom">token</token>
+	</head>
+	<trans>
+		<trn-b2e0081-rq>
+			<b2e0081-rq>
+				<acrcpayment>
+					<relatedref path="trxDom">sysRefNo</relatedref>
+					<applyflg type="v">1</applyflg>
+					<applid path="trxDom">bankId</applid>
+					<erpid path="trxDom"></erpid>
+					<branchid type="v">06042</branchid>
+					<pmtamt path="trxDom" formattor="amt:16,2">invAmt</pmtamt>
+					<pmtacno></pmtacno>
+					<fribkn></fribkn>
+					<pmtflg></pmtflg>
+					<custremark></custremark>
+					<pmttype type="v">2</pmttype>
+				</acrcpayment>
+				<circlenum path="trxDom/payment">_total_rows</circlenum>
+				<payment loop="true" path="trxDom/payment">
+					<invref></invref>
+					<invno path="trxDom/payment">invNo</invno>
+					<pmtamt path="trxDom/payment" formattor="amt:16,2">invAmt</pmtamt>
+					<sellerid path="trxDom">bankId</sellerid>
+					<sellererpid></sellererpid>
+					<settacno></settacno>
+				</payment>
+			</b2e0081-rq>
+		</trn-b2e0081-rq>
+	</trans>
+</bocb2e>

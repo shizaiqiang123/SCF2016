@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000241</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/supplier/supplier.jsp</jspfile>
+	<DESC>注册申请打回处理</DESC>
+	<tablename>TRX.CUST_E</tablename>
+	<search>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+		<field datatype="1" title="营业执照号码" defaultvalue="" width = "200">licenceNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="营业执照号码" hidden="" width = "300">licenceNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "350">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "350">custNm</field>
+		<field datatype="1" title="机构代码" hidden="true" width = "333">custInstCd</field>
+		<field datatype="1" title="交易批次" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="交易功能" hidden="true" width = "200">sysFuncId</field>
+	</select>
+	<condition><![CDATA[sysLockFlag <>T and licenceNo like %$licenceNo$% and sysRefNo like %$sysRefNo$% and custNm like %$custNm$% and sysTrxSts=S and sysFuncId=F_P_000324]]></condition>
+	<orderby>licenceNo,custNm</orderby>
+</catalog>

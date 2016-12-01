@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000085</id>
+    <desc>审核插入acno</desc>
+    <name>审核插入acno</name>
+    <type>L</type>
+    <target>L_P_000178</target>
+</inqdata>

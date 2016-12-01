@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000563</id>
+	<name>动产质押-质物出库逻辑流</name>
+	<desc>动产质押-质物出库逻辑流</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxEditDoRecord</component>
+		<tablename>TRX.INVE_DETAILS_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<condition>refNo=?</condition>
+		<params>refNo</params>
+		<doname>crtf</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST4</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.COLLAT_CH_M</tablename>
+		<fields></fields>
+		<doname>crtf</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>releaseDt,collatOutQty,loanFlag</fields>
+			<values>$releaseDt$,$collatOutQty$,0</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000005.js</nodejs>
+	</transfornode> 
+	<transfornode>
+		<id>N00000003</id>
+		<name>更新协议主表</name>
+		<desc>更新库存价值总额</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>ttlRegAmt</fields>
+			<values>$ttlRegAmt$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000056N00000006.js</nodejs>
+	</transfornode>	
+	<!--  <transfornode>
+		<id>N00000003</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST4</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CRTF_REG_M</tablename>
+		<fields></fields>
+		<doname>crtf</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,ttlRegAmt</fields>
+			<values>F,$ttlRegAmt$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000005.js</nodejs>
+	</transfornode>
+	 -->
+</logicflow>

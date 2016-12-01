@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_000005</id>
+	<module>新增部门信息</module>
+	<name>新增部门</name>
+	<desc>部门管理-新增部门</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_000004</id>
+		<index>0</index>
+		<name>新增部门</name>
+		<desc>新增部门页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

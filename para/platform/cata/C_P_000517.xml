@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000517</id>
+	<name>存货类融资明细查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>存货类融资明细查询Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>
+	<search>
+		<field datatype="1" title="卖方名称" defaultvalue="" width="100">selNm
+		</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width="100">cntrctNo
+		</field>
+		<field datatype="1" title="融资最小金额" defaultvalue="" width="100">loanMinAmt
+		</field>
+		<field datatype="1" title="融资最大金额" defaultvalue="" width="100">loanMaxAmt
+		</field>
+		<field datatype="3" title="融资开始日期" defaultvalue="" width="100">loanStartDt
+		</field>
+		<field datatype="3" title="融资结束日期" defaultvalue="" width="100">loanEndDt
+		</field>
+		<field datatype="11" title="融资支付方式" defaultvalue="" width="100">loanTp
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="融资编号" hidden="" width="12.5%" alis="sysRefNo">sysRefNo
+		</field>
+		<field datatype="1" title="协议编号" hidden="" width="12.5%" alis="cntrctNo">cntrctNo
+		</field>
+		<field datatype="1" title="卖方客户名称" hidden="" width="12.5%" alis="selNm">selNm
+		</field>
+		<field datatype="1" title="融资支付方式" hidden="" width="12.5%" alis="loanTp" formatter="loanTpFormter">loanTp
+		</field>
+		<field datatype="1" title="融资币别" hidden="true" width="12.5%" alis="ccy">ccy
+		</field>
+		<field datatype="1" title="融资金额" hidden="" width="12.5%" alis="ttlLoanAmt" formatter="ccyFormater">ttlLoanAmt
+		</field>
+		<field datatype="1" title="融资余额" hidden="" width="12.5%" alis="ttlLoanBal" formatter="ccyFormater">ttlLoanBal
+		</field>
+		<field datatype="1" title="融资日期" hidden="" width="12.5%" formatter="dateFormater" alis="loanValDt">loanValDt
+		</field>
+		<field datatype="1" title="融资到期日" hidden="" width="12.5%" formatter="dateFormater" alis="loanDueDt">loanDueDt
+		</field>
+		<!-- <field datatype="1" title="流水号" hidden="true" width = "130" alis = "sysRefNo">sysRefNo</field> -->
+		<field datatype="1" title="FunctionId" hidden="true" width = "130" alis = "sysFuncId">sysFuncId</field>
+		<field datatype="1" title="EventTimes" hidden="true" width = "130" alis = "sysEventTimes">sysEventTimes</field>
+	</select>
+	<!-- <join>
+		<on seq="1"> a.buyer_id = b.SYS_REF_NO</on>
+		<on seq="2"> a.sel_id = c.SYS_REF_NO</on>
+	</join> -->
+	<condition><![CDATA[selNm like %$selNm$% and loanTp like %$loanTp$% and cntrctNo like %$cntrctNo$% and ttlLoanAmt >= $loanMinAmt$ and ttlLoanAmt <= $loanMaxAmt$ and loanValDt >= $loanStartDt$ and loanDueDt <= $loanEndDt$  and (busiTp = 4) and sysTrxSts = M and sysLockFlag = F and sysOrgId like $sysOrgId$%]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

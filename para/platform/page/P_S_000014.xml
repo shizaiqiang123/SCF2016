@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000014</id>
+	<name>通知信息</name>
+	<desc>通知详细信息页面</desc>
+	<jspfile>jsp/sys/SYS_AdviceList.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>	
+	<istransaction>Y</istransaction>
+	<maintable>STD.ADVICE_DETAIL</maintable>
+	<!-- <logicid>L_S_000001</logicid> -->
+</page>

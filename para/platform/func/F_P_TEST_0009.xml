@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_TEST_0009</id>
+	<module>Test</module>
+	<name>地图测试</name>
+	<desc>地图测试</desc>
+	<functype>PM</functype>
+	<page>
+		<id>P_P_TEST_0003</id>
+		<index>0</index>
+		<name>筛选客户</name>
+		<desc>筛选客户以进入交易</desc>
+	</page>
+</function>

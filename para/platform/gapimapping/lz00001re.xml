@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XERP>
+	<HEAD>
+		<BATCH_NO type="v">1234567</BATCH_NO>
+		<BIZCODE type="v">8370</BIZCODE>
+	</HEAD>
+	<BODY>
+		<ACC_NO path="trxDom">custAcNo</ACC_NO>
+	</BODY>
+</XERP>

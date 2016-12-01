@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_TEST_0003</id>
+	<module>国内保理业务</module>
+	<name>审核国内保理业务</name>
+	<desc>审核国内保理业务功能</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P00000015</id>
+		<index>0</index>
+		<name>筛选条件</name>
+		<desc>筛选记录以进入交易</desc>
+		<catalog>C_P_TEST_0001</catalog>
+	</page>
+	<page>
+		<id>P00000014</id>
+		<index>1</index>
+		<name>交易信息</name>
+		<desc>主交易信息</desc>
+	</page>
+<!-- 	<page>
+		<id>P00000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page> -->
+</function>

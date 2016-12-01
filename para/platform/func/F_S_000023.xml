@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_000023</id>
+	<module>查询通知</module>
+	<name>查询通知</name>
+	<desc>查询通知</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_S_000005</catalog>
+	</page>
+	<page>
+		<id>P_S_000013</id>
+		<index>0</index>
+		<name>查询通知</name>
+		<desc>查询通知页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page>
+</function>

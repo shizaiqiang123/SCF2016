@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_10000003</id>
+	<module>菜单管理</module>
+	<name>菜单管理</name>
+	<desc>菜单管理功能</desc>
+	<page>
+		<id>P10000004</id>
+		<index>0</index>
+		<name>公司信息</name>
+		<desc>公司信息页面</desc>
+	</page>	
+	<page>
+		<id>P10000005</id>
+		<index>1</index>
+		<name>公司信息子页面</name>
+		<desc>公司信息子页面</desc>
+	</page>
+</function>

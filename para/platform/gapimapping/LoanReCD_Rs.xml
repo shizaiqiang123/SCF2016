@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<coreReturnCode path="Message/Message_Body">coreReturnCode</coreReturnCode>
+	<coreReturnMsg path="Message/Message_Body">coreReturnMsg</coreReturnMsg>
+	<cus_id path="Message/Message_Body">cus_id</cus_id>
+	<cus_name path="Message/Message_Body">cus_name</cus_name>
+	<cont_no path="Message/Message_Body">cont_no</cont_no>
+	<loan_account path="Message/Message_Body">loan_account</loan_account>
+	<bill_no path="Message/Message_Body">bill_no</bill_no>
+	<apply_amount path="Message/Message_Body">apply_amount</apply_amount>
+	<zutseq path="Message/Message_Body">zutseq</zutseq>
+	<REMARK1 path="Message/Message_Body">REMARK1</REMARK1>
+	<REMARK2 path="Message/Message_Body">REMARK2</REMARK2>
+	<REMARK3 path="Message/Message_Body">REMARK3</REMARK3>
+</trxDom>

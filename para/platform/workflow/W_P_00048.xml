@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00048</id>
+	<workid>1307</workid>
+	<workname>invcCbkPool</workname>
+	<name>池融资_反转让</name>
+	<desc>池融资_反转让</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

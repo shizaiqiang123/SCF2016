@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000018</id>
+	<name>审核融资申请</name>
+	<desc>融资申请审核页面</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>RE</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable>TRX.LOAN_M</maintable>
+</page>

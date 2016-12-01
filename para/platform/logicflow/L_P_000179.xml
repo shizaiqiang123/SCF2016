@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000179</id>
+	<name>还款自动核销自动处理逻辑流</name>
+	<desc>还款自动核销自动处理逻辑流</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.CUST_AC</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+<!-- 		<nodejs>L_P_000045.js</nodejs> -->
+		<nodejs>L_P_000037.js</nodejs>
+	</lnode> 
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST1</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.FEE_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_P_000046.js</nodejs>
+	</lnode> 
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname></doname>
+		<fields>openLoanAmt</fields>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+<!-- 			<fields>sysLockFlag</fields> -->
+<!-- 			<values>T</values> -->
+		</pending>
+		<release>
+			<fields>openLoanAmt</fields>
+			<values>$openLoanAmt$</values>
+		</release>
+		<nodejs>L_S_000003.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<fields>sysLockFlag,finaSts,ttlLoanBal,pmtTimes,intAmt</fields>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+<!-- 			<fields>sysLockFlag</fields> -->
+<!-- 			<values>T</values> -->
+		</pending>
+		<release>
+			<fields>sysLockFlag,finaSts,ttlLoanBal,pmtTimes,intAmt</fields>
+			<values>F,$finaSts$,$ttlLoanBal$,$pmtTimes$,$ttlIntAmt$</values>
+		</release>
+		<nodejs>L_P_000038.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.PMT_M</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+<!-- 			<fields>sysLockFlag</fields> -->
+<!-- 			<values>T</values> -->
+		</pending>
+		<release>
+			<fields>pmtSts,theirRef</fields>
+			<values>$pmtSts$,$theirRef$</values>
+		</release>
+		<nodejs>L_P_000043.js</nodejs>
+	</transfornode>
+</logicflow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000189</id>
+	<name>adivce 页面</name>
+	<desc>adivce 页面</desc>
+	<jspfile>jsp/para/Advice_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>advice</maintable>
+	<logicid>L_P_000147</logicid>
+</page>

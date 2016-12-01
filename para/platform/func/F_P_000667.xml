@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <desc>新增会计科目</desc>
+    <id>F_P_000667</id>
+    <name>新增会计科目</name>
+    <functype>PA</functype>
+    <page>
+        <id>P_P_000822</id>
+        <pagetype>paraAdd</pagetype>
+    </page>
+    <page>
+        <desc>交易成功或失败</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000003</id>
+        <name>交易结果页面</name>
+        <index>2</index>
+    </page>
+</function>

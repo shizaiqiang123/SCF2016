@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000070</id>
+	<name>发货通知Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>发货通知Catalog</DESC>
+	<tablename>TRX.LOAN_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="放款编号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "100">buyerNm</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "250" >cntrctNo</field>
+		<field datatype="1" title="放款编号" hidden="" width = "250" >sysRefNo</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "250" >buyerNm</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250" >selNm</field>
+		<field datatype="1" title="" hidden="true" width = "150" >sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "150" >ccy</field>
+		<field datatype="1" title="" hidden="true" width = "150" >ttlLoanBal</field>
+		<field datatype="1" title="" hidden="true" width = "150" >loanValDt</field>
+		<field datatype="1" title="" hidden="true" width = "150" >loanDueDt</field>
+		<field datatype="1" title="" hidden="true" width = "150" >marginBal</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and cntrctNo like %$cntrctNo$% and buyerNm like %$buyerNm$% and selNm like %$selNm$%  and  and busiTp=1 and  sysLockFlag = F and  sysTrxSts = M  ]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

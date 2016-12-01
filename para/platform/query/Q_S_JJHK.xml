@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_S_JJHK</id>
+	<name>卖方还款账号</name>
+	<desc>卖方还款账号</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>cntrctNo = $invNo$ and invBal > 0  and sysLockFlag=F and sysTrxSts=M</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+	</qnode>	
+</query>

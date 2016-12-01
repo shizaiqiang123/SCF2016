@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_000009</id>
+	<name>查询批处理</name>
+	<desc>查询批处理</desc>
+	<jspfile>jsp/sys/SYS_Batchs.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<!-- <maintable>STD.SOD_EOD</maintable> -->
+</page>

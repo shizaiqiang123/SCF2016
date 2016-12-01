@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+    <id>s2b1002</id>
+    <msgtype>XERP_WS_C</msgtype><!-- 表示为对接短信平台的消息BLZW -->
+    <name>查询放款</name>
+    <modle>SYNC</modle><!-- 接口通信模式,同步(SYNC)或异步(ASYNC) -->
+    <ack>N</ack><!-- 接口交互模式,是否需要及时应答 -->
+    <characterset>GBK</characterset>
+    <sendtemp>s2b1002re</sendtemp><!-- 发送模版 -->
+    <receivetemp>s2b1002rs</receivetemp><!-- 接收模版 -->
+    <validateclass></validateclass><!-- 通信层验证 -->
+    <validatejs></validatejs>
+    <generator>gapiMsgManager</generator>
+    <msgstore>y</msgstore><!-- 重发使用 -->
+    <sendinterrupt>y</sendinterrupt><!-- 发送异常后中断当前操作-->
+    <receiveinterrupt>y</receiveinterrupt><!-- 接收异常后中断当前操作-->
+    <sendservice>XERP_WS_C</sendservice>
+    <receiveservice></receiveservice>
+    <onsuccess></onsuccess>
+    <onfailed></onfailed>
+    <gapiSts>1</gapiSts>
+</gapimsg>
+
+

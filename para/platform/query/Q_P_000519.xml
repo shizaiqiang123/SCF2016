@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000519</id>
+    <name>现货入库货物表查询</name>
+    <nodeSize>1</nodeSize>
+    <desc>现货入库货物表查询</desc>
+    <qnode>
+        <desc>look up 查询主表</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <tablename>TRX.INOUT_DETAILS</tablename>
+        <name>协议文本查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <condition>inoutRefNo = $inoutRefNo$  and sysTrxSts = P and sysLockBy= $inoutRefNo$</condition>
+    </qnode>
+</query>

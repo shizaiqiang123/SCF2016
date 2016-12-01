@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XERP>
+	<HEAD>
+		<BIZCODE type="v">1001</BIZCODE>
+<!-- 			<BATCH_NO type="v">334</BATCH_NO> -->
+		<BATCH_NO path="comm" formattor = "date:HHmmss" >sysOpTime</BATCH_NO>
+	</HEAD>
+	<BODY>
+		<ERP_INS_ID path="trxDom">sysRefNo</ERP_INS_ID>
+<!-- 		<PAYER_ID type="v">BL-ACC</PAYER_ID> -->
+		<PAYER_NO type="v">6209888384883</PAYER_NO>
+		<PAY_DATE path="trxDom" formattor = "date:yyyy-MM-dd">trxDt</PAY_DATE>
+		<ABSTRACT type="v">融资</ABSTRACT>
+<!-- 		<TR_TYPE type="v">T</TR_TYPE> -->
+		<AMOUNT path="trxDom" formattor = "amt:16,2">ttlLoanAmt</AMOUNT>
+<!-- 		<CURRENCY path="trxDom">ccy</CURRENCY> -->
+		<RECE_ACC_NO path="trxDom">selAcNoHD</RECE_ACC_NO>
+		<RECE_ACC_NAME path="trxDom">selAcNmHD</RECE_ACC_NAME>
+<!-- 		<REG_NO type="v">225000</REG_NO> -->
+<!-- 		<RECE_OPBANK_NO path="trxDom">selAcBkNm</RECE_OPBANK_NO> -->
+<!-- 		<RECE_OPBANK_NAME path="trxDom">selAcBkNm</RECE_OPBANK_NAME> -->
+<!-- 		<URGENT_FLAG type="v">N</URGENT_FLAG> -->
+	</BODY>
+</XERP>

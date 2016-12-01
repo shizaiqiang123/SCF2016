@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000035</id>
+	<name>QueryNode小页</name>
+	<desc>query页面中弹开QueryNode页面</desc>
+	<type>P</type>
+	<target>P_P_000147</target>
+</inqdata>

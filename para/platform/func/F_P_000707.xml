@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000707</id>
+	<module>应收账款池融资</module>
+	<name>在途删除保证金入池</name>
+	<desc>在途删除保证金入池</desc>
+	<functype>DP</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000706</catalog>
+	</page>
+	<page>
+		<desc>复核</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>Y</istransaction>
+		<id>P_P_000249</id>
+		<name>复核</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>Y</cascadeevent>
+		<pagetype>DELP</pagetype>
+	</page>
+	<workflow>W_P_00051</workflow>
+</function>

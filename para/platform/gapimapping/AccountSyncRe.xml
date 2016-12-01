@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+	</Message_Header>
+	<Message_Body>
+		<acNo path="trxDom">acNo</acNo>
+	</Message_Body>
+</Message>

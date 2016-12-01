@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000664</id>
+	<name>质物入库退回</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>质物入库复核</DESC>
+	<tablename>TRX.CRTF_REG_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="协议编号" hidden="" width = "25%">cntrctNo</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>	
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+		</select>
+	<condition>
+		 sysTrxSts = S and sysLockFlag = F  and id.sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and  (busiTp = 4 or busiTp = 5) and sysOrgId=$sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>
+
+
+

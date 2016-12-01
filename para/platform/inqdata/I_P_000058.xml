@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000058</id>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>L</type>
+    <name>保存工作流小页</name>
+	<desc>业务调整-function修改-保存工作流小页</desc>
+	<target>L_P_000157</target>
+</inqdata>

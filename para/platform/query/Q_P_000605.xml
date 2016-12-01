@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000605</id>
+    <qnode>
+        <desc>应收账款查询</desc>
+        <condition>trxId = $trxId$ and invNo = $invNo$ and busiTp =$busiTp$ and sysTrxSts = P and sysLockFlag = T </condition>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>componentClass</component>
+        <tablename>TRX.INVC_CBK_E</tablename>
+        <name>应收账款查询</name>
+        <orderby>id.sysRefNo</orderby>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+    </qnode>
+    <name>池融资-应收账款查询</name>
+    <nodeSize>1</nodeSize>
+</query>

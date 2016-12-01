@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>行业管理的查询</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000826</id>
+    <name>查询</name>
+    <jspfile>screen/industry/industryQuery.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>STD.STD_INDUSTRY</maintable>
+</page>

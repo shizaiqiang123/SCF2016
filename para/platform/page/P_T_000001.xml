@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_T_000001</id>
+	<name>look up 1页面</name>
+	<desc>look up 1页面</desc>
+	<jspfile>screen/ChildPage.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.T_FINA_M</maintable>
+</page>

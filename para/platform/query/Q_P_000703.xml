@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000703</id>
+	<nodeSize>0</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_GOODS_CATA</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent></cascadeevent>
+		<fields></fields>
+		<condition>goodsId like %$queryGoodsId$% and goodsNm like %$queryGoodsNm$% and sysTrxSts =M and sysLockFlag = F and goodsCataTp = 1</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql />
+	</qnode>
+</query>

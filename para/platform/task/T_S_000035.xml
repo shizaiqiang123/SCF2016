@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <desc>池融资下补充池水位预警</desc>
+    <type>E</type>
+    <id>T_S_000035</id>
+    <name>池融资下补充池水位预警</name>
+     <component>batchLzPoolLineDownAlarmProcessor</component>
+     <trxdatapara>
+        <para>15</para><!-- 逾期没用到 -->
+    </trxdatapara>
+    <singlethread>Y</singlethread> 
+</task>

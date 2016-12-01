@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000101</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>用户复核查询</DESC>
+	<tablename>STD.USER_INFO_E</tablename>
+	<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "300">userId</field>
+		<field datatype="1" title="用户名称" hidden="" width = "350">userNm</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "200">sysRefNo</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="用户类型" hidden="true" width = "150">userTp</field>
+		<field datatype="1" title="被审批功能编号" hidden="" width = "350">sysFuncId</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "200">sysTrxSts</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "200">busiUnit</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "200">pwdDueDt</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "200">userGrade</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "200">custId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+	</select>
+	<condition>
+	sysTrxSts = P and userId like %$userId$% and userNm like %$userNm$% and (userTp =0 or userTp=1)
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

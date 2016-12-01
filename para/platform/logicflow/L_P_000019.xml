@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000019</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.INOUT_DETAILS</tablename>
+		<doname>crtf</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>inoutRefNo =?</condition>
+		<params>inoutRefNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	    <nodejs>L_P_000105.js</nodejs> 
+	</lnode>
+	<!-- <transfornode>
+		<id>N00000002</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LOAN_M</tablename>
+		<fields>sysLockFlag,ttlDlvAmt</fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,ttlDlvAmt</fields>
+			<values>F,$ttlDlvAmt$</values>
+		</release>
+		<mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>loanId</sysRefNo>
+		</mapping>
+	</transfornode>
+	
+	-->
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00004</name>
+		<desc>DESC TEST4</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CRTF_M</tablename>
+		<fields></fields>
+		<doname>crtf</doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>releaseDt,ttlPoOutNum</fields>
+			<values>$releaseDt$,$ttlPoOutNum$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<!-- <mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>sysId</sysRefNo>
+		</mapping> -->
+		<nodejs>L_P_000106.js</nodejs>
+	</transfornode> 
+</logicflow>

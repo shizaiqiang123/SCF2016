@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<id>S00000002</id>
+	<name>FileService1</name>
+	<node>
+		<id>N00000001</id>
+		<name>FileService1</name>
+		<type>File</type>
+		<type-value>TrxGAPIReformatComponent</type-value>
+		<!-- component -->
+		<reforrmat-class>com.cs.hsbc.ee.ap.cim.CIMSyncToCEFormater
+		</reforrmat-class>
+		<!-- 消息格式转化 -->
+		<mode>ASYNC</mode>
+		<type>M</type>
+		<!-- 消息类型，同步或者异步 -->
+		<gapiId>IS000001</gapiId>		<!-- 协议类型 -->
+		<channel>outgoing file</channel>
+		<send-msg-map>
+			<CUST_CNTRY ec-tag="N" fv-type="F" op-tag="N" order="1">CUST_CNTRY
+			</CUST_CNTRY>
+			<CUST_STAT_CD ec-tag="N" fv-type="F" op-tag="N" order="2">CUST_STAT_CD
+			</CUST_STAT_CD>
+		</send-msg-map>
+		<recv-msg-map />
+	</node>
+	<node>
+		<id>N00000002</id>
+		<name>FileService2</name>
+		<type>File</type>
+		<type-value>TrxGAPIReformatComponent</type-value>
+		<!-- component -->
+		<reforrmat-class>
+		</reforrmat-class>
+		<!-- 消息格式转化 -->
+		<mode>ASYNC</mode>
+		<type>M</type>
+		<!-- 消息类型，同步或者异步 -->
+		<gapiId>IS000001</gapiId>		<!-- 协议类型 -->
+		<channel>outgoing file</channel>
+		<send-msg-map>
+			<CUST_CNTRY ec-tag="N" fv-type="F" op-tag="N" order="1">CUST_CNTRY
+			</CUST_CNTRY>
+			<CUST_STAT_CD ec-tag="N" fv-type="F" op-tag="N" order="2">CUST_STAT_CD
+			</CUST_STAT_CD>
+		</send-msg-map>
+		<recv-msg-map />
+	</node>
+</service>

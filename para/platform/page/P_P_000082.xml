@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000082</id>
+	<name>反转让小页</name>
+	<desc>反转让小页</desc>
+	<jspfile>screen/invc/invcCbkEdit.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+<!-- 	<maintable>TRX.CUST_M</maintable> -->
+</page>

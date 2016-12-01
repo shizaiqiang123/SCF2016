@@ -1,0 +1,11 @@
+ClearCase CopyAreaDB|4
+vobs\FSSDB-FCSP_VOB\fssdb-fcsp_j2ee\src\FCSP\WebContent\corejs
+2
+7
+6:jqGrid|2|0|0|0|4ef96e58948a11e38474e41f131e4b14|0
+6:easyUI|2|0|0|0|91db61b7c5e811e398dbe41f131e4b14|0
+11:jquery-validation|2|0|0|0|f6011afb4c57477baeadc47fc04ef4b4|0
+7:jsgraph|2|0|0|0|b87b241bce7011e39e00e41f131e4b14|0
+6:jquery|2|0|0|0|68b7d851aa66409a90d5789af907364c|0
+7:mxGraph|2|0|0|0|b95e204fd820415a8797f9407859fb52|0
+9:highchart|2|0|0|0|3b66762fc5cf11e38cc2e41f131e4b14|0

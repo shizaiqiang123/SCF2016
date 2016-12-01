@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000211</id>
+	<name>客户额度明细查询的客户Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>客户Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议流水号" hidden="" width = "12.5%">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "12.5%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "12.5%">selNm</field>
+		<field datatype="1" title="额度金额" hidden="" width = "12.5%" formatter="ccyFormater">lmtAmt</field>
+		<field datatype="1" title="额度余额" hidden="" width = "12.5%" formatter="ccyFormater">lmtBal</field>
+		<field datatype="1" title="额度币种" hidden="" width = "12.5%" formatter="ccyFormater">lmtCcy</field>
+		<field datatype="1" title="额度起始日期" hidden="" width = "12.5%" formatter="dateFormater">lmtValidDt</field>
+		<field datatype="1" title="额度到期日" hidden="" width = "12.5%" formatter="dateFormater">lmtDueDt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysTrxSts</field>
+	</select>
+	<condition>
+		  selNm like %$selNm$% and selId like %$selId$% and sysRefNo like %$sysRefNo$% and sysBusiUnit =$sysBusiUnit$ and sysTrxSts = M and sysOrgId like $sysOrgId$%
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

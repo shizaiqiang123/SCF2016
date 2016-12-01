@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000350</id>
+    <name>接口监控</name>
+    <functype>VW</functype>
+    <page>
+		<id>P_P_000210</id>
+		<index>0</index>
+		<name>接口监控</name>
+		<desc>接口监控页面</desc>
+	</page>	
+</function>

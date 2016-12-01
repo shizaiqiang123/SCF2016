@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L10000001</id>
+	<name>菜单信息</name>
+	<desc>菜单信息逻辑流</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxAddRecord</component>
+		<tablename>STD.STD_SETMODINFO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

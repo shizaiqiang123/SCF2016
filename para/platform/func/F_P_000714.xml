@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>客户评级申请</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000714</id>
+    <autoassignSize>0</autoassignSize>
+    <name>客户评级申请</name>
+    <functype>MM</functype>
+    <shortnm>客户评级申请</shortnm>
+	<page>
+		<id>P_P_000868</id>
+		<index>1</index>
+		<name>客户评级申请页面</name>
+		<desc>客户评级申请页面</desc>
+		<pagetype>ADD</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

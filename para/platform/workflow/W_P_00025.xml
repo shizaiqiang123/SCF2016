@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00025</id>
+	<workid>1307</workid>
+	<workname>receivablesUpdate</workname>
+	<name>应收账款调整复核</name>
+	<desc>应收账款调整复核</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

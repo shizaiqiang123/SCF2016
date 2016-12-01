@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>国内但保利(外网)-应收账款登记页面</desc>
+    <id>P_P_000917</id>
+    <name>国内但保利(外网)-应收账款登记页面</name>
+    <jspfile>screen/invc/wideInvcReg.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.INVC_REG_M</maintable>
+	<logicid>L_P_000617</logicid>
+</page>

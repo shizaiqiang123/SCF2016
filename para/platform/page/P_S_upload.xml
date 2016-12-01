@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_upload</id>
+	<index>1</index>
+	<name>上传页面</name>
+	<desc>上传页面</desc>
+	<jspfile>jsp/upload.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<pagetype>upload</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable></maintable>		
+</page>

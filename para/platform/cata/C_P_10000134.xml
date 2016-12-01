@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000134</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>币别信息查询</DESC>
+	<tablename>STD.STD_CCY</tablename>
+
+	<search>
+		<field datatype="1" title="币别号" defaultvalue="" width="33%">sysRefNo
+		</field>
+		<field datatype="1" title="货币名称" defaultvalue="" width="33%">ccyNm
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="币别号" hidden="" width="33%">sysRefNo
+		</field>
+		<field datatype="1" title="币种名称" hidden="" width="33%">ccyNm
+		</field>
+		<!-- <field datatype="1" title="保留小数位数" hidden="" width="33%">decFormat</field>
+		<field datatype="1" title="基础计息日" hidden="" width="33%">baseDay
+		</field> -->
+		<field datatype="1" title="币种符号" hidden="" width="33%">ccySymbol
+		</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and ccyNm like %$ccyNm$% and sysTrxSts = M and sysLockFlag = F]]></condition>
+
+</catalog>

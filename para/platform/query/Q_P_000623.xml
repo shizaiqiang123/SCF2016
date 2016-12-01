@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000623</id>
+	<name>商品查询</name>
+	<desc>商品查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.COLLAT_CH_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>cntrctNo = $cntrctNo$ and ((sysTrxSts = M and sysLockFlag = F) or (sysLockFlag = T and sysLockBy = $sysLockBy$)) and froFlag=0 and collatQtyBal>0</condition>
+		<orderby></orderby> 
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>还款自动核销STP自动处理</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000338</id>
+    <name>还款自动核销STP自动处理</name>
+</function>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000629</id>
+	<name>三方保兑仓 融资申请</name>
+	<desc>三方保兑仓 融资申请</desc>
+	<module>三方保兑仓 融资申请</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>TRX.CNTRCT_CHANGE</tablename>
+		<doname>cntrct</doname>
+		<fpParam>sysRefNo</fpParam>
+		<condition>refNo =?</condition>
+		<params>refNo</params>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs>L_S_000001.js</nodejs>
+	</lnode>
+	<transfornode>
+		<id>N00000002</id>
+		<name>更新协议主表</name>
+		<desc>归还协议额度</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<fields></fields>
+		<doname></doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>lmtBal,lmtAllocate,marginBal,openLoanAmt,theirRef,lmtRecover,lmtAmt,lmtCcy,regLowestVal</fields>
+			<values>$lmtBal$,$lmtAllocate$,$marginBal$,$ttlLoanBal$,$trxId$,$lmtRecover$,$lmtAmt$,$lmtCcy$,$regLowestVal$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000075.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>更新订单表</name>
+		<desc>更新订单表</desc>
+		<module>TRX</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.PO_M</tablename>
+		<fields></fields>
+		<doname></doname>
+		<fpParam>sysRefNo</fpParam>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>isLoan</fields>
+			<values>1</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_P_000148.js</nodejs>
+	</transfornode>
+	<transfornode>
+		<id>N00000004</id>
+		<name>更新卖方额度表</name>
+		<desc>更新卖方额度表</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.LMT_M</tablename>
+		<fields></fields>
+		<doname>sellerLmt</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag,sysLockBy</fields>
+			<values>T,$sysLockBy$</values>
+		</pending>
+		<release>
+			<fields>lmtBal,lmtAllocate</fields>
+			<values>$lmtBal$,$lmtAllocate$</values>
+		</release>
+		<delepending>
+			<fields>sysLockFlag</fields>
+			<values>F</values>
+		</delepending>
+		<nodejs>L_S_000001.js</nodejs> 
+	</transfornode>
+</logicflow>

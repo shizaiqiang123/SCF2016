@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000052</id>
+    <name>查询供应商用户</name>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Report</type>
+    <component></component>
+    <propertyBean>false</propertyBean>
+    <servicejs>S_P_00011.js</servicejs>
+</service>

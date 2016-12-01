@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <name>买方单笔保理——应付账款登记退回处理</name>
+	<desc>买方单笔保理——应付账款登记退回处理</desc>
+    <pagesSize>0</pagesSize>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000757</id>
+    <autoassignSize>0</autoassignSize>
+    <functype>FP</functype>
+    <page>
+        <desc>筛选主交易信息</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_S_000002</id>
+        <name>筛选信息</name>
+        <index>0</index>
+        <catalog>C_P_000727</catalog><!-- new -->
+    </page>
+    <page>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000254</id>
+    </page>
+</function>

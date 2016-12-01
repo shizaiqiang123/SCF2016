@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>供应商信息查询报表详细</desc>
+    <transaction>false</transaction>
+    <id>P_P_000276</id>
+    <name>供应商信息查询报表</name>
+    <refsSize>0</refsSize>
+    <name>额度查询</name>
+    <jspfile>screen\cust\BuQueryCust.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>N</istransaction>
+	<maintable>TRX.CUST_M</maintable> 
+<!-- 	<queryid>Q_P_000202</queryid> -->
+	<!-- <logicid>L_P_000151</logicid>  -->
+</page>

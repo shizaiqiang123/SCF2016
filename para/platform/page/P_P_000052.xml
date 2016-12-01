@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000052</id>
+	<name>订单录入</name>
+	<desc>订单录入页面</desc>
+	<jspfile>screen/PORegist/PORegisterSure.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.PO_M</maintable>
+	<pagejs>L_P_000079.js</pagejs>
+</page>

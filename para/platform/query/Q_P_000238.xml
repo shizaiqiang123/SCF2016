@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000238</id>
+    <desc>用户角色查询</desc>
+    <name>用户角色查询</name>
+    <nodeSize>0</nodeSize>
+    	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>用户角色查询</name>
+		<desc>用户角色查询</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>roleIds</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>userId = $userId$ and sysTrxSts = M</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+	</qnode>	
+</query>

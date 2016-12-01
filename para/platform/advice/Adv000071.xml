@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000005.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的融资申请业务已通过平台审核，请注意查收融资账款是否及时到账。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000071</id>
+    <title>融资审核通过(短信)</title>
+    <remindtp>1</remindtp>
+    <name>融资审核通过(短信)</name>
+    <senddt>2015-09-19</senddt>
+</advice>

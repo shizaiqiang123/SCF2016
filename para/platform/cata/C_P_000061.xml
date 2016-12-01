@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000061</id>
+	<name>动产质押-质物出库Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>动产质押-质物出库Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议流水号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议流水号" hidden="" width = "20%" >sysRefNo</field>
+		<field datatype="1" title="业务类别" hidden="true" width = "150" >busiTp</field>
+		<field datatype="1" title="质押率" hidden="true" width = "150" >pldPerc</field>
+		<field datatype="1" title="授信客户编码" hidden="" width = "20%" >selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "20%" >selNm</field>
+		<field datatype="1" title="授信额度余额" hidden="" width = "20%" >lmtBal</field>
+		<field datatype="1" title="币种" hidden="" width = "20%" >lmtCcy</field>
+		<field datatype="1" title="买方ID" hidden="true" width = "150" >buyerId</field>
+		<field datatype="1" title="买方名称" hidden="true" width = "150" >buyerNm</field>
+		<field datatype="1" title="质物库存总价值" hidden="true" width = "150" >ttlRegAmt</field>
+		<field datatype="1" title="最低库存价值" hidden="true" width = "150" >regLowestVal</field>
+		<field datatype="1" title="" hidden="true" width = "150" >sysEventTimes</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and selNm like %$selNm$%  and selId like %$selId$% and (busiTp=4 or busiTp=5) and ttlRegAmt>0 and  sysLockFlag = F and  sysTrxSts = M and lmtValidDt <= $sysCurrentDate$ and lmtDueDt >= $sysCurrentDate$ and sysOrgId=$sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

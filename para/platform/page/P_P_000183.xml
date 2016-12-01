@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>保理商级参数小页</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000183</id>
+    <name>保理商级参数小页</name>
+    <lockcheck>Y</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>Y</cascadeevent>
+    <maincomp>paraEdit</maincomp>
+    <jspfile>jsp/para/Syst_Add.jsp</jspfile>
+    <pagetype>EDIT</pagetype>
+</page>

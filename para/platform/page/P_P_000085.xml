@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000085</id>
+	<name>Function 页面</name>
+	<desc>Function 页面</desc>
+	<jspfile>jsp/para/Function_Add.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>func</maintable>
+	<logicid>L_P_000147</logicid>
+	<maincomp>paraAdd</maincomp>
+</page>

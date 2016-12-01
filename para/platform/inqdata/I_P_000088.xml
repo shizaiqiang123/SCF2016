@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<name>查询产品信息</name>
+	<desc>查询产品信息</desc>
+    <id>I_P_000088</id>
+    <type>P</type>
+    <target>P_P_000247</target>
+</inqdata>

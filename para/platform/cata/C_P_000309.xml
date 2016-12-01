@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000309</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>供应商待补充材料</DESC>
+	<tablename>TRX.CUST_M</tablename>
+	<search>
+		<field datatype="1" title="公司名称" hidden="" width="100">custNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="公司编号" hidden="" width="300">sysRefNo</field>
+		<field datatype="1" title="公司名称" hidden="" width="300">custNm</field>
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes</field>
+	</select>
+	<condition><![CDATA[sysRefNo=$sysUserRef$ and custNm like %$custNm$% and sysLockFlag=F and sysTrxSts=M and signSts=3 ]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

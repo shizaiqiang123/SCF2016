@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh-CN">
+	<head>
+		<termid path="trxDom">termid</termid>
+		<trnid path="trxDom">sysRefNo</trnid>
+		<custid path="trxDom">custid</custid>
+		<cusopr path="trxDom">cusopr</cusopr>
+		<trncod type="v">b2e0080</trncod>
+		<token path="trxDom">token</token>
+	</head>
+	<trans>
+		<trn-b2e0080-rq>
+			<b2e0080-rq>
+				<acrcinvtrf>
+					<relatedref path="trxDom">sysRefNo</relatedref>
+					<finctype type="v">11</finctype>
+					<erpid></erpid>
+					<factorcode></factorcode>
+					<guarcoid></guarcoid>
+					<authpoint></authpoint>
+					<applid path="trxDom">bankId</applid>
+					<custremark></custremark>
+					<applyflg type="v">1</applyflg>
+					<directpurchaseflg type="v">1</directpurchaseflg>
+					<directpurchaseccy type="v">CNY</directpurchaseccy>
+					<directpurchaseamt path="trxDom" formattor="amt:16,2">invAmt
+					</directpurchaseamt>
+					<branchid type="v">06042</branchid>
+				</acrcinvtrf>
+				<circlenum path="trxDom/invoices">_total_rows</circlenum>
+				<invoice loop="true" path="trxDom/invoices">
+					<buyerid type="v">293610434</buyerid>
+					<contractno></contractno>
+					<buyererpid></buyererpid>
+					<sellererpid></sellererpid>
+					<sellerid path="trxDom">bankId</sellerid>
+					<!-- <contractno path="trxDom/invoices">contNo</contractno> -->
+					<invno path="trxDom/invoices">invNo</invno>
+					<invccy type="v">CNY</invccy>
+					<invamt path="trxDom/invoices" formattor="amt:16,2">invAmt</invamt>
+					<invdate path="trxDom/invoices" formattor="date:yyyyMMdd">invDt</invdate>
+					<invvaldate path="trxDom/invoices" formattor="date:yyyyMMdd">invValDt
+					</invvaldate>
+					<invduedate path="trxDom/invoices" formattor="date:yyyyMMdd">invDueDt
+					</invduedate>
+				</invoice>
+
+			</b2e0080-rq>
+		</trn-b2e0080-rq>
+	</trans>
+</bocb2e>
+

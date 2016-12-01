@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_001004</id>
+	<module>未来货权手工注销审核</module>
+	<name>未来货权手工注销审核</name>
+	<desc>未来货权手工注销审核</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000052</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核未来货权手工注销申请</name>
+		<desc>未来货权手工注销申请复核页面</desc>
+	</page>
+</function>

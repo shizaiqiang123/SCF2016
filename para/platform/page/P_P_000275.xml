@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.INCOME_E</maintable>
+    <desc>查询营业外收入账</desc>
+    <transaction>true</transaction>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000275</id>
+    <name>查询营业外收入账</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>trxViewManager</maincomp>
+    <jspfile>screen/pmt/queryIncome.jsp</jspfile>
+    <pagetype>VIEW</pagetype>
+</page>

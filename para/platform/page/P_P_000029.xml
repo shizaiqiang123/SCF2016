@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000029</id>
+	<name>添加押品页面</name>
+	<desc>添加押品页面</desc>
+	<jspfile>screen/collatRef/collateral.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+<!-- 	<maintable>TRX.CUST_M</maintable> -->
+</page>

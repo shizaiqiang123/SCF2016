@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<id>R_TEST_00002</id>
+	<name>测试报文</name>
+	<desc>测试面函002</desc>
+	<type>P</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>pdf</reporttype><!-- docx,excl,csv -->
+	<template>loan_invcs.rptdesign</template>
+	<!-- <outputtype>F</outputtype>F:file G:gapi M:mail S:SFTP -->
+	<output>G_TEST_00001</output>
+	<js></js>
+	<datasourcetype>db</datasourcetype><!-- db,json -->
+	<datasource>jdbc/scfdev</datasource>
+</report>

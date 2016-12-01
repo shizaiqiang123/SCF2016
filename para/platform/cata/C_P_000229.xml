@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000229</id>
+	<name>融资协议申请Catalog</name>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>融资协议申请Catalog</DESC>
+	<tablename>TRX.CNTRCT_E</tablename>
+	<!-- <search>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search> -->
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "300" >sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "350">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "350">selNm</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		</select>
+	<condition>
+		  sysTrxSts = P and approvalSts = 0 and selId = $sysUserOwnerId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>
+

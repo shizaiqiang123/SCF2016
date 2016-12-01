@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+    <id>CustCD</id>
+    <msgtype>LZESB</msgtype><!-- 表示为对接短信平台的消息 -->
+    <name>获取信贷客户号</name>
+    <modle>non</modle><!-- 接口通信模式,同步或异步 -->
+    <ack>N</ack><!-- 接口交互模式,是否需要及时应答 -->
+    <characterset>GBK</characterset>
+    <sendtemp>CustCDre</sendtemp><!-- 发送模版 -->
+    <receivetemp>CustCDrs</receivetemp><!-- 接收模版 -->
+    <gapi></gapi><!-- 只定义底层通信协议 -->
+    <validateclass></validateclass><!-- 通信层验证 -->
+    <validatejs></validatejs>
+    <generator>gapiMsgManager</generator>
+    <msgstore>N</msgstore><!-- 重发使用 -->
+    <sendinterrupt>N</sendinterrupt><!-- 发送异常后中断当前操作-->
+    <receiveinterrupt>N</receiveinterrupt><!-- 接收异常后中断当前操作-->
+    <sendservice>LZESB</sendservice><!-- 发送请求的esb服务接口 -->
+    <receiveservice></receiveservice><!-- 接收响应的esb服务接口 -->
+</gapimsg>

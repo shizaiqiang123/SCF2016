@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000017</id>
+        <name>导入供应商账号信息</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000010</id>
+    <name>导入供应商账号信息</name>
+</batch>

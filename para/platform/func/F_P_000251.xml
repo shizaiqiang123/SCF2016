@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000251</id>
+	<module>Para</module>
+	<name>Batch Add</name>
+	<desc>新增Batch 参数定义</desc>
+	<functype>PA</functype>
+	<page>
+		<id>P_P_000169</id>
+		<pagetype>paraAdd</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

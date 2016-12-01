@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000177</id>
+    <name>监控数据处理逻辑流</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+    <lnode>
+        <id>N00000001</id>
+        <name>监控数据处理</name>
+		<desc>监控数据处理</desc>
+		<component>gapiMsgRecord</component>
+<!-- 		<component>trxPortMonitorRecord</component> -->
+		<tablename>STD.GAPI_MSG</tablename>
+		<doname></doname>
+		<type>E</type>
+    </lnode>
+</logicflow>

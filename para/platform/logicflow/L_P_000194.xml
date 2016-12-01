@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000194</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00001</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxAddDoRecord</component>
+		<tablename>TRX.PO_M</tablename>
+		<doname>sbr</doname>
+		<condition></condition>
+		<params></params>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+</logicflow>

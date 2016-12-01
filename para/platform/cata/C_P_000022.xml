@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000022</id>
+	<name>国内保理-应收账款调整取消Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内保理-应收账款调整取消Catalog</DESC>
+	<tablename>TRX.INVC_M i,TRX.CNTRCT_M c</tablename>
+	<search>
+		<field datatype="1" title="应收账款流水号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户编号" defaultvalue="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+		<field datatype="1" title="间接客户编号" defaultvalue="" width = "100">buyerId</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "100">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="应收账款流水号" hidden="" width = "14.28%" alis = "sysRefNo">i.sys_Ref_No</field>
+		<field datatype="1" title="协议编号" hidden="" width = "14.28%" alis = "cntrctNo">i.cntrct_No</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "14.28%" alis = "selId">c.sel_Id</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "14.28%" alis = "selNm">c.sel_Nm</field>
+		<field datatype="1" title="间接客户编号" hidden="" width = "14.28%" alis = "buyerId">c.buyer_Id</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "14.28%" alis = "buyerNm">c.buyer_Nm</field>
+		<field datatype="1" title="序列号" hidden="" width = "14.28%" alis = "sysEventTimes">i.sys_Event_Times</field>
+	</select>
+	<join>
+		<on seq="1"> i.cntrct_No = c.SYS_REF_NO</on>
+	</join>
+	<condition><![CDATA[i.sys_Ref_No like '%$sysRefNo$%' and c.sel_Nm like '%$selNm$%'  and c.sel_Id like '%$selId$%' and i.cntrct_No like '%$cntrctNo$%' and c.buyer_Id like '%$buyerId$%' and c.buyer_Nm like '%$buyerNm$%'  and i.busi_Tp= 0  and  i.sys_Lock_Flag = 'F' and  i.sys_Trx_Sts = 'M' and i.inv_Bal > 0 and c.cntrct_sts <> 0]]></condition>
+	<orderby>i.sys_Ref_No</orderby>
+</catalog>

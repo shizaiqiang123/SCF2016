@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000084</id>
+	<module>预付类-保证金变更</module>
+	<name>保证金変更</name>
+	<desc>保证金変更页面</desc>
+	<functype>PM</functype>
+<!-- 	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000072</catalog>
+	</page> -->
+	<!--<page>
+		<desc>客户页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>T</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_P_000412</id>
+        <name>交易进入页面</name>
+        <lockcheck>Y</lockcheck>
+        <propertyBean>false</propertyBean>
+        <cascadeevent>N</cascadeevent>
+        <maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+	</page>-->
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>追加保证金</name>
+		<desc>追加保证金</desc>
+		<catalog>C_P_000183</catalog>
+	</page>
+	<page>
+		<id>P_P_000418</id>
+		<index>1</index>
+		<name>预付类-追加保证金</name>
+		<desc>预付类-追加保证金页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<!-- <page>
+		<id>P_S_000012</id>
+		<index>2</index>
+		<name>账务处理</name>
+		<accountingjs>A00000017.js</accountingjs>
+	</page> --> 
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<!-- <service>
+        <id>S_P_000076</id>
+        <trigger>M</trigger>
+    </service> -->
+	<workflow>W_P_00030</workflow>
+</function>

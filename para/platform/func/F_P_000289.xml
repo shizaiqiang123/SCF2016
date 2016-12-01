@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000289</id>
+	<pagesSize>1</pagesSize>
+    <desc>修改Advice</desc>
+    <transactionPage>1</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <name>修改Advice</name>
+    <functype>PA</functype>
+	<page>
+        <desc>advice筛选页面</desc>
+        <name>筛选Function</name>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <index>0</index>
+        <catalog>C_P_000221</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+    <page>
+        <desc>adivce页面</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_P_000189</id>
+        <name>adivce页面</name>
+        <index>1</index>
+        <pagetype>paraEdit</pagetype>
+    </page>
+    <page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

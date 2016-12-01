@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000413</id>
+	<module>系统功能</module>
+	<name>产品介绍维护</name>
+	<desc>产品介绍维护</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_P_000293</id>
+		<index>1</index>
+		<name>产品介绍维护</name>
+		<desc>产品介绍维护</desc>
+		<pagetype>EDIT</pagetype>
+		<maincomp>TrxPendingManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>3</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+</function>

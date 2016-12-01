@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000133</id>
+	<name>买方协议编号查询</name>
+	<desc>买方协议编号查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>CntrctSbrM a,CustM b</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>buyerId,buyerNm,lmtBal</fields>
+		<params></params>
+		<condition>a.buyerId = b.sysRefNo and a.selId = '$selId$' and a.trxId = '$trxId$' and b.sysRefNo like '%$buyerId$%' and a.buyerNm like '%$buyerNm$%'</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql>select a.buyerId,a.buyerNm,b.lmtBal from CntrctSbrM a,CustM b </sql>
+	</qnode>
+</query>

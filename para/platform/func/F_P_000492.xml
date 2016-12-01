@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000492</id>
+	<module>池融资间接还款复核</module>
+	<name>池融资间接还款复核</name>
+	<desc>池融资间接还款复核</desc>
+	<functype>RE</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000676</catalog>
+	</page>
+	<page>
+		<id>P_S_000011</id>
+		<index>1</index>
+		<name>复核应收账款</name>
+		<desc>应收账款复核页面</desc>
+	</page>
+</function>

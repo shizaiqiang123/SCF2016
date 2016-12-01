@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000496</id>
+    <name>现货入库主表查询</name>
+    <nodeSize>1</nodeSize>
+    <desc>现货入库主表查询</desc>
+    <qnode>
+        <desc>look up 查询主表</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <tablename>TRX.CRTF_REG_M</tablename>
+        <name>协议文本查询</name>
+        <doname>doname</doname>
+        <cascadeevent>N</cascadeevent>
+        <condition>cntrctNo = $cntrctNo$</condition>
+    </qnode>
+</query>

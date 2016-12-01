@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000313</id>
+    <desc>回执单查stdacno供应商</desc>
+    <name>回执单查stdacno供应商</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>acOwnerid=$acOwnerid$ and buyerId=$buyerId$</condition>
+		<params>$acOwnerid$,$buyerId$</params>
+		<orderby></orderby>
+		<fields></fields>
+		<sql />
+		<asc>Y</asc>
+	</qnode>
+</query>

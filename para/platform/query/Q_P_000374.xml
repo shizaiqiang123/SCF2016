@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000374</id>
+	<name>根据额度表中的交易流水号得到额度关联表的交易流水号</name>
+	<desc>根据额度表中的交易流水号得到额度关联表的交易流水号</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询额度关联表</desc>
+		<component>componentClass</component>
+		<tablename>CntrctSbrM</tablename>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,buyerLmtBat</fields>
+		<condition></condition>
+		<orderby></orderby>
+		<params>$trxId$</params>
+		<asc></asc>
+		<sql><![CDATA[select t.sysRefNo,t.buyerLmtBat from CntrctSbrM t where t.trxId = ? ]]></sql>
+	</qnode>
+</query>

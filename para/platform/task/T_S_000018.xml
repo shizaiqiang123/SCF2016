@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000018</id>
+    <name>导入节假日数据</name>    
+    <component>batchHolidayExecutor</component>   
+    <nodeName>导入节假日数据</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>
+    <trxdatapara>  
+    	<templateId>T0000009</templateId><!--供应商模板  -->
+    	<filePath>D:\test目录</filePath>
+    	<fileBakPath>D:\bak</fileBakPath>
+    	<fileExtensions>.xls,.xlsx</fileExtensions>    	
+    </trxdatapara>
+</task>

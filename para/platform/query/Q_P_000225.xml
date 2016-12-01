@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000220</id>
+    <desc>客户等级维护</desc>
+    <name>客户等级维护</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询基础利率</desc>
+		<component>componentClass</component> 
+		<tablename>STD.STD_CUST_LEVEL</tablename>
+		<doname></doname>
+		<type>E</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc></asc>
+		<sql/>
+		<condition>sysBusiUnit =$sysBusiUnit$  and levelDesc =$levelDesc$ and levelCd =$levelCd$ </condition>
+		<params>$sysBusiUnit$,%$levelDesc$%,%$levelCd$%</params>
+	</qnode>
+</query>

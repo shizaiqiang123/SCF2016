@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000079</id>
+	<name>融资申请的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>融资申请的协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M a,TRX.CNTRCT_SBR_M b</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" defaultvalue="" width = "200">sellerInstCd</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+		<field datatype="4" title="业务类别" defaultvalue="" width = "200" formatter="busiTp">busiTp</field>
+		<field datatype="4" title="币种" defaultvalue="" width = "200" formatter="ccy">lmtCcy</field>
+		<field datatype="4" title="间接客户名称" defaultvalue="" width = "200" formatter="buyerNm">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="币种" hidden="" width = "150" alis = "lmtCcy">a.LMT_CCY</field>
+		<field datatype="1" title="业务类别" hidden="" width = "150" alis = "busiTp">a.BUSI_TP</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "150" alis = "buyerNm">b.BUYER_NM</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "150" alis = "sellerInstCd">a.SELLER_INST_CD</field>
+		<field datatype="1" title="流水号" hidden="" width = "150" alis = "sysRefNo">a.SYS_REF_NO</field>
+		<field datatype="1" title="协议编号" hidden="" width = "100" alis = "cntrctNo">a.CNTRCT_NO</field>
+		<field datatype="1" title="授信客户ID" hidden="true" width = "200" alis = "selId">a.SEL_ID</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200" alis = "selNm">a.SEL_NM</field>
+		<field datatype="1" title="协议余额" hidden="true" width = "200" alis = "lmtBal">a.LMT_BAL</field>
+		<field datatype="1" title="授信模式" hidden="true" width = "200" alis = "serviceReq">a.SERVICE_REQ</field>
+		<field datatype="1" title="融资比例" hidden="true" width = "200" alis = "loanPct">b.LOAN_PCT</field>
+		<field datatype="1" title="费率" hidden="true" width = "200" alis = "finChgrt">a.FIN_CHGRT</field>
+		<field datatype="1" title="利率" hidden="true" width = "200" alis = "loanRt">a.LOAN_RT</field>
+		<field datatype="1" title="可融资余额" hidden="true" width = "200" alis = "arAvalLoan">a.AR_AVAL_LOAN</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "200" alis = "payIntTp ">a.PAY_INT_TP</field>
+	</select>
+	<join>
+		<on seq="1"> b.TRX_ID = a.SYS_REF_NO</on>
+	</join>
+	<condition><![CDATA[a.CNTRCT_NO like '%$cntrctNo$%' and b.BUYER_NM like '%$buyerNm$%' and a.SELLER_INST_CD like '%$sellerInstCd$%' and a.BUSI_TP like '%$busiTp$%' and a.LMT_CCY like '%$lmtCcy$%'and a.SEL_NM like '%$selNm$%' and a.SYS_TRX_STS = 'M'  and a.SYS_LOCK_FLAG = 'F' and  a.FINA_TP= 0 and a.LMT_DUE_DT> TO_DATE('$sysCurrentDate$','yyyy-mm-dd HH24:mi:ss') ]]></condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

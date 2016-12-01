@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000264</id>
+	<name>查询还款E表</name>
+	<desc>查询还款E表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.PMT_E</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,payPrinAmt,payIntAmt,ttlPmtAmt,pmtDt,pmtSts,loanId,selAcNm,selAcNo,ttlLoanAmt,ttlLoanBal,lmtAmt,lmtBal,openLoanAmt,arAvalLoan,loanDueDt,finaSts,advaPaytype</fields>
+		<condition></condition>
+		<orderby></orderby>
+		<params>$sysRefNo$</params>
+		<asc></asc>
+		<sql><![CDATA[SELECT p.id.sysRefNo,p.payPrinAmt,p.payIntAmt,p.ttlPmtAmt,p.pmtDt,p.pmtSts,p.loanId,p.selAcNm,p.selAcNo,a.ttlLoanAmt,a.ttlLoanBal,b.lmtAmt,b.lmtBal,b.openLoanAmt,b.arAvalLoan,a.loanDueDt,a.finaSts,a.advaPaytype from PmtE p,LoanM a , CntrctM b where p.loanId = a.sysRefNo and a.cntrctNo=b.sysRefNo and p.pmtSts = '1' and p.id.sysRefNo=?  and p.sysLockFlag = 'F']]></sql>
+	</qnode>
+</query>

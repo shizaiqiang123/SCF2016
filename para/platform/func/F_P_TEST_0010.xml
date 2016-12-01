@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_TEST_0010</id>
+	<module>修改菜单</module>
+	<name>测试参数工具</name>
+	<desc>测试参数工具</desc>
+	<functype>PA</functype>
+	<page>
+		<id>P00000021</id>
+		<index>0</index>
+		<name>筛选条件</name>
+		<desc>筛选记录以进入交易</desc>
+		<catalog>C_P_000081</catalog>
+	</page>
+	<page>
+		<id>P_T_000002</id>
+		<index>1</index>
+		<name>修改功能定义</name>
+		<desc>参数工具之调整Function参数</desc>
+		<pagetype>paraEdit</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

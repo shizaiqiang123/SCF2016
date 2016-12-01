@@ -1,0 +1,53 @@
+select this_.SYS_REF_NO as SYS_REF_1_23_0_, this_.ext_tel as ext_tel3_23_0_, this_.IS_MGR as IS_MGR4_23_0_, this_.mob_phone as mob_phon5_23_0_, this_.NOTE as NOTE6_23_0_, 
+this_.OWNER_BR_ID as OWNER_BR7_23_0_, this_.OWNER_DEP as OWNER_DE8_23_0_, this_.PASSWORD as PASSWORD9_23_0_, this_.PWD_DUE_DT as PWD_DUE10_23_0_, this_.PWD_EDIT_DT as PWD_EDI11_23_0_, this_.ROLE_ID as ROLE_ID12_23_0_, 
+this_.SYS_AUTH_ID as SYS_AUT13_23_0_, this_.SYS_AUTH_TM as SYS_AUT14_23_0_, this_.sys_busi_unit as sys_bus15_23_0_, this_.SYS_EVENT_TIMES as SYS_EVE16_23_0_, this_.SYS_FUNC_ID as SYS_FUN17_23_0_, 
+this_.SYS_LOCK_BY as SYS_LOC18_23_0_, this_.SYS_LOCK_FLAG as SYS_LOC19_23_0_, this_.SYS_NEXT_OP as SYS_NEX20_23_0_, this_.SYS_OP_ID as SYS_OP_21_23_0_, this_.SYS_OP_TM as SYS_OP_22_23_0_, this_.SYS_REL_ID as SYS_REL23_23_0_, 
+this_.SYS_REL_TM as SYS_REL24_23_0_, this_.SYS_TRX_STS as SYS_TRX25_23_0_, this_.tel_phone as tel_pho26_23_0_, this_.title as title27_23_0_, this_.USER_ID as USER_ID28_23_0_, this_.USER_LEVEL as USER_LE29_23_0_, 
+this_.USER_NM as USER_NM30_23_0_, this_.USER_OWNERID as USER_OW31_23_0_, this_.USER_TP as USER_TP32_23_0_ from user_info_m this_ where this_.USER_ID='super_admin';
+
+select * from user_info_m;
+DROP TABLE acc_trn;
+DROP TABLE advice_detail;
+DROP TABLE advice_header;
+DROP TABLE bank_m;
+DROP TABLE cntrct_e;
+DROP TABLE cntrct_m;
+DROP TABLE cntrct_sbr;
+DROP TABLE collat_reg;
+DROP TABLE collateral;
+DROP TABLE cust_e;
+DROP TABLE cust_m;
+DROP TABLE goods_inout;
+DROP TABLE inout_details;
+DROP TABLE invc_chg;
+DROP TABLE invc_e;
+DROP TABLE invc_loan;
+DROP TABLE invc_m;
+DROP TABLE invc_pmt;
+DROP TABLE loan_e;
+DROP TABLE loan_m;
+DROP TABLE party_e;
+DROP TABLE party_m;
+DROP TABLE pmt_m;
+DROP TABLE po_e;
+DROP TABLE po_m;
+DROP TABLE ref_no_m;
+DROP TABLE ref_no_using;
+DROP TABLE sod_eod;
+DROP TABLE std_ccy;
+DROP TABLE std_ctry;
+DROP TABLE std_cust_cl;
+DROP TABLE std_cust_cl_e;
+DROP TABLE std_dept_m;
+DROP TABLE std_goods_cata;
+DROP TABLE std_goods_cata_tp;
+DROP TABLE std_holiday;
+DROP TABLE std_inst_m;
+DROP TABLE std_menu_info;
+DROP TABLE std_permission_info;
+DROP TABLE std_permission_menu;
+DROP TABLE std_role_info;
+DROP TABLE std_role_permission;
+DROP TABLE trf_reg;
+DROP TABLE user_info_e;
+DROP TABLE user_info_m;

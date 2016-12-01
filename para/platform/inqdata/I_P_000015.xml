@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+	<id>I_P_000015</id>
+	<name>预付类-发货通知look up</name>
+	<desc>预付类-发货通知look up</desc>
+	<type>P</type><!-- Q:Query,P:Page,S:Service L:Logic-->
+	<target>P_P_000070</target>
+</inqdata>

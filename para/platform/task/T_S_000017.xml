@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+    <id>T_S_000017</id>
+    <name>导入供应商账号信息</name>
+    <component>batchCustAcProcessor</component>   
+    <nodeName>task</nodeName>  
+    <singlethread>Y</singlethread>
+    <propertyBean>false</propertyBean>
+    <trxdatapara>  
+    	<templateId>T0000008</templateId><!--账号模板  -->
+    	<filePath>D:\test目录</filePath>
+    	<fileBakPath>D:\bak</fileBakPath>
+    	<fileExtensions>.xls,.xlsx</fileExtensions>    	
+    </trxdatapara>
+</task>

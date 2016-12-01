@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>应收账款登记_退回处理(外网)</desc>
+    <cacheAble>false</cacheAble>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <id>F_P_000917</id>
+    <autoassignSize>0</autoassignSize>
+    <name>应收账款登记_退回处理(外网)</name>
+    <functype>FP</functype>
+    <bfServiceSize>0</bfServiceSize>
+    <serviceSize>0</serviceSize>
+    <shortnm>应收账款登记_退回处理(外网)</shortnm>
+    <page>
+        <desc>筛选主交易信息</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_S_000002</id>
+        <name>筛选信息</name>
+        <index>0</index>
+        <catalog>C_P_000770</catalog>
+    </page>
+    <page>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000254</id>
+    </page>
+</function>

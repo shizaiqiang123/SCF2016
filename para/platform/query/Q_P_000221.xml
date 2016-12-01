@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000221</id>
+    <desc>业务利率维护</desc>
+    <name>利率维护</name>
+    <nodeSize>1</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component> 
+		<tablename>STD.STD_RT</tablename>
+		<doname>doname</doname>
+		<type>E</type> 
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<asc>Y</asc>
+		<sql/>
+		<condition>sysBusiUnit=$sysBusiUnit$ and busiTp =$busiTp$ and finaTp =$finaTp$  and acctPeriod =$acctPeriod$  and feeOrIntr =$feeOrIntr$</condition>
+		<params>$sysBusiUnit$,$busiTp$,$finaTp$,%$acctPeriod$%,$feeOrIntr$</params>
+		<orderby>feeOrIntr,custLevel,acctPeriod</orderby>
+	</qnode>
+</query>

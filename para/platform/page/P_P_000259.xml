@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000259</id>
+    <desc>补充材料登记</desc>
+    <name>补充材料登记</name>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/supplier/addMaterial.jsp</jspfile>
+    <maincomp>TrxMasterManager</maincomp>
+    <maintable>TRX.CUST_M</maintable> 
+    <pagejs>L_P_000049.js</pagejs>
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000100</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile></jspfile>
+	<DESC>百联用户查询</DESC>
+	<tablename>STD.USER_INFO_M u,STD.USER_ROLE_INFO ur,STD.STD_ROLE_INFO r</tablename>
+	<search>
+		<field datatype="1" title="用户编号" defaultvalue="" width = "200">userId</field>
+		<field datatype="1" title="用户名称" defaultvalue="" width = "200">userNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="用户编号" hidden="" width = "200" alis = "userId" distinct = "true">u.user_Id</field>
+		<field datatype="1" title="用户名称" hidden="" width = "200" alis = "userNm">u.user_Nm</field>
+		<field datatype="1" title="sysRefNo" hidden="true" width = "200" alis = "sysRefNo">u.sys_Ref_No</field>
+		<field datatype="1" title="批次号" hidden="true" width = "200" alis = "sys_EventTimes">u.sys_Event_Times</field>
+		<field datatype="1" title="用户类型" hidden="true" width = "150" alis = "userTp">u.user_Tp</field>
+		<field datatype="1" title="上次修改密码日期" hidden="true" width = "200" alis = "pwdEditDt">u.pwd_Edit_Dt</field>
+		<field datatype="1" title="保理商名称" hidden="true" width = "100" alis = "userOwnerid">u.user_Ownerid</field>
+		<field datatype="1" title="保理商编号" hidden="true" width = "100" alis = "busiUnit">u.busi_Unit</field>
+	</select>
+	<join>
+		<on seq="1"> u.sys_Ref_No = ur.user_Id</on>
+		<on seq="2"> r.role_Id = ur.role_Id</on>
+	</join>
+	<condition><![CDATA[u.user_Id like '%$userId$%' and u.user_Nm like '%$userNm$%' and u.user_Tp = '2' and u.sys_Trx_Sts = 'M' and u.busi_Unit = '$sysBusiUnit$' and r.role_type='40']]></condition>
+	<orderby>u.sys_Ref_No</orderby>
+</catalog>

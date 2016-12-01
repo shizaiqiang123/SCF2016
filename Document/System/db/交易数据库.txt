@@ -1,0 +1,1038 @@
+CREATE TABLE   ACC_TRN 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   ACC_NO char(35),
+   REL_REF_NO char(35),
+   REL_EVT_NO decimal(4),
+   TRX_DESC char(35),
+   TRX_TP char(1),
+   AMT decimal(18),
+   CRET_TM timestamp,
+   UPDT_TM timestamp,
+   RECON_STAT char(1)
+)
+;
+CREATE TABLE   CNTRCT_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35) NOT NULL,
+   VALID_DT timestamp,
+   DUE_DT timestamp,
+   TRX_DT timestamp,
+   BUSI_TP char(8),
+   SEL_ID char(35),
+   HAN_CHG_CCY char(10),
+   HAN_CHG_AMT decimal(18),
+   MAN_CHG_RT decimal(3),
+   LMT_CCY char(10),
+   LMT_AMT decimal(18),
+   LMT_BAL decimal(18),
+   LMT_VALID_DT timestamp,
+   LMT_DUE_DT timestamp,
+   EXPOSURE_DAY decimal(3),
+   MIN_MARGIN_PCT decimal(3),
+   CNTRCT_STS char(1),
+   OPEN_LOAN_AMT decimal(18),
+   CLERK_ID char(35),
+   IF_ID char(35),
+   IF_CL_ID char(35),
+   IF_HAN_CHG_CCY char(10),
+   IF_HAN_CHG_AMT decimal(18),
+   IF_COMM_RT decimal(3),
+   EF_ID char(35),
+   EF_CL_ID char(35),
+   EF_HAN_CHG_CCY char(10),
+   EF_HAN_CHG_AMT decimal(18),
+   EF_COMM_RT decimal(3),
+   PATNER_ID char(35),
+   PATNER_NM char(70),
+   PATNER_CL_ID char(35),
+   PATNER_HAN_CHG_CCY char(10),
+   PATNER_HAN_CHG_AMT decimal(18),
+   PATNER_HAN_CHG_RT decimal(3),
+   LOAN_PCT decimal(3),
+   ACCT_PERIOD decimal(4),
+   GRACE_DAY decimal(3),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   SERVICE_REQ char(1),
+   SYS_REL_REASON char(256),
+   FUND_RT decimal(3),
+   INT_RT char(18),
+   INT_COL_TP char(18),
+   INT_COL_DT timestamp,
+   STORAGE_ID char(35),
+   STORAGE_NM char(70),
+   STORAGE_ADR char(14),
+   CONTACT_NM char(70),
+   CUST_AC_NO char(35),
+   MARGIN_AC_NO char(35),
+   TTL_REG_AMT decimal(18),
+   LOAN_TIMES decimal(3) DEFAULT 0,
+   REG_LOWEST_VAL decimal(18) DEFAULT 0,
+   MARGIN_BAL decimal(18) DEFAULT 0,
+   MARGIN_FORM char(1),
+   MARGIN_TP char(1),
+   MARGIN_APPLIED decimal(18),
+   CONSTRAINT CNTRCT_E_PK PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   CNTRCT_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35) NOT NULL,
+   VALID_DT timestamp,
+   DUE_DT timestamp,
+   TRX_DT timestamp,
+   BUSI_TP char(8),
+   SEL_ID char(35),
+   HAN_CHG_CCY char(10),
+   HAN_CHG_AMT decimal(18),
+   MAN_CHG_RT decimal(3),
+   LMT_CCY char(10),
+   LMT_AMT decimal(18),
+   LMT_BAL decimal(18),
+   LMT_VALID_DT timestamp,
+   LMT_DUE_DT timestamp,
+   EXPOSURE_DAY decimal(3),
+   MIN_MARGIN_PCT decimal(3),
+   CNTRCT_STS char(1),
+   OPEN_LOAN_AMT decimal(18),
+   CLERK_ID char(35),
+   IF_ID char(35),
+   IF_CL_ID char(35),
+   IF_HAN_CHG_CCY char(10),
+   IF_HAN_CHG_AMT decimal(18),
+   IF_COMM_RT decimal(3),
+   EF_ID char(35),
+   EF_CL_ID char(35),
+   EF_HAN_CHG_CCY char(10),
+   EF_HAN_CHG_AMT decimal(18),
+   EF_COMM_RT decimal(3),
+   PATNER_ID char(35),
+   PATNER_NM char(70),
+   PATNER_CL_ID char(35),
+   PATNER_HAN_CHG_CCY char(10),
+   PATNER_HAN_CHG_AMT decimal(18),
+   PATNER_HAN_CHG_RT decimal(3),
+   LOAN_PCT decimal(3),
+   ACCT_PERIOD decimal(4),
+   GRACE_DAY decimal(3),
+   SERVICE_REQ char(1),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   FUND_RT decimal(3),
+   INT_RT char(18),
+   INT_COL_TP char(18),
+   INT_COL_DT timestamp,
+   SYS_REL_REASON char(256),
+   STORAGE_ID char(35),
+   STORAGE_NM char(70),
+   STORAGE_ADR char(14),
+   CONTACT_NM char(70),
+   CUST_AC_NO char(35),
+   MARGIN_AC_NO char(35),
+   TTL_REG_AMT decimal(18),
+   LOAN_TIMES decimal(3) DEFAULT 0,
+   REG_LOWEST_VAL decimal(18) DEFAULT 0,
+   MARGIN_BAL decimal(18) DEFAULT 0,
+   MARGIN_FORM char(1),
+   MARGIN_TP char(1)
+)
+;
+CREATE TABLE   CNTRCT_SBR 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   SERVICE_REQ char(1),
+   CNTRCT_NO char(35),
+   BUYER_ID char(35),
+   BUYER_LMT_CCY char(10),
+   BUYER_LMT_AMT decimal(18),
+   ACCT_PERIOD decimal(3),
+   BUYER_NAME char(35)
+)
+;
+CREATE TABLE   COLLAT_REG 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   SEL_ID char(35),
+   SEL_NM char(70),
+   PATNER_ID char(35),
+   PATNER_NM char(70),
+   STORAGE_ID char(35),
+   STORAGE_NM char(70),
+   STORAGE_ADR char(140),
+   CONTACT_NM char(70),
+   REG_AMT decimal(18) DEFAULT 0,
+   CCY char(3),
+   REG_LOWEST_VAL decimal(18) DEFAULT 0,
+   REG_LOAN_BAL decimal(18) DEFAULT 0,
+   CNTRCT_NO char(35),
+   BUSI_TP char(8),
+   LOAN_TIMES decimal(3) DEFAULT 0,
+   SYS_REL_REASON char(256)
+)
+;
+CREATE TABLE   COLLATERAL 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35),
+   COLLAT_NM char(70),
+   COLLAT_QTY char(20),
+   COLLAT_CCY char(3),
+   COLLAT_VAL decimal(22) DEFAULT 0,
+   PRICE decimal(22) DEFAULT 0,
+   SALE_PRICE decimal(22) DEFAULT 0,
+   TTL_LOAN_AMT decimal(22) DEFAULT 0,
+   TTL_LOAN_QTY char(20),
+   TTL_IN_QTY char(20),
+   TTL_IN_AMT decimal(22) DEFAULT 0,
+   TTL_OUT_AMT decimal(22) DEFAULT 0,
+   TTL_OUT_QTY char(20),
+   ARRIVAL_DT timestamp,
+   COLLAT_RD_PRICE decimal(22) DEFAULT 0,
+   REG_NO char(35),
+   COLLAT_ADJ_DT timestamp,
+   COLLAT_SPEC char(50),
+   COLLAT_FACT char(35),
+   QTY char(20),
+   WEIGHT char(20),
+   COLLAT_UNIT char(10),
+   COLLAT_ID char(35),
+   COLLAT_OUT_QTY decimal(18) DEFAULT 0,
+   OUT_QTY decimal(18) DEFAULT 0,
+   OUT_WEIGHT decimal(18) DEFAULT 0
+
+)
+;
+CREATE TABLE   CUST_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CUST_NM char(70) NOT NULL,
+   CUST_EN_NM char(70),
+   CUST_INST_CD char(10),
+   CUST_EDI_ID char(7),
+   CUST_BR_ID char(35),
+   CUST_MGR_ID char(35),
+   CUST_CTRY char(35),
+   CUST_INDUSTRY char(35),
+   DEPT_ID char(35),
+   CUST_ADR char(140),
+   CUST_EN_ADR char(140),
+   CUST_TEL char(35),
+   CUST_FAX char(35),
+   CUST_EMAIL char(256),
+   CUST_TP char(1),
+   CTCT_ID char(35),
+   CTCT_NM char(35),
+   CTCT_EN_NM char(35),
+   CTCT_TEL char(30),
+   CTCT_FAX char(30),
+   CTCT_EMAIL char(256),
+   CTCT_ADR char(140),
+   CUST_FLG char(1),
+   IS_KEYCUST char(1),
+   CCY char(10),
+   LMT_AMT decimal(18) DEFAULT 0,
+   VALID_DT timestamp,
+   DUE_DT timestamp,
+   SYS_REL_REASON char(256),
+   LMT_BAL decimal(18) DEFAULT 0,
+   CONSTRAINT TRX_CUST_E_PK PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   CUST_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CUST_NM char(70) NOT NULL,
+   CUST_EN_NM char(70),
+   CUST_INST_CD char(10),
+   CUST_EDI_ID char(7),
+   CUST_BR_ID char(35),
+   CUST_MGR_ID char(35),
+   CUST_CTRY char(35),
+   CUST_INDUSTRY char(35),
+   DEPT_ID char(35),
+   CUST_ADR char(140),
+   CUST_EN_ADR char(140),
+   CUST_TEL char(35),
+   CUST_FAX char(35),
+   CUST_EMAIL char(256),
+   CUST_TP char(1),
+   CTCT_ID char(35),
+   CTCT_NM char(35),
+   CTCT_EN_NM char(35),
+   CTCT_TEL char(30),
+   CTCT_FAX char(30),
+   CTCT_EMAIL char(256),
+   CTCT_ADR char(140),
+   CUST_FLG char(1),
+   IS_KEYCUST char(1),
+   CCY char(10),
+   LMT_AMT decimal(18) DEFAULT 0,
+   VALID_DT timestamp,
+   DUE_DT timestamp,
+   LMT_BAL decimal(18) DEFAULT 0,
+   SYS_REL_REASON char(256)
+)
+;
+CREATE TABLE   GOODS_INOUT 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   LOAN_ID char(35),
+   INOUT_AMT decimal(18) DEFAULT 0,
+   INOUT_DATE timestamp,
+   BUSI_TP char(1),
+   PMT_DT timestamp,
+   PMT_AMT decimal(18),
+   CNTRCT_NO char(35),
+   PO_NO char(35),
+   TTL_PAY_AMT decimal(18),
+   TTL_IN_VAL decimal(18),
+   TTL_OUT_VAL decimal(18),
+   PO_ID char(35),
+   TRX_DT timestamp
+)
+;
+CREATE TABLE   INOUT_DETAILS 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   INOUT_REF char(35),
+   COLLAT_ID char(35),
+   COLLAT_NM char(35),
+   COLLAT_RD_PRICE decimal(22) DEFAULT 0,
+   OUT_QTY decimal(18),
+   OUT_VAL decimal(18),
+   OUT_DT timestamp,
+   BUSI_TP char(1),
+   INOUT_FLG char(35),
+   ARRIVAL_DT timestamp,
+   COLLAT_QTY char(20),
+   COLLAT_VAL decimal(22) DEFAULT 0,
+   COLLAT_ADJ_DT timestamp,
+   COLLAT_SPEC char(50),
+   COLLAT_FACT char(35),
+   QTY char(20),
+   WEIGHT char(20),
+   COLLAT_UNIT char(10),
+   COLLAT_CCY char(35),
+   COLLAT_OUT_QTY decimal(18),
+   DELV_VAL decimal(18),
+   DELV_QTY decimal(18)
+)
+;
+CREATE TABLE   INVC_CHG 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   HAN_CHG_CCY char(3),
+   HAN_CHG_AMT decimal(18),
+   MAN_CHG_RT char(3),
+   INV_NO char(35) NOT NULL,
+   MAN_CHG_AMT decimal(18),
+   INV_CCY char(3),
+   INV_AMT decimal(18)
+)
+;
+CREATE TABLE   INVC_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35),
+   BUYER_ID char(35),
+   SEL_ID char(35),
+   ORDER_NO char(35),
+   INV_NO char(35) NOT NULL,
+   INV_DT timestamp,
+   INV_VAL_DT timestamp,
+   INV_DUE_DT timestamp,
+   INV_CCY char(3),
+   INV_AMT decimal(18) DEFAULT 0
+,
+   INV_BAL decimal(18) DEFAULT 0
+,
+   SYS_REL_REASON char(256),
+   INV_LOAN_BAL decimal(18) DEFAULT 0
+,
+   BATCH_NO char(35),
+   INV_STS char(10),
+   BUSI_TP char(8),
+   INV_LOAN_AVAL decimal(18),
+   ADJ_TP char(8),
+   NOTES char(150),
+   CONSTRAINT PK_INVCM_E PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   INVC_LOAN 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   INV_REF char(35),
+   INV_NO char(35),
+   INV_CCY char(35),
+   INV_AMT decimal(18) DEFAULT 0
+,
+   INV_BAL decimal(18) DEFAULT 0
+,
+   INV_LOAN_BAL decimal(18) DEFAULT 0
+,
+   INV_LOAN_AMT decimal(18) DEFAULT 0
+,
+   LOAN_PCT decimal(3) DEFAULT 0
+,
+   LOAN_RT decimal(6) DEFAULT 0
+,
+   LOAN_TIMES decimal(3) DEFAULT 0
+,
+   INT_AMT decimal(18) DEFAULT 0
+,
+   LOAN_VAL_DT timestamp,
+   LOAN_DUE_DT timestamp,
+   INVC_LOAN_ID char(35) NOT NULL,
+   INV_LOAN_EBAL decimal(18) DEFAULT 0
+
+)
+;
+CREATE TABLE   INVC_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35),
+   BUYER_ID char(35),
+   SEL_ID char(35),
+   ORDER_NO char(35),
+   INV_NO char(35) NOT NULL,
+   INV_DT timestamp,
+   INV_VAL_DT timestamp,
+   INV_DUE_DT timestamp,
+   INV_CCY char(3),
+   INV_AMT decimal(18) DEFAULT 0
+,
+   INV_BAL decimal(18) DEFAULT 0
+,
+   INV_LOAN_BAL decimal(18) DEFAULT 0
+,
+   BATCH_NO char(35),
+   INV_STS char(10),
+   BUSI_TP char(8),
+   INV_LOAN_AVAL decimal(18) DEFAULT 0
+,
+   SYS_REL_REASON char(256),
+   ADJ_TP char(8),
+   NOTES char(150)
+)
+;
+CREATE TABLE   INVC_PMT 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   INV_PMT_REF char(35),
+   INV_NO char(35),
+   INV_CCY char(3),
+   INV_AMT decimal(18) DEFAULT 0
+,
+   PMT_AMT decimal(18) DEFAULT 0
+,
+   INV_REF char(35),
+   PAY_PRIN_AMT decimal(18) DEFAULT 0
+
+)
+;
+CREATE TABLE   LOAN_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   LOAN_PCT decimal(3) DEFAULT 0
+,
+   LOAN_RT decimal(6) DEFAULT 0
+,
+   LOAN_TIMES decimal(3) DEFAULT 0
+,
+   INT_AMT decimal(18) DEFAULT 0,
+   LOAN_VAL_DT timestamp,
+   LOAN_DUE_DT timestamp,
+   TTL_LOAN_AMT decimal(18) DEFAULT 0,
+   BUSI_TP char(8),
+   SEL_ID char(35),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   SERVICE_REQ char(1),
+   TRX_DT timestamp,
+   SEL_LMT_BAL decimal(18) DEFAULT 0,
+   SEL_LMT_DUE_DT timestamp,
+   PO_NO char(35),
+   PO_ID char(35),
+   TTL_LOAN_BAL decimal(18) DEFAULT 0
+,
+   REG_NO char(35),
+   CNTRCT_NO char(35),
+   CCY char(3),
+   SYS_REL_REASON char(256),
+   MARGIN_AMT decimal(18) DEFAULT 0
+,
+   MARGIN_AC_NO char(35),
+   MARGIN_COMPEN decimal(18),
+   MARGIN_RELE decimal(18),
+   MARGIN_BAL decimal(18),
+   TTL_DLV_AMT decimal(18),
+   CONSTRAINT LOAN_E1_PK PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   LOAN_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   LOAN_PCT decimal(3) DEFAULT 0
+,
+   LOAN_RT decimal(6) DEFAULT 0
+,
+   LOAN_TIMES decimal(3) DEFAULT 0
+,
+   INT_AMT decimal(18) DEFAULT 0
+,
+   LOAN_VAL_DT timestamp,
+   LOAN_DUE_DT timestamp,
+   TTL_LOAN_AMT decimal(18) DEFAULT 0
+,
+   BUSI_TP char(8),
+   SEL_ID char(35),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   SERVICE_REQ char(1),
+   TRX_DT timestamp,
+   SEL_LMT_BAL decimal(18) DEFAULT 0
+,
+   SEL_LMT_DUE_DT timestamp,
+   PO_NO char(35),
+   PO_ID char(35),
+   TTL_LOAN_BAL decimal(18) DEFAULT 0
+,
+   REG_NO char(35),
+   CNTRCT_NO char(35),
+   CCY char(3),
+   SYS_REL_REASON char(256),
+   MARGIN_AMT decimal(18) DEFAULT 0
+,
+   MARGIN_AC_NO char(35),
+   MARGIN_COMPEN decimal(18),
+   MARGIN_RELE decimal(18),
+   MARGIN_BAL decimal(18),
+   TTL_DLV_AMT decimal(18)
+)
+;
+CREATE TABLE   PARTY_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   PATNER_NO char(35),
+   PATNER_NM char(70),
+   PATNER_EN_NM char(70),
+   PATNER_TP char(1),
+   PATNER_CTRY char(35),
+   PATNER_ADR char(140),
+   PATNER_TEL char(30),
+   PATNER_FAX char(30),
+   PATNER_EMAIL char(40),
+   PATNER_POST_CD char(20),
+   INSP_TP char(1),
+   INSP_DAY decimal(4) DEFAULT 0
+,
+   INSP_DT timestamp,
+   INSPECTOR char(35),
+   CONTACT_NM char(35),
+   IS_FCI char(1),
+   FCI_NO char(7),
+   AGM_SIGN_FLG char(1),
+   AGM_NO char(35),
+   AGM_VALUE_DT timestamp,
+   AGM_DUE_DT timestamp,
+   PATNER_LEVL char(7),
+   PATNER_AREA char(70),
+   PATNER_GOODS char(70),
+   PATNER_CITY char(35),
+   SYS_REL_REASON char(256),
+   LMT_CCY char(35),
+   LMT_AMT decimal(18),
+   LMT_BAL decimal(18),
+   LMT_VALID_DT timestamp,
+   LMT_DUE_DT timestamp,
+   LMT_FLG char(1),
+   LMT_ALLOCATE decimal(18),
+   LMT_RECOVER decimal(18),
+   BUSI_TP char(1),
+   THEIR_REF char(35),
+   CUST_ID char(35),
+   CUST_NM char(35),
+   LMT_DT timestamp,
+   CONSTRAINT PARTY_E_PK PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   PARTY_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   PATNER_NO char(35),
+   PATNER_NM char(70),
+   PATNER_EN_NM char(70),
+   PATNER_TP char(1),
+   PATNER_CTRY char(35),
+   PATNER_ADR char(140),
+   PATNER_TEL char(30),
+   PATNER_FAX char(30),
+   PATNER_EMAIL char(40),
+   PATNER_POST_CD char(20),
+   INSP_TP char(1),
+   INSP_DAY decimal(4) DEFAULT 0
+,
+   INSP_DT timestamp,
+   INSPECTOR char(35),
+   CONTACT_NM char(35),
+   IS_FCI char(1),
+   FCI_NO char(7),
+   AGM_SIGN_FLG char(1),
+   AGM_NO char(35),
+   AGM_VALUE_DT timestamp,
+   AGM_DUE_DT timestamp,
+   PATNER_LEVL char(7),
+   PATNER_AREA char(70),
+   PATNER_GOODS char(70),
+   PATNER_CITY char(35),
+   SYS_REL_REASON char(256),
+   LMT_CCY char(35),
+   LMT_AMT decimal(18),
+   LMT_BAL decimal(18),
+   LMT_VALID_DT timestamp,
+   LMT_DUE_DT timestamp,
+   LMT_FLG char(1),
+   LMT_ALLOCATE decimal(18),
+   LMT_RECOVER decimal(18),
+   BUSI_TP char(1),
+   THEIR_REF char(35),
+   CUST_ID char(35),
+   CUST_NM char(35),
+   LMT_DT timestamp
+)
+;
+CREATE TABLE   PMT_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   TTL_PMT_AMT decimal(18) DEFAULT 0
+,
+   PMT_DT timestamp,
+   TRX_DT timestamp,
+   SEL_ID char(35),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   BUSI_TP char(8),
+   SERVICE_REQ char(1),
+   LOAN_ID char(35),
+   PAY_INT_AMT decimal(18) DEFAULT 0
+,
+   PAY_PRIN_AMT decimal(18) DEFAULT 0
+,
+   PO_ID char(35),
+   SYS_REL_REASON char(256),
+   PMT_TP char(8)
+)
+;
+CREATE TABLE   PO_E 
+(
+   SYS_REF_NO char(35) NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35),
+   BUYER_ID char(35),
+   SEL_ID char(35),
+   BUYER_NM char(70),
+   SEL_NM char(70),
+   PO_CCY char(3),
+   PO_AMT decimal(18) DEFAULT 0
+,
+   PO_DUE_DT timestamp,
+   PO_NO char(35),
+   TRX_DT timestamp,
+   PO_LOAN_BAL decimal(18) DEFAULT 0
+,
+   TRX_STS char(1),
+   SYS_REL_REASON char(256),
+   CONSTRAINT PO_E_PK PRIMARY KEY (SYS_REF_NO,SYS_EVENT_TIMES)
+)
+;
+CREATE TABLE   PO_M 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   CNTRCT_NO char(35),
+   BUYER_ID char(35),
+   SEL_ID char(35),
+   BUYER_NM char(70),
+   SEL_NM char(70),
+   PO_CCY char(3),
+   PO_AMT decimal(18) DEFAULT 0
+,
+   PO_DUE_DT timestamp,
+   PO_NO char(35),
+   TRX_DT timestamp,
+   PO_LOAN_BAL decimal(18) DEFAULT 0
+,
+   TRX_STS char(1),
+   SYS_REL_REASON char(256)
+)
+;
+CREATE TABLE   TRF_REG 
+(
+   SYS_REF_NO char(35) PRIMARY KEY NOT NULL,
+   SYS_OP_ID char(35),
+   SYS_OP_TM timestamp,
+   SYS_REL_ID char(35),
+   SYS_REL_TM timestamp,
+   SYS_AUTH_ID char(35),
+   SYS_AUTH_TM timestamp,
+   SYS_NEXT_OP char(35),
+   SYS_LOCK_FLAG char(1),
+   SYS_LOCK_BY char(35),
+   SYS_FUNC_ID char(35),
+   SYS_TRX_STS char(1),
+   SYS_EVENT_TIMES int(6) not null,
+   SEL_ID char(35),
+   BUYER_ID char(35),
+   SEL_NM char(35),
+   BUYER_NM char(35),
+   CCY char(3),
+   REG_AMT decimal(18) DEFAULT 0,
+   CNTRCT_NO char(35),
+   SERVICE_REQ char(1),
+   BUSI_TP char(8),
+   TRX_DT timestamp,
+   ACCT_PERIOD decimal(3) DEFAULT 0,
+   GRACE_DAY decimal(3) DEFAULT 0
+
+)
+;
+CREATE UNIQUE INDEX SYS_C0028367 ON   ACC_TRN (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX CNTRCT_E_PK ON   CNTRCT_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX CNTRCT_M_U01 ON   CNTRCT_M (CNTRCT_NO)
+;
+CREATE UNIQUE INDEX CNTRCT_M_PK ON   CNTRCT_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX CNTRCT_SBR_PK ON   CNTRCT_SBR (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_COLLAT_REG ON   COLLAT_REG (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX COLLATERAL_KEY ON   COLLATERAL (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX TRX_CUST_E_PK ON   CUST_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX TRX_CUST_M_PK ON   CUST_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX GOODS_INOUT_PK ON   GOODS_INOUT (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX INOUT_DETAILS_PK ON   INOUT_DETAILS (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_INVC_CHG ON   INVC_CHG (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_INVCM_E ON   INVC_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX INVC_LOAN_PKK1 ON   INVC_LOAN (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_INVCM_M ON   INVC_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_INVC_P1MT ON   INVC_PMT (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX LOAN_E1_PK ON   LOAN_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX LOAN_M_PK ON   LOAN_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PARTY_E_PK ON   PARTY_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX PARTY_M_PK ON   PARTY_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PK_PMT_M ON   PMT_M (SYS_REF_NO)
+;
+CREATE UNIQUE INDEX PO_E_PK ON   PO_E 
+(
+  SYS_REF_NO,
+  SYS_EVENT_TIMES
+)
+;
+CREATE UNIQUE INDEX PK_TRF_REG ON   TRF_REG (SYS_REF_NO)
+;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>ESBRoot esbservice开发工具页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <queryid>Q_P_000214</queryid>
+    <id>P_P_000196</id>
+    <name>esbservice页面</name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>jsp/para/ESBRoot_ESBService_Add.jsp</jspfile>
+</page>

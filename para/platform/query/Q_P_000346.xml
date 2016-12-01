@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000346</id>
+	<name>合格证信息查询</name>
+	<desc>合格证信息查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CRTF_M</tablename>
+		<lockcheck>N</lockcheck>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,cntrctNo,loanId,crtfNo,billNo,billAmt,brandNo,chassisNo,engineNo,adviceAmt</fields>
+<!-- 		<condition>billNo = '$billNo$'  and releaseDt is null  and sysLockFlag = 'F' and sysTrxSts = 'M'</condition> -->
+		<condition>billNo = '$billNo$'  and  sysLockFlag = 'F' and sysTrxSts = 'M'</condition>
+		<orderby>billNo</orderby>
+		<asc>Y</asc>
+		<sql>select sysRefNo,cntrctNo,loanId,crtfNo,billNo,billAmt,brandNo,chassisNo,engineNo,adviceAmt from CrtfM</sql>
+	</qnode>	
+</query>

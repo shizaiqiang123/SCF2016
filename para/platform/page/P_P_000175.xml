@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<name>保理商-function修改</name>
+	<desc>保理商-function修改</desc>
+    <holdmaster>T</holdmaster>
+    <istransaction>N</istransaction>
+    <id>P_P_000175</id>
+    <lockcheck>Y</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>screen\para\Function_Edit.jsp</jspfile>
+</page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000261</id>
+    <name>核心企业用户信息</name>
+    <desc>核心企业用户信息页面</desc>
+    <jspfile>screen/coreUser/coreUser.jsp</jspfile>
+    <cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+</page>

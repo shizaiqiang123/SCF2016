@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<id>T0000009</id>
+	<name>导入节假日数据</name>
+	<desc>导入节假日数据</desc>
+	<!--export 保留字段 -->
+	<type>import</type>
+	<!--XML,Text，html,pdf,csv -->
+	<temptype>Excel</temptype>
+	<!--Export的模板文件，Import中忽略此属性 -->
+	<tempfile>节假日.xlsx</tempfile>
+	<!--解析初始行，xml中忽略此属性 -->
+	<startrow>1</startrow>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<separator>,</separator>
+	<!--自定义逻辑 -->
+	<reformatclass></reformatclass>	
+	<head name="Sheet1">
+<!-- 		<mfield key="1,1" isnull="true" isunique="true" desc="供应商营业执照" type="java.lang.String" defaultvalue="">licenceNo</mfield> -->
+	</head>
+	<mapping name="Sheet1" beginRow="2" endRow="1280" beginColumn="0" endColumn="2">		
+			<mfield key="1" isnull="false" isunique="false" desc="日期" type="java.util.Date" defaultvalue="">holiday</mfield>
+	</mapping>
+</template>

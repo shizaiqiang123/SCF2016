@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q00000017</id>
+	<name>用户复核</name>
+	<desc>复核用户查询</desc>	
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询子表</desc>
+		<component>componentClass</component>
+		<tablename>STD.USER_INFO_E</tablename>
+		<lockcheck>y</lockcheck>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<!-- <fields>all</fields>
+		<condition>sys_ref_no=?and sys_op_id=?</condition>
+		<params>$sysRefNo$,user001</params>
+		<orderby>sys_ref_no</orderby>
+		<asc>Y</asc>
+		<sql>SELECT * FROM  TCntrctE</sql> -->
+	</qnode>
+</query>

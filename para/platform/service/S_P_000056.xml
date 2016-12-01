@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <trigger>M</trigger>
+    <ruleSize>0</ruleSize>
+    <type>Advice</type>
+    <id>S_P_000056</id>
+    <component></component>
+    <name>验证码通知服务</name>
+    <gapiid>b2e00083</gapiid>
+    <servicejs>S_P_00027.js</servicejs>
+    <methodname>perViewServiceData</methodname>
+</service>

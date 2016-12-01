@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+		<channel type="v">24</channel>
+		<fromNodeId type="v">gjjs</fromNodeId>
+		<toServiceCode></toServiceCode>
+		<externalReferenceNo path="trxDom">sysRefNo</externalReferenceNo>
+		<transactionBranch></transactionBranch>
+		<transactionDate path="trxDom">currentdate</transactionDate>
+		<msgPri type="v">1</msgPri>
+		<msgVer type="v">1.0</msgVer>
+		<replyCode></replyCode>
+		<replyText></replyText>
+	</Message_Header>
+	<Message_Body>
+		<token path="trxDom">token</token>
+		<SubTranCode></SubTranCode>
+		<tranDate path="trxDom">currentdate</tranDate>
+		<tranArray></tranArray>
+		<tranDetail></tranDetail>
+		<TranAcctNo></TranAcctNo>
+		<TranAmt path="trxDom">ttlLoanAmt</TranAmt>
+		<vtyp></vtyp>
+		<vprefix></vprefix>
+		<vsno></vsno>
+		<acn></acn>
+		<brcd></brcd>
+		<zsummry></zsummry>
+		<zxfr></zxfr>
+		<zxfrnam></zxfrnam>
+		<zxfrboo></zxfrboo>
+		<CC></CC>
+		<CRCDLST></CRCDLST>
+		<CRCD path="trxDom">ccy</CRCD>
+		<RATE type="v">1</RATE>
+		<BASE type="path">ccy</BASE>
+		<MULT></MULT>
+		<CUSTCD></CUSTCD>
+		<BSEAMT></BSEAMT>
+		<OPER></OPER>
+		<ZACCTNAM></ZACCTNAM>
+		<ZCASH type="v">1</ZCASH>
+		<ZCASA type="v">1</ZCASA>
+		<SEQ></SEQ>
+		<FXCODE></FXCODE>
+		<ZBRT></ZBRT>
+		<ZSRT></ZSRT>
+		<ZBEQURT></ZBEQURT>
+		<ZSEQURT></ZSEQURT>
+		<ZBAMT></ZBAMT>
+		<ZSAMT></ZSAMT>
+		<ZBCRCD></ZBCRCD>
+		<ZSCRCD></ZSCRCD>
+		<VERIFY></VERIFY>
+		<PASSWORD></PASSWORD>
+		<CHNLUID></CHNLUID>
+		<OCHNL></OCHNL>
+		<ACN></ACN>
+		<SUBTYPE></SUBTYPE>
+		<CRCD></CRCD>
+		<ODT></ODT>
+		<TRM></TRM>
+		<MDT></MDT>
+		<ORG></ORG>
+		<RENCD></RENCD>
+		<IMO></IMO>
+		<RACN></RACN>
+		<INTMATITA></INTMATITA>
+		<ZINTTRM></ZINTTRM>
+		<PRATE></PRATE>
+		<ZHLDFLG></ZHLDFLG>
+		<ZPTYPE></ZPTYPE>
+		<ZPHC></ZPHC>
+		<ZENDDT></ZENDDT>
+	</Message_Body>
+</Message>

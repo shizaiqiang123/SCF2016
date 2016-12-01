@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000351</id>
+    <name>产品介绍</name>
+    <functype>VW</functype>
+    <page>
+		<id>P_P_000271</id>
+		<index>0</index>
+		<name>产品介绍</name>
+		<desc>产品介绍</desc>
+	</page>	
+	<page>
+		<id>P_P_000295</id>
+		<index>0</index>
+		<name>产品介绍</name>
+		<desc>产品介绍</desc>
+		<maincomp>TrxViewManager</maincomp>
+        <pagetype>VIEW</pagetype>
+<!-- 		<pagetype>EDIT</pagetype> -->
+<!-- 		<maincomp>TrxMasterManager</maincomp> -->
+	</page>	
+</function>

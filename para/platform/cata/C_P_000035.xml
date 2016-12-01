@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000035</id>
+	<name>融资申请的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>预付类-融资申请的协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" defaultvalue="" width = "200">selId</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "300">cntrctNo</field>
+		<field datatype="1" title="授信客户ID" hidden="" width = "350">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "350">selNm</field>
+		<field datatype="1" title="间接客户ID" hidden="true" width = "100">buyerId</field>
+		<field datatype="1" title="间接客户名称" hidden="true" width = "100">buyerNm</field>
+		<field datatype="1" title="业务类型" hidden="true" width = "100">busiTp</field>
+		<field datatype="1" title="敞口覆盖日" hidden="true" width = "100">exposureDay</field>					
+		<field datatype="1" title="" hidden="true" width = "100">sysRefNo</field>					
+		<field datatype="1" title="" hidden="true" width = "100">lmtBal</field>					
+	</select>
+	<condition>
+		  cntrctNo like %$cntrctNo$% and selNm like %$selNm$% and selId like %$selId$% and sysTrxSts = M and busiTp=1 and  cntrctSts=0 and sysBusiUnit =$sysBusiUnit$
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

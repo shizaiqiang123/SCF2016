@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<servicejs>S_P_0000801.js</servicejs>
+    <ruleSize>0</ruleSize>
+    <type>QueryCustNo</type>
+    <id>S_P_000049</id>
+    <component></component>
+    <name></name>
+    <methodname>postMasterData</methodname>
+</service>

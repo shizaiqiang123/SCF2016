@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000476</id>
+	<module>查看保险公司信息</module>
+	<name>查看保险公司信息</name>
+	<desc></desc>
+	<functype>VM</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000135</catalog>
+	</page>
+	<page>
+		<id>P_P_000754</id>
+		<index>0</index>
+		<name>查看保险公司</name>
+		<desc>查看保险公司</desc>
+		<pagetype>View</pagetype>
+		<maincomp>TrxViewManager</maincomp>
+	</page>	
+</function>

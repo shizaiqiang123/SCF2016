@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000003</id>
+	<name>Limits</name>
+	<type>Limits</type>
+	<protocol>limitsServiceImpl</protocol>
+	<postadapter>limitsAdapter</postadapter>
+	<queryadapter>limitsQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

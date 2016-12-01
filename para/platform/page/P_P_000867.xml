@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000867</id>
+	<name>预付类价格变动页面</name>
+	<desc>预付类价格变动页面</desc>
+	<jspfile>screen/collatRef/poCollatPrice.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.PRICE_ADJUST_M</maintable>
+	<logicid>L_P_000587</logicid>
+</page>

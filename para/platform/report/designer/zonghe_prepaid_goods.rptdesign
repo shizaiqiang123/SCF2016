@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">D:\预付类货物出入库台帐.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">sysOpTm</property>
+                    <text-property name="heading">sysOpTm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">poInNum</property>
+                    <text-property name="heading">poInNum</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ttlPoOutNum</property>
+                    <text-property name="heading">ttlPoOutNum</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">cntrctNo</property>
+                    <text-property name="heading">cntrctNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selNm</property>
+                    <text-property name="heading">selNm</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">busiTp</property>
+                    <text-property name="heading">busiTp</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ccy</property>
+                    <text-property name="heading">ccy</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">goodsCata</property>
+                    <text-property name="heading">goodsCata</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">subCata</property>
+                    <text-property name="heading">subCata</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">price</property>
+                    <text-property name="heading">price</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">pldPerc</property>
+                    <text-property name="heading">pldPerc</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">warehouseNm</property>
+                    <text-property name="heading">warehouseNm</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">sysOpTm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">poInNum</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ttlPoOutNum</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">cntrctNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">selNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">busiTp</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">ccy</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">goodsCata</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">subCata</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">price</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">pldPerc</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">warehouseNm</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">sysOpTm</property>
+                    <property name="nativeName">sysOpTm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">poInNum</property>
+                    <property name="nativeName">poInNum</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ttlPoOutNum</property>
+                    <property name="nativeName">ttlPoOutNum</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">cntrctNo</property>
+                    <property name="nativeName">cntrctNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">selNm</property>
+                    <property name="nativeName">selNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">busiTp</property>
+                    <property name="nativeName">busiTp</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">ccy</property>
+                    <property name="nativeName">ccy</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">goodsCata</property>
+                    <property name="nativeName">goodsCata</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">subCata</property>
+                    <property name="nativeName">subCata</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">price</property>
+                    <property name="nativeName">price</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">pldPerc</property>
+                    <property name="nativeName">pldPerc</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">warehouseNm</property>
+                    <property name="nativeName">warehouseNm</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/CRTF_E]#:#{sysOpTm;STRING;/sysOpTm},{poInNum;STRING;/poInNum},{ttlPoOutNum;STRING;/ttlPoOutNum},{cntrctNo;STRING;/cntrctNo},{selNm;STRING;/selNm},{busiTp;STRING;/busiTp},{ccy;STRING;/ccy},{goodsCata;STRING;/goodsCata},{subCata;STRING;/subCata},{price;STRING;/price},{pldPerc;STRING;/pldPerc},{warehouseNm;STRING;/warehouseNm}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysOpTm</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysOpTm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>poInNum</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>poInNum</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ttlPoOutNum</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ttlPoOutNum</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>cntrctNo</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>cntrctNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selNm</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>busiTp</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>busiTp</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ccy</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ccy</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>goodsCata</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>goodsCata</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>subCata</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>subCata</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>price</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>price</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>pldPerc</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>pldPerc</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>warehouseNm</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>warehouseNm</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="9">
+            <column id="10"/>
+            <row id="11">
+                <cell id="12"/>
+            </row>
+            <row id="13">
+                <cell id="14">
+                    <table id="17">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sysOpTm</property>
+                                <text-property name="displayName">sysOpTm</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sysOpTm"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">poInNum</property>
+                                <text-property name="displayName">poInNum</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["poInNum"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ttlPoOutNum</property>
+                                <text-property name="displayName">ttlPoOutNum</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ttlPoOutNum"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">cntrctNo</property>
+                                <text-property name="displayName">cntrctNo</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["cntrctNo"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">selNm</property>
+                                <text-property name="displayName">selNm</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["selNm"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">busiTp</property>
+                                <text-property name="displayName">busiTp</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["busiTp"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ccy</property>
+                                <text-property name="displayName">ccy</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ccy"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">goodsCata</property>
+                                <text-property name="displayName">goodsCata</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["goodsCata"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">subCata</property>
+                                <text-property name="displayName">subCata</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["subCata"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">price</property>
+                                <text-property name="displayName">price</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["price"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">pldPerc</property>
+                                <text-property name="displayName">pldPerc</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["pldPerc"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">warehouseNm</property>
+                                <text-property name="displayName">warehouseNm</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["warehouseNm"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="57"/>
+                        <column id="58"/>
+                        <column id="59"/>
+                        <column id="60"/>
+                        <column id="61"/>
+                        <column id="62"/>
+                        <column id="63"/>
+                        <column id="64"/>
+                        <column id="65"/>
+                        <column id="66"/>
+                        <column id="67"/>
+                        <column id="68"/>
+                        <header>
+                            <row id="18">
+                                <cell id="19">
+                                    <label id="69">
+                                        <text-property name="text">业务日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="20">
+                                    <label id="71">
+                                        <text-property name="text">入库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="21">
+                                    <label id="73">
+                                        <text-property name="text">出库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="22">
+                                    <label id="75">
+                                        <text-property name="text">货押协议编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="23">
+                                    <label id="77">
+                                        <text-property name="text">客户名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="24">
+                                    <label id="79">
+                                        <text-property name="text">业务类别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="25">
+                                    <label id="81">
+                                        <text-property name="text">币种</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="26">
+                                    <label id="83">
+                                        <text-property name="text">商品名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="27">
+                                    <label id="85">
+                                        <text-property name="text">商品子类名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="28">
+                                    <label id="87">
+                                        <text-property name="text">最新认定价格</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="29">
+                                    <label id="89">
+                                        <text-property name="text">质押率</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="30">
+                                    <label id="91">
+                                        <text-property name="text">仓库名称</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="31">
+                                <cell id="32">
+                                    <data id="70">
+                                        <property name="resultSetColumn">sysOpTm</property>
+                                    </data>
+                                </cell>
+                                <cell id="33">
+                                    <data id="72">
+                                        <property name="resultSetColumn">poInNum</property>
+                                    </data>
+                                </cell>
+                                <cell id="34">
+                                    <data id="74">
+                                        <property name="resultSetColumn">ttlPoOutNum</property>
+                                    </data>
+                                </cell>
+                                <cell id="35">
+                                    <data id="76">
+                                        <property name="resultSetColumn">cntrctNo</property>
+                                    </data>
+                                </cell>
+                                <cell id="36">
+                                    <data id="78">
+                                        <property name="resultSetColumn">selNm</property>
+                                    </data>
+                                </cell>
+                                <cell id="37">
+                                    <data id="80">
+                                        <property name="resultSetColumn">busiTp</property>
+                                    </data>
+                                </cell>
+                                <cell id="38">
+                                    <data id="82">
+                                        <property name="resultSetColumn">ccy</property>
+                                    </data>
+                                </cell>
+                                <cell id="39">
+                                    <data id="84">
+                                        <property name="resultSetColumn">goodsCata</property>
+                                    </data>
+                                </cell>
+                                <cell id="40">
+                                    <data id="86">
+                                        <property name="resultSetColumn">subCata</property>
+                                    </data>
+                                </cell>
+                                <cell id="41">
+                                    <data id="88">
+                                        <property name="resultSetColumn">price</property>
+                                    </data>
+                                </cell>
+                                <cell id="42">
+                                    <data id="90">
+                                        <property name="resultSetColumn">pldPerc</property>
+                                    </data>
+                                </cell>
+                                <cell id="43">
+                                    <data id="92">
+                                        <property name="resultSetColumn">warehouseNm</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="44">
+                                <cell id="45"/>
+                                <cell id="46"/>
+                                <cell id="47"/>
+                                <cell id="48"/>
+                                <cell id="49"/>
+                                <cell id="50"/>
+                                <cell id="51"/>
+                                <cell id="52"/>
+                                <cell id="53"/>
+                                <cell id="54"/>
+                                <cell id="55"/>
+                                <cell id="56"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

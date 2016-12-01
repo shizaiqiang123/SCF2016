@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00056</id>
+	<workid>1307</workid>
+	<workname>buyerInvcReg</workname>
+	<name>买方保理_应收账款登记</name>
+	<desc>买方保理_应收账款登记</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

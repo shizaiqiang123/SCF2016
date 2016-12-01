@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000014</id>
+	<name>审核应收账款页面</name>
+	<desc>主交易信息管理</desc>
+	<jspfile>jsp/SYS_Release.jsp</jspfile>
+	<cascadeevent>y</cascadeevent>
+	<lockcheck>y</lockcheck>
+	<pagetype>re</pagetype>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxReleaseManager</maincomp>
+	<maintable>TRX.T_CNTRCT_M</maintable>
+ 	<!--<queryid>Q00000002</queryid>
+	<logicid>L00000002</logicid>
+	<gapi>G00000001</gapi>
+	<service>S00000002</service>
+	<report>R00000002 </report>-->
+</page>

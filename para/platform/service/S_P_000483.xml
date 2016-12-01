@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000483</id>
+    <trigger>M</trigger>
+    <type>Report</type>
+    <component></component>
+    <gapiid></gapiid>
+    <methodname>postMasterData</methodname>
+    <rule>R_P_000026</rule>
+</service>

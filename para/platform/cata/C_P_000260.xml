@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000260</id>
+	<name>还款手动核销自动处理Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>还款手动核销自动处理Catalog</DESC>
+	<tablename>TRX.FUND_REF_E</tablename>
+	<search>
+		<field datatype="1" title="资金编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "100">payerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="资金编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="入账账号" hidden="" width = "170" >payAcNo</field>
+		<field datatype="1" title="付款人账号" hidden="" width = "170">selAcNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "300">payerNm</field>
+		<field datatype="1" title="还款金额" hidden="" width = "150" formatter="ccyFormater">ttlPmtAmt</field>
+		<field datatype="1" title="到账日期" hidden="" width = "150" formatter="dateFormater">pmtDt</field>
+		<field datatype="1" title="付款银行代码" hidden="true" width = "120">bkCd</field>
+		<field datatype="1" title="附言" hidden="true" width = "120">remark</field>
+		<field datatype="1" title="theirRef" hidden="true" width = "100">theirRef</field>
+		<field datatype="1" title="sysEventTimes" hidden="true" width = "100">sysEventTimes</field>
+		</select>
+	<condition><![CDATA[sysTrxSts = P and sysRefNo like %$sysRefNo$% and compSts <> 0]]>
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

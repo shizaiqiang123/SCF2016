@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_10000007</id>
+	<module>删除角色</module>
+	<name>删除角色</name>
+	<desc>角色管理-删除角色</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P00000015</id>
+		<index>0</index>
+		<name>筛选条件</name>
+		<desc>筛选记录以进入交易</desc>
+		<catalog>C_S_ROLE_0001</catalog>
+	</page>	
+	<page>
+		<id>P_S_10000003</id>
+		<index>1</index>
+		<name>删除角色</name>
+		<desc>删除角色页面</desc>
+		<pagetype>DELETE</pagetype>
+	</page>	
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

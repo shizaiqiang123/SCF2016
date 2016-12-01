@@ -1,0 +1,10 @@
+ClearCase CopyAreaDB|4
+vobs\FSSDB-FCSP_VOB\fssdb-fcsp_j2ee\src\FCSP\WebContent\corejs\jquery-validation
+2
+6
+18:jquery.validate.min.gzjs|1|1454551a4c6|18d9|988e3b72|6b81838612b84c47b165854f412e94b0|0
+16:jquery.validate.min.js|1|1454551a4d6|51cf|60e12d9a|be12dba9740940ee84448850c60a4d59|0
+12:jquery.metadata.js|1|1454551a4c6|39b|357e5347|0d661a18550c45d392a4169f1cb5c339|0
+18:jquery.metadata-debug.js|1|1454551a4c6|f73|4a14d89e|a6f5d7d81917433cb3e399ab82dffd52|0
+14:messages_cn-debug.js|1|1454551a4e6|46a|498c3375|7d284c55ab4b11e391b0e41f131e4b14|0
+e:messages_cn.js|1|1454551a4e6|3be|e1751125|87584c69ab4b11e391b0e41f131e4b14|0

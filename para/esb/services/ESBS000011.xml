@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000011</id>
+	<name>Verify</name>
+	<type>Verify</type>
+	<protocol>verificationCodeService</protocol>
+	<postadapter>verificationCodePostAdapter</postadapter>
+	<queryadapter>verificationCodeQueryAdapter</queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Class</protocoltp>
+</esbservice>

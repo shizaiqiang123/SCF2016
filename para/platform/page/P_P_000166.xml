@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000166</id>
+	<name>间接客户额度明细信息</name>
+	<desc>间接客户额度明细信息</desc>
+	<jspfile>screen/cust/custDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.CUST_E</maintable>
+</page>

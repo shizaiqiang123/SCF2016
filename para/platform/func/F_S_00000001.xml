@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_00000001</id>
+	<module>测试上传</module>
+	<name>测试上传</name>
+	<desc>测试上传</desc>
+	<functype>MM</functype>
+	<template>T0000001</template>
+	<page>
+		<id>P00000000</id>
+		<index>0</index>
+		<name>测试上传</name>
+		<desc>测试上传</desc>
+		<pagetype>ADD</pagetype>
+	</page>	
+	<page>
+		<id>P_S_success</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>	
+</function>

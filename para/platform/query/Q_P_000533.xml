@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000533</id>
+	<name>会计科目账目查询</name>
+	<nodeSize>1</nodeSize>
+	<desc>会计科目账目查询</desc>
+	<qnode>
+		<desc>look up 查询主表</desc>
+		<type>E</type>
+		<id>N00000001</id>
+		<asc>Y</asc>
+		<tablename>TRX.ESB_ACCOUNTING</tablename>
+		<name>会计科目账目查询</name>
+		<doname>doname</doname>
+		<cascadeevent>N</cascadeevent>
+		<condition>accId = $accId$</condition>
+	</qnode>
+</query>

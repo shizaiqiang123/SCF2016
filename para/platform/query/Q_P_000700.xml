@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000700</id>
+    <cacheAble>false</cacheAble>
+    <name>国内单保理(外网)-卖方还款</name>
+    <nodeSize>0</nodeSize>
+    <qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询融资表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.LOAN_E</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[sysRefNo=$loanId$ and sysTrxSts=T and sysLockBy =$sysRefNo$]]></condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

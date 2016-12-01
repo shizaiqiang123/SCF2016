@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000042</id>
+	<name>核心-信贷接口服务</name>
+	<type>LZESB</type><!-- 对内开放的服务类型，消费者凭此类型调用服务 -->
+    <protocol>127.0.0.1</protocol>
+	<postadapter></postadapter>
+	<queryadapter></queryadapter>
+	<initlize>S</initlize>
+	<protocoltp>Socket</protocoltp><!-- 接口协议类型 -->
+	<address>127.0.0.1</address>
+    <port>30001</port>
+    <method></method>
+    <inorout>i</inorout><!-- 当前服务是对内还是对外开放的，对内开放，属性对接外部接口，对外开放，属性对接内部监听 -->
+    <timeout>60</timeout>
+    <characterset>GBK</characterset>
+</esbservice>

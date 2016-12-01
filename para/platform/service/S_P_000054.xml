@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <ruleSize>0</ruleSize>
+    <type>Advice</type>
+    <id>S_P_000054</id>
+    <component></component>
+    <name>到账通知短信提醒</name>
+    <nodeName>service</nodeName>
+    <gapiid>b2e00083</gapiid>
+    <servicejs>S_P_00014.js</servicejs>
+</service>

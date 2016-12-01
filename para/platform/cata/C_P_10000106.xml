@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_10000106</id>
+	<name>应收账款台帐查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>应收账款台帐查询Catalog</DESC>
+	<tablename>INVC_E a, CUST_M b,STD_MENU_INFO c</tablename>
+	<search>
+		<field datatype="3" title="交易起始日期" defaultvalue="" width = "200">trxStartDate</field>
+		
+		<field datatype="3" title="交易结束日期" defaultvalue="" width = "200">trxEndDate</field>
+		
+		<field datatype="4" title="操作类型" defaultvalue="" width = "200">menuName</field>
+	
+		<field datatype="1" title="应收账款凭证号" defaultvalue="" width = "200">invNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易日期" hidden="" width = "100" alis = "sysOpTm" formatter="dateFormater">a.sys_Op_Tm</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100" alis = "selId">a.sel_Id</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100" alis = "selNm">b.cust_nm</field>
+		<field datatype="1" title="应收账款凭证号" hidden="" width = "100" alis = "invNo">a.inv_No</field>
+		<field datatype="1" title="模块编号" hidden="" width = "100" alis = "sysFuncId">a.sys_Func_Id</field>
+		<field datatype="1" title="操作类型" hidden="" width = "100" alis = "menuName">c.menu_Name</field>
+		<field datatype="1" title="应收账款金额" hidden="" width = "100" alis = "invAmt">a.inv_Amt</field>
+		<field datatype="1" title="应收账款余额" hidden="" width = "100" alis = "invBal">a.inv_Bal</field>
+		<!-- <field datatype="1" title="" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "200">sysEventTimes</field>
+		<field datatype="1" title="" hidden="true" width = "200">busiTp</field>
+		<field datatype="1" title="" hidden="true" width = "200">ccy</field>
+		<field datatype="1" title="" hidden="true" width = "200">loanPct</field>
+		<field datatype="1" title="" hidden="true" width = "200">selId</field>
+		<field datatype="1" title="" hidden="true" width = "200">selAcNo</field>
+		<field datatype="1" title="" hidden="true" width = "200">investorName</field> -->
+	</select>
+	<join>
+		<on seq="1"> a.SEL_ID = b.SYS_REF_NO</on>
+		<on seq="2"> a.SYS_FUNC_ID = c.MENU_ID</on>
+	</join>
+		<condition><![CDATA[c.menu_Name = '$menuName$' and a.sys_Op_Tm >= '$trxStartDate$' and  a.sys_Op_Tm <= '$trxEndDate$' and c.menu_Name like '%$menuName$%' and a.inv_No like '%$invNo$%'  and a.busi_Tp = '0' and a.sys_Busi_Unit = '$sysBusiUnit$' ]]></condition>
+		<orderby>a.sys_Ref_No</orderby>
+</catalog>
+

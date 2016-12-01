@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00001</id>
+	<workid>1303</workid>
+	<workname>LZAddUser</workname>
+	<name>添加用户信息</name>
+	<desc>添加用户信息</desc>
+	<jspath>W_P_00001.js</jspath>
+</workflow>

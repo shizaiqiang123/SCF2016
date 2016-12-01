@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000053</id>
+	<name>国内保理-卖方还款 应收账款信息查询</name>
+	<desc>国内保理-卖方还款 应收账款信息查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询融资子表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_LOAN_M</tablename>
+		<doname>doname</doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>invcLoanRef,invId,invNo,invAmt,invLoanEbal,invCcy,loanValDt,loanDueDt,invValDt,invDueDt,loanRt</fields>
+		<condition></condition>
+		<orderby></orderby>
+		<params>$sysRefNo$,$invcLoanId$</params>
+		<asc></asc>
+	  <!-- <sql><![CDATA[SELECT b.sysRefNo ,b.invRef,b.invNo,b.invAmt,b.invLoanEbal,b.invCcy,b.loanValDt,b.loanDueDt,b.invValDt,b.invDueDt from InvcM a , InvcLoanM b where a.sysRefNo=b.invRef  and b.invLoanEbal>0   and b.sysLockFlag = 'F' and a.invSts <> 'BUYERPMT' and b.invcLoanId=?]]></sql> -->
+		   <sql><![CDATA[SELECT b.sysRefNo ,b.invRef,b.invNo,b.invAmt,b.invLoanBal,b.invCcy,b.loanValDt,b.loanDueDt,b.invValDt,b.invDueDt,b.loanRt   from InvcM a , InvcLoanM b where a.sysRefNo=b.invRef  and b.invLoanBal>0   and (b.sysLockFlag = 'F' or b.sysLockBy = ? )  and b.invcLoanId=?]]></sql>
+	</qnode>
+</query>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000421</id>
+	<name>客户查询</name>
+	<desc>客户查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询应收账款E表</desc>
+		<component>componentClass</component>
+		<tablename>InvcLoanE</tablename>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>loanAmt</fields>
+		<condition></condition>
+		<orderby></orderby>
+		<params>$sysRefNo$,$sysRefNo$</params>
+		<asc></asc>
+		<sql><![CDATA[select loanAmt from InvcLoanE a where a.id.sysRefNo = ? and a.id.sysEventTimes =( select Max(e.id.sysEventTimes) from InvcLoanE e where e.id.sysRefNo = ? )]]></sql>
+	</qnode>	
+</query>

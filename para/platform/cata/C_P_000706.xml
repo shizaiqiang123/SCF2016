@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000706</id>
+	<name>Catalog</name>
+	<MODULE>应收账款池融资</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>保证金入池在途删除</DESC>
+	<tablename>TRX.POOL_INOUT_E</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "20%">sysRefNo</field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "20%" formatter="busiTpFormater">busiTp</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "20%">selNm</field>
+		<field datatype="1" title="本次入池金额" hidden="" width = "20%">marginAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >selId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >ccy</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >inoutTp</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >arBal</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >arAvalLoan</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >poolLine</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >openLoanAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >marginAcNo</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >marginAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >trxDt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >freezeDueDt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >lmtAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >lmtBal</field>
+		<field datatype="1" title="交易状态" hidden="true" width = "100" >sysTrxSts</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysRelId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width="222">sysRelTm</field>
+		</select>
+	<condition>
+		  sysLockFlag = F and (sysTrxSts=S or sysTrxSts=P)  and cntrctNo like %$cntrctNo$% and selNm like %$selNm$% and inoutTp =0 and busiTp = 6 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

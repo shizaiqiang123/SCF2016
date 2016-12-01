@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000190</id>
+	<name>菜单级别选择</name>
+	<desc>菜单级别选择</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>查询系统类型定义</name>
+		<desc>新建角色时，查询角色类型（不可建超级和默认级角色）</desc>
+		<component>componentClass</component>
+		<tablename>STD.STD_TYPE_DEFINE</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[typeNo < $sysUserRole$ and typeNo > 0 ]]></condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

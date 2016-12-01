@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>供应商融资协议申请</desc>
+    <id>L_P_000184</id>
+    <name>供应商融资协议申请</name>
+    <nodeSize>0</nodeSize>
+    <transforSize>0</transforSize>
+     <transfornode>
+		<id>N00000001</id>
+		<name>修改用户账户信息</name>
+		<desc>注册签约复核变权限</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<fields>sysRefNo,acNm,acNo,acBkNm,acOwnerid,cntrctNo,buyerId,sysBusiUnit</fields>
+		<doname>stdAcNo</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<pending>
+			<fields></fields>
+			<values></values>
+		</pending>
+		<release> 
+			<fields>sysRefNo,acNm,acNo,acBkNm,acOwnerid,cntrctNo,buyerId,sysBusiUnit</fields>
+			<values>$sysRefNo$,$acNm$,$acNo$,$acBkNm$,$acOwnerid$,$cntrctNo$,$buyerId$,$sysBusiUnit$</values>
+		</release>
+<!-- 		<nodejs>L_P_000036.js</nodejs>  -->
+	</transfornode>
+</logicflow>

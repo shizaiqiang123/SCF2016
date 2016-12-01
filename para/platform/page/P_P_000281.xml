@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000281</id>
+	<name>业务数据展示小页</name>
+	<desc>业务数据展示小页</desc>
+	<jspfile>jsp/comBusiMsg/User_ComBusiMsg.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>page</maintable>
+	<queryid>Q_P_000208</queryid>
+<!-- 	<logicid>L_P_000147</logicid> -->
+</page>

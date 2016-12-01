@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000306</id>
+	<name>Catalog</name>
+	<MODULE>TEST</MODULE>
+	<jspfile>screen/supplier/supplier.jsp</jspfile>
+	<DESC>删除手动点销审核</DESC>
+	<tablename>TRX.FUND_REF_E</tablename>
+	<search>
+		<field datatype="1" title="资金编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "100">payerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="资金编号" hidden="" width = "150">sysRefNo</field>
+		<field datatype="1" title="入账账号" hidden="" width = "170" >payAcNo</field>
+		<field datatype="1" title="付款人账号" hidden="" width = "170">selAcNo</field>
+		<field datatype="1" title="付款人名称" hidden="" width = "150">payerNm</field>
+		<field datatype="1" title="还款金额" hidden="" width = "150" formatter="ccyFormater">ttlPmtAmt</field>
+		<field datatype="1" title="到账日期" hidden="" width = "150" formatter="dateFormater">pmtDt</field>
+		<field datatype="1" title="付款银行代码" hidden="true" width = "120">bkCd</field>
+		<field datatype="1" title="附言" hidden="true" width = "120">remark</field>
+		<field datatype="1" title="theirRef" hidden="true" width = "100">theirRef</field>
+		<field datatype="1" title="交易批次" width = "200">sysEventTimes</field>
+		<field datatype="1" title="交易功能" width = "200">sysFuncId</field>
+	</select>
+	<condition><![CDATA[sysLockFlag <>T and  compSts = 1 and sysRefNo like %$sysRefNo$% and payerNm like %$payerNm$% and sysTrxSts=P and sysFuncId=F_P_000367]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <module>PARA</module>
+    <page>
+        <desc>筛选条件以进入参数管理</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>t</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_S_000002</id>
+        <name>参数筛选页面</name>
+        <lockcheck>n</lockcheck>
+        <cascadeevent>n</cascadeevent>
+        <maincomp>TrxCatalogManager</maincomp>
+        <index>0</index>
+        <jspfile>jsp/Para_Catalog.jsp</jspfile>
+        <catalog>C_P_000201</catalog>
+        <pagetype>CA</pagetype>
+    </page>
+    <page>
+        <maintable>service</maintable>
+        <desc>Service 页面</desc>
+        <transaction>true</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>t</holdmaster>
+        <istransaction>Y</istransaction>
+        <id>P_P_000143</id>
+        <name>Service 页面</name>
+        <lockcheck>N</lockcheck>
+        <cascadeevent>N</cascadeevent>
+        <jspfile>jsp/para/Service_Add.jsp</jspfile>
+        <pagetype>paraDelete</pagetype>
+    </page>
+    <page>
+        <desc>处理结果管理</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <holdmaster>n</holdmaster>
+        <istransaction>N</istransaction>
+        <id>P_S_000003</id>
+        <name>处理结果管理</name>
+        <lockcheck>n</lockcheck>
+        <cascadeevent>n</cascadeevent>
+        <maincomp>TrxResutlManager</maincomp>
+        <index>2</index>
+        <jspfile>jsp/SYS_Result.jsp</jspfile>
+        <pagetype>RS</pagetype>
+    </page>
+    <pagesSize>3</pagesSize>
+    <desc>删除Service定义</desc>
+    <transactionPage>1</transactionPage>
+    <nodeName>function</nodeName>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000205</id>
+    <name>删除Service</name>
+    <functype>PA</functype>
+</function>

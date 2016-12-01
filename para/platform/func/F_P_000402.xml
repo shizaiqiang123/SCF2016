@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <id>F_P_000402</id>
+    <name>新增用户密码</name>
+    <module>新增用户密码</module>
+    <desc>新增用户密码</desc>
+    <functype>MM</functype>
+	<page>
+		<id>P_P_000272</id>
+		<index>0</index>
+		<name>密码页面</name>
+		<desc>密码页面</desc>
+		<pagetype>ADD</pagetype>
+		<maincomp>TrxMasterManager</maincomp>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>交易结果页面</name>
+		<desc>交易成功或失败</desc>
+	</page>
+	<service>
+        <id>S_P_000055</id>
+      	<servicejs>S_P_00031.js</servicejs>
+      	<trigger>M</trigger>
+    </service>
+</function>

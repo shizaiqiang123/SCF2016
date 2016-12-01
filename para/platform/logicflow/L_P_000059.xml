@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000059</id>
+	<name>用户密码信息修改</name>
+	<desc>用户密码信息修改逻辑流</desc>
+	<module></module>
+ 	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.USER_PWD</tablename>
+		<doname></doname>
+		<type>E</type>
+		<nodejs>L_P_000027.js</nodejs>
+	</lnode> 
+</logicflow>

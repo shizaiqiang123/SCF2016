@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您正在通过短信方式找回您的登录密码，您的验证码是【$code$】。为保证您的账号安全，请勿将验证码告诉任何人。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000080</id>
+    <title>找回密码验证码(短信)</title>
+    <remindtp>1</remindtp>
+    <name>找回密码验证码(短信)</name>
+    <senddt>2015-09-21</senddt>
+</advice>

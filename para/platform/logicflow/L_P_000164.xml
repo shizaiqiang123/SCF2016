@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <id>L_P_000164</id>
+	<module>Comm</module>
+    <desc>修改通知标记状态</desc>
+    <name>修改通知标记状态</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+    <lnode>
+        <desc>修改通知标记状态</desc>
+        <nodeName>lnode</nodeName>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>TrxEditRecord</component>
+        <tablename>STD.ADVICE_CLIENT</tablename>
+        <name>修改通知标记状态</name>
+        <cascadeevent>N</cascadeevent>
+        <nodejs>L_P_000026</nodejs>
+    </lnode>
+</logicflow>

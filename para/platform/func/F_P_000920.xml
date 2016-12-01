@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <cacheAble>false</cacheAble>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <id>F_P_000920</id>
+    <autoassignSize>0</autoassignSize>
+    <functype>VW</functype>
+    <bfServiceSize>0</bfServiceSize>
+    <serviceSize>0</serviceSize>
+     <page>
+        <cacheAble>false</cacheAble>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000920</id>
+    </page>
+</function>

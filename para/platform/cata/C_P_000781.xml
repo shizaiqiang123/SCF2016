@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000781</id>
+	<name>(国内保理)应收账款登记确认复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>(国内保理)应收账款登记确认复核Catalog</DESC>
+	<tablename>TRX.INVC_REG_E</tablename>
+	<search>
+		<field datatype="1" title="授信客户编号" hidden="" width="100">selId
+		</field>
+		<field datatype="1" title="授信客户名称" hidden="" width="100">selNm
+		</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox="true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width="33.33%">sysRefNo
+		</field>
+		<field datatype="1" title="授信客户编号" hidden="" width="33.33%">selId
+		</field>
+		<field datatype="1" title="授信客户名称" hidden="" width="33.33%">selNm
+		</field>
+		<field datatype="1" title="批次号" hidden="true" width="200">sysEventTimes
+		</field>
+		<field datatype="1" title="功能编号" hidden="true" width="200">sysFuncId
+		</field>
+	</select>
+	<condition>
+	selId like %$selId$% and selNm like %$selNm$% and sysTrxSts = P  and sysLockFlag = F and sysOrgId=$sysOrgId$ and ((isConfirm=0 and confirmFlag=2) or (isConfirm=1 and confirmFlag=0)) 
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+	<asc>N</asc>
+</catalog>

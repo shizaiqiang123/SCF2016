@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000434</id>
+    <nodeSize>1</nodeSize>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<component>componentClass</component>
+		<desc>look up 查询主表</desc>
+		<tablename>TRX.CNTRCT_M</tablename>
+		<doname>doname</doname>
+		<lockcheck>N</lockcheck>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>cmsCustNo = $cmsCustNo$</condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+	</qnode>
+</query>

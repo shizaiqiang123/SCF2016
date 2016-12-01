@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>apsyst</maintable>
+    <desc>系统参数修改页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>t</holdmaster>
+    <istransaction>Y</istransaction>
+    <id>P_P_000174</id>
+    <name>系统参数修改页面</name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>paraEdit</maincomp>
+    <jspfile>jsp/para/Syst_Edit.jsp</jspfile>
+    <pagetype>PARAEDIT</pagetype>
+</page>

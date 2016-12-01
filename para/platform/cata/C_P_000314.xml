@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000314</id>
+	<name>查询营业外收入账Catalog</name>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>查询营业外收入账Catalog</DESC>
+	<tablename>TRX.INCOME_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" hidden="" width = "100">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "300" >cntrctNo</field>
+		<field datatype="1" title="" hidden="true" width = "200" >sysRefNo</field>
+		<field datatype="1" title="营业外收益总金额" hidden="" width = "350" formatter="ccyFormater">incomeAmt</field>
+		<field datatype="1" title="收益类型" hidden="" width = "350" >sumIncomeFlag</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		</select>
+	<condition>cntrctNo like %$cntrctNo$%</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

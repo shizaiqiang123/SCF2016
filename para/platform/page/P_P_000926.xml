@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <cacheAble>false</cacheAble>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000926</id>
+    <name>仓单流程页面</name>
+	<desc> 流程页面</desc>
+	<jspfile>screen/busFirstPage/cd.jsp</jspfile>
+	<holdmaster>t</holdmaster>
+</page>

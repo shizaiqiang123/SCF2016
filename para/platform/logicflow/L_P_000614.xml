@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000614</id>
+	<name>外网--用户管理-新增用户</name>
+	<desc>外网--用户管理-新增用户</desc>
+	<module>外网--用户管理-新增用户</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>用户角色注入</name>
+		<desc>用户角色注入</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>STD.USER_ROLE_INFO</tablename>
+		<doname>roleIds</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+</logicflow>

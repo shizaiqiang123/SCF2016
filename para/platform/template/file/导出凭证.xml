@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<id>T0000001</id>
+	<name>测试导入模板</name>
+	<desc>测试应收账款导入功能</desc>
+	<type>Exccel</type>
+	<!--XML,Text -->
+	<startrow>1</startrow>
+	<!--解析初始行，xml中忽略此属性 -->
+	<separator>,</separator>
+	<!--区分数据间隔，用于Text文本中 ，Excel xml中忽略此属性-->
+	<map>
+		<col key="1" isnull="false" isunique="false" desc="合同号" type="java.lang.String" default="">cntrctno</col>
+		<col key="2" isnull="false" isunique="false" desc="商品编号" type="java.lang.String" default="">cldgdsid</col>
+		<col key="3" isnull="false" isunique="false" desc="商品名称" type="java.lang.String" default="">cldgdsdes</col>
+		<col key="4" isnull="false" isunique="false" desc="单价" type="java.lang.Double" default="0">cldprice</col>
+		<col key="5" isnull="false" isunique="false" desc="数量" type="java.lang.Double" default="0">cldnum</col>
+		<col key="6" isnull="false" isunique="false" desc="单位" type="java.lang.String" default="">cldunion</col>
+		<col key="7" isnull="false" isunique="false" desc="有效期" type="java.util.Date" default="">cldduedate</col>
+	</map>
+</root>

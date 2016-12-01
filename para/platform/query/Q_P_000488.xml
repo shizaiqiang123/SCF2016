@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000488</id>
+	<name>查询货物信息表</name>
+	<desc>查询货物信息表</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CRTF_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>refNo = $sysRefNo$ and sysTrxSts = P and sysLockBy = $sysRefNo$
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<params></params>
+	</qnode>
+</query>

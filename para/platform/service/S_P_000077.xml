@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+ 	<id>S_P_000077</id>
+    <trigger>M</trigger>
+    <ruleSize>0</ruleSize>
+    <type>GAPI</type>
+    <gapiid>CP0001</gapiid>
+    <component></component>
+    <name>融资申请复核</name>
+</service>

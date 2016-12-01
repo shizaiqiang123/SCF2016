@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000237</id>
+	<name>融资协议申请进度查询</name>
+	<desc>融资协议申请进度查询</desc>
+	<jspfile>screen/cntrct/verifyLoanDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.CNTRCT_E</maintable>
+</page>

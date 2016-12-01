@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>预警模拟功能</desc>
+    <lnode>
+        <desc>预警模拟功能</desc>
+        <type>C</type>
+        <mainLogic>false</mainLogic>
+        <id>N00000001</id>
+        <component>alertClientTest</component>
+        <name>预警模拟功能</name>
+    </lnode>
+    <id>L_P_000209</id>
+    <name>预警模拟功能</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000002</id>
+	<name>客户Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>客户Catalog</DESC>
+	<tablename>TRX.CUST_M</tablename>
+	<search>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "200">custNm</field>
+		<field datatype="1" title="所属网点" defaultvalue="" width = "200">custBrId</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "250">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "250">custNm</field>
+		<field datatype="1" title="所属网点" hidden="" width = "250">custBrId</field>
+		<field datatype="1" title="序列号" hidden="" width = "250">sysEventTimes</field>
+	</select>
+	<condition>
+		  custNm like %$custNm$% and custBrId like %$custBrId$% and sysLockFlag = F
+	</condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000435</id>
+	<name>根据客户表中的买方卖方id得到invcM中的信息</name>
+	<desc>根据客户表中的买方卖方id得到invcM中的信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>查询发表表</desc>
+		<component>componentClass</component>
+		<tablename>InvcM</tablename>
+		<doname></doname>
+		<type>S</type>
+		<cascadeevent>N</cascadeevent>
+		<fields>sysRefNo,struLoanAmt,invNo,invCcy,invBal,loanPerc,invDueDt,invValDt,invLoanBal,invLoanAval</fields>
+		<condition>t.selId = ? and t.buyerId = ? and t.sysTrxSts = 'M' and invBal > 0 and and invLoanBal > 0</condition>
+		<orderby>invDueDt</orderby>
+		<params>$selId$,$buyerId$</params>
+		<asc>N</asc>
+		<sql><![CDATA[select t.sysRefNo,t.struLoanAmt,t.invNo,t.invCcy,t.invBal,t.loanPerc,t.invDueDt,t.invValDt,t.invLoanBal,t.invLoanAval from InvcM t]]></sql>
+	</qnode>
+</query>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000165</id>
+	<name>授信客户额度明细信息</name>
+	<desc>授信客户额度明细信息</desc>
+	<jspfile>screen/cntrct/cntrctDetail.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<pagetype>View</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxViewManager</maincomp>
+	<maintable>TRX.CNTRCT_M</maintable>
+</page>

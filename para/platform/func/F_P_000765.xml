@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000765</id>
+	<module>应收账款池融资--争议登记--删除在途</module>
+	<name>应收账款池融资--争议登记--删除在途</name>
+	<desc>应收账款池融资--争议登记--删除在途</desc>
+	<functype>DP</functype>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000624</catalog>
+	</page>
+	<page>
+		<desc>删除</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>Y</istransaction>
+		<id>P_P_000249</id>
+		<name>删除</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>Y</cascadeevent>
+		<pagetype>DELP</pagetype>
+	</page>
+</function>

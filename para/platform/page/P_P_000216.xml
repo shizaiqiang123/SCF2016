@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>新增成员企业页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <istransaction>Y</istransaction>
+    <id>P_P_000216</id>
+    <name>新增成员企业</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>Y</cascadeevent>
+    <jspfile>screen/cust/addCompany.jsp</jspfile>
+    <maintable>TRX.CUST_M</maintable> 
+</page>

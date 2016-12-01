@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000349</id>
+    <qnode>
+        <index>0</index>
+        <desc>look up 查询主表</desc>
+        <condition>sysRefNo = $sysRefNo$ and cmsCntrctNo = $cmsCntrctNo$</condition>
+        <type>E</type>
+        <id>N00000001</id>
+        <asc>Y</asc>
+        <component>componentClass</component>
+        <tablename>TRX.CNTRCT_M</tablename>
+        <name>node name</name>
+        <doname>doname</doname>
+        <cascadeevent>n</cascadeevent>
+    </qnode>
+    <nodeSize>1</nodeSize>
+</query>

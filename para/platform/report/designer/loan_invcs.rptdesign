@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">216</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">216</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">216</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/first_report.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.firstreport</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="DB Source" id="215">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521:orcl</property>
+            <property name="odaUser">utscf</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">dXRzY2Y=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Invc Set" id="216">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">SYS_REF_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SYS_REF_NO</text-property>
+                    <text-property name="heading">SYS_REF_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SYS_OP_ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SYS_OP_ID</text-property>
+                    <text-property name="heading">SYS_OP_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CNTRCT_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CNTRCT_NO</text-property>
+                    <text-property name="heading">CNTRCT_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BUYER_ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BUYER_ID</text-property>
+                    <text-property name="heading">BUYER_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SEL_ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SEL_ID</text-property>
+                    <text-property name="heading">SEL_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INV_NO</text-property>
+                    <text-property name="heading">INV_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_DT</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INV_DT</text-property>
+                    <text-property name="heading">INV_DT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_AMT</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">INV_AMT</text-property>
+                    <text-property name="heading">INV_AMT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_LOAN_AVAL</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">INV_LOAN_AVAL</text-property>
+                    <text-property name="heading">INV_LOAN_AVAL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">INV_STS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">INV_STS</text-property>
+                    <text-property name="heading">INV_STS</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">SYS_REF_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">SYS_OP_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CNTRCT_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">BUYER_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">SEL_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">INV_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">INV_DT</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">INV_AMT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">INV_LOAN_AVAL</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">INV_STS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">DB Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">SYS_REF_NO</property>
+                    <property name="nativeName">SYS_REF_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">SYS_OP_ID</property>
+                    <property name="nativeName">SYS_OP_ID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CNTRCT_NO</property>
+                    <property name="nativeName">CNTRCT_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">BUYER_ID</property>
+                    <property name="nativeName">BUYER_ID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">SEL_ID</property>
+                    <property name="nativeName">SEL_ID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">INV_NO</property>
+                    <property name="nativeName">INV_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">INV_DT</property>
+                    <property name="nativeName">INV_DT</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">INV_AMT</property>
+                    <property name="nativeName">INV_AMT</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">INV_LOAN_AVAL</property>
+                    <property name="nativeName">INV_LOAN_AVAL</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">INV_STS</property>
+                    <property name="nativeName">INV_STS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select TRX.INVC_M.SYS_REF_NO，TRX.INVC_M.SYS_OP_ID，TRX.INVC_M.CNTRCT_NO，TRX.INVC_M.BUYER_ID，TRX.INVC_M.SEL_ID，TRX.INVC_M.INV_NO，TRX.INVC_M.INV_DT，TRX.INVC_M.INV_AMT，TRX.INVC_M.INV_LOAN_AVAL，TRX.INVC_M.INV_STS
+from TRX.INVC_M where TRX.INVC_M.BUSI_TP = 0 and TRX.INVC_M.INV_STS = 'LOAN']]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SYS_REF_NO</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SYS_REF_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SYS_REF_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SYS_OP_ID</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SYS_OP_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SYS_OP_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CNTRCT_NO</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CNTRCT_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CNTRCT_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>BUYER_ID</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>BUYER_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>BUYER_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SEL_ID</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SEL_ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SEL_ID</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>INV_NO</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>35</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>INV_NO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>INV_NO</design:label>
+            <design:formattingHints>
+              <design:displaySize>35</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>INV_DT</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>6</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>INV_DT</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>INV_DT</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>INV_AMT</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>18</design:precision>
+            <design:scale>3</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>INV_AMT</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>INV_AMT</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>INV_LOAN_AVAL</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>18</design:precision>
+            <design:scale>3</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>INV_LOAN_AVAL</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>INV_LOAN_AVAL</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>INV_STS</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>INV_STS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>INV_STS</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="110">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="246">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="247">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="245">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">x-large</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">已融资发票汇总</text-property>
+        </label>
+        <table id="286">
+            <property name="dataSet">Invc Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">SYS_REF_NO</property>
+                    <text-property name="displayName">SYS_REF_NO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SYS_REF_NO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SYS_OP_ID</property>
+                    <text-property name="displayName">SYS_OP_ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SYS_OP_ID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CNTRCT_NO</property>
+                    <text-property name="displayName">CNTRCT_NO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CNTRCT_NO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BUYER_ID</property>
+                    <text-property name="displayName">BUYER_ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BUYER_ID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SEL_ID</property>
+                    <text-property name="displayName">SEL_ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SEL_ID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_NO</property>
+                    <text-property name="displayName">INV_NO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_NO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_DT</property>
+                    <text-property name="displayName">INV_DT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_DT"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_AMT</property>
+                    <text-property name="displayName">INV_AMT</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_AMT"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_LOAN_AVAL</property>
+                    <text-property name="displayName">INV_LOAN_AVAL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_LOAN_AVAL"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">INV_STS</property>
+                    <text-property name="displayName">INV_STS</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["INV_STS"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">row.__rownum</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="318"/>
+            <column id="319"/>
+            <column id="320"/>
+            <column id="321"/>
+            <column id="322"/>
+            <column id="323"/>
+            <column id="324"/>
+            <column id="325"/>
+            <header>
+                <row id="287">
+                    <cell id="289">
+                        <label id="341">
+                            <text-property name="text">编号</text-property>
+                        </label>
+                    </cell>
+                    <cell id="290">
+                        <label id="327">
+                            <text-property name="text">SYS_REF_NO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="291">
+                        <label id="329">
+                            <text-property name="text">INV_NO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="292">
+                        <label id="331">
+                            <text-property name="text">CNTRCT_NO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="293">
+                        <label id="333">
+                            <text-property name="text">BUYER_ID</text-property>
+                        </label>
+                    </cell>
+                    <cell id="294">
+                        <label id="335">
+                            <text-property name="text">SEL_ID</text-property>
+                        </label>
+                    </cell>
+                    <cell id="295">
+                        <label id="337">
+                            <text-property name="text">INV_AMT</text-property>
+                        </label>
+                    </cell>
+                    <cell id="296">
+                        <label id="339">
+                            <text-property name="text">INV_LOAN_AVAL</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="297">
+                    <property name="backgroundColor">#80FF80</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">center</property>
+                    <cell id="299">
+                        <data id="326">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">Column Binding</property>
+                        </data>
+                    </cell>
+                    <cell id="300">
+                        <data id="328">
+                            <property name="resultSetColumn">SYS_REF_NO</property>
+                        </data>
+                    </cell>
+                    <cell id="301">
+                        <data id="330">
+                            <property name="resultSetColumn">INV_NO</property>
+                        </data>
+                    </cell>
+                    <cell id="302">
+                        <data id="332">
+                            <property name="resultSetColumn">CNTRCT_NO</property>
+                        </data>
+                    </cell>
+                    <cell id="303">
+                        <data id="334">
+                            <property name="resultSetColumn">BUYER_ID</property>
+                        </data>
+                    </cell>
+                    <cell id="304">
+                        <data id="336">
+                            <property name="resultSetColumn">SEL_ID</property>
+                        </data>
+                    </cell>
+                    <cell id="305">
+                        <data id="338">
+                            <property name="resultSetColumn">INV_AMT</property>
+                        </data>
+                    </cell>
+                    <cell id="306">
+                        <data id="340">
+                            <property name="resultSetColumn">INV_LOAN_AVAL</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="307">
+                    <cell id="309"/>
+                    <cell id="310"/>
+                    <cell id="311"/>
+                    <cell id="312"/>
+                    <cell id="313"/>
+                    <cell id="314"/>
+                    <cell id="315"/>
+                    <cell id="316"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

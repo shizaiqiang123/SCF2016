@@ -1,0 +1,222 @@
+@charset "utf-8";
+/*login.jsp*/
+.loginBg {
+	background:url(../images/bg1.jpg) repeat;
+	background-size:cover;
+}
+
+.loginTag {
+	width:290px;
+	height:64px;
+	line-height:58px;
+	background:url(../images/loginBg1.png) no-repeat;
+}
+
+.loginList {
+	width:600px;
+	padding-top:65px;
+}
+
+.loginLists {
+	width:610px;
+	margin-bottom:55px;
+}
+
+.loginLists-txt {
+	margin-left:18px;
+	height:85px;
+	line-height:40px;
+	padding-left:25px;
+	background:url(../images/loginBg5.png) left center no-repeat;
+}
+
+.loginBox {
+	margin:50px 0 0 30px;
+	width:470px;
+	height:385px;
+	position: fixed;
+    z-index: 500;
+    left: 8%;
+    top: 5%;	
+	border-top-right-radius:60px;
+	border-bottom-left-radius:60px;
+	box-shadow:-3px 0 7px rgba(0,0,0,0.2);
+	background: rgba(255, 255, 255, 0.4);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,
+		endcolorstr=#7fffffff);
+}
+
+.loginLogo {
+	margin:33px 0 20px 33px;
+	padding-left:165px;
+/* 	background:url(../images/loginLogo.png) left center no-repeat; */
+	color:#5c5c5c;
+}
+
+.loginBoxCon {
+	width:332px;
+	margin:0 auto;
+	line-height:36px;
+}
+
+.loginArea {
+	background-color:#bcdff0;
+	background-position:6px 10px;
+	background-repeat:no-repeat;
+	width:284px;
+	height:50px;
+	padding-left:48px;
+	margin:0 auto 20px;
+	box-shadow:-3px 0 8px rgba(0,0,0,0.2);
+}
+
+.loginName {
+	background-image:url(../images/loginBg7.png);
+}
+
+.loginPwd {
+	background-image:url(../images/loginBg8.png);
+}
+
+.loginIden {
+	width:332px;
+	margin:0 auto;
+	display:none;
+}
+
+.loginInputWrap {
+	background:url(../images/loginBg10.png) left center no-repeat;
+	width:255px;
+	height:24px;
+	padding:13px 0 13px 12px;
+}
+
+.loginInput {
+	background-color:#bcdff0;
+	height:24px;
+	color:#666;
+	width:255px;
+}
+
+.loginIden .loginArea {
+	width:180px;
+	background-image:url(../images/loginBg9.png);
+	margin-bottom:0;
+}
+
+.loginIden .loginInputWrap {
+	width:165px;
+}
+
+.loginIden .loginInput {
+	width:155px;
+}
+
+.idenPic {
+	height:48px;
+	width:92px;
+	border:solid 1px #eee;	
+	overflow:hidden;
+	background-color:#fff;
+}
+
+.loginButton {
+	display:block;
+	width:332px;
+	margin:0 auto 20px;
+	height:50px;
+	background-color:#004195;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.loginCallMe {
+	margin-top:180px;
+	height:48px;
+	line-height:24px;
+	padding-left:45px;
+	background:url(../../images/loginBg6.png) left center no-repeat;
+}
+
+.loginFooter {
+	height:75px;
+	line-height:75px;
+	color:#fff;
+	background: rgba(124, 141, 159, 0.5);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7f7c8d9f,
+		endcolorstr=#7f7c8d9f);
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: "黑体";
+	color: #F2F2F2;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.content{
+	position: absolute;
+    right: 10%;
+    top: 45%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section0{
+	/* background-color: #BFDA00; */
+	background: url(../images/zybl/meeting.png) left center no-repeat;
+}
+#section0 h1{
+	color: #fff;
+}
+#section0 p{	
+	opacity: 0.8;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section1{
+	/* background-color: #2EBE21; */
+	background: url(../images/zybl/office.png) left center no-repeat;
+}
+#section1 h1{
+	color: #fff;
+}
+#section1 p{
+	opacity: 0.8;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section2{
+	/* background-color: #2C3E50; */
+	background: url(../images/zybl/lamp.png) left center no-repeat;
+}
+#section2 h1{
+	color: #F2F2F2;
+}
+#section2 p{
+	opacity: 0.6;
+}
+/* Section 4
+ * --------------------------------------- */
+#section3{
+	/* background-color: #2C3E50; */
+	background: url(../images/zybl/section1_slide2.png) left center no-repeat;
+}
+#section23 h1{
+	color: #F2F2F2;
+}
+#section3 p{
+	opacity: 0.6;
+}

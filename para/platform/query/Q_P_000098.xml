@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000098</id>
+	<name>checkBusiUnit</name>
+	<desc>checkBusiUnit</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>busiUnit = $busiUnit$</condition>
+		<orderby>sysRefNo</orderby>
+		<asc>Y</asc>
+		<sql/>
+	</qnode>
+</query>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000597</id>
+	<name>客户查询</name>
+	<desc>客户查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>池融资复核查询融资主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition>
+		sysLockBy = $sysLockBy$ and cntrctNo = $cntrctNo$
+		</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>	
+</query>

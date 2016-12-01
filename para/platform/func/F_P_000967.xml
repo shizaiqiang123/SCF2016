@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<desc>查收还款删除在途</desc>
+	<id>F_P_000967</id>
+	<name>查收还款删除在途</name>
+	<transactionPage>0</transactionPage>
+	<reportsSize>0</reportsSize>
+	<serviceSize>0</serviceSize>
+	<functype>DP</functype>
+	<isValidCode>false</isValidCode>
+	<page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000329</catalog>
+	</page>
+	<page>
+		<desc>复核</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>Y</istransaction>
+		<id>P_P_000249</id>
+		<name>复核</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>Y</cascadeevent>
+		<pagetype>DELP</pagetype>
+	</page>
+</function>

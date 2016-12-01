@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>syst/syspara</maintable>
+    <desc>系统参数页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>t</holdmaster>
+    <istransaction>Y</istransaction>
+    <logicid>L_P_000147</logicid>
+    <id>P_P_000152</id>
+    <name>系统参数页面</name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>paraEdit</maincomp>
+    <jspfile>jsp/para/Syst_Add.jsp</jspfile>
+    <pagetype>PARAEDIT</pagetype>
+</page>

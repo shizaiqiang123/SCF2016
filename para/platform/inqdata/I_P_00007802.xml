@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_00007802</id>
+    <desc>获取信贷客户号</desc>
+    <name>获取信贷客户号</name>
+    <type>S</type>
+    <target>S_P_00006701</target>
+</inqdata>

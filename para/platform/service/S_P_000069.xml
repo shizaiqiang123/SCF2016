@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+ 	<id>S_P_000069</id>
+    <trigger>M</trigger>
+    <ruleSize>0</ruleSize>
+    <type>GAPI</type>
+    <gapiid>AccBalanceOut</gapiid>
+    <component></component>
+    <name>账户资金划转</name>
+</service>

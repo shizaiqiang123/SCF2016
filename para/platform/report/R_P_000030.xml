@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <id>R_P_000030</id>
+	<name>存货类货物出入库台帐</name>
+	<desc>存货类货物出入库台帐</desc>
+	<type>M</type><!-- P:pending 生成 M : 复合时生成 --> 
+	<reporttype>xls</reporttype><!-- html,ps,xls,pdf,ppt,xlsx -->
+	<template>query_ch_goods_details.rptdesign</template>
+	<outputtype>F</outputtype><!-- F:file G:gapi M:mail S:SFTP -->
+	<output></output>
+	<datasourcetype>db</datasourcetype><!-- db,json -->
+	<datasource>jdbc/scfdev</datasource>
+</report>

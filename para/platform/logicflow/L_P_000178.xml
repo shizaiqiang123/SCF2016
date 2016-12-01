@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <desc>审核插入acno</desc>
+    <id>L_P_000178</id>
+    <name>审核插入acno</name>
+    <nodeSize>0</nodeSize>
+    <module>Comm</module>
+    <transforSize>0</transforSize>
+    <lnode>
+        <desc>修改用户等级信息</desc>
+        <type>E</type>
+        <id>N00000001</id>
+        <doname>stdAcNo</doname>
+        <asc>Y</asc>
+        <component>commManagerRecord</component>
+        <tablename>STD.STD_AC_NO</tablename>
+        <name>修改用户等级信息</name>
+        <cascadeevent>N</cascadeevent>
+        <nodejs>L_P_000036.js</nodejs> 
+    </lnode>
+</logicflow>

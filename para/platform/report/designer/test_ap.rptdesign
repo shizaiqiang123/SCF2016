@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="27">
+            <property name="FILELIST">xmlsource/test_ap_report.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="28">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">userId</property>
+                    <text-property name="displayName">操作员</text-property>
+                    <text-property name="heading">userId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">buyerId</property>
+                    <text-property name="displayName">买方客户</text-property>
+                    <text-property name="heading">buyerId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selId</property>
+                    <text-property name="displayName">卖方客户</text-property>
+                    <text-property name="heading">selId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <text-property name="displayName">系统交易流水</text-property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">userId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">buyerId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">selId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">userId</property>
+                    <property name="nativeName">userId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">buyerId</property>
+                    <property name="nativeName">buyerId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">selId</property>
+                    <property name="nativeName">selId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root]#:#{userId;STRING;/userInfo/userId},{buyerId;STRING;/trxDom/buyerId},{selId;STRING;/trxDom/selId},{sysRefNo;STRING;/trxDom/sysRefNo}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>userId</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>userId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>buyerId</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>buyerId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selId</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Invc" id="85">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">buyerId</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">买方名称</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">buyerId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">selId</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">卖方名称</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">selId</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sysRefNo</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">系统流水</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">sysRefNo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">operateType</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">operateType</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">buyerId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">selId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">sysRefNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">operateType</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">buyerId</property>
+                    <property name="nativeName">buyerId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">selId</property>
+                    <property name="nativeName">selId</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">sysRefNo</property>
+                    <property name="nativeName">sysRefNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">operateType</property>
+                    <property name="nativeName">operateType</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/root/trxDom/records/e]#:#{buyerId;STRING;/buyerId},{selId;STRING;/selId},{sysRefNo;STRING;/sysRefNo},{operateType;STRING;/operateType}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>buyerId</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>buyerId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>selId</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>selId</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>sysRefNo</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>sysRefNo</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>reqType</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>reqType</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <data id="31">
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">userId</property>
+                    <text-property name="displayName">操作员</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["userId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">userId</property>
+        </data>
+        <grid id="119">
+            <column id="120"/>
+            <column id="142"/>
+            <column id="121"/>
+            <column id="122"/>
+            <row id="123">
+                <cell id="124"/>
+                <cell id="139">
+                    <label id="143">
+                        <text-property name="text">系统流水</text-property>
+                    </label>
+                </cell>
+                <cell id="125">
+                    <data id="146">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">sysRefNo</property>
+                                <text-property name="displayName">系统交易流水</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">sysRefNo</property>
+                    </data>
+                </cell>
+                <cell id="126"/>
+            </row>
+            <row id="127">
+                <cell id="128"/>
+                <cell id="140">
+                    <label id="147">
+                        <text-property name="text">卖方编号</text-property>
+                    </label>
+                </cell>
+                <cell id="129">
+                    <data id="150">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">selId</property>
+                                <text-property name="displayName">卖方客户</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["selId"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">selId</property>
+                    </data>
+                </cell>
+                <cell id="130"/>
+            </row>
+            <row id="131">
+                <cell id="132"/>
+                <cell id="141">
+                    <label id="148">
+                        <text-property name="text">买方编号</text-property>
+                    </label>
+                </cell>
+                <cell id="133">
+                    <data id="149">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">buyerId</property>
+                                <text-property name="displayName">买方客户</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["buyerId"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">buyerId</property>
+                    </data>
+                </cell>
+                <cell id="134"/>
+            </row>
+        </grid>
+        <table id="174">
+            <property name="dataSet">Invc</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">sysRefNo</property>
+                    <text-property name="displayName">系统流水</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["sysRefNo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">selId</property>
+                    <text-property name="displayName">卖方名称</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["selId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">buyerId</property>
+                    <text-property name="displayName">买方名称</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["buyerId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">operateType</property>
+                    <text-property name="displayName">operateType</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["operateType"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">row.__rownum</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="193"/>
+            <column id="213"/>
+            <column id="194"/>
+            <column id="195"/>
+            <column id="196"/>
+            <column id="197"/>
+            <header>
+                <row id="175">
+                    <cell id="176"/>
+                    <cell id="210"/>
+                    <cell id="177">
+                        <label id="202">
+                            <text-property name="text">sysRefNo</text-property>
+                        </label>
+                    </cell>
+                    <cell id="178">
+                        <label id="204">
+                            <text-property name="text">selId</text-property>
+                        </label>
+                    </cell>
+                    <cell id="179">
+                        <label id="206">
+                            <text-property name="text">buyerId</text-property>
+                        </label>
+                    </cell>
+                    <cell id="180">
+                        <label id="208">
+                            <text-property name="text">operateType</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="181">
+                    <cell id="182"/>
+                    <cell id="211">
+                        <data id="214">
+                            <property name="resultSetColumn">Column Binding</property>
+                        </data>
+                    </cell>
+                    <cell id="183">
+                        <data id="203">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">sysRefNo</property>
+                        </data>
+                    </cell>
+                    <cell id="184">
+                        <data id="205">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">selId</property>
+                        </data>
+                    </cell>
+                    <cell id="185">
+                        <data id="207">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">buyerId</property>
+                        </data>
+                    </cell>
+                    <cell id="186">
+                        <data id="209">
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">operateType</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="187">
+                    <cell id="188"/>
+                    <cell id="212"/>
+                    <cell id="189"/>
+                    <cell id="190"/>
+                    <cell id="191"/>
+                    <cell id="192"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000191</id>
+	<name>退回删除反转让Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>退回删除反转让Catalog</DESC>
+	<tablename>TRX.CBK_REG_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" defaultvalue="" width = "200">cntrctNo</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "20%">sysRefNo</field>
+		<field datatype="1" title="授信额度编号" hidden="" width = "20%" >cntrctNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "20%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="间接客户名称" hidden="true" width = "200" >buyerNm</field>
+		<field datatype="1" title="授信客户" hidden="" width = "20%" >selNm</field>
+		<field datatype="1" title="反转让金额" hidden="" width = "20%" >ttlRevTrfAmt</field>
+		
+		<field datatype="1" title="" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="" hidden="true" width = "100">sysEventTimes</field>
+		 <field datatype="1" title="监管方名称" hidden="true" width = "100">sysTrxSts</field>
+		<field datatype="1" title="系统sysOpId" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="系统sysOpTm" hidden="true" width = "100" >sysOpTm</field>
+		<field datatype="1" title="系统sysRelId" hidden="true" width = "100" >sysRelId</field>
+		<field datatype="1" title="系统sysRelTm" hidden="true" width = "100" >sysRelTm</field>
+	</select>
+	<condition>
+	  busiTp = 6 and (sysTrxSts = S or sysTrxSts = P) and sysRefNo like %$sysRefNo$% and cntrctNo like %$cntrctNo$% and sysLockFlag = F and cbkTp = CBK and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

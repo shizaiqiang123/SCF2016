@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gapimsg>
+	<id>b2e0080</id>
+	<msgtype>ZHZW</msgtype><!-- 表示为对接SCF平台的消息 -->
+	<name>SCF应付账款入池同步</name>
+	<modle>SYNC</modle><!-- 接口通信模式,同步或异步 -->
+	<ack>Y</ack><!-- 接口交互模式,是否需要及时应答 -->
+	<characterset>GBK</characterset>
+	<sendtemp>b2e0080re</sendtemp><!-- 发送模版 -->
+	<receivetemp>b2e0080rs</receivetemp><!-- 接收模版 -->
+	<gapi>b2e_head</gapi><!-- 只定义底层通信协议 -->
+	<validateclass></validateclass><!-- 通信层验证 -->
+	<validatejs>G_P_000002.js</validatejs>
+	<generator>gapiMsgManager</generator>
+	<msgstore>Y</msgstore><!-- 重发使用 -->
+	<sendinterrupt>y</sendinterrupt><!-- 发送异常后中断当前操作 -->
+	<receiveinterrupt>y</receiveinterrupt><!-- 接收异常后中断当前操作 -->
+	<sendservice>ZHZW</sendservice>
+	<receiveservice></receiveservice>
+	<onsuccess>I_b2e0080</onsuccess>
+	<onfailed>I_b2e0080_fail</onfailed>
+</gapimsg>

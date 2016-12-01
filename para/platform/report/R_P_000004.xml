@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <id>R_P_000004</id>
+	<name>未结案应收账款</name>
+	<desc>未结案应收账款</desc>
+	<type>M</type><!-- P:pending 生成 M : 复合时生成 -->
+	<reporttype>xls</reporttype><!-- html,ps,xls,pdf,ppt,xlsx -->
+	<template>noclose_invc.rptdesign</template>
+	<outputtype>F</outputtype><!-- F:file G:gapi M:mail S:SFTP -->
+	<output></output>
+	<js>R_P_00007.js</js>
+	<datasourcetype>db</datasourcetype><!-- db,json -->
+	<datasource>jdbc/scfdev</datasource>
+</report>

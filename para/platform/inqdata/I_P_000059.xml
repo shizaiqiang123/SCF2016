@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000059</id>
+   <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>L</type>
+    <name>重置工作流</name>
+	<desc>业务调整-function修改中-重置工作流小页</desc>
+	<target>L_P_000158</target>
+</inqdata>

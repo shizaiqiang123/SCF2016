@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_S_000006</id>
+	<name>删除通知用户信息</name>
+	<desc>通知用户信息逻辑流</desc>
+	<module></module>
+	<lnode>
+		<id>N00000001</id>
+		<event>y</event>
+		<component>TrxDeleteRecord</component>
+		<tablename>STD.Advice_Header_Recive</tablename>
+		<doname>recipients</doname>
+		<type>E</type>
+	</lnode>
+</logicflow>

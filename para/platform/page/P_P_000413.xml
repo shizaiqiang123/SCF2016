@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000413</id>
+	<name>合格证列表页面</name>
+	<desc>列表页面</desc>
+	<jspfile>screen/Report/crtfReport.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.CRTF_M</maintable>
+</page>

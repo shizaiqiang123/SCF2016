@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000012</id>
+	<name>融资复核的协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>融资复核的协议信息Catalog</DESC>
+	<tablename>TRX.LOAN_E</tablename>
+	<search>
+		<field datatype="1" title="融资编号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="融资编号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="组织机构代码" hidden="true" width = "">sellerInstCd</field>
+		<field datatype="1" title="业务类型" hidden="true" width = "100" formatter="busiTpFormater">busiTp</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="融资日期" hidden="true" width = "">loanValDt</field>
+		<field datatype="1" title="融资到期日" hidden="true" width = "">loanDueDt</field>
+		<field datatype="1" title="保证金账号" hidden="true" width = "">marginAcNo</field>
+		<field datatype="1" title="开户行" hidden="true" width = "">selAcBkNm</field>
+		<field datatype="1" title="贷款资金用途" hidden="true" width = "">loanApplicat</field>
+		<field datatype="1" title="融资总金额" hidden="" width = "25%" formatter="ccyFormater">ttlLoanAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "" >sysEventTimes</field>
+		<field datatype="1" title="融资比例" hidden="true" width = "">loanPct</field>
+		<field datatype="1" title="币种" hidden="true" width = "">ccy</field>
+		<field datatype="1" title="invloanbal" hidden="true" width = "">ttlLoanBal</field>
+		<field datatype="1" title="invloanbal" hidden="true" width = "">selAcNo</field>
+		<field datatype="1" title="正常利率" hidden="true" width = "200">loanRt</field>
+		<field datatype="1" title="交易日期" hidden="true" width = "200">trxDt</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "200">payIntTp</field>
+		<field datatype="1" title="初始保证金比例" hidden="true" width = "200">initMarginPct</field>
+		<field datatype="1" title="授信保证金比例" hidden="true" width = "200">authMarginPct</field>
+		<field datatype="1" title="保证金总额" hidden="true" width = "200">loanTp</field>
+		<field datatype="1" title="保证金总额" hidden="true" width = "200">marginAmt</field>
+		<field datatype="1" title="保证金总额" hidden="true" width = "200">lmtBal</field>
+		<field datatype="1" title="保证金总额" hidden="true" width = "200">lmtAllocate</field>
+		<field datatype="1" title="保证金总额" hidden="true" width = "200">lmtAmt</field>
+		<field datatype="1" title="" hidden="true" width = "100" >sysOpId</field>
+		</select>
+	<condition>
+		  sysTrxSts = P and sysRefNo like %$sysRefNo$% and selNm like %$selNm$% and sysLockFlag = F and sysFuncId = F_P_000020 and sysOrgId=$sysOrgId$
+	</condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000073</id>
+    <desc>业务利率调整</desc>
+    <name>业务利率调整</name>
+    <type>P</type>
+    <target>P_P_000209</target>
+    <propertyBean>false</propertyBean>
+</inqdata>

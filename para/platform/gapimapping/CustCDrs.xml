@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trxDom>
+	<coreReturnCode path="Message/Message_Body">coreReturnCode</coreReturnCode>
+	<coreReturnMsg path="Message/Message_Body">coreReturnMsg</coreReturnMsg>
+	<ACN path="Message/Message_Body">ACN</ACN>
+	<ZCHNM path="Message/Message_Body">ZCHNM</ZCHNM>
+	<com_ins_code path="Message/Message_Body">com_ins_code</com_ins_code>
+	<cus_type path="Message/Message_Body">cus_type</cus_type>
+	<com_cll_type path="Message/Message_Body">com_cll_type</com_cll_type>
+	<nat_tax_reg_code path="Message/Message_Body">nat_tax_reg_code</nat_tax_reg_code>
+	<loc_tax_reg_code path="Message/Message_Body">loc_tax_reg_code</loc_tax_reg_code>
+	<com_country path="Message/Message_Body">com_country</com_country>
+	<reg_addr path="Message/Message_Body">reg_addr</reg_addr>
+	<reg_cur_type path="Message/Message_Body">reg_cur_type</reg_cur_type>
+	<reg_cap_amt path="Message/Message_Body">reg_cap_amt</reg_cap_amt>
+	<com_str_date path="Message/Message_Body">com_str_date</com_str_date>
+	<loan_card_id path="Message/Message_Body">loan_card_id</loan_card_id>
+	<reg_type path="Message/Message_Body">reg_type</reg_type>
+	<com_main_opt_scp path="Message/Message_Body">com_main_opt_scp</com_main_opt_scp>
+	<main_br_id path="Message/Message_Body">main_br_id</main_br_id>
+	<remark path="Message/Message_Body">remark</remark>
+	<legal_name path="Message/Message_Body">legal_name</legal_name>
+	<legal_cert_type path="Message/Message_Body">legal_cert_type</legal_cert_type>
+	<legal_cert_code path="Message/Message_Body">legal_cert_code</legal_cert_code>
+	<fna_mgr path="Message/Message_Body">fna_mgr</fna_mgr>
+	<phone path="Message/Message_Body">phone</phone>
+	<legal_phone path="Message/Message_Body">legal_phone</legal_phone>
+	<duty path="Message/Message_Body">duty</duty>
+	<fax_code path="Message/Message_Body">fax_code</fax_code>
+	<email path="Message/Message_Body">email</email>
+	<post_addr path="Message/Message_Body">post_addr</post_addr>
+	<REMARKS1 path="Message/Message_Body">REMARKS1</REMARKS1>
+	<REMARKS2 path="Message/Message_Body">REMARKS2</REMARKS2>
+	<REMARKS3 path="Message/Message_Body">REMARKS3</REMARKS3>
+</trxDom>

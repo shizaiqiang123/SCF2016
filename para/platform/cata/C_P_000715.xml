@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000715</id>
+	<name>国内单笔保理--应收账款转让添加 查询协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>国内单笔保理--应收账款转让添加 查询协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" defaultvalue="" width = "200">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "20%">sellerInstCd</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "20%" >buyerNm</field>
+		<field datatype="1" title="业务类别" hidden="" width = "20%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="币种" hidden="" width = "20%" formatter="ccyFormater">lmtCcy</field>
+		<!-- <field datatype="1" title="争议登记数量" hidden="true" width = "25%">cntSysRefNo</field> -->
+		<field datatype="1" title="单据处理费" hidden="true" width = "25%">billAmt</field>
+		<field datatype="1" title="授信网点名称" hidden="true" width = "20%" >bchNm</field>
+		<field datatype="1" title="协议起始日期" hidden="true" width = "20%" >lmtValidDt</field>
+		<field datatype="1" title="协议到期日期" hidden="true" width = "20%" >lmtDueDt</field>
+		<field datatype="1" title="转让费率" hidden="true" width = "25%">transChgrt</field>
+		<!-- <field datatype="1" title="授信客户编号" hidden="true" width = "25%">selId</field> -->
+		<field datatype="1" title="间接客户编号" hidden="true" width = "25%">buyerId</field>
+		<field datatype="1" title="应收账款可融资额" hidden="true" width = "25%">arAvalLoan</field>
+	</select>
+	<condition><![CDATA[cntrctNo like %$cntrctNo$% and selNm like %$selNm$% and busiTp = 8 and sysTrxSts = M and sysLockFlag = F  and lmtValidDt <= $sysCurrentDate$ and lmtDueDt >= $sysCurrentDate$ and sysOrgId=$sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

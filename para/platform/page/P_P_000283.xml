@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <maintable>TRX.CNTRCT_TEMP</maintable>
+    <desc>查询协议文本</desc>
+    <holdmaster>T</holdmaster>
+    <id>P_P_000283</id>
+    <name>查询协议文本</name>
+    <lockcheck>N</lockcheck>
+    <cascadeevent>N</cascadeevent>
+    <maincomp>trxViewManager</maincomp>
+    <jspfile>screen/cntrct/queryCntrctTemp.jsp</jspfile>
+    <pagetype>VIEW</pagetype>
+</page>

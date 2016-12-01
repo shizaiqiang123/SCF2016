@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000009.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您正在办理【$sysFuncNm$】业务，您的验证码是【$code$】。为保证交易正常进行，请及时输入验证码。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000079</id>
+    <title>通用验证码(短信)</title>
+    <remindtp>1</remindtp>
+    <name>通用验证码(短信)</name>
+    <senddt>2015-09-21</senddt>
+</advice>

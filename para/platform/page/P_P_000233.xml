@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000233</id>
+	<name>还款自动核销自动处理页面</name>
+	<desc>还款自动核销自动处理页面</desc>
+	<jspfile>screen/pmt/reLoanPmt.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.FUND_REF_M</maintable>
+<!-- 	<pagejs>L_P_000037.js</pagejs> -->
+	<logicid>L_P_000179</logicid>
+</page>

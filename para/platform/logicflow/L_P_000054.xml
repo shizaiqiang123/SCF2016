@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000054</id>
+	<name>贷项清单</name>
+	<desc>贷项清单</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+	</lnode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.CUST_M</tablename>
+		<fields>sysLockFlag,lmtBal,busiTp,lmtFlg,lmtAllocate,lmtRecover,theirRef,rcustId,rcustNm,lmtDt</fields>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,lmtBal,busiTp,lmtFlg,lmtAllocate,lmtRecover,theirRef,rcustId,rcustNm,lmtDt</fields>
+			<values>F,$lmtBal$,$busiTp$,1,0,$ttlCrnAmt$,$sysRefNoHD$,$selId$,$selNm$,$trxDt$</values>
+		</release>
+		<nodejs>L_P_000014.js</nodejs>
+		<!-- <mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>buyerId</sysRefNo>
+		</mapping> -->
+	</transfornode>
+	<transfornode>
+		<id>N00000003</id>
+		<name>TEST 00003</name>
+		<desc>DESC TEST3</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxTransForToRecord</component>
+		<tablename>TRX.INVC_M</tablename>
+		<fields>sysLockFlag,crnAmt,invSts,busiTp</fields>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<pending>
+			<fields>sysLockFlag</fields>
+			<values>T</values>
+		</pending>
+		<release>
+			<fields>sysLockFlag,crnAmt,invSts,busiTp</fields>
+			<values>F,$crnAmt$,CRN,$busiTp$</values>
+		</release>
+		<nodejs>L_P_000021.js</nodejs>
+		<!-- <mapping>
+			将invRef mapping 成 sysRefNo 可配置多个
+			<sysRefNo>buyerId</sysRefNo>
+		</mapping> -->
+	</transfornode>
+</logicflow>

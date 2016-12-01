@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>BatchRoot batch开发工具页面</desc>
+    <transaction>true</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <holdmaster>T</holdmaster>
+    <istransaction>Y</istransaction>
+    <!-- <logicid>L_P_000147</logicid> -->
+    <queryid>Q_P_000212</queryid>
+    <id>P_P_000193</id>
+    <name>batch页面</name>
+    <lockcheck>N</lockcheck>
+    <propertyBean>false</propertyBean>
+    <cascadeevent>N</cascadeevent>
+    <jspfile>jsp/para/BatchRoot_Batch_Add.jsp</jspfile>
+</page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>P_P_000185</id>
+	<name>业务调整面凾小页</name>
+	<desc>业务调整-Report-面凾小页</desc>
+	<jspfile>screen\para\Function_Report_View.jsp</jspfile>
+	<cascadeevent>N</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>func</maintable>
+	<queryid>Q_P_000202</queryid>
+	<!-- <logicid>L_P_000151</logicid>  -->
+</page>

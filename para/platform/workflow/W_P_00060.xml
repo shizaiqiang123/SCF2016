@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00060</id>
+	<workid>1307</workid>
+	<workname>collatCangRef</workname>
+	<name>仓单质押_质物入库</name>
+	<desc>仓单质押_质物入库</desc>
+	<jspath>W_P_00016.js</jspath>
+</workflow>

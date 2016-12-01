@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000042</id>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Report</type>
+    <component></component>
+    <name>Report服务</name>
+    <propertyBean>false</propertyBean>
+    <servicejs>S_P_00003.js</servicejs>
+    <trigger>M</trigger>
+</service>

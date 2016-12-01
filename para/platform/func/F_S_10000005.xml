@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_S_10000005</id>
+	<module>新增角色</module>
+	<name>新增角色</name>
+	<desc>角色管理-新增角色</desc>
+	<functype>MM</functype>
+	<page>
+		<id>P_S_10000003</id>
+		<index>0</index>
+		<name>新增角色</name>
+		<desc>新增角色页面</desc>
+		<pagetype>ADD</pagetype>
+	</page>
+	<page>
+		<id>P_S_000003</id>
+		<index>1</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>	
+</function>

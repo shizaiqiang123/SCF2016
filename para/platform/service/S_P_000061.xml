@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>S_P_000061</id>
+    <name>打印已放款回执单</name>
+    <ruleSize>0</ruleSize>
+    <nodeName>service</nodeName>
+    <type>Report</type>
+    <component></component>
+    <propertyBean>false</propertyBean>
+    <servicejs>S_P_00035.js</servicejs>
+    <methodname>perViewServiceData</methodname>
+</service>

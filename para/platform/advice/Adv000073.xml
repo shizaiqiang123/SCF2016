@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000005.js</js>
+    <grouptp>1</grouptp>
+    <type>S</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的应收款融资业务，因未能通过您公司的内部授权无法进行平台审核，请及时处理这笔业务。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000073</id>
+    <title>融资复核不通过(短信)</title>
+    <remindtp>1</remindtp>
+    <name>融资复核不通过(短信)</name>
+    <senddt>2015-09-21</senddt>
+</advice>

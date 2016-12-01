@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000600</id>
+	<name>Test Look up</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_E</tablename>
+		<doname>invc</doname>
+		<type>E</type> 
+		<cascadeevent>N</cascadeevent>
+		<fields><!-- buyerId,buyerNm,invNo,invCcy,invAmt,acctAmt,invBal,invDt,invValDt,acctPeriod,invDueDt,loanPerc,invLoanAval,invLoanBal,dspAmt,dspDt,dspFlag,dspRsn,otherRsn,dspRef,arAvalLoan,arBal,poolLine --></fields>
+		<condition>dspRef = $dspRef$ and sysFuncId=F_P_000683</condition>
+		<orderby>dspRef</orderby>
+		<asc>Y</asc>
+		<sql><!-- select a.buyerId,a.buyerNm,a.invNo,a.invCcy,a.invAmt,a.acctAmt,a.invBal,a.invDt,a.invValDt,a.acctPeriod,a.invDueDt,a.loanPerc,a.invLoanAval,a.invLoanBal,a.dspAmt,a.dspDt,a.dspFlag,a.dspRsn,a.otherRsn,a.dspRef,b.arAvalLoan,b.arBal,b.poolLine from InvcE a,CntrctE b --></sql>
+	</qnode>
+</query>

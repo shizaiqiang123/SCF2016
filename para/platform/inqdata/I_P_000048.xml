@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000048</id>
+    <desc>保理商级参数定义小页</desc>
+    <name>弹开保理商级参数小页</name>
+    <target>P_P_000183</target>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>P</type>
+</inqdata>

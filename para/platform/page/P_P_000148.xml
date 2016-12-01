@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>系统UnLock页面</desc>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <nodeName>page</nodeName>
+    <id>P_P_000148</id>
+    <name>UnLock页面</name>
+    <jspfile>jsp/sys/SYS_UnLock.jsp</jspfile>
+    <pagetype>unlock</pagetype>
+    <maincomp>trxLockRecord</maincomp>
+    <maintable>std.para_define_m</maintable>
+    <istransaction>Y</istransaction>
+</page>

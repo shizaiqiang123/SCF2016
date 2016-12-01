@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000110</id>
+	<module>查询监控信息</module>
+	<name>查询监控信息</name>
+	<desc>监控管理-查询监控历史信息</desc>
+	<functype>VW</functype>
+	<!-- <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		 <catalog>C_P_000076</catalog>
+	</page> -->
+	<page>
+		<id>P_P_000285</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+	</page>
+	 <page>
+		<id>P_P_000080</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现监控信息页面</desc>
+		<maincomp>TrxViewManager</maincomp>
+		<pagetype>View</pagetype>
+	</page> 	  
+</function>

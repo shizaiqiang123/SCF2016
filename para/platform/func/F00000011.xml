@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F00000011</id>
+	<module>国内保理业务</module>
+	<name>交易符合</name>
+	<desc>交易符合功能</desc>
+<!--	<page>-->
+<!--		<id>P00000011</id>-->
+<!--		<index>0</index>-->
+<!--		<name>查询客户信息</name>-->
+<!--		<desc>查询客户信息功能</desc>-->
+<!--	</page>-->
+	<page>
+		<id>P00000012</id>
+		<index>1</index>
+		<name>符合客户信息</name>
+		<desc>符合客户信息功能</desc>
+	</page>
+</function>

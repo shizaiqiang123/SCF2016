@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000060</id>
+	<name>应收账款历程查询Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>应收账款历程查询Catalog</DESC>
+	<tablename>INVC_M a,CUST_M b,CUST_M c</tablename>
+	<search>
+		<field datatype="1" title="应收账款流水号" defaultvalue="" width = "100">sysRefNo</field>
+		<field datatype="1" title="应收账款编号" defaultvalue="" width = "100">invNo</field>
+		<field datatype="1" title="协议流水号" defaultvalue="" width = "100">cntrctNo</field>
+		<field datatype="1" title="授信客户名称" defaultvalue="" width = "100">selNm</field>
+		<field datatype="1" title="间接客户名称" defaultvalue="" width = "100">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="应收账款流水号" hidden="" width = "200" alis = "sysRefNo">a.sys_Ref_No</field>
+		<field datatype="1" title="应收账款编号" hidden="" width = "200" alis = "invcNo">a.inv_No</field>
+		<field datatype="1" title="协议流水号" hidden="" width = "200" alis = "cntrctNo">a.cntrct_No</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "200" alis = "selNm">c.cust_Nm</field>
+		<field datatype="1" title="间接客户名称" hidden="" width = "200" alis = "buyerNm">b.cust_Nm</field>
+	</select>
+	<join>
+		<on seq="1"> a.buyer_id = b.SYS_REF_NO</on>
+		<on seq="2"> a.sel_id = c.SYS_REF_NO</on>
+	</join>
+	<condition><![CDATA[a.sys_Ref_No like '%$sysRefNo$%' and a.cntrct_No like '%$cntrctNo$%' and a.inv_No like '%$invNo$%' and c.cust_Nm like '%$selNm$%' and b.cust_Nm like '%$buyerNm$%' and a.ar_type <> '6' and a.sys_Busi_Unit ='$sysBusiUnit$']]></condition>
+	<orderby>a.sys_Ref_No</orderby>
+</catalog>

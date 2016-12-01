@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syst>
+    <uploadtempdir>D:\\upload\\</uploadtempdir>
+    <downloadtempdir>D:\\download\\</downloadtempdir>
+    <id>SYSPara</id>
+    <reportengine>http://localhost:8080/WebReprot/entry</reportengine>
+</syst>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <desc>池融资下补充池水位预警</desc>
+    <task>
+        <desc>池融资下补充池水位预警</desc>
+        <id>T_S_000035</id>
+        <name>池融资下补充池水位预警</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000035</id>
+    <schedule>
+        <terminativedate>2016-11-27</terminativedate>
+        <second>0</second>
+        <beginfrom>2016-09-06</beginfrom>
+        <condition>N</condition>
+        <checkholiday>Y</checkholiday>
+        <express>* */0 * * * ? *</express>
+        <minute>0</minute>
+        <scheduletype>每分钟</scheduletype>
+        <isbybu>Y</isbybu>
+        <initialize>E</initialize>
+    </schedule>
+    <name>池融资下补充池水位预警</name>
+</batch>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esbservice>
+	<id>ESBS000028</id>
+	<name>百联核心WS客户端</name>
+	<type>XERP_WS_C</type><!-- 对内开放的服务类型，消费者凭此类型调用服务 -->
+	<initlize>S</initlize>
+	<protocoltp>WS</protocoltp><!-- 接口协议类型 -->
+	<inorout>i</inorout><!-- 当前服务是对内还是对外开放的，对内开放，属性对接外部接口，对外开放，属性对接内部监听 -->
+	<address>http://localhost:8080/SCFWeb/WS_Server/TxLoanService</address>
+	<wsUser>123456</wsUser>
+	<wsPwd>123456</wsPwd>
+	<characterset>UTF-8</characterset>
+	<timeout>60</timeout>
+</esbservice>

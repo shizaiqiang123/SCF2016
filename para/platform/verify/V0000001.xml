@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<verify>
+    <id>V0000001</id>
+    <type>Verify</type>
+    <component></component>
+    <name>验证码服务</name>
+<!--     <servicejs>S_P_00003.js</servicejs> -->
+    <sendtp>1</sendtp>
+    <gapiid>b2e00083</gapiid>
+    <validtime>300</validtime>
+    <codelen>6</codelen>
+    <keyname>sysRefNo</keyname>
+    <codeTp>1</codeTp><!--2为纯字母，3位数字加字母，1或不填为纯数字-->
+</verify>

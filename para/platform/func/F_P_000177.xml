@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+   <id>F_P_000177</id>
+	<module>PARA</module>
+	<name>查询Inqdata</name>
+	<desc>Inqdata管理-查询Inqdata</desc>
+	<functype>PA</functype>
+    <page>
+        <desc>筛选Inqdata页面以进入</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <nodeName>page</nodeName>
+        <id>P_S_000002</id>
+        <name>筛选Inqdata</name>
+        <index>0</index>
+        <catalog>C_P_000204</catalog>
+        <pagetype>CA</pagetype><!-- 这个我有疑问？ -->
+    </page>
+	<page>
+		<transaction>false</transaction>
+        <refsSize>0</refsSize> 
+        <nodeName>page</nodeName>
+        <id>P_P_000139</id>
+		<index>0</index>
+		<name>查询Inqdata</name>
+		<desc>查询Inqdata</desc>
+		 <pagetype>View</pagetype> 
+	</page>
+</function>

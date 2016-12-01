@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>2</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$办理的应收款融资业务，因未能在当日完成您公司的内部授权，已被系统取消。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000072</id>
+    <title>取消隔日融资交易(短信)</title>
+    <remindtp>1</remindtp>
+    <name>取消隔日融资交易(短信)</name>
+    <senddt>2015-09-19</senddt>
+</advice>

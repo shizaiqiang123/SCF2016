@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000023</id>
+	<name>预付类客户还款</name>
+	<desc>预付类客户还款页面</desc>
+	<jspfile>screen/poPmt/poPmt.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.PMT_M</maintable>
+	<logicid>L_P_000006</logicid>
+</page>

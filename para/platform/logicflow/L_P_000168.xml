@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+    <lnode>
+        <condition></condition>
+        <type>E</type>
+        <id>N00000001</id>
+        <component>TrxAddRecord</component>
+        <cascadeevent>Y</cascadeevent>
+        <tablename>STD.USER_INFO_M</tablename>
+        <event>y</event>
+        <name>用户表</name>		
+		<doname></doname>		
+		<nodejs>L_P_000028.js</nodejs>
+    </lnode>
+    <lnode>
+        <condition></condition>
+        <type>E</type>
+        <id>N00000002</id>
+        <component>TrxAddRecord</component>
+        <tablename>STD.USER_PWD</tablename>
+        <event>y</event>
+        <name>用户密码表</name>		
+		<doname></doname>		
+		<nodejs>L_P_000029.js</nodejs>
+    </lnode>
+    <lnode>
+        <condition></condition>
+        <type>E</type>
+        <id>N00000003</id>
+        <component>TrxAddRecord</component>
+        <tablename>STD.USER_ROLE_INFO</tablename>
+        <event>y</event>
+        <name>用户权限表</name>		
+		<doname></doname>		
+		<nodejs>L_P_000030.js</nodejs>
+    </lnode>
+    <lnode>
+        <condition></condition>
+        <type>E</type>
+        <id>N00000004</id>
+        <component>TrxAddRecord</component>
+        <tablename>STD.STD_AC_NO</tablename>
+        <event>y</event>
+        <name>账号表</name>		
+		<doname></doname>		
+		<nodejs>L_P_000060.js</nodejs>
+    </lnode>
+    <!-- <lnode>
+        <condition>sysRefNo = $sysRefNo$</condition>
+        <type>E</type>
+        <id>N00000004</id>
+        <component>TrxAddRecord</component>
+        <tablename>STD.USER_LOG_INFO</tablename>
+        <event>y</event>
+        <name>用户日志表</name>		
+		<doname></doname>		
+		<nodejs>L_P_000031.js</nodejs>
+    </lnode> -->
+    <id>L_P_000168</id>
+    <name>注册新用户</name>
+    <nodeSize>1</nodeSize>
+    <transforSize>0</transforSize>
+</logicflow>

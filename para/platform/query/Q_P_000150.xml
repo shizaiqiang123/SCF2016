@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000150</id>
+	<name>买方协议编号查询</name>
+	<desc>买方协议编号查询</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CNTRCT_SBR_M</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>Y</cascadeevent>
+		<fields></fields>
+		<condition>selId = $selId$ and trxId =$trxId$</condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

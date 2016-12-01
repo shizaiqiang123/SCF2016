@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00101</id>
+	<workid>1314</workid>
+	<workname>buyerPoolInvcM</workname>
+	<name>应收账款入池</name>
+	<desc>应收账款入池</desc>
+	<jspath>W_P_00014.js</jspath>
+</workflow>

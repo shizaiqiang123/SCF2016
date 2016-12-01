@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000598</id>
+	<name>查询invc</name>
+	<desc>查询invc</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 参数定义主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.INVC_M</tablename>
+		<doname>invc</doname>
+		<type>E</type>
+		<cascadeevent>n</cascadeevent>
+		<fields></fields>
+		<condition><![CDATA[invNo like %$queryInvNo$% and buyerId like %$invcBuyerId$% and buyerNm like %$invcBuyerNm$% and selId=$selId$ and dspFlag = 0 and invBal > 0 and sysTrxSts = M and (sysLockFlag = F or sysLockBy = $trxId$)]]></condition>
+		<orderby></orderby>
+		<asc>Y</asc>
+		<sql />
+	</qnode>
+</query>

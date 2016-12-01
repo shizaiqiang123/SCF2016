@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000881</id>
+	<name>买方单笔保理——买方还款页面</name>
+	<desc>买方单笔保理——买方还款页面</desc>
+	<jspfile>screen/pmt/buyerCntPmt.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>N</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maintable>TRX.PMT_M</maintable>
+	<logicid>L_P_000594</logicid><!--new logic  -->
+</page>
+

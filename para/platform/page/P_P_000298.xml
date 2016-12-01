@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <pagejs>user_add.js</pagejs>
+    <id>P_P_000298</id>
+    <name>用户测试页面1</name>
+    <jspfile>user_add.jsp</jspfile>
+    <pagetype>ADD</pagetype>
+</page>

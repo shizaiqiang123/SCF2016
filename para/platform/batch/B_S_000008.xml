@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000015</id>
+        <name>还款自动核销</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000008</id>
+    <name>还款自动核销</name>
+</batch>

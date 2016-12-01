@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_P_000073</id>
+	<name>百联用户信息</name>
+	<desc>百联用户信息页面</desc>
+	<jspfile>screen/factorUser/factorUser.jsp</jspfile>
+	<cascadeevent>Y</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<maincomp>TrxPendingManager</maincomp>
+	<maintable>STD.USER_INFO_M</maintable>	
+</page>

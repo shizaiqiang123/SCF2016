@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <page>
+        <desc>新增客户等级</desc>
+        <transaction>false</transaction>
+        <refsSize>0</refsSize>
+        <id>P_P_000215</id>
+        <name>新增客户等级</name>
+        <pagetype>ADD</pagetype>
+    </page>
+    <pagesSize>1</pagesSize>
+    <desc>新增客户等级</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000353</id>
+    <name>新增客户等级</name>
+    <functype>MM</functype>
+</function>

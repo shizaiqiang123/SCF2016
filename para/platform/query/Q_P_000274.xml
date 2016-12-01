@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+    <id>Q_P_000274</id>
+    <nodeSize>1</nodeSize>
+    <qnode>
+        <desc>成员企业应收账款查询</desc>
+        <type>S</type>
+        <id>N00000001</id>
+        <name>成员企业查询</name>
+        <component>componentClass</component>
+        <doname></doname>
+        <cascadeevent>N</cascadeevent>
+        <tablename>TRX.INVC_M</tablename>
+        <params>$licenceNo$</params>
+        <sql><![CDATA[SELECT Sum(invAmt) from InvcM where licenceNo = ?]]></sql>
+    </qnode>
+</query>

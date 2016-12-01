@@ -1,0 +1,12 @@
+ClearCase CopyAreaDB|4
+vobs\FSSDB-FCSP_VOB\fssdb-fcsp_j2ee\src\FCSP\WebContent\corejs\easyUI
+2
+8
+1a:jquery.easyui.min-debug.js|1|1454551930b|45581|95510beb|9b7c9bee320e4aabb8d97ea8bcc80bed|0
+4:ssrc|2|0|0|0|69404a84cf6c11e39f8ae41f131e4b14|0
+7:plugins|2|0|0|0|5e8f4621b2fc11e38d27e41f131e4b14|0
+6:locale|2|0|0|0|9977bcfc32724df280751a96025229c2|0
+15:jquery.ui.normal.gzjs|1|145cef455a7|10df3|64072398|2153eaadd00011e386a5e41f131e4b14|0
+6:themes|2|0|0|0|089ce339ee7c4c85be7bb2cdf916031d|0
+13:jquery.ui.mini.gzjs|1|1457375767d|32f0|be5a73c0|accad1eec5fc11e39f16e41f131e4b14|0
+14:jquery.easyui.min.js|1|1454551932a|3ce78|d6ffeae1|b7921838f1f745d3ac157747f41a9c04|0

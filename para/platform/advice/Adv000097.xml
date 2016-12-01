@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<advice>
+    <expdt>2</expdt>
+    <js>AD0000008.js</js>
+    <grouptp>1</grouptp>
+    <type>M</type>
+    <sendtp>0</sendtp>
+    <content>&lt;p&gt;您好，您于$trxDt$汇出的还款资金信息，因没有查询到对应的还款信息，平台无法进行销账处理，请及时登录平台登记还款信息。【百联金融服务平台】&lt;/p&gt;
+</content>
+    <id>Adv000097</id>
+    <title>还款信息流未达通知</title>
+    <remindtp>1</remindtp>
+    <name>还款信息流未达(站内信)</name>
+    <senddt>2015-09-21</senddt>
+</advice>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000217</id>
+	<name>查询应收账款到期日</name>
+	<MODULE>batch</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>参数管理Catalog</DESC>
+	<tablename>TRX.INVC_M</tablename>
+	<bybu>false</bybu>
+	<search></search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="应收账款到期日" hidden="true" width = "200" >invDueDt</field>
+	</select>
+	<condition></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

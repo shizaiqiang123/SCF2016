@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logicflow>
+	<id>L_P_000022</id>
+	<name>TEST 00001</name>
+	<desc>DESC TEST</desc>
+	<module>TEST</module>
+	<lnode>
+		<id>N00000001</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxEditRecord</component>
+		<tablename>STD.STD_ORG_INFO</tablename>
+		<doname></doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode>
+	<lnode>
+		<id>N00000002</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>STD.STD_AC_NO</tablename>
+		<doname>doname</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>acOwnerid =?</condition>
+		<params>acOwnerid</params>
+	</lnode>
+	 <lnode>
+		<id>N00000003</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>trxEditDoRecord</component>
+		<tablename>STD.FACTOR_PRODUCT</tablename>
+		<doname>productId</doname>
+		<condition>factorId =?</condition>
+		<params>factorId</params>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+		<nodejs></nodejs>
+	</lnode> 
+	<!-- <lnode>
+		<id>N00000004</id>
+		<name>TEST 00002</name>
+		<desc>DESC TEST2</desc>
+		<module>TEST</module>
+		<event>TestEvent</event>
+		<component>TrxAddRecord</component>
+		<tablename>STD.FACTOR_PRODUCT</tablename>
+		<doname>productId</doname>
+		<type>E</type>
+		<cascadeevent>N</cascadeevent>
+	</lnode> -->
+</logicflow>

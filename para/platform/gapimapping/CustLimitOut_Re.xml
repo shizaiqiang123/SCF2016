@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef type="v">234343</msgRef>
+	</Message_Header>
+	<Message_Body>
+	</Message_Body>
+</Message>

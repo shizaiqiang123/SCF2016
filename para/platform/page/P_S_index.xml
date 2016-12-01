@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P_S_index</id>
+	<name>首页</name>
+	<desc>首页面</desc>
+	<jspfile>index.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<pagetype>index</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxMasterManager</maincomp>
+	<maintable></maintable>	
+</page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inqdata>
+    <id>I_P_000049</id>
+    <desc>独立逻辑流提交请求</desc>
+    <name>保理商参数提交</name>
+    <target>L_P_000153</target>
+    <nodeName>inqdata</nodeName>
+    <propertyBean>false</propertyBean>
+    <type>L</type>
+</inqdata>

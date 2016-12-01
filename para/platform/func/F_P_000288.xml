@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000288</id>
+	<module>Para</module>
+	<name>advice Add</name>
+	<desc>新增advice 参数定义</desc>
+	<functype>PA</functype>
+	<page>
+		<id>P_P_000189</id>
+		<pagetype>paraAdd</pagetype>
+	</page>	
+<!-- 	<page> -->
+<!-- 		<id>P_S_000021</id> -->
+<!-- 	</page>	 -->
+	<page>
+		<id>P_S_000003</id>
+		<index>2</index>
+		<name>成功页面</name>
+		<desc>操作成功页面</desc>
+	</page>
+</function>

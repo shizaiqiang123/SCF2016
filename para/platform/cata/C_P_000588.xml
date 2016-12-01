@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000588</id>
+	<name>买方单笔保理池--买方还款 查询协议信息Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>买方单笔保理池--买方还款 查询协议信息Catalog</DESC>
+	<tablename>TRX.CNTRCT_M</tablename>
+	<search>
+		<field datatype="1" title="协议编号" defaultvalue="" width = "200">cntrctNo</field>
+		<field datatype="1" title="核心企业名称" defaultvalue="" width = "200">buyerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="协议编号" hidden="" width = "20%">cntrctNo</field>
+		<field datatype="1" title="组织机构代码" hidden="" width = "20%">sellerInstCd</field>
+		<field datatype="1" title="核心企业名称" hidden="" width = "20%">buyerNm</field>
+		<field datatype="1" title="业务类别" hidden="" width = "20%" formatter="busiTypeFormater">busiTp</field>
+		<field datatype="1" title="币种" hidden="" width = "20%" formatter="ccyFormater">lmtCcy</field>
+		<field datatype="1" title="协议流水号" hidden="true" width = "25%">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="true" width = "25%">selId</field>
+		<field datatype="1" title="间接客户编号" hidden="true" width = "25%">buyerId</field>
+		<field datatype="1" title="额度余额" hidden="true" width = "25%">lmtBal</field>
+		<field datatype="1" title="占用额度" hidden="true" width = "25%">lmtAllocate</field>
+		<field datatype="1" title="额度金额" hidden="true" width = "25%">lmtAmt</field>
+		<field datatype="1" title="扣息方式" hidden="true" width = "25%">payIntTp</field>
+		<field datatype="1" title="可融资余额" hidden="true" width = "100">arAvalLoan</field>
+		<field datatype="1" title="应收账款余额" hidden="true" width = "100">arBal</field>
+		<field datatype="1" title="已敞口融资" hidden="true" width = "100">openLoanAmt</field>
+		<field datatype="1" title="池水位" hidden="" width = "14%">poolLine</field>
+		
+		
+	</select>
+	<condition><![CDATA[cntrctNo like %$cntrctNo$% and buyerNm like %$buyerNm$% and sysTrxSts = M and sysLockFlag = F and lmtDueDt > $sysCurrentDate$ and lmtValidDt <= $sysCurrentDate$ and busiTp = 9 and sysOrgId = $sysOrgId$]]></condition>
+	<orderby>sysRefNo</orderby>
+</catalog>

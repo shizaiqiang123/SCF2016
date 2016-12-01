@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+    <pagesSize>0</pagesSize>
+    <desc>仓单质押_客户还款-删除在途</desc>
+    <transactionPage>0</transactionPage>
+    <reportsSize>0</reportsSize>
+    <serviceSize>0</serviceSize>
+    <id>F_P_000820</id>
+    <autoassignSize>0</autoassignSize>
+    <name>仓单质押_客户还款-删除在途</name>
+    <functype>DP</functype>
+    <shortnm>仓单质押_客户还款-删除在途</shortnm>
+    <page>
+		<id>P_S_000002</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000759</catalog>
+	</page>
+	<page>
+		<desc>复核</desc>
+		<transaction>true</transaction>
+		<refsSize>0</refsSize>
+		<nodeName>page</nodeName>
+		<holdmaster>T</holdmaster>
+		<istransaction>Y</istransaction>
+		<id>P_P_000249</id>
+		<name>复核</name>
+		<lockcheck>Y</lockcheck>
+		<propertyBean>false</propertyBean>
+		<cascadeevent>Y</cascadeevent>
+		<pagetype>DELP</pagetype>
+	</page>
+	<workflow>W_P_00063</workflow>
+</function>

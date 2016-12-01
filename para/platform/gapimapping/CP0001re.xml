@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Message_Header>
+		<msgId type="v">1234567</msgId>
+		<msgRef path="trxDom">sysRefNo</msgRef>
+		<channel type="v">24</channel>
+		<fromNodeId type="v">gjjs</fromNodeId>
+		<toServiceCode></toServiceCode>
+		<externalReferenceNo path="trxDom">sysRefNo</externalReferenceNo>
+		<transactionBranch></transactionBranch>
+		<transactionDate path="trxDom">currentdate</transactionDate>
+		<msgPri type="v">1</msgPri>
+		<msgVer type="v">1.0</msgVer>
+		<replyCode></replyCode>
+		<replyText></replyText>
+	</Message_Header>
+	<Message_Body>
+		<token path="trxDom">token</token>
+		<CoreDate></CoreDate>
+		<Tlrno></Tlrno>
+		<TlrName></TlrName>
+		<ActType></ActType>
+		<TXNTYPE></TXNTYPE>
+		<PayActno></PayActno>
+		<PayName></PayName>
+		<CurCd></CurCd>
+		<PayeeActno path="trxDom">payBailAcno</PayeeActno>
+		<PayeeName></PayeeName>
+		<SndBrno></SndBrno>
+		<RcvBrno></RcvBrno>
+		<transferSum path="trxDom">bailPayAmt</transferSum>
+		<signDate></signDate>
+		<payUse></payUse>
+		<protocolNo></protocolNo>
+		<billType></billType>
+		<certType></certType>
+		<certNo></certNo>
+		<transferType></transferType>
+		<FEE1_CODE></FEE1_CODE>
+		<FEE1_AMOUNT></FEE1_AMOUNT>
+		<FEE1_ACCT></FEE1_ACCT>
+		<FEE2_CODE></FEE2_CODE>
+		<FEE2_AMOUNT></FEE2_AMOUNT>
+		<FEE2_ACCT></FEE2_ACCT>
+		<FEE3_CODE></FEE3_CODE>
+		<FEE3_AMOUNT></FEE3_AMOUNT>
+		<FEE3_ACCT></FEE3_ACCT>
+		<otherRemark></otherRemark>
+		<orgiVouchersNo></orgiVouchersNo>
+		<RESEND></RESEND>
+		<FEE_MODE></FEE_MODE>
+	</Message_Body>
+</Message>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <cacheAble>false</cacheAble>
+    <transaction>false</transaction>
+    <refsSize>0</refsSize>
+    <id>P_P_000938</id>
+    <name>保对仓</name>
+	<desc> 流程页面</desc>
+	<jspfile>screen/busFirstPage/bdc.jsp</jspfile>
+	<holdmaster>t</holdmaster>
+</page>

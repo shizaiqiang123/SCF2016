@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_S_000002</id>
+	<name>查询工作流信息</name>
+	<desc>查询工作流信息</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name></name>
+		<desc></desc>
+		<component>queryWorkItem</component>
+		<tablename></tablename>
+		<doname></doname>
+		<type>C</type>
+		<cascadeevent>N</cascadeevent>
+		<fields></fields>
+		<condition></condition>
+		<orderby></orderby>
+		<asc></asc>
+		<sql/>
+	</qnode>
+</query>

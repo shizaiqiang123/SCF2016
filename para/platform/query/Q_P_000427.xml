@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<id>Q_P_000427</id>
+	<name>保单查询</name>
+	<desc>Test Look up</desc>
+	<qnode>
+		<id>N00000001</id>
+		<index>0</index>
+		<name>node name</name>
+		<desc>look up 查询主表</desc>
+		<component>componentClass</component>
+		<tablename>TRX.CUST_INSURE,TRX.CUST_M</tablename>
+		<doname>doname</doname>
+		<type>J</type>
+		<cascadeevent>N</cascadeevent>
+		<condition>a.insure_No='$insureNo$' and a.sys_Ref_No='$cntrctNo$'</condition>
+		<orderby>a.sys_Ref_No</orderby>
+		<params>$insureNo$,$cntrctNo$</params>
+		<sql><![CDATA[ select a.insure_No,a.sys_Ref_No,b.lmt_Bal,a.collat_Comp_Nm,a.collat_No,a.collat_Amt from trx.cust_insure a  left join trx.cust_m b on(a.insure_no= b.sys_ref_no) ]]></sql>
+		<fields>insureNo,sysRefNo,lmtBal,collatCompNm,collatNo,collatAmt </fields>
+		<asc>Y</asc>
+	</qnode>
+</query>

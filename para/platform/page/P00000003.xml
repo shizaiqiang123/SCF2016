@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<id>P00000003</id>
+	<name>应收账款处理结果管理</name>
+	<desc>处理结果管理</desc>
+	<jspfile>jsp/SYS_Result.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>n</holdmaster>
+	<pagetype>RS</pagetype>
+	<istransaction>N</istransaction>
+	<maincomp>TrxResutlManager</maincomp>
+	<!--<maintable>TRX.T_CNTRCT_M</maintable>
+	<queryid>query00003</queryid>
+	<logicid>logic00003</logicid>
+	<gapi>int000001</gapi>
+	<service>service00001</service>
+	<report>report00001</report>-->
+</page>

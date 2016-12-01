@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+	<id>W_P_00012</id>
+	<workid>1312</workid>
+	<workname>PoReg</workname>
+	<name>订单登记</name>
+	<desc>订单登记</desc>
+	<jspath>W_P_00012.js</jspath>
+</workflow>

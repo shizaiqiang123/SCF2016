@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch>
+    <task>
+        <id>T_S_000013</id>
+        <name>供应商还款提醒</name>
+    </task>
+    <type>M</type>
+    <id>B_S_000006</id>
+    <name>供应商还款提醒</name>
+</batch>

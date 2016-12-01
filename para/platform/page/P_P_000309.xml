@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <desc>授信额度编号查询页面</desc>   
+    <id>P_P_000309</id>
+    <name>授信额度编号查询页面</name>  
+	<index>1</index>
+	<jspfile>screen/cntrct/queryCntrctNo.jsp</jspfile>
+	<cascadeevent>n</cascadeevent>
+	<lockcheck>n</lockcheck>
+	<holdmaster>t</holdmaster>
+	<istransaction>Y</istransaction>
+	<pagetype>inqData</pagetype>
+	<maincomp></maincomp>
+	<maintable></maintable>
+ 	<queryid>Q_P_000331</queryid>	
+</page>

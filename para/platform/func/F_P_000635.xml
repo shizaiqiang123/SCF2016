@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function>
+	<id>F_P_000635</id>
+	<module>应收账款明细查询</module>
+	<name>应收账款明细查询</name>
+	<desc>应收账款明细查询</desc>
+	<functype>VW</functype>
+	<page>
+		<id>P_P_000941</id>
+		<index>0</index>
+		<name>筛选信息</name>
+		<desc>筛选主交易信息</desc>
+		<catalog>C_P_000514</catalog>
+	</page>
+	<page>
+		<id>P_P_000789</id>
+		<index>1</index>
+		<name>列表页面</name>
+		<desc>展现所有历史列表</desc>
+	</page>
+	<page>
+		<id>P_P_000790</id>
+		<index>2</index>
+		<name>应收账款详细信息</name>
+		<desc>详细应收账款信息页面</desc>
+	</page>
+	<!-- <service>
+		<id>S_P_000482</id>
+		<trigger>M</trigger>
+		<name>生成Excel格式应收账款</name>
+	</service> -->
+	<service>
+        <id>S_P_000482</id>
+        <servicejs>S_P_00057.js</servicejs>
+        <trigger>M</trigger>
+	</service>
+</function>

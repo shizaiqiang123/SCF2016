@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000005</id>
+	<name>合作方复核Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>合作方复核Catalog</DESC>
+	<tablename>TRX.PARTY_E</tablename>
+	<search>
+		<field datatype="1" title="合作方编号" defaultvalue="" width = "200">sysRefNo</field>
+		<field datatype="1" title="合作方名称" defaultvalue="" width = "200">patnerNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="合作方编号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="合作方名称" hidden="" width = "25%">patnerNm</field>
+		<field datatype="1" title="合作方类型" hidden="" width = "25%" formatter="patnerTpFormater">patnerTp</field>
+		<field datatype="1" title="序列号" hidden="" width = "25%">sysEventTimes</field>
+		<field datatype="1" title="序列号" hidden="true" width = "200">sysFuncId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysOpTm</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelId</field>
+		<field datatype="1" title="系统流水号" hidden="true" width = "222">sysRelTm</field>
+	</select>
+	<condition><![CDATA[sysRefNo like %$sysRefNo$% and patnerNm like %$patnerNm$%   and sysTrxSts=P and sysOrgId = $sysOrgId$ ]]></condition>
+	<orderby>sysOpTm</orderby>
+</catalog>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<id>C_P_000703</id>
+	<name>退回处理池融资卖方还款Catalog</name>
+	<MODULE>SYST</MODULE>
+	<jspfile>screen/catalog.jsp</jspfile>
+	<DESC>退回处理池融资卖方还款Catalog</DESC>
+	<tablename>TRX.PMT_E</tablename>
+	<search>
+		<field datatype="1" title="交易流水号" hidden="" width = "100">sysRefNo</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "100">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "100">selNm</field>
+	</search>
+	<select>
+		<field datatype="1" checkbox = "true"></field>
+		<field datatype="1" title="交易流水号" hidden="" width = "25%">sysRefNo</field>
+		<field datatype="1" title="业务类型" hidden="" width = "25%" formatter="busiTpFormater">busiTp</field>
+		<field datatype="1" title="授信客户编号" hidden="" width = "25%">selId</field>
+		<field datatype="1" title="授信客户名称" hidden="" width = "25%">selNm</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysEventTimes</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysFuncId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >sysOpId</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >ttlPmtAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >pmtDt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >payIntAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >payPrinAmt</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >lmtCcy</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >lmtBal</field>
+		<field datatype="1" title="原始Function" hidden="true" width = "100" >cntrctNo</field>
+		</select>
+	<condition>
+		  sysTrxSts = S and sysLockFlag = F and sysRefNo like %$sysRefNo$% and selId like %$selId$% and selNm like %$selNm$% and busiTp = 6 and sysOrgId = $sysOrgId$
+	</condition>
+	<orderby>id.sysRefNo</orderby>
+</catalog>

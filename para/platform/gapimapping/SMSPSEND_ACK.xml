@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<XML_PACK>
+	<CSP_HEAD>
+		<TRANCODE type="v">SMSPSEND</TRANCODE>
+		<PACKPORP type="v">01</PACKPORP>
+		<CSP_DATE path="comm">sysOpDate</CSP_DATE>
+		<CSP_TIME path="comm">sysOpTime</CSP_TIME>
+		<CSP_TRAC path="trxDom">sysRefNo</CSP_TRAC>
+	</CSP_HEAD>
+	<SMSPBODY>
+		<RETCODE type="v">00</RETCODE>
+		<ERRMSG type="v">SUCCESS</ERRMSG>
+	</SMSPBODY>
+</XML_PACK>
+

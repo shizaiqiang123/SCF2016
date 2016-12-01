@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="selNm" id="9">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cntrctNo" id="10">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="controlNm" id="11">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="subNm" id="12">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="goodsId" id="13">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.25.1.45:1521/ORCL</property>
+            <property name="odaUser">std</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">c3Rk</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">SYS_OP_TM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SYS_OP_TM</text-property>
+                    <text-property name="heading">SYS_OP_TM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PO_IN_NUM</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PO_IN_NUM</text-property>
+                    <text-property name="heading">PO_IN_NUM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TTL_PO_OUT_NUM</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TTL_PO_OUT_NUM</text-property>
+                    <text-property name="heading">TTL_PO_OUT_NUM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CNTRCT_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CNTRCT_NO</text-property>
+                    <text-property name="heading">CNTRCT_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SEL_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SEL_NM</text-property>
+                    <text-property name="heading">SEL_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BUSI_TP</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BUSI_TP</text-property>
+                    <text-property name="heading">BUSI_TP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CCY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CCY</text-property>
+                    <text-property name="heading">CCY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">GOODS_ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">GOODS_ID</text-property>
+                    <text-property name="heading">GOODS_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">GOODS_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">GOODS_NM</text-property>
+                    <text-property name="heading">GOODS_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PRICE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PRICE</text-property>
+                    <text-property name="heading">PRICE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PLD_PERC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PLD_PERC</text-property>
+                    <text-property name="heading">PLD_PERC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SUPERVISOR_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SUPERVISOR_NM</text-property>
+                    <text-property name="heading">SUPERVISOR_NM</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">WAREHOUSE_NM</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">WAREHOUSE_NM</text-property>
+                    <text-property name="heading">WAREHOUSE_NM</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">SYS_OP_TM</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">PO_IN_NUM</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">TTL_PO_OUT_NUM</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">CNTRCT_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">SEL_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">BUSI_TP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">CCY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">GOODS_ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">GOODS_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">PRICE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">PLD_PERC</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">SUPERVISOR_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">WAREHOUSE_NM</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[this.queryText="SELECT a.sys_Op_Tm,a.po_In_Num,a.ttl_Po_Out_Num,c.cntrct_No,c.sel_Nm,c.busi_Tp,a.ccy,a.goods_id,a.goods_nm,a.price,c.pld_Perc,b.supervisor_Nm,b.warehouse_Nm              "
++" from  TRX.CRTF_E a,TRX.CRTF_REG_M b,TRX.CNTRCT_M c                                   "
++" where  a.ref_No = b.sys_Ref_No  and b.cntrct_No = c.sys_Ref_No and c.busi_Tp = '2'                  "
+
+var selNm = params["selNm"].value;
+var cntrctNo = params["cntrctNo"].value;
+var controlNm = params["controlNm"].value;
+var subNm = params["subNm"].value;
+var goodsId = params["goodsId"].value;
+if(selNm!=null &amp;&amp; selNm!=""){
+this.queryText+="AND c.sel_Nm like '%"+selNm+"%'";
+}
+if(cntrctNo!=null &amp;&amp; cntrctNo!=""){
+this.queryText+="AND c.cntrct_No like '%"+cntrctNo+"%'";
+}
+if(controlNm!=null &amp;&amp; controlNm!=""){
+this.queryText+="AND b.supervisor_Nm like '%"+controlNm+"%'";
+}
+if(subNm!=null &amp;&amp; subNm!=""){
+this.queryText+="AND a.goods_Nm like '%"+subNm+"%'";
+}
+if(goodsId!=null &amp;&amp; goodsId!=""){
+this.queryText+="AND a.goods_Id like '%"+goodsId+"%'";
+}]]></method>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">SYS_OP_TM</property>
+                    <property name="nativeName">SYS_OP_TM</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">PO_IN_NUM</property>
+                    <property name="nativeName">PO_IN_NUM</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">TTL_PO_OUT_NUM</property>
+                    <property name="nativeName">TTL_PO_OUT_NUM</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">CNTRCT_NO</property>
+                    <property name="nativeName">CNTRCT_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">SEL_NM</property>
+                    <property name="nativeName">SEL_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">BUSI_TP</property>
+                    <property name="nativeName">BUSI_TP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">CCY</property>
+                    <property name="nativeName">CCY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">GOODS_ID</property>
+                    <property name="nativeName">GOODS_ID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">GOODS_NM</property>
+                    <property name="nativeName">GOODS_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">PRICE</property>
+                    <property name="nativeName">PRICE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">PLD_PERC</property>
+                    <property name="nativeName">PLD_PERC</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">SUPERVISOR_NM</property>
+                    <property name="nativeName">SUPERVISOR_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">WAREHOUSE_NM</property>
+                    <property name="nativeName">WAREHOUSE_NM</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select  a.sys_Op_Tm,a.po_In_Num,a.ttl_Po_Out_Num,c.cntrct_No,c.sel_Nm,c.busi_Tp,a.ccy,a.goods_id,a.goods_nm,a.price,c.pld_Perc,b.supervisor_Nm,b.warehouse_Nm
+from  TRX.CRTF_E a,TRX.CRTF_REG_M b,TRX.CNTRCT_M c
+where a.ref_No = b.sys_Ref_No  and b.cntrct_No = c.sys_Ref_No and c.busi_Tp = '2']]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="14">
+            <column id="15"/>
+            <row id="16">
+                <cell id="17">
+                    <label id="87">
+                        <property name="textAlign">center</property>
+                        <text-property name="text">预付类货物出入库台帐查询</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="18">
+                <cell id="19">
+                    <table id="22">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">SYS_OP_TM</property>
+                                <text-property name="displayName">SYS_OP_TM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SYS_OP_TM"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PO_IN_NUM</property>
+                                <text-property name="displayName">PO_IN_NUM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PO_IN_NUM"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">TTL_PO_OUT_NUM</property>
+                                <text-property name="displayName">TTL_PO_OUT_NUM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["TTL_PO_OUT_NUM"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CNTRCT_NO</property>
+                                <text-property name="displayName">CNTRCT_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CNTRCT_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SEL_NM</property>
+                                <text-property name="displayName">SEL_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SEL_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">BUSI_TP</property>
+                                <text-property name="displayName">BUSI_TP</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["BUSI_TP"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CCY</property>
+                                <text-property name="displayName">CCY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CCY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">GOODS_ID</property>
+                                <text-property name="displayName">GOODS_ID</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["GOODS_ID"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">GOODS_NM</property>
+                                <text-property name="displayName">GOODS_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["GOODS_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PRICE</property>
+                                <text-property name="displayName">PRICE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PRICE"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PLD_PERC</property>
+                                <text-property name="displayName">PLD_PERC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PLD_PERC"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SUPERVISOR_NM</property>
+                                <text-property name="displayName">SUPERVISOR_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SUPERVISOR_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">WAREHOUSE_NM</property>
+                                <text-property name="displayName">WAREHOUSE_NM</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["WAREHOUSE_NM"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="65"/>
+                        <column id="66"/>
+                        <column id="67"/>
+                        <column id="68"/>
+                        <column id="69"/>
+                        <column id="70"/>
+                        <column id="71"/>
+                        <column id="72"/>
+                        <column id="73"/>
+                        <column id="74"/>
+                        <column id="75"/>
+                        <column id="76"/>
+                        <column id="77"/>
+                        <header>
+                            <row id="23">
+                                <cell id="24">
+                                    <label id="88">
+                                        <text-property name="text">业务日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="25">
+                                    <label id="89">
+                                        <text-property name="text">入库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="26">
+                                    <label id="90">
+                                        <text-property name="text">出库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="27">
+                                    <label id="91">
+                                        <text-property name="text">货押协议编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="28">
+                                    <label id="92">
+                                        <text-property name="text">客户名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="29">
+                                    <label id="93">
+                                        <text-property name="text">业务类别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="30">
+                                    <label id="94">
+                                        <text-property name="text">币种</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="31">
+                                    <label id="95">
+                                        <text-property name="text">商品编号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="32">
+                                    <label id="96">
+                                        <text-property name="text">商品名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="33">
+                                    <label id="97">
+                                        <text-property name="text">最新认定价格</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="34">
+                                    <label id="98">
+                                        <text-property name="text">质押率</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="35">
+                                    <label id="99">
+                                        <text-property name="text">监管方名称</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="36">
+                                    <label id="100">
+                                        <text-property name="text">仓库名称</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="37">
+                                <cell id="38">
+                                    <data id="101">
+                                        <property name="resultSetColumn">SYS_OP_TM</property>
+                                    </data>
+                                </cell>
+                                <cell id="39">
+                                    <data id="102">
+                                        <property name="resultSetColumn">PO_IN_NUM</property>
+                                    </data>
+                                </cell>
+                                <cell id="40">
+                                    <data id="103">
+                                        <property name="resultSetColumn">TTL_PO_OUT_NUM</property>
+                                    </data>
+                                </cell>
+                                <cell id="41">
+                                    <data id="104">
+                                        <property name="resultSetColumn">CNTRCT_NO</property>
+                                    </data>
+                                </cell>
+                                <cell id="42">
+                                    <data id="105">
+                                        <property name="resultSetColumn">SEL_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="43">
+                                    <data id="106">
+                                        <property name="resultSetColumn">BUSI_TP</property>
+                                    </data>
+                                </cell>
+                                <cell id="44">
+                                    <data id="107">
+                                        <property name="resultSetColumn">CCY</property>
+                                    </data>
+                                </cell>
+                                <cell id="45">
+                                    <data id="108">
+                                        <property name="resultSetColumn">GOODS_ID</property>
+                                    </data>
+                                </cell>
+                                <cell id="46">
+                                    <data id="109">
+                                        <property name="resultSetColumn">GOODS_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="47">
+                                    <data id="110">
+                                        <property name="resultSetColumn">PRICE</property>
+                                    </data>
+                                </cell>
+                                <cell id="48">
+                                    <data id="111">
+                                        <property name="resultSetColumn">PLD_PERC</property>
+                                    </data>
+                                </cell>
+                                <cell id="49">
+                                    <data id="112">
+                                        <property name="resultSetColumn">SUPERVISOR_NM</property>
+                                    </data>
+                                </cell>
+                                <cell id="50">
+                                    <data id="113">
+                                        <property name="resultSetColumn">WAREHOUSE_NM</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="51">
+                                <cell id="52"/>
+                                <cell id="53"/>
+                                <cell id="54"/>
+                                <cell id="55"/>
+                                <cell id="56"/>
+                                <cell id="57"/>
+                                <cell id="58"/>
+                                <cell id="59"/>
+                                <cell id="60"/>
+                                <cell id="61"/>
+                                <cell id="62"/>
+                                <cell id="63"/>
+                                <cell id="64"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="20">
+                <cell id="21"/>
+            </row>
+        </grid>
+    </body>
+</report>
